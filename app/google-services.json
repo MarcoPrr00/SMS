@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "689067539377",
+    "project_id": "provalogin-65cb5",
+    "storage_bucket": "provalogin-65cb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689067539377:android:c21403d1cdb07c90961b90",
+        "android_client_info": {
+          "package_name": "com.example.provalogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH1AnZybfzNulxS4S8CRiyY7hCLa2Ymz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
