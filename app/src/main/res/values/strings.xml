@@ -2,4 +2,13 @@
     <string name="app_name">ProvaLogin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
+    <string name="name">Name</string>
+    <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
+    <string name="todo">TODO</string>
+    <string name="username">username</string>
+    <string name="full_name">full name</string>
+    <string name="btn_follow">Button</string>
+    <string name="segui">segui</string>
+    <string name="follow">Follow</string>
 </resources>

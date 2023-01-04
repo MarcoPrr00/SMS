@@ -115,12 +115,12 @@ public class RegisterActivity extends AppCompatActivity {
                     hashMap.put("Cognome",musername);
                     hashMap.put("Nome",mfullname);
                     hashMap.put("imgUrl","https://firebasestorage.googleapis.com/v0/b/provalogin-65cb5.appspot.com/o/avatar.png?alt=media&token=e6a038aa-942e-4c21-b1ff-d8c9dd33b0fc");
-                    
-                    //REALTIME DATABASE
-                    /*reference= FirebaseDatabase.getInstance().getReference()
-                            .child("Users").child(userid);*/
 
-                    /*reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+                    //REALTIME DATABASE
+                  FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+                    reference = database.getReference().child("Users").child(userid);
+                    reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
@@ -130,7 +130,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 startActivity(intent);
                             }
                         }
-                    });*/
+                    }); /* */
 
                     //CLOUDSTORAGE DATABASE
                     FirebaseFirestore firebaseFirestore= FirebaseFirestore.getInstance();
