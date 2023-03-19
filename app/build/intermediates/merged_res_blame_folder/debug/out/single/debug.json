@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\xml_start_scene.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\xml\\start_scene.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_post.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xxhdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\menu_buttom_navigation.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\menu\\buttom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xxhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xxhdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xxhdpi_ic_favorites.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xxhdpi\\ic_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-mdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-mdpi\\ic_home.png"
+    },
+    {
+        "merged": "com.example.provalogin.app-merged_res-36:/layout_activity_register.xml.flat",
+        "source": "com.example.provalogin.app-main-38:/layout/activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-hdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-hdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi_ic_favorites.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-anydpi\\ic_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_border.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-hdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-hdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-hdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xhdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_avatar.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi_ic_search.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-anydpi\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_user_item.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\user_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-hdpi_ic_favorites.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-hdpi\\ic_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_update.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi_ic_profile.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-anydpi\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_start.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\start.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xxhdpi_ic_home.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xxhdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_index.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_index.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-pngs-31:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi_ic_home.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-anydpi\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-mdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-mdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-mdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-mdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xxhdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xhdpi_ic_favorites.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xhdpi\\ic_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_fragment_favorietes.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\fragment_favorietes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_image_item.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\image_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_first.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-xhdpi_ic_close.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-xhdpi\\ic_close.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-hdpi_ic_profile.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-hdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-mdpi_ic_favorites.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-mdpi\\ic_favorites.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_l.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\l.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-anydpi_ic_close.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-anydpi\\ic_close.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable-mdpi_ic_search.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-debug-37:\\drawable-mdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\drawable_search_background.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\drawable\\search_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-36:\\layout_activity_start.xml.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-38:\\layout\\activity_start.xml"
+    }
+]
