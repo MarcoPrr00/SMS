@@ -23,29 +23,28 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/todo"
                 android:src="@drawable/ic_search" />
-
             <EditText
-                android:id="@+id/searchbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:autofillHints=""
-                android:background="@drawable/search_background"
-                android:hint="@string/cerca_i_tuoi_amici_"
-                android:importantForAutofill="no"
-                android:inputType="textShortMessage"
-                android:minHeight="48dp"
-                android:textColorHint="#6D4C41" />
-
-
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:autofillHints=""
+            android:background="@drawable/search_background"
+            android:hint="@string/cerca_i_tuoi_amici_"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:minHeight="48dp"
+            android:textColorHint="#6D4C41" />
         </androidx.appcompat.widget.Toolbar>
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#95AC9DF1"
-            android:backgroundTint="#95AC9DF1" />
+            android:layout_below="@id/bar"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF" />
     </com.google.android.material.appbar.AppBarLayout>
 
 </RelativeLayout>

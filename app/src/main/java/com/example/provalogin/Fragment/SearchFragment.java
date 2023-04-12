@@ -2,7 +2,15 @@ package com.example.provalogin.Fragment;
 
 import android.os.Bundle;
 
+import com.google.firebase.storage.StorageReference;
 import androidx.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.ValueEventListener;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,6 +31,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +83,7 @@ public class SearchFragment extends Fragment {
     }
 
     private void searchUsers(String s){
-        Query query = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users").orderByChild("Nome")
+        Query query = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users").orderByChild("Cognome")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
         query.addValueEventListener(new ValueEventListener() {
@@ -94,7 +104,9 @@ public class SearchFragment extends Fragment {
             }
         });
     }
+
     //lettura utenti
+
     private void readUsers (){
         DatabaseReference reference = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users");
         reference.addValueEventListener(new ValueEventListener() {
@@ -118,3 +130,4 @@ public class SearchFragment extends Fragment {
     }
 
 }
+

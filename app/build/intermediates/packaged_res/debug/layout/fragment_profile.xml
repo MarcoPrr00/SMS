@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:id="@+id/container"
     tools:context=".Fragment.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PROFILO" />
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mieianimali_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nuovomanuale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@mipmap/ic_pets_black_24dp"
+            app:fab_title="@string/nuovoanimale"
+            app:backgroundTint="#B0592423"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_qr_code_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:fab_icon="@mipmap/baseline_qr_code_scanner_black_18"
+            app:fab_title="@string/qrcode"
+            app:backgroundTint="#B0592423"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nuovoconbluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@mipmap/ic_settings_bluetooth_black_18dp"
+            app:fab_title="@string/new_pet_bluetooth_option"
+            app:backgroundTint="#B0592423"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
 
 </FrameLayout>

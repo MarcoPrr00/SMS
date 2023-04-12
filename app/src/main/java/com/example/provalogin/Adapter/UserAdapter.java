@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,15 +26,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.List;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
-private final Context mContext;
-private final List<User> mUsers;
+    private final Context mContext;
+    private final List<User> mUsers;
 
 private FirebaseUser firebaseUser;
 
@@ -54,7 +52,7 @@ private FirebaseUser firebaseUser;
 
        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        User user = mUsers.get(i);
+        final User user = mUsers.get(i);
         viewHolder.btn_follow.setVisibility(View.VISIBLE);
 
         viewHolder.username.setText(user.getUsername());
@@ -62,11 +60,11 @@ private FirebaseUser firebaseUser;
         Glide.with(mContext).load(user.getImageurl()).into(viewHolder.image_profile);
         isFollowing(user.getId(), viewHolder.btn_follow);
 
-       /* if(user.getId().equals(firebaseUser.getUid())){
+       if(user.getId().equals(firebaseUser.getUid())){
             viewHolder.btn_follow.setVisibility(View.GONE);
-        }*/
+        }
 
-        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+      /*  viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
                 SharedPreferences.Editor editor = mContext.getSharedPreferences("Preferiti", Context.MODE_PRIVATE).edit();
@@ -77,11 +75,11 @@ private FirebaseUser firebaseUser;
                         new ProfileFragment()).commit();
             }
         });
-
+*/
        viewHolder.btn_follow.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-                if(viewHolder.btn_follow.getText().toString().equals("follow")){
+                if(viewHolder.btn_follow.getText().toString().equals("Follow")){
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
                             .child("following").child(user.getId()).setValue(true);
 
@@ -108,7 +106,7 @@ private FirebaseUser firebaseUser;
 
         public TextView username;
         public TextView fullname;
-        public CircleImageView image_profile;
+        public ImageView image_profile;
         public Button btn_follow;
 
         public ViewHolder(@NonNull View itemView){
@@ -129,7 +127,7 @@ private FirebaseUser firebaseUser;
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.child(userid).exists()){
-                    button.setText("following");
+                    button.setText("Following");
                 } else {
                     button.setText("Follow");
                 }

@@ -48,5 +48,15 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 
+    //expandable floating action button
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
 
+    //QrCode
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+   // implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+
+    //exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.2'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.18.2'
 }

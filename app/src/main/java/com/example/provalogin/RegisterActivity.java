@@ -1,8 +1,10 @@
 package com.example.provalogin;
 
+import static androidx.core.content.ContentProviderCompat.requireContext;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.widget.TintableCheckedTextView;
+import android.content.Context;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -10,9 +12,9 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,7 +29,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
-import java.util.Locale;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -35,6 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
     Button register;
     TextView txt_login;
 
+    Spinner tipologia;
     FirebaseAuth auth;
     DatabaseReference reference;
     ProgressDialog pd;
@@ -43,16 +45,16 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         //get the spinner from the xml.
-        Spinner dropdown = findViewById(R.id.tipologia);
+        tipologia = findViewById(R.id.tipologia);
 //create a list of items for the spinner.
         String[] items = new String[]{"Utente Amico", "Veterinario", "EntePubblico"};
 //create an adapter to describe how the items are displayed, adapters are used in several places in android.
 //There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 //set the spinners adapter to the previously created one.
-        dropdown.setAdapter(adapter);
-
+        tipologia.setAdapter(adapter);
 
         username=findViewById(R.id.username);
         fullname=findViewById(R.id.name);
@@ -82,38 +84,46 @@ public class RegisterActivity extends AppCompatActivity {
                 pd.setMessage("Caricamento...");
                 pd.show();
 
+
+
+
+                String typeuser = tipologia.getSelectedItem().toString();
+
                 String strUsername=username.getText().toString();
                 String strFullname=fullname.getText().toString();
                 String strEmail=email.getText().toString();
                 String strPassword=password.getText().toString();
 
-                if(TextUtils.isEmpty(strEmail)){
-                    email.setError("Email Richiesta!!");
+                if(typeuser.isEmpty() || typeuser == null){
+                    String message = getResources().getString(R.string.type_null);
                     System.out.println("sono nel primo if");
+                }else if(TextUtils.isEmpty(strEmail)){
+                    email.setError("Email Richiesta!!");
+                    System.out.println("sono nel secondo if");
                 }
                 else if(TextUtils.isEmpty(strPassword)){
                     password.setError("Password Richiesta!!");
-                    System.out.println("sono nel secondo if");
+                    System.out.println("sono nel terzo if");
                 }
                 else if(TextUtils.isEmpty(strUsername)){
                     username.setError("Cognome Richiesto!!");
-                    System.out.println("sono nel secondo if");
+                    System.out.println("sono nel quarto if");
                 }
                 else if(TextUtils.isEmpty(strFullname)){
                     password.setError("Nome Richiesto!!");
-                    System.out.println("sono nel secondo if");
+                    System.out.println("sono nel quinto if");
                 }
                 else if(password.length()<6){
                     password.setError("Password minimo 6 caratteri!!");
-                    System.out.println("sono nel terzo if");
+                    System.out.println("sono nel seston if");
                 }else {
-                    register(strUsername,strFullname,strEmail,strPassword);
+                    register(typeuser, strUsername,strFullname,strEmail,strPassword);
                 }
             }
         });
     }
 
-    private void register(String musername, String mfullname, String memail, String mpassword){
+    private void register(String typeuser, String musername, String mfullname, String memail, String mpassword){
         auth.createUserWithEmailAndPassword(memail,mpassword).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -124,9 +134,10 @@ public class RegisterActivity extends AppCompatActivity {
 
                     HashMap<String, Object> hashMap = new HashMap<>();
                     hashMap.put("id",userid);
+                    hashMap.put("Tipo utente", typeuser);
                     hashMap.put("Cognome",musername);
                     hashMap.put("Nome",mfullname);
-                    hashMap.put("imgUrl","https://firebasestorage.googleapis.com/v0/b/provalogin-65cb5.appspot.com/o/avatar.png?alt=media&token=e6a038aa-942e-4c21-b1ff-d8c9dd33b0fc");
+                    hashMap.put("imgUrl", null);
 
 
                     //REALTIME DATABASE

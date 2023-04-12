@@ -25,4 +25,23 @@
     <string name="passwordutenteamico">Password</string>
     <string name="hai_gi_un_account_clicca_qui">Hai già un account? Clicca qui!</string>
     <string name="logoimage">TODO</string>
+    <string name="fullname">fullname</string>
+    <string name="Username">Username</string>
+    <string name="FullName">FullName</string>
+    <string name="nuovo">nuovo</string>
+    <string name="qrcode">qrcode</string>
+    <string name="nuovoanimale">nuovoanimale</string>
+    <string name="new_pet_bluetooth_option">Nuovo animale con Bluetooth</string>
+    <string name="new_pet_bluetooth__option">new_pet_bluetooth_option</string>
+    <string name="imieianimali">I Miei Animali</string>
+    <string name="ciao">ciao</string>
+    <string name="items">Tipologia Utente</string>
+    <string name="type_null">tipo nullo</string>
+    <string name="Nickname">Nickname</string>
+    <string name="Nominativo">Nome e Cognome</string>
+    <string name="image">TODO</string>
+    <string name="nomeanimale">Nome Animale</string>
+    <string name="imagenuova">TODO</string>
+    <string name="todoy">TODO</string>
+    <string name="tastopercaricamento">Cliccare per caricare</string>
 </resources>
