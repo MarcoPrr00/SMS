@@ -2,16 +2,18 @@ package com.example.provalogin.Model;
 
 public class User {
 
+
+    private String Nome;
+    private String Cognome;
+    private String TipoUtente;
     private String id;
-    private String username;
-    private String fullname;
     private String imageurl;
     private String bio;
 
     public User(String id, String username, String fullname, String imageurl, String bio) {
         this.id = id;
-        this.username = username;
-        this.fullname = fullname;
+        this.Nome = username;
+        this.Cognome = fullname;
         this.imageurl = imageurl;
         this.bio = bio;
     }
@@ -28,19 +30,19 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return Nome;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.Nome = username;
     }
 
     public String getFullname() {
-        return fullname;
+        return Cognome;
     }
 
     public void setFullname(String fullname) {
-        this.fullname = fullname;
+        this.Cognome = fullname;
     }
 
     public String getImageurl() {

@@ -100,6 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                                 pd.dismiss();
                                 startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                             }else{
+                                pd.dismiss();
                                 Toast.makeText(LoginActivity.this, "Autenticazione Fallita!!", Toast.LENGTH_SHORT).show();
                             }
 

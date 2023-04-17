@@ -2,6 +2,8 @@ package com.example.provalogin.Fragment;
 
 import android.os.Bundle;
 
+import com.example.provalogin.Adapter.UtenteAdapter;
+import com.example.provalogin.Model.Utente;
 import com.google.firebase.storage.StorageReference;
 import androidx.annotation.NonNull;
 import androidx.annotation.NonNull;
@@ -43,6 +45,10 @@ public class SearchFragment extends Fragment {
     private UserAdapter userAdapter;
     private List<User> mUsers;
 
+    private List<Utente> mUtente;
+    private UtenteAdapter adapter;
+    DatabaseReference dbUtente;
+
     EditText search_bar;
 
     @Override
@@ -57,10 +63,19 @@ public class SearchFragment extends Fragment {
         search_bar = view.findViewById(R.id.searchbar);
 
         mUsers = new ArrayList<>();
+
+        mUtente = new ArrayList<>();
+        adapter = new UtenteAdapter(this.getContext(), mUtente);
+        recyclerView.setAdapter(adapter);
+        dbUtente=FirebaseDatabase.getInstance().getReference("Users");
+        dbUtente.addValueEventListener(valueEventListener);
+
+        /*
         userAdapter = new UserAdapter(getContext(), mUsers);
         recyclerView.setAdapter(userAdapter);
 
         readUsers();
+*/
        search_bar.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -86,29 +101,13 @@ public class SearchFragment extends Fragment {
         Query query = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users").orderByChild("Cognome")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
-        query.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                mUsers.clear();
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    User user = snapshot.getValue(User.class);
-                    mUsers.add(user);
-                }
-
-                userAdapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+        query.addValueEventListener(valueEventListener);
     }
 
     //lettura utenti
-
+/*
     private void readUsers (){
-        DatabaseReference reference = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -128,6 +127,25 @@ public class SearchFragment extends Fragment {
             }
         });
     }
+*/
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            mUtente.clear();
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Utente artist = snapshot.getValue(Utente.class);
+                    mUtente.add(artist);
+                }
+                adapter.notifyDataSetChanged();
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
 
 }
 
