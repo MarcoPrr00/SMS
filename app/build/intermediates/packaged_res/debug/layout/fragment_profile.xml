@@ -2,9 +2,9 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-android:id="@+id/container"
     tools:context=".Fragment.ProfileFragment">
 
     <ScrollView
@@ -21,15 +21,16 @@ android:id="@+id/container"
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end">
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="#65503F">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/nuovomanuale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:backgroundTint="#B0592423"
             app:fab_icon="@mipmap/ic_pets_black_24dp"
-            app:fab_title="@string/nuovoanimale"
-            app:backgroundTint="#B0592423"/>
+            app:fab_title="@string/nuovoanimale" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/add_qr_code_pet"
@@ -37,17 +38,17 @@ android:id="@+id/container"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
+            app:backgroundTint="#B0592423"
             app:fab_icon="@mipmap/baseline_qr_code_scanner_black_18"
-            app:fab_title="@string/qrcode"
-            app:backgroundTint="#B0592423"/>
+            app:fab_title="@string/qrcode" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/nuovoconbluetooth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:backgroundTint="#B0592423"
             app:fab_icon="@mipmap/ic_settings_bluetooth_black_18dp"
-            app:fab_title="@string/new_pet_bluetooth_option"
-            app:backgroundTint="#B0592423"/>
+            app:fab_title="@string/new_pet_bluetooth_option" />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 

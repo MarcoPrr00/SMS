@@ -4,7 +4,7 @@
             "outputFile": "com.example.provalogin.app-mergeDebugResources-37:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\Antonella_Z\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
