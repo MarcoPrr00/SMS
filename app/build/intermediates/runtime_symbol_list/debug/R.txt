@@ -2850,6 +2850,7 @@ int id autoCompleteToEnd 0x7f0a0058
 int id autoCompleteToStart 0x7f0a0059
 int id backgroundLayout 0x7f0a005a
 int id bar 0x7f0a005b
+int id bar_Navigator_Veterinario 0x7f0a0231
 int id barrier 0x7f0a005c
 int id baseline 0x7f0a005d
 int id beginOnFirstDraw 0x7f0a005e
@@ -2859,6 +2860,7 @@ int id blocking 0x7f0a0061
 int id bluelogo 0x7f0a0062
 int id bntAddImg 0x7f0a0063
 int id bottom 0x7f0a0064
+int id bottom_Veterinario 0x7f0a0232
 int id bottom_navigation 0x7f0a0065
 int id bounce 0x7f0a0066
 int id bounceBoth 0x7f0a0067
@@ -2975,6 +2977,7 @@ int id fixed 0x7f0a00d5
 int id flip 0x7f0a00d6
 int id floating 0x7f0a00d7
 int id forever 0x7f0a00d8
+int id fragmentContainerVeterinario 0x7f0a0233
 int id fragment_container 0x7f0a00d9
 int id fragment_container_view_tag 0x7f0a00da
 int id frost 0x7f0a00db
@@ -3443,6 +3446,7 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_home 0x7f0d001c
+int layout activity_home_veterinario 0x7f0d0079
 int layout activity_index 0x7f0d001d
 int layout activity_login 0x7f0d001e
 int layout activity_post 0x7f0d001f
@@ -3469,6 +3473,7 @@ int layout design_text_input_end_icon 0x7f0d0033
 int layout design_text_input_start_icon 0x7f0d0034
 int layout fragment_favorietes 0x7f0d0035
 int layout fragment_home 0x7f0d0036
+int layout fragment_home_veterinario 0x7f0d007a
 int layout fragment_newanimal 0x7f0d0037
 int layout fragment_profile 0x7f0d0038
 int layout fragment_search 0x7f0d0039

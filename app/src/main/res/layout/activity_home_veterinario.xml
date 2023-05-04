@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeVeterinarioActivity">
+    <FrameLayout
+        android:id="@+id/fragmentContainerVeterinario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_Veterinario"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_Veterinario"
+        android:layout_alignParentBottom="true">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bar_Navigator_Veterinario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/buttom_navigation" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

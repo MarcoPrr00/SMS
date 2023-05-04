@@ -2851,6 +2851,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backgroundLayout
 id bar
+id bar_Navigator_Veterinario
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2860,6 +2861,7 @@ id blocking
 id bluelogo
 id bntAddImg
 id bottom
+id bottom_Veterinario
 id bottom_navigation
 id bounce
 id bounceBoth
@@ -2976,6 +2978,7 @@ id fixed
 id flip
 id floating
 id forever
+id fragmentContainerVeterinario
 id fragment_container
 id fragment_container_view_tag
 id frost
@@ -3444,6 +3447,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_home
+layout activity_home_veterinario
 layout activity_index
 layout activity_login
 layout activity_post
@@ -3470,6 +3474,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_favorietes
 layout fragment_home
+layout fragment_home_veterinario
 layout fragment_newanimal
 layout fragment_profile
 layout fragment_search
