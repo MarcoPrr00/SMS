@@ -2862,7 +2862,9 @@ id bluelogo
 id bntAddImg
 id bottom
 id bottom_Veterinario
+id bottom_ente
 id bottom_navigation
+id bottom_navigation_ente
 id bounce
 id bounceBoth
 id bounceEnd
@@ -2980,6 +2982,7 @@ id floating
 id forever
 id fragmentContainerVeterinario
 id fragment_container
+id fragment_container_ente
 id fragment_container_view_tag
 id frost
 id fullname
@@ -3447,6 +3450,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_home
+layout activity_home_ente
 layout activity_home_veterinario
 layout activity_index
 layout activity_login
@@ -3474,6 +3478,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_favorietes
 layout fragment_home
+layout fragment_home_ente
 layout fragment_home_veterinario
 layout fragment_newanimal
 layout fragment_profile
@@ -3672,6 +3677,7 @@ mipmap ic_launch_black_24dp
 mipmap ic_launch_black_36dp
 mipmap ic_launch_black_48dp
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap ic_lightbulb_outline_black_18dp
 mipmap ic_lightbulb_outline_black_24dp

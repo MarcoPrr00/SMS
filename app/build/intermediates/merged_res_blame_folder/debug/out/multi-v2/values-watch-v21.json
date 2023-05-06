@@ -4,7 +4,7 @@
             "outputFile": "com.example.provalogin.app-mergeDebugResources-37:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

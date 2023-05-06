@@ -137,7 +137,9 @@ public class RegisterActivity extends AppCompatActivity {
                     hashMap.put("Tipo utente", typeuser);
                     hashMap.put("Cognome",musername);
                     hashMap.put("Nome",mfullname);
-                    hashMap.put("imgUrl", null);
+                    hashMap.put("ImgUrl", null);
+                    hashMap.put("Email",memail);
+                    hashMap.put("Password",mpassword);
 
 
                     //REALTIME DATABASE

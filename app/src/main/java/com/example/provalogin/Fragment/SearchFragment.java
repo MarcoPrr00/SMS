@@ -42,8 +42,6 @@ import java.util.List;
 public class SearchFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private UserAdapter userAdapter;
-    private List<User> mUsers;
 
     private List<Utente> mUtente;
     private UtenteAdapter adapter;
@@ -62,7 +60,7 @@ public class SearchFragment extends Fragment {
 
         search_bar = view.findViewById(R.id.searchbar);
 
-        mUsers = new ArrayList<>();
+
 
         mUtente = new ArrayList<>();
         adapter = new UtenteAdapter(this.getContext(), mUtente);
@@ -70,12 +68,7 @@ public class SearchFragment extends Fragment {
         dbUtente=FirebaseDatabase.getInstance().getReference("Users");
         dbUtente.addValueEventListener(valueEventListener);
 
-        /*
-        userAdapter = new UserAdapter(getContext(), mUsers);
-        recyclerView.setAdapter(userAdapter);
 
-        readUsers();
-*/
        search_bar.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -98,7 +91,7 @@ public class SearchFragment extends Fragment {
     }
 
     private void searchUsers(String s){
-        Query query = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference("Users").orderByChild("Cognome")
+        Query query = dbUtente.orderByChild("Cognome")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
         query.addValueEventListener(valueEventListener);
