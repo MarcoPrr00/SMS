@@ -47,14 +47,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProvaLogin" >
         <activity
-            android:name="com.example.provalogin.HomeEnteActivity"
+            android:name="com.example.provalogin.HomeVeterinarioActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.provalogin.HomeVeterinarioActivity"
+            android:name="com.example.provalogin.HomeEnteActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

@@ -4,24 +4,24 @@
             "outputFile": "com.example.provalogin.app-mergeDebugResources-37:/values-nb/values-nb.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\8e3132d6a6ef9a884ef9c6462836938e\\transformed\\exoplayer-core-2.18.2\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\b002bb5a5c586a1c624b5da06243fbed\\transformed\\play-services-basement-18.1.0\\res\\values-nb\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,131,193,257,328,408,486,580,677",
-                        "endColumns": "75,61,63,70,79,77,93,96,70",
-                        "endOffsets": "126,188,252,323,403,481,575,672,743"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "125",
+                        "endOffsets": "320"
                     },
                     "to": {
-                        "startLines": "57,58,59,60,61,62,63,64,65",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5718,5794,5856,5920,5991,6071,6149,6243,6340",
-                        "endColumns": "75,61,63,70,79,77,93,96,70",
-                        "endOffsets": "5789,5851,5915,5986,6066,6144,6238,6335,6406"
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4339",
+                        "endColumns": "129",
+                        "endOffsets": "4464"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\4d71415200048da841c2de89390b2410\\transformed\\material-1.7.0\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\4d71415200048da841c2de89390b2410\\transformed\\material-1.7.0\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\bbb53841f15bfde0053fccfd715feca2\\transformed\\appcompat-1.5.1\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,24 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\0ebfc616283cfcd29194fe2acb6d2b1c\\transformed\\play-services-base-18.0.1\\res\\values-nb\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,295,450,572,677,829,955,1071,1170,1320,1423,1580,1704,1842,2014,2077,2135",
-                        "endColumns": "101,154,121,104,151,125,115,98,149,102,156,123,137,171,62,57,73",
-                        "endOffsets": "294,449,571,676,828,954,1070,1169,1319,1422,1579,1703,1841,2013,2076,2134,2208"
-                    },
-                    "to": {
-                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3330,3436,3595,3721,3830,3986,4116,4236,4469,4623,4730,4891,5019,5161,5337,5404,5466",
-                        "endColumns": "105,158,125,108,155,129,119,102,153,106,160,127,141,175,66,61,77",
-                        "endOffsets": "3431,3590,3716,3825,3981,4111,4231,4334,4618,4725,4886,5014,5156,5332,5399,5461,5539"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\b8dbc6a598ca9601b454ace2edc55734\\transformed\\core-1.8.0\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\b8dbc6a598ca9601b454ace2edc55734\\transformed\\core-1.8.0\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -91,24 +74,41 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\b002bb5a5c586a1c624b5da06243fbed\\transformed\\play-services-basement-18.1.0\\res\\values-nb\\values.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\0ebfc616283cfcd29194fe2acb6d2b1c\\transformed\\play-services-base-18.0.1\\res\\values-nb\\values.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "125",
-                        "endOffsets": "320"
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,295,450,572,677,829,955,1071,1170,1320,1423,1580,1704,1842,2014,2077,2135",
+                        "endColumns": "101,154,121,104,151,125,115,98,149,102,156,123,137,171,62,57,73",
+                        "endOffsets": "294,449,571,676,828,954,1070,1169,1319,1422,1579,1703,1841,2013,2076,2134,2208"
                     },
                     "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4339",
-                        "endColumns": "129",
-                        "endOffsets": "4464"
+                        "startLines": "37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3330,3436,3595,3721,3830,3986,4116,4236,4469,4623,4730,4891,5019,5161,5337,5404,5466",
+                        "endColumns": "105,158,125,108,155,129,119,102,153,106,160,127,141,175,66,61,77",
+                        "endOffsets": "3431,3590,3716,3825,3981,4111,4231,4334,4618,4725,4886,5014,5156,5332,5399,5461,5539"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\c83bdd686bed2bf02dcbfc91152cf124\\transformed\\browser-1.4.0\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\8e3132d6a6ef9a884ef9c6462836938e\\transformed\\exoplayer-core-2.18.2\\res\\values-nb\\values-nb.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,193,257,328,408,486,580,677",
+                        "endColumns": "75,61,63,70,79,77,93,96,70",
+                        "endOffsets": "126,188,252,323,403,481,575,672,743"
+                    },
+                    "to": {
+                        "startLines": "57,58,59,60,61,62,63,64,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5718,5794,5856,5920,5991,6071,6149,6243,6340",
+                        "endColumns": "75,61,63,70,79,77,93,96,70",
+                        "endOffsets": "5789,5851,5915,5986,6066,6144,6238,6335,6406"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\c83bdd686bed2bf02dcbfc91152cf124\\transformed\\browser-1.4.0\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
