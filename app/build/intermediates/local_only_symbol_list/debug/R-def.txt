@@ -14,6 +14,9 @@ color teal_700
 color white
 drawable avatar
 drawable border
+drawable ic_baseline_home_24
+drawable ic_baseline_person_24
+drawable ic_baseline_pets_24
 drawable ic_close
 drawable ic_favorites
 drawable ic_home
@@ -35,11 +38,10 @@ font coustard
 id add_qr_code_pet
 id backgroundLayout
 id bar
-id bar_Navigator_Veterinario
 id bluelogo
 id bntAddImg
 id bottom
-id bottom_Veterinario
+id bottomNavigationView
 id bottom_ente
 id bottom_navigation
 id bottom_navigation_ente
@@ -55,6 +57,7 @@ id fragmentContainerVeterinario
 id fragment_container
 id fragment_container_ente
 id fullname
+id homeVet
 id ic_favorites
 id ic_home
 id ic_profile
@@ -84,7 +87,9 @@ id nuovaimmagine
 id nuovoconbluetooth
 id nuovomanuale
 id password
+id petsVet
 id post
+id profileVet
 id recycler_view
 id register
 id searchbar
@@ -113,11 +118,14 @@ layout fragment_home
 layout fragment_home_ente
 layout fragment_home_veterinario
 layout fragment_newanimal
+layout fragment_pets_veterinario
 layout fragment_profile
+layout fragment_profile_veterinario
 layout fragment_search
 layout image_item
 layout start
 layout user_item
+menu bottom_navmenu_veterinario
 menu buttom_navigation
 mipmap baseline_qr_code_scanner_black_18
 mipmap baseline_qr_code_scanner_black_20

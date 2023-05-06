@@ -181,24 +181,24 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Le
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:17:9-48
 	android:dataExtractionRules
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:11:9-65
-activity#com.example.provalogin.HomeEnteActivity
+activity#com.example.provalogin.HomeVeterinarioActivity
 ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:exported
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:20:13-52
 meta-data#android.app.lib_name
 ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:22:13-24:36
 	android:value
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:24:17-33
 	android:name
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:23:17-52
-activity#com.example.provalogin.HomeVeterinarioActivity
+activity#com.example.provalogin.HomeEnteActivity
 ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:exported
 		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:27:13-52
+		ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:27:13-45
 activity#com.example.provalogin.first
 ADDED from C:\Users\Lenovo\Desktop\android\Nuova cartella\SMS\app\src\main\AndroidManifest.xml:33:9-45:20
 	android:exported
