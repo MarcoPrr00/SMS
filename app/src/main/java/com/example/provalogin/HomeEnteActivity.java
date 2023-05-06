@@ -54,9 +54,10 @@ public class HomeEnteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_ente);
 
         bottomNavigationView=findViewById(R.id.bottom_navigation_ente);
+        /*
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();
+                new HomeFragment()).commit();*/
 
     }
 }

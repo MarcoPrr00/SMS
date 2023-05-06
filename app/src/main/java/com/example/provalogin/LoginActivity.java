@@ -43,27 +43,71 @@ public class LoginActivity extends AppCompatActivity {
     Spinner dropdown;
 
     FirebaseAuth auth;
+    FirebaseDatabase db =FirebaseDatabase.getInstance();
 
-    private List<Utente> mUtente;
-    private UtenteAdapter adapter;
+    private Utente utente;
+    private boolean autenticazione= false;
 
     public ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
-            mUtente.clear();
             if (dataSnapshot.exists()) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Utente artist = snapshot.getValue(Utente.class);
-                    mUtente.add(artist);
+                    utente = snapshot.getValue(Utente.class);
                 }
-                adapter.notifyDataSetChanged();
             }
+            goToNextActivity();
         }
 
         @Override
         public void onCancelled(DatabaseError databaseError) {
 
         }
+    };
+
+    void goToNextActivity(){
+        if (autenticazione) {
+            switch (utente.TipoUtente) {
+                case "Utente Amico":
+                    startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                    break;
+                case "Veterinario":
+                    startActivity(new Intent(LoginActivity.this, HomeVeterinarioActivity.class));
+                    break;
+                case "EntePubblico":
+                    startActivity(new Intent(LoginActivity.this, HomeEnteActivity.class));
+                    break;
+
+            }
+        }
+    }
+
+    public ChildEventListener childEventListener = new ChildEventListener() {
+        @Override
+        public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+            utente=snapshot.getValue(Utente.class);
+        }
+
+        @Override
+        public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+        }
+
+        @Override
+        public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+        }
+
+        @Override
+        public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError error) {
+
+        }
+
     };
 
 
@@ -131,13 +175,13 @@ public class LoginActivity extends AppCompatActivity {
                                         .child(auth.getCurrentUser().getUid());
 
                                 String currentIdUser = auth.getCurrentUser().getUid();
-                                Query query = FirebaseDatabase.getInstance().
-                                        getReference("Users").orderByChild("id").equalTo(currentIdUser);
-                                //query.addValueEventListener(valueEventListener);
-                                //Utente utente = query.get().getResult().getValue(Utente.class);
+                                Query query = db.getReference("Users").orderByChild("id").equalTo(currentIdUser);
+                                query.addValueEventListener(valueEventListener);
+                                autenticazione=true;
+
                                 pd.dismiss();
 
-                                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+
                             }else{
                                 pd.dismiss();
                                 Toast.makeText(LoginActivity.this, "Autenticazione Fallita!!", Toast.LENGTH_SHORT).show();
@@ -147,9 +191,15 @@ public class LoginActivity extends AppCompatActivity {
                     });
 
 
+                    //query.addValueEventListener(valueEventListener);
+                    //Utente utente = query.get().getResult().getValue(Utente.class);
+
+
+
                 }
             }
         });
+
 
     }
 

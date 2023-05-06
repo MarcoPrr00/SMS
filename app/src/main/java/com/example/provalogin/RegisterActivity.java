@@ -134,7 +134,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                     HashMap<String, Object> hashMap = new HashMap<>();
                     hashMap.put("id",userid);
-                    hashMap.put("Tipo utente", typeuser);
+                    hashMap.put("TipoUtente", typeuser);
                     hashMap.put("Cognome",musername);
                     hashMap.put("Nome",mfullname);
                     hashMap.put("ImgUrl", null);
@@ -150,9 +150,25 @@ public class RegisterActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
                                 pd.dismiss();
+                                switch (typeuser){
+                                    case "Utente Amico":
+                                        Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        startActivity(intent);
+                                        break;
+                                    case "Veterinario":
+                                        Intent intent2 = new Intent(RegisterActivity.this, HomeVeterinarioActivity.class);
+                                        intent2.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        startActivity(intent2);
+                                        break;
+                                    case "EntePubblico":
+                                        Intent intent3 = new Intent(RegisterActivity.this, HomeEnteActivity.class);
+                                        intent3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        startActivity(intent3);
+                                        break;
+                                }
                                 Intent intent = new Intent(RegisterActivity.this,HomeActivity.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
+
                             }
                         }
                     }); /* */
