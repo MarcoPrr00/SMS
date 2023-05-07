@@ -4,10 +4,6 @@ import android.os.Bundle;
 
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Utente;
-import com.google.firebase.storage.StorageReference;
-import androidx.annotation.NonNull;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -24,17 +20,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.example.provalogin.Adapter.UserAdapter;
-import com.example.provalogin.Model.User;
 import com.example.provalogin.R;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;

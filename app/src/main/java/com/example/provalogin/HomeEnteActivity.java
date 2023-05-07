@@ -33,14 +33,11 @@ public class HomeEnteActivity extends AppCompatActivity {
                     selectedFragment= new FavorietesFragment();
                     break;
                 case R.id.ic_profile:
-                    SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
-                    editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                    editor.apply();
                     selectedFragment= new ProfileFragment();
                     break;
             }
             if( selectedFragment != null){
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
                         selectedFragment).commit();
             }
 
@@ -54,10 +51,10 @@ public class HomeEnteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_ente);
 
         bottomNavigationView=findViewById(R.id.bottom_navigation_ente);
-        /*
+
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();*/
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
+                new HomeEnteFragment()).commit();
 
     }
 }

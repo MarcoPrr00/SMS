@@ -133,11 +133,11 @@ public class RegisterActivity extends AppCompatActivity {
                     String userid=firebaseUser.getUid();
 
                     HashMap<String, Object> hashMap = new HashMap<>();
-                    hashMap.put("id",userid);
+                    hashMap.put("Id",userid);
                     hashMap.put("TipoUtente", typeuser);
                     hashMap.put("Cognome",musername);
                     hashMap.put("Nome",mfullname);
-                    hashMap.put("ImgUrl", null);
+                    hashMap.put("ImgUrl", "gs://provalogin-65cb5.appspot.com/avatar.png");
                     hashMap.put("Email",memail);
                     hashMap.put("Password",mpassword);
 
@@ -177,9 +177,7 @@ public class RegisterActivity extends AppCompatActivity {
                     FirebaseFirestore firebaseFirestore= FirebaseFirestore.getInstance();
                     firebaseFirestore.collection("Users").document(userid).set(hashMap);
                     pd.dismiss();
-                    Intent intent = new Intent(RegisterActivity.this,HomeActivity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
+
 
 
                 }else {

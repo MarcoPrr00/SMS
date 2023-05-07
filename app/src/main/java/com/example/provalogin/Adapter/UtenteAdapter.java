@@ -12,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.provalogin.Model.User;
+import com.bumptech.glide.Registry;
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,7 +24,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.StorageReference;
 
+import java.io.InputStream;
 import java.util.List;
 
 public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteViewHolder> {
@@ -35,6 +39,8 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
         this.mCtx = mCtx;
         this.utenteList = utenteList;
     }
+
+
 
     @NonNull
     @Override
@@ -52,10 +58,11 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
 
         holder.username.setText(user.Cognome);
         holder.fullname.setText(user.Nome);
-        //Glide.with(mCtx).load(user.getImageurl()).into(holder.image_profile);
-        isFollowing(user.id, holder.btn_follow);
 
-        if(user.id.equals(firebaseUser.getUid())){
+        Glide.with(mCtx).load(R.drawable.avatar).into(holder.image_profile);
+        isFollowing(user.Id, holder.btn_follow);
+
+        if(user.Id.equals(firebaseUser.getUid())){
             holder.btn_follow.setVisibility(View.GONE);
         }
 
@@ -64,15 +71,15 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
             public void onClick(View view) {
                 if(holder.btn_follow.getText().toString().equals("Follow")){
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
-                            .child("following").child(user.id).setValue(true);
+                            .child("following").child(user.Id).setValue(true);
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.id)
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.Id)
                             .child("followers").child(firebaseUser.getUid()).setValue(true);
                 } else {
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
-                            .child("following").child(user.id).removeValue();
+                            .child("following").child(user.Id).removeValue();
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.id)
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.Id)
                             .child("followers").child(firebaseUser.getUid()).removeValue();
                 }
             }

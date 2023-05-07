@@ -144,7 +144,7 @@ public class LoginActivity extends AppCompatActivity {
                                         .child(auth.getCurrentUser().getUid());
 
                                 String currentIdUser = auth.getCurrentUser().getUid();
-                                Query query = db.getReference("Users").orderByChild("id").equalTo(currentIdUser);
+                                Query query = db.getReference("Users").orderByChild("Id").equalTo(currentIdUser);
                                 query.addValueEventListener(valueEventListener);
                                 autenticazione=true;
 
@@ -158,11 +158,6 @@ public class LoginActivity extends AppCompatActivity {
 
                         }
                     });
-
-
-                    //query.addValueEventListener(valueEventListener);
-                    //Utente utente = query.get().getResult().getValue(Utente.class);
-
 
 
                 }

@@ -6,8 +6,8 @@ public class Utente {
     public String Nome;
     public String Password;
     public String TipoUtente;
-    public String id;
-
+    public String Id;
+    public String ImgUrl;
 
     public Utente(){
 
