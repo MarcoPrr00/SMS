@@ -1,6 +1,8 @@
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,8 @@ import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.module.AppGlideModule;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +28,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.io.InputStream;
@@ -58,8 +63,13 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
 
         holder.username.setText(user.Cognome);
         holder.fullname.setText(user.Nome);
-
-        Glide.with(mCtx).load(R.drawable.avatar).into(holder.image_profile);
+        StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(user.ImgUrl);
+        storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(mCtx).load(uri).into(holder.image_profile);
+            }
+        });
         isFollowing(user.Id, holder.btn_follow);
 
         if(user.Id.equals(firebaseUser.getUid())){
