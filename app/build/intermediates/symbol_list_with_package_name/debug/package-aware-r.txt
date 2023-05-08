@@ -3552,7 +3552,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
-id razza_animale
 id rectangles
 id recycler_view
 id register
@@ -3619,6 +3618,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id specie_animale
 id spline
 id split_action_bar
 id spread
@@ -3669,8 +3669,8 @@ id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id text_nomeanimale_layout
-id text_razza_layout
 id text_sesso_layout
+id text_specie_layout
 id text_view_name
 id textinput_counter
 id textinput_error
@@ -4261,7 +4261,7 @@ raw zxing_beep
 string FullName
 string Nickname
 string Nominativo
-string Razza_animale
+string Specie_animale
 string Tipologia
 string Username
 string abc_action_bar_home_description

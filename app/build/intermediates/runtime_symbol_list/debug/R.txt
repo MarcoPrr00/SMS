@@ -3551,7 +3551,6 @@ int id progress_circular 0x7f0a0198
 int id progress_horizontal 0x7f0a0199
 int id radio 0x7f0a019a
 int id ratio 0x7f0a019b
-int id razza_animale 0x7f0a019c
 int id rectangles 0x7f0a019d
 int id recycler_view 0x7f0a019e
 int id register 0x7f0a019f
@@ -3618,6 +3617,7 @@ int id snapMargins 0x7f0a01db
 int id south 0x7f0a01dc
 int id spacer 0x7f0a01dd
 int id special_effects_controller_view_tag 0x7f0a01de
+int id specie_animale 0x7f0a0257
 int id spline 0x7f0a01df
 int id split_action_bar 0x7f0a01e0
 int id spread 0x7f0a01e1
@@ -3668,8 +3668,8 @@ int id text_input_end_icon 0x7f0a020d
 int id text_input_error_icon 0x7f0a020e
 int id text_input_start_icon 0x7f0a020f
 int id text_nomeanimale_layout 0x7f0a0210
-int id text_razza_layout 0x7f0a0211
 int id text_sesso_layout 0x7f0a0212
+int id text_specie_layout 0x7f0a0258
 int id text_view_name 0x7f0a0213
 int id textinput_counter 0x7f0a0214
 int id textinput_error 0x7f0a0215
@@ -4260,7 +4260,7 @@ int raw zxing_beep 0x7f120001
 int string FullName 0x7f130000
 int string Nickname 0x7f130001
 int string Nominativo 0x7f130002
-int string Razza_animale 0x7f130003
+int string Specie_animale 0x7f130104
 int string Tipologia 0x7f130004
 int string Username 0x7f130005
 int string abc_action_bar_home_description 0x7f130006

@@ -89,13 +89,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_razza_layout"
+        android:id="@+id/text_specie_layout"
         android:layout_width="350dp"
         android:layout_height="66dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/Razza_animale"
+        android:hint="@string/Specie_animale"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:endIconMode="clear_text"
@@ -108,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_nomeanimale_layout">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/razza_animale"
+            android:id="@+id/specie_animale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/trasparenza"
@@ -138,7 +138,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_razza_layout">
+        app:layout_constraintTop_toBottomOf="@id/text_specie_layout">
 
 
         <AutoCompleteTextView
