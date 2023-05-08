@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    android:background="#C3936C"
-    android:backgroundTint="#C3936C">
+    android:background="#D2A472"
+    android:backgroundTint="#D2A472">
 
 
     <de.hdodenhof.circleimageview.CircleImageView

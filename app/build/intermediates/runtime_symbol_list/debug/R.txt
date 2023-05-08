@@ -1393,6 +1393,8 @@ int color cardview_dark_background 0x7f06002e
 int color cardview_light_background 0x7f06002f
 int color cardview_shadow_end_color 0x7f060030
 int color cardview_shadow_start_color 0x7f060031
+int color colorSecondary 0x7f060305
+int color colorSecondaryVariant 0x7f060306
 int color common_google_signin_btn_text_dark 0x7f060032
 int color common_google_signin_btn_text_dark_default 0x7f060033
 int color common_google_signin_btn_text_dark_disabled 0x7f060034
@@ -2101,8 +2103,6 @@ int color switch_thumb_material_dark 0x7f0602f2
 int color switch_thumb_material_light 0x7f0602f3
 int color switch_thumb_normal_material_dark 0x7f0602f4
 int color switch_thumb_normal_material_light 0x7f0602f5
-int color teal_200 0x7f0602f6
-int color teal_700 0x7f0602f7
 int color tooltip_background_dark 0x7f0602f8
 int color tooltip_background_light 0x7f0602f9
 int color white 0x7f0602fa
