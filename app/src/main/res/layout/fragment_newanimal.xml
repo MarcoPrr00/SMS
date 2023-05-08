@@ -6,15 +6,17 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    android:background="#65503F"
-    android:backgroundTint="#65503F">
+    android:background="#C3936C"
+    android:backgroundTint="#C3936C">
 
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
+        android:layout_width="186dp"
+        android:layout_height="173dp"
         android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#FA783535"
         android:contentDescription="@string/imagenuova"
         android:src="@drawable/prova1"
@@ -41,16 +43,118 @@
 
     <TextView
         android:id="@+id/testo"
-        android:layout_width="229dp"
-        android:layout_height="135dp"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/coustard"
-        android:text="Un nuovo amico tra noi!"
+        android:text="@string/nuovoamicotranoi"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toEndOf="@+id/img"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_nomeanimale_layout"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/nome_animale"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nuovaimmagine">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_animale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trasparenza"
+            android:fontFamily="@font/coustard"
+            android:inputType="text"
+            android:textColorHint="#AE8E87"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_razza_layout"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/Razza_animale"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_nomeanimale_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/razza_animale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trasparenza"
+            android:fontFamily="@font/coustard"
+            android:inputType="text"
+            android:textColorHint="#AE8E87"
+            android:textCursorDrawable="@null"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_sesso_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/sesso_animale_text"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:helperTextTextColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_razza_layout">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/sessoanimale"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/trasparenza"
+            android:fontFamily="@font/coustard"
+            android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textColorHint="#AE8E87"
+            android:textSize="18sp"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

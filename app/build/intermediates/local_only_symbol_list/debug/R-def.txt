@@ -38,6 +38,7 @@ drawable prova1
 drawable prova2
 drawable provasfondo
 drawable search_background
+drawable trasparenza
 font architects_daughter
 font coustard
 id add_qr_code_pet
@@ -87,6 +88,7 @@ id mieianimali_recyclerview
 id motionLayout
 id name
 id newanimale
+id nome_animale
 id nomecognome
 id nuovaimmagine
 id nuovoconbluetooth
@@ -95,13 +97,18 @@ id password
 id petsVet
 id post
 id profileVet
+id razza_animale
 id recycler_view
 id register
 id searchbar
+id sessoanimale
 id start
 id tab_layout_veterinario
 id testo
 id textView
+id text_nomeanimale_layout
+id text_razza_layout
+id text_sesso_layout
 id text_view_name
 id tipologia
 id toolbar
@@ -426,6 +433,7 @@ mipmap ic_update_black_36dp
 string FullName
 string Nickname
 string Nominativo
+string Razza_animale
 string Tipologia
 string Username
 string accedi
@@ -460,8 +468,10 @@ string name
 string new_pet_bluetooth__option
 string new_pet_bluetooth_option
 string nome
+string nome_animale
 string nomeanimale
 string nuovo
+string nuovoamicotranoi
 string nuovoanimale
 string password
 string passwordutenteamico
@@ -470,6 +480,7 @@ string qrcode
 string registratibut
 string se_non_sei_registrato_clicca_qui
 string segui
+string sesso_animale_text
 string tastopercaricamento
 string todo
 string todoy

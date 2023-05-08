@@ -44,4 +44,8 @@
     <string name="imagenuova">TODO</string>
     <string name="todoy">TODO</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
+    <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>
+    <string name="nome_animale">Nome Animale</string>
+    <string name="Razza_animale">Razza Animale</string>
+    <string name="sesso_animale_text">Sesso</string>
 </resources>
