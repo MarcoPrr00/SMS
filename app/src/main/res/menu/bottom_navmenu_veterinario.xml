@@ -6,7 +6,7 @@
         android:id="@+id/homeVet"/>
 
     <item android:title="Pets"
-        android:icon="@drawable/ic_baseline_pets_24"
+        android:icon="@drawable/ax"
         android:id="@+id/petsVet"/>
 
     <item android:title="Profilo"

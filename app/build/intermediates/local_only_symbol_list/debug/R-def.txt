@@ -12,8 +12,12 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable a
 drawable avatar
+drawable ax
+drawable b
 drawable border
+drawable c
 drawable ic_baseline_home_24
 drawable ic_baseline_person_24
 drawable ic_baseline_pets_24
@@ -24,6 +28,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_profile
 drawable ic_search
+drawable icona_pets
 drawable img
 drawable img_1
 drawable img_3
@@ -94,6 +99,7 @@ id recycler_view
 id register
 id searchbar
 id start
+id tab_layout_veterinario
 id testo
 id textView
 id text_view_name
@@ -103,6 +109,7 @@ id txt_login
 id txt_signup
 id user_item
 id username
+id view_pager_veterinario
 id whitelogo
 layout activity_home
 layout activity_home_ente
@@ -117,7 +124,9 @@ layout fragment_favorietes
 layout fragment_home
 layout fragment_home_ente
 layout fragment_home_veterinario
+layout fragment_in_carico_veterinario
 layout fragment_newanimal
+layout fragment_per_te_veterinario
 layout fragment_pets_veterinario
 layout fragment_profile
 layout fragment_profile_veterinario
