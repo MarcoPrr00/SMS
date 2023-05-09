@@ -6,11 +6,10 @@
     tools:context=".Fragment.PerTeVeterinarioFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Per Te Fragmet"
-        android:layout_centerInParent="true"
-        android:textSize="32dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_veterinario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>

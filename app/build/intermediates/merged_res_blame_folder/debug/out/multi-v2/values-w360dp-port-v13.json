@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-38:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-39:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Antonella_Z\\.gradle\\caches\\transforms-3\\d7146affa611d72fc2e77a6b919ad467\\transformed\\material-1.9.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\d7146affa611d72fc2e77a6b919ad467\\transformed\\material-1.9.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -20,7 +20,6 @@ drawable border
 drawable c
 drawable ic_baseline_home_24
 drawable ic_baseline_person_24
-drawable ic_baseline_pets_24
 drawable ic_close
 drawable ic_favorites
 drawable ic_home
@@ -75,6 +74,7 @@ id image_added
 id image_profile
 id image_view_update
 id img
+id img1
 id imgUpdate
 id insert
 id insert_email_address
@@ -98,6 +98,7 @@ id petsVet
 id post
 id profileVet
 id recycler_view
+id recycler_view_veterinario
 id register
 id searchbar
 id sessoanimale
@@ -112,8 +113,11 @@ id text_specie_layout
 id text_view_name
 id tipologia
 id toolbar
+id txt_città
+id txt_email
 id txt_login
 id txt_signup
+id txt_tipo_segnalazione
 id user_item
 id username
 id view_pager_veterinario
@@ -139,6 +143,7 @@ layout fragment_profile
 layout fragment_profile_veterinario
 layout fragment_search
 layout image_item
+layout segnalazioni_item
 layout start
 layout user_item
 menu bottom_navmenu_veterinario
