@@ -20,6 +20,13 @@
         <item>@font/architects_daughter</item>
         <item>@font/coustard</item>
     </array>
+    <string-array name="spinner_segnalazione">
+        <item>Cerco Aiuto!</item>
+        <item>Cerco Stallo</item>
+        <item>Offro Stallo</item>
+        <item>Cerco Animale</item>
+        <item>Offro Animale</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="colorSecondary">#FB825B</color>
     <color name="colorSecondaryVariant">#675143</color>
@@ -41,8 +48,10 @@
     <string name="ciao">ciao</string>
     <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
+    <string name="descrizione">Descrizione</string>
     <string name="email">Email</string>
     <string name="emailutente">Email</string>
+    <string name="ente">Ente</string>
     <string name="firebase_database_url" translatable="false">https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="follow">Follow</string>
     <string name="full_name">full name</string>
@@ -57,6 +66,7 @@
     <string name="image">TODO</string>
     <string name="imagenuova">TODO</string>
     <string name="imieianimali">I Miei Animali</string>
+    <string name="invia_segnalazione">Invia Segnalazione</string>
     <string name="items">Tipologia Utente</string>
     <string name="log">TODO</string>
     <string name="logo"/>
@@ -67,11 +77,13 @@
     <string name="nome">Nome</string>
     <string name="nome_animale">Nome Animale</string>
     <string name="nomeanimale">Nome Animale</string>
+    <string name="nuovaSegnalazione">Nuova Segnalazione</string>
     <string name="nuovo">nuovo</string>
     <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>
     <string name="nuovoanimale">nuovoanimale</string>
     <string name="password">Password</string>
     <string name="passwordutenteamico">Password</string>
+    <string name="posizione">Posizione</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
     <string name="qrcode">qrcode</string>
     <string name="registratibut">REGISTRATI</string>
@@ -83,6 +95,8 @@
     <string name="todoy">TODO</string>
     <string name="type_null">tipo nullo</string>
     <string name="username">username</string>
+    <string name="utente">Utente Tradizionale</string>
+    <string name="veterinario">Veterinario</string>
     <style name="Theme.ProvaLogin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">#65503F</item>

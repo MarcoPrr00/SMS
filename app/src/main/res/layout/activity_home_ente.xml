@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            app:menu="@menu/buttom_navigation"/>
+            app:menu="@menu/bottom_navmenu_ente"/>
 
 
     </com.google.android.material.appbar.AppBarLayout>

@@ -48,4 +48,18 @@
     <string name="nome_animale">Nome Animale</string>
     <string name="Specie_animale">Specie Animale</string>
     <string name="sesso_animale_text">Sesso</string>
+    <string name="nuovaSegnalazione">Nuova Segnalazione</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="veterinario">Veterinario</string>
+    <string name="ente">Ente</string>
+    <string name="utente">Utente Tradizionale</string>
+    <string name="posizione">Posizione</string>
+    <string name="invia_segnalazione">Invia Segnalazione</string>
+    <string-array name="spinner_segnalazione">
+        <item>Cerco Aiuto!</item>
+        <item>Cerco Stallo</item>
+        <item>Offro Stallo</item>
+        <item>Cerco Animale</item>
+        <item>Offro Animale</item>
+    </string-array>
 </resources>

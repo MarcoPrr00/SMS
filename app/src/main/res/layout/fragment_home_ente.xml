@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.HomeEnteFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_ente"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="HOME ENTE" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/per_te_ente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Per Te" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/in_carico_ente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In Carico" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager_ente"
+        android:layout_below="@+id/tab_layout_ente"/>
+
+</RelativeLayout>

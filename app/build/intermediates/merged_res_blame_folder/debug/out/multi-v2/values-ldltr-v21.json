@@ -4,7 +4,7 @@
             "outputFile": "com.example.provalogin.app-mergeDebugResources-39:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\stefa\\.gradle\\caches\\transforms-3\\bc0ac2459959f164a0e6e41b029ae660\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\bc0ac2459959f164a0e6e41b029ae660\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

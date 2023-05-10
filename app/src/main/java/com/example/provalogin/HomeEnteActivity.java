@@ -8,10 +8,15 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.provalogin.Adapter.MyViewPagerAdapter;
 import com.example.provalogin.Fragment.FavorietesFragment;
 import com.example.provalogin.Fragment.HomeEnteFragment;
 import com.example.provalogin.Fragment.HomeFragment;
+import com.example.provalogin.Fragment.InCaricoVeterinarioFragment;
+import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
+import com.example.provalogin.Fragment.PetsVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileFragment;
+import com.example.provalogin.Fragment.ProfileVeterinarioFragment;
 import com.example.provalogin.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,23 +28,24 @@ public class HomeEnteActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
-                case R.id.ic_home:
-                    selectedFragment= new HomeEnteFragment();
+                case R.id.homeEnte:
+                    selectedFragment= new PerTeVeterinarioFragment();
                     break;
-                case R.id.ic_search:
-                    selectedFragment= new SearchFragment();
+                case R.id.inCarico:
+                    selectedFragment= new InCaricoVeterinarioFragment();
                     break;
-                case R.id.ic_favorites:
-                    selectedFragment= new FavorietesFragment();
+                case R.id.petsEnte:
+                    selectedFragment= new PetsVeterinarioFragment();
                     break;
-                case R.id.ic_profile:
-                    selectedFragment= new ProfileFragment();
+                case R.id.profileEnte:
+                    selectedFragment= new ProfileVeterinarioFragment();
                     break;
             }
             if( selectedFragment != null){
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
                         selectedFragment).commit();
             }
+
 
             return true;
         }
@@ -54,7 +60,8 @@ public class HomeEnteActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
-                new HomeEnteFragment()).commit();
+                new PerTeVeterinarioFragment()).commit();
+
 
     }
 }

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.NuovaSegnalazioneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_tipologia"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:autofillHints="Tipo Segnalazione"
+            android:background="#90F5EBE6"
+            android:backgroundTint="#90F5EBE6"
+            android:contentDescription="@string/Tipologia"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:entries="@array/spinner_segnalazione"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/txt_descrizione"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="0dp"
+                android:inputType="textLongMessage"
+                android:backgroundTint="#90F5EBE6"
+                android:hint="@string/descrizione"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+            app:startIconTint="@color/black"
+            android:minHeight="48dp">
+
+            <EditText
+                android:id="@+id/txt_posizione"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="0dp"
+                android:autofillHints=""
+                android:inputType="textLongMessage"
+                android:backgroundTint="#90F5EBE6"
+                android:hint="@string/posizione"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/segnalazione_checkboxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <CheckBox
+                android:id="@+id/checkbox_veterinario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/veterinario" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/ente" />
+
+            <CheckBox
+                android:id="@+id/checkbox_utentetradizionale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/utente" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnprova"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="prova"
+            />
+
+        <Button
+            android:id="@+id/btn_invia_nuova_segnalazione"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#5A4737"
+            android:clickable="true"
+            android:text="@string/invia_segnalazione"
+            android:textColor="#FDF9F4" />
+
+        <TextView
+            android:id="@+id/prova_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/invia_segnalazione"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

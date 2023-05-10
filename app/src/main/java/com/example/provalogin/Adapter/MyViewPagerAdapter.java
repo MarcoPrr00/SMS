@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.example.provalogin.Fragment.HomeEnteFragment;
 import com.example.provalogin.Fragment.HomeVeterinarioFragment;
 import com.example.provalogin.Fragment.InCaricoVeterinarioFragment;
 import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
@@ -12,6 +13,9 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
 
 
     public MyViewPagerAdapter(@NonNull HomeVeterinarioFragment fragmentActivity) {
+        super(fragmentActivity);
+    }
+    public MyViewPagerAdapter(@NonNull HomeEnteFragment fragmentActivity) {
         super(fragmentActivity);
     }
 

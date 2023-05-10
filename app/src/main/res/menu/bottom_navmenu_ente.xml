@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Segnalazioni"
+        android:icon="@drawable/icon_segnalazioni"
+        android:id="@+id/homeEnte"/>
+
+    <item android:title="In Carico"
+        android:icon="@drawable/icon_star"
+        android:id="@+id/inCarico"/>
+
+    <item android:title="Pets"
+        android:icon="@drawable/ax"
+        android:id="@+id/petsEnte"/>
+
+    <item android:title="Profilo"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/profileEnte"/>
+</menu>
