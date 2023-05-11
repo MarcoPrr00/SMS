@@ -71,9 +71,13 @@ array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array items
 array preloaded_fonts
+array sessoa
 array spinner_segnalazione
+array sterilizzazione
+array sterilizzazioneanimale
 attr SharedValue
 attr SharedValueId
+attr action
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -125,6 +129,7 @@ attr animationMode
 attr appBarLayoutStyle
 attr applyMotionScene
 attr arcMode
+attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr attributeName
@@ -399,6 +404,8 @@ attr customNavigationLayout
 attr customPixelDimension
 attr customReference
 attr customStringValue
+attr data
+attr dataPattern
 attr dayInvalidStyle
 attr daySelectedStyle
 attr dayStyle
@@ -409,6 +416,7 @@ attr defaultState
 attr deltaPolarAngle
 attr deltaPolarRadius
 attr deriveConstraintsFrom
+attr destination
 attr dialogCornerRadius
 attr dialogPreferredPadding
 attr dialogTheme
@@ -459,6 +467,7 @@ attr endIconTintMode
 attr enforceMaterialTheme
 attr enforceTextAppearance
 attr ensureMinTouchTargetSize
+attr enterAnim
 attr errorAccessibilityLabel
 attr errorContentDescription
 attr errorEnabled
@@ -468,6 +477,7 @@ attr errorIconTintMode
 attr errorShown
 attr errorTextAppearance
 attr errorTextColor
+attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
 attr expandedHintEnabled
@@ -569,6 +579,7 @@ attr framePosition
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
+attr graph
 attr guidelineUseRtl
 attr haloColor
 attr haloRadius
@@ -660,6 +671,7 @@ attr labelStyle
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
 attr lastItemDecorated
+attr launchSingleTop
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -818,6 +830,7 @@ attr menu
 attr menuAlignmentMode
 attr menuGravity
 attr methodName
+attr mimeType
 attr minHeight
 attr minHideDelay
 attr minSeparation
@@ -876,6 +889,7 @@ attr motion_postLayoutCollision
 attr motion_triggerOnCollision
 attr moveWhenScrollAtTop
 attr multiChoiceItemLayout
+attr navGraph
 attr navigationContentDescription
 attr navigationIcon
 attr navigationIconTint
@@ -885,6 +899,7 @@ attr navigationViewStyle
 attr nestedScrollFlags
 attr nestedScrollViewStyle
 attr nestedScrollable
+attr nullable
 attr number
 attr numericModifiers
 attr onCross
@@ -925,6 +940,11 @@ attr placeholderTextAppearance
 attr placeholderTextColor
 attr placeholder_emptyVisibility
 attr polarRelativeTo
+attr popEnterAnim
+attr popExitAnim
+attr popUpTo
+attr popUpToInclusive
+attr popUpToSaveState
 attr popupMenuBackground
 attr popupMenuStyle
 attr popupTheme
@@ -957,11 +977,13 @@ attr region_heightMoreThan
 attr region_widthLessThan
 attr region_widthMoreThan
 attr removeEmbeddedFabElevation
+attr restoreState
 attr reverseLayout
 attr rippleColor
 attr rotationCenterId
 attr round
 attr roundPercent
+attr route
 attr saturation
 attr scaleFromTextSize
 attr scopeUris
@@ -1023,6 +1045,7 @@ attr springStopThreshold
 attr srcCompat
 attr stackFromEnd
 attr staggered
+attr startDestination
 attr startIconCheckable
 attr startIconContentDescription
 attr startIconDrawable
@@ -1090,6 +1113,7 @@ attr tabTextAppearance
 attr tabTextColor
 attr tabUnboundedRipple
 attr targetId
+attr targetPackage
 attr telltales_tailColor
 attr telltales_tailScale
 attr telltales_velocityMode
@@ -1231,6 +1255,7 @@ attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
 attr upDuration
+attr uri
 attr useCompatPadding
 attr useMaterialThemeColors
 attr values
@@ -1305,6 +1330,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -2900,6 +2926,7 @@ id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
+id caricamentoanimale
 id carryVelocity
 id center
 id centerCrop
@@ -2914,6 +2941,7 @@ id checkbox_ente
 id checkbox_utentetradizionale
 id checkbox_veterinario
 id checked
+id chipanimale
 id chronometer
 id circle_center
 id clear_text
@@ -2984,6 +3012,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id etaanimale
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3008,7 +3037,6 @@ id fragment_container
 id fragment_container_ente
 id fragment_container_view_tag
 id frost
-id fullname
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -3141,6 +3169,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id name
+id nav_controller_view_tag
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3151,9 +3180,10 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id newanimale
+id newanimal
 id noScroll
 id noState
+id nome
 id nome_animale
 id nomecognome
 id none
@@ -3172,6 +3202,7 @@ id outline
 id outward
 id overshoot
 id packed
+id padroneanimale
 id parallax
 id parent
 id parentPanel
@@ -3191,6 +3222,7 @@ id pooling_container_listener_holder_tag
 id position
 id post
 id postLayout
+id preferenzaciboanimale
 id pressed
 id profileEnte
 id profileVet
@@ -3210,6 +3242,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saluteanimale
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3253,6 +3286,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id specie
 id specie_animale
 id spinner_tipologia
 id spline
@@ -3272,6 +3306,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
+id sterilizzazioneanimale
 id stop
 id stretch
 id submenuarrow
@@ -3302,12 +3337,18 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id text_chip
+id text_eta
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_nomeanimale_layout
-id text_sesso_layout
-id text_specie_layout
+id text_nomeanimale
+id text_padrone
+id text_preferenza
+id text_salute
+id text_sesso
+id text_specie
+id text_sterilizzazione
 id text_view_name
 id textinput_counter
 id textinput_error
@@ -3532,6 +3573,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dropdown_scelta
 layout fragment_favorietes
 layout fragment_home
 layout fragment_home_ente
@@ -3910,6 +3952,7 @@ mipmap ic_update_black_36dp
 plurals mtrl_badge_content_description
 raw firebase_common_keep
 raw zxing_beep
+string Conferma
 string FullName
 string Nickname
 string Nominativo
@@ -3944,6 +3987,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string accedi
+string added
 string androidx_startup
 string app_name
 string app_version
@@ -3960,6 +4004,7 @@ string cerca_i_tuoi_amici_
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string chip
 string ciao
 string clear_text_end_icon_content_description
 string cognome
@@ -3990,6 +4035,7 @@ string emailutente
 string ente
 string error_a11y_label
 string error_icon_content_description
+string eta
 string exo_download_completed
 string exo_download_description
 string exo_download_downloading
@@ -4133,6 +4179,7 @@ string nuovaSegnalazione
 string nuovo
 string nuovoamicotranoi
 string nuovoanimale
+string padrone
 string password
 string password_toggle_content_description
 string passwordutenteamico
@@ -4141,14 +4188,17 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string posizione
+string preferenza
 string project_id
 string qrcode
 string registratibut
+string salute
 string se_non_sei_registrato_clicca_qui
 string search_menu_title
 string segui
 string sesso_animale_text
 string status_bar_notification_info_overflow
+string sterilizzazione
 string tastopercaricamento
 string todo
 string todoy
@@ -5223,6 +5273,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable ActivityNavigator android_name action data dataPattern targetPackage
 styleable AddFloatingActionButton fab_plusIconColor
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
@@ -5326,10 +5377,17 @@ styleable MotionLabel android_textSize android_typeface android_textStyle androi
 styleable MotionLayout applyMotionScene currentState layoutDescription motionDebug motionProgress showPaths
 styleable MotionScene defaultDuration layoutDuringTransition
 styleable MotionTelltales telltales_tailColor telltales_tailScale telltales_velocityMode
+styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive popUpToSaveState restoreState
+styleable NavArgument android_name android_defaultValue argType nullable
+styleable NavDeepLink android_autoVerify action mimeType uri
+styleable NavGraphNavigator startDestination
+styleable NavHost navGraph
+styleable NavInclude graph
 styleable NavigationBarActiveIndicator android_height android_width android_color marginHorizontal shapeAppearance
 styleable NavigationBarView backgroundTint elevation itemActiveIndicatorStyle itemBackground itemIconSize itemIconTint itemPaddingBottom itemPaddingTop itemRippleColor itemTextAppearanceActive itemTextAppearanceInactive itemTextColor labelVisibilityMode menu
 styleable NavigationRailView headerLayout itemMinHeight menuGravity paddingBottomSystemWindowInsets paddingTopSystemWindowInsets
 styleable NavigationView android_layout_gravity android_background android_fitsSystemWindows android_maxWidth bottomInsetScrimEnabled dividerInsetEnd dividerInsetStart drawerLayoutCornerSize elevation headerLayout itemBackground itemHorizontalPadding itemIconPadding itemIconSize itemIconTint itemMaxLines itemRippleColor itemShapeAppearance itemShapeAppearanceOverlay itemShapeFillColor itemShapeInsetBottom itemShapeInsetEnd itemShapeInsetStart itemShapeInsetTop itemTextAppearance itemTextColor itemVerticalPadding menu shapeAppearance shapeAppearanceOverlay subheaderColor subheaderInsetEnd subheaderInsetStart subheaderTextAppearance topInsetScrimEnabled
+styleable Navigator android_label android_id route
 styleable OnClick clickAction targetId
 styleable OnSwipe autoCompleteMode dragDirection dragScale dragThreshold limitBoundsTo maxAcceleration maxVelocity moveWhenScrollAtTop nestedScrollFlags onTouchUp rotationCenterId springBoundary springDamping springMass springStiffness springStopThreshold touchAnchorId touchAnchorSide touchRegionId
 styleable PopupWindow android_popupBackground android_popupAnimationStyle overlapAnchor

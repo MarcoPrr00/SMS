@@ -3,6 +3,7 @@ package com.example.provalogin.Fragment;
 import android.os.Bundle;
 
 import com.example.provalogin.Adapter.UtenteAdapter;
+import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Utente;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -30,7 +31,7 @@ public class SearchFragment extends Fragment {
 
     private RecyclerView recyclerView;
 
-    private List<Utente> mUtente;
+    private List<Animal> mUtente;
     private UtenteAdapter adapter;
     DatabaseReference dbUtente;
 
@@ -52,7 +53,7 @@ public class SearchFragment extends Fragment {
         mUtente = new ArrayList<>();
         adapter = new UtenteAdapter(this.getContext(), mUtente);
         recyclerView.setAdapter(adapter);
-        dbUtente=FirebaseDatabase.getInstance().getReference("Users");
+        dbUtente=FirebaseDatabase.getInstance().getReference("Animals");
         dbUtente.addValueEventListener(valueEventListener);
 
 
@@ -78,7 +79,7 @@ public class SearchFragment extends Fragment {
     }
 
     private void searchUsers(String s){
-        Query query = dbUtente.orderByChild("Cognome")
+        Query query = dbUtente.orderByChild("Nome")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
         query.addValueEventListener(valueEventListener);
@@ -114,7 +115,7 @@ public class SearchFragment extends Fragment {
             mUtente.clear();
             if (dataSnapshot.exists()) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Utente artist = snapshot.getValue(Utente.class);
+                    Animal artist = snapshot.getValue(Animal.class);
                     mUtente.add(artist);
                 }
                 adapter.notifyDataSetChanged();

@@ -2,7 +2,7 @@ package com.example.provalogin.Adapter;
 
 import android.content.Context;
 import android.net.Uri;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +14,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.Registry;
-import com.bumptech.glide.annotation.GlideModule;
-import com.bumptech.glide.module.AppGlideModule;
-import com.example.provalogin.Model.Utente;
+
+import com.example.provalogin.Model.Animal;
+
 import com.example.provalogin.R;
-import com.google.android.gms.tasks.OnFailureListener;
+
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -31,18 +30,18 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.io.InputStream;
+
 import java.util.List;
 
 public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteViewHolder> {
 
-    private Context mCtx;
-    private List<Utente> utenteList;
+    final private Context mCtx;
+    final private List<Animal> animaleList;
     private FirebaseUser firebaseUser;
 
-    public UtenteAdapter(Context mCtx, List<Utente> utenteList){
+    public UtenteAdapter(Context mCtx, List<Animal> utenteList){
         this.mCtx = mCtx;
-        this.utenteList = utenteList;
+        this.animaleList = utenteList;
     }
 
 
@@ -58,21 +57,21 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
     public void onBindViewHolder(@NonNull UtenteViewHolder holder, int position) {
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        final Utente user = utenteList.get(position);
+        final Animal animal = animaleList.get(position);
         holder.btn_follow.setVisibility(View.VISIBLE);
 
-        holder.username.setText(user.Cognome);
-        holder.fullname.setText(user.Nome);
-        StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(user.ImgUrl);
-        storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
+        holder.nomeanimale.setText(animal.nomeanimale);
+        holder.specieanimale.setText(animal.specieanimale);
+        //StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(animal.ImgUrl);
+        //storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            /*@Override
             public void onSuccess(Uri uri) {
                 Glide.with(mCtx).load(uri).into(holder.image_profile);
             }
-        });
-        isFollowing(user.Id, holder.btn_follow);
+        });*/
+        isFollowing(animal.id, holder.btn_follow);
 
-        if(user.Id.equals(firebaseUser.getUid())){
+        if(animal.id.equals(firebaseUser.getUid())){
             holder.btn_follow.setVisibility(View.GONE);
         }
 
@@ -81,15 +80,15 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
             public void onClick(View view) {
                 if(holder.btn_follow.getText().toString().equals("Follow")){
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
-                            .child("following").child(user.Id).setValue(true);
+                            .child("following").child(animal.id).setValue(true);
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.Id)
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animal.id)
                             .child("followers").child(firebaseUser.getUid()).setValue(true);
                 } else {
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
-                            .child("following").child(user.Id).removeValue();
+                            .child("following").child(animal.id).removeValue();
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(user.Id)
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animal.id)
                             .child("followers").child(firebaseUser.getUid()).removeValue();
                 }
             }
@@ -99,21 +98,21 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
 
     @Override
     public int getItemCount() {
-        return utenteList.size();
+        return animaleList.size();
     }
 
-    public class UtenteViewHolder extends RecyclerView.ViewHolder{
+    static public class UtenteViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView username;
-        public TextView fullname;
+        public TextView nomeanimale;
+        public TextView specieanimale;
         public ImageView image_profile;
         public Button btn_follow;
 
         public UtenteViewHolder(@NonNull View itemView){
             super(itemView);
 
-            username = itemView.findViewById(R.id.username);
-            fullname = itemView.findViewById(R.id.fullname);
+            nomeanimale = itemView.findViewById(R.id.nome);
+            specieanimale = itemView.findViewById(R.id.specie);
             image_profile = itemView.findViewById(R.id.image_profile);
             btn_follow = itemView.findViewById(R.id.btn_follow);
 

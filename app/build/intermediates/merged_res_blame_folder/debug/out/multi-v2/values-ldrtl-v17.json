@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-39:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-45:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\4d71415200048da841c2de89390b2410\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Antonella_Z\\.gradle\\caches\\transforms-3\\4d71415200048da841c2de89390b2410\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

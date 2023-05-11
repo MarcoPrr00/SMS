@@ -20,6 +20,10 @@
         <item>@font/architects_daughter</item>
         <item>@font/coustard</item>
     </array>
+    <string-array name="sessoa">
+        <item>Maschio</item>
+        <item>Femmina</item>
+    </string-array>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>
@@ -27,6 +31,11 @@
         <item>Cerco Animale</item>
         <item>Offro Animale</item>
     </string-array>
+    <string-array name="sterilizzazione">
+        <item>Effettuata</item>
+        <item>Non effettuata</item>
+    </string-array>
+    <string-array name="sterilizzazioneanimale"/>
     <color name="black">#FF000000</color>
     <color name="colorSecondary">#FB825B</color>
     <color name="colorSecondaryVariant">#675143</color>
@@ -34,6 +43,7 @@
     <color name="purple_500">#B36A0D</color>
     <color name="purple_700">#D2A472</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="Conferma">Conferma Dati</string>
     <string name="FullName">FullName</string>
     <string name="Nickname">Nickname</string>
     <string name="Nominativo">Nome e Cognome</string>
@@ -41,10 +51,12 @@
     <string name="Tipologia"/>
     <string name="Username">Username</string>
     <string name="accedi">ACCEDI</string>
+    <string name="added">Animale Aggiunto!</string>
     <string name="app_name">PuppyPad</string>
     <string name="btn_follow">Button</string>
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
+    <string name="chip">Chip</string>
     <string name="ciao">ciao</string>
     <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
@@ -52,6 +64,7 @@
     <string name="email">Email</string>
     <string name="emailutente">Email</string>
     <string name="ente">Ente</string>
+    <string name="eta">Eta Animale</string>
     <string name="firebase_database_url" translatable="false">https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="follow">Follow</string>
     <string name="full_name">full name</string>
@@ -81,15 +94,19 @@
     <string name="nuovo">nuovo</string>
     <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>
     <string name="nuovoanimale">nuovoanimale</string>
+    <string name="padrone">Padrone Animale</string>
     <string name="password">Password</string>
     <string name="passwordutenteamico">Password</string>
     <string name="posizione">Posizione</string>
+    <string name="preferenza">Preferenza Cibo</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
     <string name="qrcode">qrcode</string>
     <string name="registratibut">REGISTRATI</string>
+    <string name="salute">Stato di Salute</string>
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato? Clicca qui!</string>
     <string name="segui">segui</string>
     <string name="sesso_animale_text">Sesso</string>
+    <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
     <string name="todo">TODO</string>
     <string name="todoy">TODO</string>

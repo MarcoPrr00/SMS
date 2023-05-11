@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-39:/values-v18/values-v18.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-45:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\bc0ac2459959f164a0e6e41b029ae660\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Antonella_Z\\.gradle\\caches\\transforms-3\\bc0ac2459959f164a0e6e41b029ae660\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
