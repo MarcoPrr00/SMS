@@ -2893,6 +2893,7 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backgroundLayout
 id bar
+id bar_per_te
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3233,6 +3234,7 @@ id radio
 id ratio
 id rectangles
 id recycler_view
+id recycler_view_incarico
 id recycler_view_veterinario
 id register
 id reverseSawtooth
@@ -3265,6 +3267,7 @@ id search_src_text
 id search_voice_btn
 id searchbar
 id segnalazione_checkboxes
+id segnalazioni_item
 id select_dialog_listview
 id selected
 id selection_type

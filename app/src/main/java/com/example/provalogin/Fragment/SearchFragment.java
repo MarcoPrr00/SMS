@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Animal;
-import com.example.provalogin.Model.Utente;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;

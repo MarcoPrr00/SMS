@@ -33,6 +33,7 @@ public class NuovaSegnalazioneFragment extends Fragment {
 
     FirebaseAuth auth;
     DatabaseReference reference;
+    String userid;
 
     EditText descrizione, posizione;
     Spinner tipologia;
@@ -53,9 +54,10 @@ public class NuovaSegnalazioneFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         auth=FirebaseAuth.getInstance();
-        String userid = auth.getCurrentUser().getUid();
+        userid = auth.getCurrentUser().getUid();
+        String id = NewAnimal.generacodiceid();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
-        reference = database.getReference().child("Segnalazioni").child(userid);
+        reference = database.getReference().child("Segnalazioni").child(id);
 
     }
 
@@ -78,7 +80,6 @@ public class NuovaSegnalazioneFragment extends Fragment {
         cbUtenteTradizionale=view.findViewById(R.id.checkbox_utentetradizionale);
         cbVeterinario=view.findViewById(R.id.checkbox_veterinario);
 
-        String s = btnInviaSegnalazione.toString();
 
         btnInviaSegnalazione.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +107,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
                 hashMap.put("destinatarioVeterionario", destinatarioVeterinario);
                 hashMap.put("destinatarioEnte", destinatarioEnte);
                 hashMap.put("destinatarioUtente", destinatarioUtente);
+                hashMap.put("idMittente",userid);
+
                 reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

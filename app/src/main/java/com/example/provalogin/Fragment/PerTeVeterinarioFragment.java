@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -12,14 +13,48 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.provalogin.Adapter.SegnalazioniAdapter;
+;
+import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PerTeVeterinarioFragment extends Fragment {
 
-    RecyclerView recyclerView;
-    SegnalazioniAdapter segnalazioniAdapter;
+    private RecyclerView recyclerView;
+    private SegnalazioniAdapter segnalazioniAdapter;
     com.getbase.floatingactionbutton.FloatingActionButton floatingButtonNuovaSegnalazione;
-    Fragment selectedFragment=null;
+    //Fragment selectedFragment=null;
+    private List<Segnalazioni> mSegnalazioni;
+    DatabaseReference db;
+
+
+
+
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            mSegnalazioni.clear();
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Segnalazioni segnalazioni = snapshot.getValue(Segnalazioni.class);
+                    mSegnalazioni.add(segnalazioni);
+                }
+                segnalazioniAdapter.notifyDataSetChanged();
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
 
 
     @Override
@@ -27,20 +62,21 @@ public class PerTeVeterinarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
-        /*
-        recyclerView = recyclerView.findViewById(R.id.recycler_view_veterinario);
+
+        recyclerView = view.findViewById(R.id.recycler_view_veterinario);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        FirebaseRecyclerOptions<Segnalazioni> options =
-                new FirebaseRecyclerOptions.Builder<Segnalazioni>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("segnalazioni"), Segnalazioni.class)
-                        .build();
 
-        segnalazioniAdapter = new SegnalazioniAdapter(options);
+        mSegnalazioni = new ArrayList<>();
+        segnalazioniAdapter = new SegnalazioniAdapter(this.getContext(), mSegnalazioni);
+
         recyclerView.setAdapter(segnalazioniAdapter);
-    */
 
-        //TextView txttesto = view.findViewById(R.id.txttesto);
+        db= FirebaseDatabase.getInstance().getReference("Segnalazioni");
+        db.addValueEventListener(valueEventListener);
+
+
 
         return inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
     }
@@ -48,7 +84,7 @@ public class PerTeVeterinarioFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //Bottone che mi permette di aggiungere manualmente un nuovo animale
+
         floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);
         floatingButtonNuovaSegnalazione.setVisibility(View.VISIBLE);
         floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {

@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.InCaricoVeterinarioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_incarico"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="In Carico Fragment"
-        android:layout_centerInParent="true"
-        android:textSize="32dp"/>
+
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF" />
 
 </RelativeLayout>

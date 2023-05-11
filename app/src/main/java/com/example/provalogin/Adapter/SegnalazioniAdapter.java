@@ -1,64 +1,119 @@
 package com.example.provalogin.Adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+
 import com.example.provalogin.Model.Segnalazioni;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class SegnalazioniAdapter extends FirebaseRecyclerAdapter<Segnalazioni,SegnalazioniAdapter.segnalazioniViewHolder> {
-    /**
-     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
-     * {@link FirebaseRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
-    public SegnalazioniAdapter(@NonNull FirebaseRecyclerOptions<Segnalazioni> options) {
-        super(options);
-    }
+public class SegnalazioniAdapter extends RecyclerView.Adapter<SegnalazioniAdapter.SegnalazioniViewHolder> {
 
-    @Override
-    protected void onBindViewHolder(@NonNull segnalazioniViewHolder holder, int position, @NonNull Segnalazioni model) {
-        holder.email.setText(model.getEmail());
-        holder.città.setText(model.getCittà());
-        holder.tipoSegnalazione.setText(model.getTipoSegnalazione());
-        Glide.with(holder.img.getContext())
-                .load(model.getSurl())
-                .placeholder(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark)
-                .circleCrop()
-                .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)
-                .into(holder.img);
+    final private Context mCtx;
+    final private List<Segnalazioni> segnalazioniList;
 
+
+
+    public SegnalazioniAdapter(Context mCtx, List<Segnalazioni> segnalazioniList){
+        this.mCtx = mCtx;
+        this.segnalazioniList = segnalazioniList;
     }
 
     @NonNull
     @Override
-    public segnalazioniViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.segnalazioni_item,parent,false);
-        return new segnalazioniViewHolder(view);
+    public SegnalazioniViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(mCtx).inflate(R.layout.segnalazioni_item,parent,false);
+        return new SegnalazioniViewHolder(view);
     }
 
-    class segnalazioniViewHolder extends RecyclerView.ViewHolder{
-        CircleImageView img;
-        TextView email,città,tipoSegnalazione;
+    @Override
+    public void onBindViewHolder(@NonNull SegnalazioniViewHolder holder, int position) {
+        final Segnalazioni segnalazioni = segnalazioniList.get(position);
 
-        public segnalazioniViewHolder(@NonNull View itemView) {
+
+
+        holder.descrizione.setText(segnalazioni.descrizione);
+        holder.tipologiaSegnalazione.setText(segnalazioni.tipologiaSegnalazione);
+        trovaNomeCognomeUtente(segnalazioni.idMittente, holder.mittente);
+
+        Glide.with(holder.img.getContext())
+                .load(R.drawable.logo)
+                /*.placeholder(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark)
+                .circleCrop()
+                .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)*/
+                .into(holder.img);
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return segnalazioniList.size();
+    }
+
+
+
+
+    static class SegnalazioniViewHolder extends RecyclerView.ViewHolder{
+        ImageView img;
+        TextView tipologiaSegnalazione,descrizione,mittente;
+
+        public SegnalazioniViewHolder(@NonNull View itemView) {
             super(itemView);
-            img = (CircleImageView)itemView.findViewById(R.id.img1);
-            email = (TextView) itemView.findViewById(R.id.txt_email);
-            città = (TextView) itemView.findViewById(R.id.txt_città);
-            tipoSegnalazione = (TextView) itemView.findViewById(R.id.txt_tipo_segnalazione);
+            img = itemView.findViewById(R.id.img1);
+            mittente =  itemView.findViewById(R.id.txt_email);
+            descrizione =  itemView.findViewById(R.id.txt_città);
+            tipologiaSegnalazione =  itemView.findViewById(R.id.txt_tipo_segnalazione);
         }
+    }
+
+    private void trovaNomeCognomeUtente(String id, TextView mittente){
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        Query query = db.getReference("Users").orderByChild("Id").equalTo(id);
+
+
+        ValueEventListener valueEventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        Utente utentetmp = snapshot.getValue(Utente.class);
+                        mittente.setText(utentetmp.Nome+" "+utentetmp.Cognome);
+                    }
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        };
+        query.addValueEventListener(valueEventListener);
+
+
     }
 
 

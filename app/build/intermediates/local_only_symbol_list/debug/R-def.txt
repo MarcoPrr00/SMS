@@ -50,6 +50,7 @@ font coustard
 id add_qr_code_pet
 id backgroundLayout
 id bar
+id bar_per_te
 id bluelogo
 id bntAddImg
 id bottom
@@ -123,11 +124,13 @@ id profileEnte
 id profileVet
 id prova_txt
 id recycler_view
+id recycler_view_incarico
 id recycler_view_veterinario
 id register
 id saluteanimale
 id searchbar
 id segnalazione_checkboxes
+id segnalazioni_item
 id sessoanimale
 id specie
 id specie_animale
