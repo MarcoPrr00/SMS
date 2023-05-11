@@ -16,6 +16,7 @@ import com.example.provalogin.Adapter.SegnalazioniAdapter;
 ;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,7 +30,7 @@ public class PerTeVeterinarioFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private SegnalazioniAdapter segnalazioniAdapter;
-    com.getbase.floatingactionbutton.FloatingActionButton floatingButtonNuovaSegnalazione;
+    FloatingActionButton floatingButtonNuovaSegnalazione;
     //Fragment selectedFragment=null;
     private List<Segnalazioni> mSegnalazioni;
     DatabaseReference db;
@@ -78,7 +79,7 @@ public class PerTeVeterinarioFragment extends Fragment {
 
 
 
-        return inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
+        return view;
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -100,15 +101,5 @@ public class PerTeVeterinarioFragment extends Fragment {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        //segnalazioniAdapter.startListening();
-    }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        //segnalazioniAdapter.stopListening();
-    }
 }

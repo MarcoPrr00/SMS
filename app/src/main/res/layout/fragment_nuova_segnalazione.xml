@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8D89D"
     tools:context=".Fragment.NuovaSegnalazioneFragment">
 
     <LinearLayout
@@ -123,14 +124,6 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnprova"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="prova"
-            />
-
-        <Button
             android:id="@+id/btn_invia_nuova_segnalazione"
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -142,17 +135,6 @@
             android:text="@string/invia_segnalazione"
             android:textColor="#FDF9F4" />
 
-        <TextView
-            android:id="@+id/prova_txt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:clickable="true"
-            android:gravity="center"
-            android:text="@string/invia_segnalazione"
-            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

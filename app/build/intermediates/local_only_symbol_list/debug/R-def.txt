@@ -18,11 +18,13 @@ color purple_500
 color purple_700
 color white
 drawable a
+drawable add_icon
 drawable avatar
 drawable ax
 drawable b
 drawable border
 drawable c
+drawable ic_baseline_add_24
 drawable ic_baseline_home_24
 drawable ic_baseline_person_24
 drawable ic_close
@@ -50,7 +52,6 @@ font coustard
 id add_qr_code_pet
 id backgroundLayout
 id bar
-id bar_per_te
 id bluelogo
 id bntAddImg
 id bottom
@@ -63,7 +64,6 @@ id btnScegli
 id btn_follow
 id btn_invia_nuova_segnalazione
 id btn_nuova_segnalazione
-id btnprova
 id caricamentoanimale
 id checkbox_ente
 id checkbox_utentetradizionale
@@ -122,7 +122,6 @@ id post
 id preferenzaciboanimale
 id profileEnte
 id profileVet
-id prova_txt
 id recycler_view
 id recycler_view_incarico
 id recycler_view_veterinario

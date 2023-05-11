@@ -2653,6 +2653,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_icon
 drawable avatar
 drawable avd_hide_password
 drawable avd_show_password
@@ -2696,6 +2697,7 @@ drawable fab_bg_mini
 drawable fab_bg_normal
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_baseline_add_24
 drawable ic_baseline_home_24
 drawable ic_baseline_person_24
 drawable ic_clock_black_24dp
@@ -2893,7 +2895,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id backgroundLayout
 id bar
-id bar_per_te
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2921,7 +2922,6 @@ id btnScegli
 id btn_follow
 id btn_invia_nuova_segnalazione
 id btn_nuova_segnalazione
-id btnprova
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3229,7 +3229,6 @@ id profileEnte
 id profileVet
 id progress_circular
 id progress_horizontal
-id prova_txt
 id radio
 id ratio
 id rectangles

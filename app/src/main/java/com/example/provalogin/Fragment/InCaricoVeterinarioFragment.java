@@ -42,7 +42,26 @@ public class InCaricoVeterinarioFragment extends Fragment {
     private List<Segnalazioni> mSegnalazioni;
     DatabaseReference db;
 
-    EditText search_bar;
+
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            mSegnalazioni.clear();
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Segnalazioni segnalazioni = snapshot.getValue(Segnalazioni.class);
+                    mSegnalazioni.add(segnalazioni);
+                }
+                segnalazioniAdapter.notifyDataSetChanged();
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -129,24 +148,7 @@ public class InCaricoVeterinarioFragment extends Fragment {
         }
     };
 
-    ValueEventListener valueEventListener = new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            mSegnalazioni.clear();
-            if (dataSnapshot.exists()) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Segnalazioni segnalazioni = snapshot.getValue(Segnalazioni.class);
-                    mSegnalazioni.add(segnalazioni);
-                }
-                segnalazioniAdapter.notifyDataSetChanged();
-            }
-        }
 
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-
-        }
-    };
 
 }
 
