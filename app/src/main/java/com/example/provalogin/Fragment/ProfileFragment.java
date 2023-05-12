@@ -14,8 +14,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.HomeActivity;
+import com.example.provalogin.Model.Animal;
 import com.example.provalogin.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -27,11 +37,33 @@ public class ProfileFragment extends Fragment {
 
     RecyclerView recyclerView;
     TextView newanimal;
-    //PetsAdapter adapter;
+    private AnimalAdapter animalAdapter;
+    private List<Animal> listAnimal;
+    DatabaseReference db;
+
+
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimaleqrcode;
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimalebluetooth;
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimalemanualmente;
 
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            listAnimal.clear();
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Animal animali = snapshot.getValue(Animal.class);
+                    listAnimal.add(animali);
+                }
+                animalAdapter.notifyDataSetChanged();
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -61,7 +93,7 @@ public class ProfileFragment extends Fragment {
         recyclerView =(RecyclerView)getActivity().findViewById(R.id.mieianimali_recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-    //Fare collegamento con db
+        //Fare collegamento con db
 
 
     }
@@ -71,7 +103,23 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        recyclerView = view.findViewById(R.id.mieianimali_recyclerview);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+
+        listAnimal = new ArrayList<>();
+        animalAdapter = new AnimalAdapter(this.getContext(), listAnimal);
+
+        recyclerView.setAdapter(animalAdapter);
+
+        db= FirebaseDatabase.getInstance().getReference("Animals");
+        db.addValueEventListener(valueEventListener);
+
+
+        return view;
     }
 
     @Override
@@ -83,11 +131,16 @@ public class ProfileFragment extends Fragment {
         nuovoanimalemanualmente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new NewAnimal();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .add(R.id.newanimal, new NuovaSegnalazioneFragment()).commit();
+                nuovoanimalemanualmente.setVisibility(View.INVISIBLE);
+
+
+               /* Fragment fragment = new NewAnimal();
                 FragmentTransaction transaction = getActivity()
                         .getSupportFragmentManager()
                         .beginTransaction();
-                transaction.replace(R.id.container, fragment).commit();
+                transaction.replace(R.id.container, fragment).commit();*/
             }
         });
     }

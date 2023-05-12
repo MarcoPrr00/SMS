@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
+    android:background="#F8D89D"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragment.ProfileFragment">
@@ -22,14 +23,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:backgroundTint="#65503F"
-        app:fab_addButtonColorNormal="#65503F">
+        android:backgroundTint="#F8D89D"
+        app:fab_addButtonColorNormal="#F8D89D">
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/nuovomanuale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:backgroundTint="#B0592423"
+            app:backgroundTint="#F8D89D"
             app:fab_icon="@mipmap/ic_pets_black_24dp"
             app:fab_title="@string/nuovoanimale" />
 
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            app:backgroundTint="#B0592423"
+            app:backgroundTint="#F8D89D"
             app:fab_icon="@mipmap/baseline_qr_code_scanner_black_18"
             app:fab_title="@string/qrcode" />
 
@@ -47,10 +48,12 @@
             android:id="@+id/nuovoconbluetooth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:backgroundTint="#B0592423"
+            app:backgroundTint="#F8D89D"
             app:fab_icon="@mipmap/ic_settings_bluetooth_black_18dp"
             app:fab_title="@string/new_pet_bluetooth_option" />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
 
 </FrameLayout>
+
+

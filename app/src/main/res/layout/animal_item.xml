@@ -52,18 +52,9 @@
             android:textColor="#000"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/padrone_item"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/specie_item"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@+id/img1"
-            android:text="@string/padronea"
-            android:textColor="#000"
-            android:textSize="18sp" />
-
 
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
+
+

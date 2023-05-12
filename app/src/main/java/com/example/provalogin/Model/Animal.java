@@ -1,15 +1,16 @@
+
 package com.example.provalogin.Model;
 
 public class Animal {
 
-    public String ImgUrl;
+
     public String id;
     public String nome_animale;
     private String eta_animale;
     private String sesso_animale;
     private String chip_animale;
     private String sterilizzazione_animale;
-    private String padrone_animale;
+    public String padrone_animale;
     public String specie_animale;
     private String preferenza_animale;
     private String salute_animale;
@@ -33,3 +34,10 @@ public class Animal {
     }
 
 }
+
+
+
+
+
+
+

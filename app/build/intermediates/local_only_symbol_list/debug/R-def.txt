@@ -117,7 +117,6 @@ id nuovaimmagine
 id nuovoconbluetooth
 id nuovomanuale
 id padrone_animale
-id padrone_item
 id password
 id per_te_ente
 id petsEnte
