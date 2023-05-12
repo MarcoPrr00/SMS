@@ -60,8 +60,8 @@ public class UtenteAdapter extends RecyclerView.Adapter<UtenteAdapter.UtenteView
         final Animal animal = animaleList.get(position);
         holder.btn_follow.setVisibility(View.VISIBLE);
 
-        holder.nomeanimale.setText(animal.nomeanimale);
-        holder.specieanimale.setText(animal.specieanimale);
+        holder.nomeanimale.setText(animal.nome_animale);
+        holder.specieanimale.setText(animal.specie_animale);
         //StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(animal.ImgUrl);
         //storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             /*@Override

@@ -58,26 +58,9 @@
         app:layout_constraintStart_toEndOf="@+id/img"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_nomeanimale"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/nome_animale"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nuovaimmagine">
 
-        <com.google.android.material.textfield.TextInputEditText
+
+        <EditText
             android:id="@+id/nome_animale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,30 +69,26 @@
             android:inputType="text"
             android:textColorHint="#AE8E87"
             android:textCursorDrawable="@null"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/nome_animale"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nuovaimmagine"
             android:textSize="18sp"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_specie"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/Specie_animale"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_nomeanimale">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/specie_animale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,33 +97,29 @@
             android:inputType="text"
             android:textColorHint="#AE8E87"
             android:textCursorDrawable="@null"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/Specie_animale"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome_animale"
             android:textSize="18sp"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_sesso"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/sesso_animale_text"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_specie">
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
 
-        <AutoCompleteTextView
-            android:id="@+id/sessoanimale"
+
+
+        <EditText
+            android:id="@+id/sesso_animale"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/trasparenza"
@@ -155,32 +130,28 @@
             android:textColorHint="#AE8E87"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_padrone"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/padrone"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_sesso">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/sesso_animale_text"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/specie_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
 
-        <AutoCompleteTextView
-            android:id="@+id/padroneanimale"
+
+
+        <EditText
+            android:id="@+id/padrone_animale"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/trasparenza"
@@ -191,31 +162,86 @@
             android:textColorHint="#AE8E87"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_preferenza"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/preferenza"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_padrone">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/padrone"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sesso_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
 
-        <AutoCompleteTextView
-            android:id="@+id/preferenzaciboanimale"
+        <EditText
+            android:id="@+id/preferenza_animale"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/trasparenza"
+            android:fontFamily="@font/coustard"
+            android:hint="@string/preferenza"
+            android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:textColorHint="#AE8E87"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/padrone_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck,DuplicateClickableBoundsCheck"
+            android:importantForAutofill="no" />
+
+
+        <EditText
+            android:id="@+id/salute_animale"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/trasparenza"
+            android:fontFamily="@font/coustard"
+            android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:hint="@string/salute"
+            android:textColorHint="#AE8E87"
+            android:textSize="18sp"
+            android:visibility="visible"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/preferenza_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
+
+
+        <EditText
+            android:id="@+id/sterilizzazione_animale"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/trasparenza"
@@ -226,32 +252,26 @@
             android:textColorHint="#AE8E87"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_salute"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/salute"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_preferenza">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/sterilizzazione"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/salute_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
 
-        <AutoCompleteTextView
-            android:id="@+id/saluteanimale"
+        <EditText
+            android:id="@+id/eta_animale"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/trasparenza"
@@ -262,32 +282,27 @@
             android:textColorHint="#AE8E87"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_sterilizzazione"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/sterilizzazione"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_salute">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/eta"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sterilizzazione_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
 
-        <AutoCompleteTextView
-            android:id="@+id/sterilizzazioneanimale"
+
+        <EditText
+            android:id="@+id/chip_animale"
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:background="@drawable/trasparenza"
@@ -298,78 +313,23 @@
             android:textColorHint="#AE8E87"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_eta"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/eta"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_sterilizzazione">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/chip"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:helperTextTextColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eta_animale"
+            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
+            android:importantForAutofill="no" />
 
-
-        <AutoCompleteTextView
-            android:id="@+id/etaanimale"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:background="@drawable/trasparenza"
-            android:fontFamily="@font/coustard"
-            android:inputType="text"
-            android:paddingLeft="14dp"
-            android:paddingRight="14dp"
-            android:textColorHint="#AE8E87"
-            android:textSize="18sp"
-            android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_chip"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="350dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:hint="@string/chip"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:endIconMode="clear_text"
-        app:errorEnabled="true"
-        app:helperTextTextColor="@color/black"
-        app:hintTextColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_eta">
-
-
-        <AutoCompleteTextView
-            android:id="@+id/chipanimale"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:background="@drawable/trasparenza"
-            android:fontFamily="@font/coustard"
-            android:inputType="text"
-            android:paddingLeft="14dp"
-            android:paddingRight="14dp"
-            android:textColorHint="#AE8E87"
-            android:textSize="18sp"
-            android:visibility="visible"
-            tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/caricamentoanimale"
@@ -387,7 +347,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_chip" />
+        app:layout_constraintTop_toBottomOf="@id/chip_animale" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

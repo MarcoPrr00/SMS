@@ -2882,6 +2882,7 @@ id aligned
 id all
 id allStates
 id always
+id animali_item
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -2942,7 +2943,7 @@ id checkbox_ente
 id checkbox_utentetradizionale
 id checkbox_veterinario
 id checked
-id chipanimale
+id chip_animale
 id chronometer
 id circle_center
 id clear_text
@@ -3013,7 +3014,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id etaanimale
+id eta_animale
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3187,6 +3188,7 @@ id noScroll
 id noState
 id nome
 id nome_animale
+id nome_item
 id nomecognome
 id none
 id normal
@@ -3204,7 +3206,8 @@ id outline
 id outward
 id overshoot
 id packed
-id padroneanimale
+id padrone_animale
+id padrone_item
 id parallax
 id parent
 id parentPanel
@@ -3224,7 +3227,7 @@ id pooling_container_listener_holder_tag
 id position
 id post
 id postLayout
-id preferenzaciboanimale
+id preferenza_animale
 id pressed
 id profileEnte
 id profileVet
@@ -3244,7 +3247,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id saluteanimale
+id salute_animale
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3271,7 +3274,7 @@ id segnalazioni_item
 id select_dialog_listview
 id selected
 id selection_type
-id sessoanimale
+id sesso_animale
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3291,6 +3294,7 @@ id spacer
 id special_effects_controller_view_tag
 id specie
 id specie_animale
+id specie_item
 id spinner_tipologia
 id spline
 id split_action_bar
@@ -3309,7 +3313,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id status_bar_latest_event_content
-id sterilizzazioneanimale
+id sterilizzazione_animale
 id stop
 id stretch
 id submenuarrow
@@ -3340,18 +3344,9 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id text_chip
-id text_eta
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_nomeanimale
-id text_padrone
-id text_preferenza
-id text_salute
-id text_sesso
-id text_specie
-id text_sterilizzazione
 id text_view_name
 id textinput_counter
 id textinput_error
@@ -3558,6 +3553,7 @@ layout activity_post
 layout activity_register
 layout activity_start
 layout activity_update
+layout animal_item
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4070,6 +4066,8 @@ string icon_content_description
 string image
 string imagenuova
 string imieianimali
+string immag
+string immagine
 string invia_segnalazione
 string item_view_role_description
 string items
@@ -4177,12 +4175,14 @@ string new_pet_bluetooth__option
 string new_pet_bluetooth_option
 string nome
 string nome_animale
+string nomeanimal
 string nomeanimale
 string nuovaSegnalazione
 string nuovo
 string nuovoamicotranoi
 string nuovoanimale
 string padrone
+string padronea
 string password
 string password_toggle_content_description
 string passwordutenteamico
@@ -4200,6 +4200,7 @@ string se_non_sei_registrato_clicca_qui
 string search_menu_title
 string segui
 string sesso_animale_text
+string specie
 string status_bar_notification_info_overflow
 string sterilizzazione
 string tastopercaricamento

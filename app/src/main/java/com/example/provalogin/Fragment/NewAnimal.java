@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,15 +37,7 @@ public class NewAnimal extends Fragment {
 
     public static ImageView immaginedacaricare;
     FloatingActionButton nuovaimmagine;
-    TextInputLayout text_nomeanimale;
-    TextInputLayout text_specie;
-    TextInputLayout text_sesso;
-    TextInputLayout text_padrone;
-    TextInputLayout text_preferenza;
-    TextInputLayout text_salute;
-    TextInputLayout text_sterilizzazione;
-    TextInputLayout text_eta;
-    TextInputLayout text_chip;
+    EditText nome_animale, specie_animale, sesso_animale, padrone_animale, preferenza_animale, salute_animale, sterilizzazione_animale, eta_animale, chip_animale;
 
     FirebaseDatabase database;
     DatabaseReference reference;
@@ -73,27 +66,27 @@ public class NewAnimal extends Fragment {
        super.onViewCreated(view, savedInstanceState);
 
        //reference
-        text_nomeanimale = view.findViewById(R.id.text_nomeanimale);
-        text_chip = view.findViewById(R.id.text_chip);
-        text_eta = view.findViewById(R.id.text_eta);
-        text_padrone = view.findViewById(R.id.text_padrone);
-        text_preferenza = view.findViewById(R.id.text_preferenza);
-        text_salute = view.findViewById(R.id.text_salute);
-        text_sesso = view.findViewById(R.id.text_sesso);
-        text_specie = view.findViewById(R.id.text_specie);
-        text_sterilizzazione = view.findViewById(R.id.text_sterilizzazione);
+        nome_animale = view.findViewById(R.id.nome_animale);
+        chip_animale = view.findViewById(R.id.chip_animale);
+        eta_animale = view.findViewById(R.id.eta_animale);
+        padrone_animale = view.findViewById(R.id.padrone_animale);
+        preferenza_animale = view.findViewById(R.id.preferenza_animale);
+        salute_animale = view.findViewById(R.id.salute_animale);
+        sesso_animale = view.findViewById(R.id.sesso_animale);
+        specie_animale = view.findViewById(R.id.specie_animale);
+        sterilizzazione_animale = view.findViewById(R.id.sterilizzazione_animale);
 
         //scelta del sesso dell'animale
-       final String[] sessoa = getResources().getStringArray(R.array.sessoa);
+      /* final String[] sessoa = getResources().getStringArray(R.array.sessoa);
        ArrayAdapter<String> sessoAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sessoa);
-       AutoCompleteTextView addGender = view.findViewById(R.id.sessoanimale);
-       addGender.setAdapter(sessoAdapter);
+       AutoCompleteTextView addGender = view.findViewById(R.id.sesso_animale);
+       addGender.setAdapter(sessoAdapter);*/
 
        //scelta del boolean relativo alla sterilizzazione dell'animale
-       final String[] sterilizzazione = getResources().getStringArray(R.array.sterilizzazioneanimale);
+      /* final String[] sterilizzazione = getResources().getStringArray(R.array.sterilizzazioneanimale);
        ArrayAdapter<String> sterilizzazioneAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sterilizzazione);
-       AutoCompleteTextView addSterilization = view.findViewById(R.id.sterilizzazioneanimale);
-       addSterilization.setAdapter(sterilizzazioneAdapter);
+       AutoCompleteTextView addSterilization = view.findViewById(R.id.sterilizzazione_animale);
+       addSterilization.setAdapter(sterilizzazioneAdapter);*/
 
 
     /*Definire il processo per inserire una immagine animale da telefono*/
@@ -108,15 +101,15 @@ public class NewAnimal extends Fragment {
         {
             @Override
             public void onClick (View view){
-                String nome = text_nomeanimale.getEditText().getText().toString();
-                String eta = text_eta.getEditText().getText().toString();
-                String chip = text_chip.getEditText().getText().toString();
-                String padrone = text_padrone.getEditText().getText().toString();
-                String preferenza = text_preferenza.getEditText().getText().toString();
-                String sesso = text_sesso.getEditText().getText().toString();
-                String specie = text_specie.getEditText().getText().toString();
-                String sterilizzazione = text_sterilizzazione.getEditText().getText().toString();
-                String salute = text_salute.getEditText().getText().toString();
+                String nome = nome_animale.getText().toString();
+                String eta = eta_animale.getText().toString();
+                String chip = chip_animale.getText().toString();
+                String padrone = padrone_animale.getText().toString();
+                String preferenza = preferenza_animale.getText().toString();
+                String sesso = sesso_animale.getText().toString();
+                String specie = specie_animale.getText().toString();
+                String sterilizzazione = sterilizzazione_animale.getText().toString();
+                String salute = salute_animale.getText().toString();
 
                 //mettere dialog se dati sono corretti
 

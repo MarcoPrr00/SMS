@@ -79,6 +79,8 @@
     <string name="image">TODO</string>
     <string name="imagenuova">TODO</string>
     <string name="imieianimali">I Miei Animali</string>
+    <string name="immag">TODO</string>
+    <string name="immagine">immagine</string>
     <string name="invia_segnalazione">Invia Segnalazione</string>
     <string name="items">Tipologia Utente</string>
     <string name="log">TODO</string>
@@ -89,12 +91,14 @@
     <string name="new_pet_bluetooth_option">Nuovo animale con Bluetooth</string>
     <string name="nome">Nome</string>
     <string name="nome_animale">Nome Animale</string>
+    <string name="nomeanimal">Nome</string>
     <string name="nomeanimale">Nome Animale</string>
     <string name="nuovaSegnalazione">Nuova Segnalazione</string>
     <string name="nuovo">nuovo</string>
     <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>
     <string name="nuovoanimale">nuovoanimale</string>
     <string name="padrone">Padrone Animale</string>
+    <string name="padronea">Padrone</string>
     <string name="password">Password</string>
     <string name="passwordutenteamico">Password</string>
     <string name="posizione">Posizione</string>
@@ -106,6 +110,7 @@
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato? Clicca qui!</string>
     <string name="segui">segui</string>
     <string name="sesso_animale_text">Sesso</string>
+    <string name="specie">Specie</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
     <string name="todo">TODO</string>

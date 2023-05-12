@@ -63,6 +63,11 @@
     <string name="eta">Eta Animale</string>
     <string name="Conferma">Conferma Dati</string>
     <string name="added">Animale Aggiunto!</string>
+    <string name="nomeanimal">Nome</string>
+    <string name="specie">Specie</string>
+    <string name="padronea">Padrone</string>
+    <string name="immag">TODO</string>
+    <string name="immagine">immagine</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>
