@@ -10,6 +10,8 @@ import android.content.SharedPreferences;
 import android.view.MenuItem;
 
 import com.example.provalogin.Fragment.HomeVeterinarioFragment;
+import com.example.provalogin.Fragment.InCaricoVeterinarioFragment;
+import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
 import com.example.provalogin.Fragment.PetsVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileVeterinarioFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -34,15 +36,15 @@ public class HomeVeterinarioActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
                 case R.id.homeVet:
-                    selectedFragment= new HomeVeterinarioFragment();
+                    selectedFragment= new PerTeVeterinarioFragment();
+                    break;
+                case R.id.inCaricoVet:
+                    selectedFragment= new InCaricoVeterinarioFragment();
                     break;
                 case R.id.petsVet:
                     selectedFragment= new PetsVeterinarioFragment();
                     break;
                 case R.id.profileVet:
-                    SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
-                    editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
-                    editor.apply();
                     selectedFragment= new ProfileVeterinarioFragment();
                     break;
             }

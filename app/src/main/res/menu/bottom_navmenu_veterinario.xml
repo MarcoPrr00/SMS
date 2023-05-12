@@ -2,8 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Home"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/icon_segnalazioni"
         android:id="@+id/homeVet"/>
+
+    <item android:title="In Carico"
+        android:icon="@drawable/icon_star"
+        android:id="@+id/inCaricoVet"/>
 
     <item android:title="Pets"
         android:icon="@drawable/ax"

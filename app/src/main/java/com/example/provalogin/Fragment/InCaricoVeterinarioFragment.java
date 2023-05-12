@@ -28,7 +28,7 @@ import com.google.firebase.database.Query;
 import java.util.ArrayList;
 import java.util.List;
 
-public class InCaricoVeterinarioFragment extends Fragment {
+public class  InCaricoVeterinarioFragment extends Fragment {
 
     private RecyclerView recyclerView;
     //ANIMALE ADAPTER
