@@ -2654,6 +2654,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add_icon
+drawable akwhitelogo
 drawable avatar
 drawable avd_hide_password
 drawable avd_show_password
@@ -2792,6 +2793,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable profilebkg
 drawable prova1
 drawable prova2
 drawable provasfondo
@@ -2800,6 +2802,7 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable trasparenza
+drawable white_background
 font architects_daughter
 font coustard
 id ALT
@@ -3005,6 +3008,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editButton
 id edit_query
 id elastic
 id email
@@ -3107,6 +3111,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id log
@@ -3228,7 +3233,12 @@ id post
 id postLayout
 id preferenza_animale
 id pressed
+id profileEmail
 id profileEnte
+id profileImg
+id profileName
+id profilePassword
+id profileUsername
 id profileVet
 id progress_circular
 id progress_horizontal
@@ -3357,6 +3367,8 @@ id time
 id tipologia
 id title
 id titleDividerNoCustom
+id titleName
+id titleUsername
 id title_template
 id toggle
 id toolbar

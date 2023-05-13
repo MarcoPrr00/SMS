@@ -19,6 +19,7 @@ color purple_700
 color white
 drawable a
 drawable add_icon
+drawable akwhitelogo
 drawable avatar
 drawable ax
 drawable b
@@ -42,11 +43,13 @@ drawable img_1
 drawable img_3
 drawable l
 drawable logo
+drawable profilebkg
 drawable prova1
 drawable prova2
 drawable provasfondo
 drawable search_background
 drawable trasparenza
+drawable white_background
 font architects_daughter
 font coustard
 id add_qr_code_pet
@@ -73,6 +76,7 @@ id chip_animale
 id close
 id container
 id description
+id editButton
 id email
 id end
 id eta_animale
@@ -103,6 +107,7 @@ id insert_password_address
 id insertname
 id inspass
 id layout_button
+id linearLayout
 id log
 id login
 id mieianimali_recyclerview
@@ -123,7 +128,12 @@ id petsEnte
 id petsVet
 id post
 id preferenza_animale
+id profileEmail
 id profileEnte
+id profileImg
+id profileName
+id profilePassword
+id profileUsername
 id profileVet
 id recycler_view
 id recycler_view_incarico
@@ -146,6 +156,8 @@ id testo
 id textView
 id text_view_name
 id tipologia
+id titleName
+id titleUsername
 id toolbar
 id txt_città
 id txt_descrizione
