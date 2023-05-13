@@ -3,6 +3,8 @@ package com.example.provalogin.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -10,18 +12,58 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.provalogin.Model.Segnalazioni;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class  ProfileVeterinarioFragment extends Fragment {
 
+    FirebaseAuth dbAuth = FirebaseAuth.getInstance();
+    Query query;
+    private List<Utente> nUser = new ArrayList<Utente>();
     TextView profileNameVeterinario, profileEmailVeterinario, profileUsernameVeterinario,profilePasswordVeterinario;
     TextView titleName, titleUsername;
 
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            nUser.clear();
+
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Utente user = snapshot.getValue(Utente.class);
+                    nUser.add(user);
+                }
+                showUserData();
+            }
+
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override
@@ -36,20 +78,22 @@ public class  ProfileVeterinarioFragment extends Fragment {
         titleName = view.findViewById(R.id.titleName);
         titleUsername = view.findViewById(R.id.titleUsername);
 
-        showUserData();
+        String userId = dbAuth.getCurrentUser().getUid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+        query = database.getReference().child("Users").orderByChild("Id").equalTo(userId);
+        query.addValueEventListener(valueEventListener);
         return view;
     }
 
     public void showUserData(){
-        Intent intent = getActivity().getIntent();
 
-        String nameUser = intent.getStringExtra("Name");
-        String emailUser = intent.getStringExtra("email");
-        String usernameUser = intent.getStringExtra("username");
-        String passwordUser = intent.getStringExtra("password");
+        String nameUser = nUser.get(0).Nome;
+        String emailUser = nUser.get(0).Email;
+        String usernameUser = nUser.get(0).Cognome;
+        String passwordUser = nUser.get(0).Password;
 
-        titleName.setText(nameUser);
-        titleUsername.setText(usernameUser);
+        titleName.setText(nameUser+" "+usernameUser);
+        titleUsername.setText(emailUser);
         profileNameVeterinario.setText(nameUser);
         profileEmailVeterinario.setText(emailUser);
         profileUsernameVeterinario.setText(usernameUser);

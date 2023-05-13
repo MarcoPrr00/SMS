@@ -93,7 +93,7 @@ public class PerTeVeterinarioFragment extends Fragment {
             public void onClick(View v) {
 
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .add(R.id.fragmentContainerVeterinario, new NuovaSegnalazioneFragment()).commit();
+                        .add(R.id.fragment_container_ente, new NuovaSegnalazioneFragment()).commit();
                 floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
 
             }

@@ -1384,6 +1384,10 @@
         "source": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\baseline_qr_code_scanner_black_48.png"
     },
     {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout_fragment_profile_veterinario.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout/fragment_profile_veterinario.xml"
+    },
+    {
         "merged": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_flight_land_black_18dp.png.flat",
         "source": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_flight_land_black_18dp.png"
     },
@@ -2234,10 +2238,6 @@
     {
         "merged": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_perm_identity_black_24dp.png.flat",
         "source": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_identity_black_24dp.png"
-    },
-    {
-        "merged": "com.example.provalogin.app-merged_res-47:/layout_fragment_home_veterinario.xml.flat",
-        "source": "com.example.provalogin.app-main-49:/layout/fragment_home_veterinario.xml"
     },
     {
         "merged": "C:\\Users\\stefa\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_provasfondo.jpg.flat",
