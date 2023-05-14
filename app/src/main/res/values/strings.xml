@@ -68,6 +68,8 @@
     <string name="padronea">Padrone</string>
     <string name="immag">TODO</string>
     <string name="immagine">immagine</string>
+    <string name="tipo_segnalazione">Tipo segnalazione</string>
+    <string name="destinatari">Destinatari</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>

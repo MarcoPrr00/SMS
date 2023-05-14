@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -16,6 +17,7 @@ import com.example.provalogin.Adapter.SegnalazioniAdapter;
 ;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.R;
+import com.example.provalogin.Recycler.RecyclerItemClickListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -66,9 +68,11 @@ public class PerTeVeterinarioFragment extends Fragment {
 
 
         recyclerView = view.findViewById(R.id.recycler_view_veterinario);
+        floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);
+
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setVisibility(View.VISIBLE);
+        rendiVisibileView();
 
         mSegnalazioni = new ArrayList<>();
         segnalazioniAdapter = new SegnalazioniAdapter(this.getContext(), mSegnalazioni);
@@ -85,21 +89,47 @@ public class PerTeVeterinarioFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        rendiVisibileView();
 
-        recyclerView.setVisibility(View.VISIBLE);
-        floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);
-        floatingButtonNuovaSegnalazione.setVisibility(View.VISIBLE);
+        //BOTTONE NUOVA SEGNALAZIONE
         floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                recyclerView.setVisibility(View.INVISIBLE);
+                rendiInvisibileView();
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment()).commit();
-                floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
+
 
             }
         });
 
+        //CLICK ITEM RECYCLERVIEW
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        rendiInvisibileView();
+                        Segnalazioni tmp = mSegnalazioni.get(position);
+                        getActivity().getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.fragment_container_per_te, new DettagliSegnalazioniFragment(tmp)).commit();
+
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                })
+        );
+
+    }
+
+    private void rendiVisibileView(){
+        recyclerView.setVisibility(View.VISIBLE);
+        floatingButtonNuovaSegnalazione.setVisibility(View.VISIBLE);
+    }
+
+    private void rendiInvisibileView(){
+        recyclerView.setVisibility(View.INVISIBLE);
+        floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
     }
 
 

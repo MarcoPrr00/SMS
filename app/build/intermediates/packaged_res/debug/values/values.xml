@@ -61,6 +61,7 @@
     <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
     <string name="descrizione">Descrizione</string>
+    <string name="destinatari">Destinatari</string>
     <string name="email">Email</string>
     <string name="emailutente">Email</string>
     <string name="ente">Ente</string>
@@ -113,6 +114,7 @@
     <string name="specie">Specie</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
+    <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="todo">TODO</string>
     <string name="todoy">TODO</string>
     <string name="type_null">tipo nullo</string>

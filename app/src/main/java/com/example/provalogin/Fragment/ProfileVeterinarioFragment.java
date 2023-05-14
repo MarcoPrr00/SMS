@@ -11,12 +11,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,6 +37,7 @@ public class  ProfileVeterinarioFragment extends Fragment {
     FirebaseAuth dbAuth = FirebaseAuth.getInstance();
     Query query;
     private List<Utente> nUser = new ArrayList<Utente>();
+    ImageView profileImg;
     TextView profileNameVeterinario, profileEmailVeterinario, profileUsernameVeterinario,profilePasswordVeterinario;
     TextView titleName, titleUsername;
 
@@ -81,6 +84,7 @@ public class  ProfileVeterinarioFragment extends Fragment {
         profilePasswordVeterinario = view.findViewById(R.id.profilePassword);
         titleName = view.findViewById(R.id.titleName);
         titleUsername = view.findViewById(R.id.titleUsername);
+        profileImg= view.findViewById(R.id.profileImg);
 
         String userId = dbAuth.getCurrentUser().getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -95,14 +99,14 @@ public class  ProfileVeterinarioFragment extends Fragment {
         String emailUser = nUser.get(0).Email;
         String usernameUser = nUser.get(0).Cognome;
         String passwordUser = nUser.get(0).Password;
-        /*
+
         StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(nUser.get(0).ImgUrl);
         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                Glide.with(mCtx).load(uri).into(holder.image_profile);
+                Glide.with(getContext()).load(uri).into(profileImg);
             }
-        });*/
+        });
 
         titleName.setText(nameUser+" "+usernameUser);
         titleUsername.setText(emailUser);

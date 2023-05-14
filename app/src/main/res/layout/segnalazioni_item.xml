@@ -60,7 +60,9 @@
             android:layout_toRightOf="@+id/img1"
             android:text="Tipo Segnalazione"
             android:textColor="#000"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="italic"
+            />
 
 
     </RelativeLayout>

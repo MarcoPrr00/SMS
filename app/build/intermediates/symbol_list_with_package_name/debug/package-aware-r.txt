@@ -2987,6 +2987,12 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id dettagli_segnalazione_button
+id dettagli_segnalazione_checkbox_ente
+id dettagli_segnalazione_checkbox_utentetradizionale
+id dettagli_segnalazione_checkbox_veterinario
+id dettagli_segnalazione_checkboxes
+id dettagli_segnalazioni
 id dialog_button
 id dimensions
 id direct
@@ -3084,6 +3090,7 @@ id image_view_update
 id img
 id img1
 id imgUpdate
+id img_dettagli_segnalazioni
 id immediateStop
 id inCarico
 id inCaricoVet
@@ -3387,6 +3394,9 @@ id transition_transform
 id triangle
 id txt_città
 id txt_descrizione
+id txt_dettagli_segnalazione_descrizone
+id txt_dettagli_segnalazione_posizione
+id txt_dettagli_segnalazione_tipologia
 id txt_email
 id txt_login
 id txt_posizione
@@ -3586,6 +3596,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dropdown_scelta
+layout fragment_dettagli_segnalazioni
 layout fragment_favorietes
 layout fragment_home
 layout fragment_home_ente
@@ -4042,6 +4053,7 @@ string copy_toast_msg
 string default_web_client_id
 string define_zxingandroidembedded
 string descrizione
+string destinatari
 string email
 string emailutente
 string ente
@@ -4217,6 +4229,7 @@ string specie
 string status_bar_notification_info_overflow
 string sterilizzazione
 string tastopercaricamento
+string tipo_segnalazione
 string todo
 string todoy
 string type_null
