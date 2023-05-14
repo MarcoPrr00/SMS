@@ -2798,6 +2798,7 @@ drawable prova1
 drawable prova2
 drawable provasfondo
 drawable search_background
+drawable sfondo_profili
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3041,6 +3042,7 @@ id forever
 id fragmentContainerVeterinario
 id fragment_container
 id fragment_container_ente
+id fragment_container_per_te
 id fragment_container_view_tag
 id frost
 id fullscreen_header

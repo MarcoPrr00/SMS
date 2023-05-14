@@ -64,10 +64,11 @@ public class PerTeVeterinarioFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
 
+
         recyclerView = view.findViewById(R.id.recycler_view_veterinario);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
+        recyclerView.setVisibility(View.VISIBLE);
 
         mSegnalazioni = new ArrayList<>();
         segnalazioniAdapter = new SegnalazioniAdapter(this.getContext(), mSegnalazioni);
@@ -85,15 +86,15 @@ public class PerTeVeterinarioFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
+        recyclerView.setVisibility(View.VISIBLE);
         floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);
         floatingButtonNuovaSegnalazione.setVisibility(View.VISIBLE);
         floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                recyclerView.setVisibility(View.INVISIBLE);
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .add(R.id.fragment_container_ente, new NuovaSegnalazioneFragment()).commit();
+                        .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment()).commit();
                 floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
 
             }

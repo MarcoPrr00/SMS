@@ -1,6 +1,7 @@
 package com.example.provalogin.Fragment;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
@@ -22,6 +24,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,6 +95,14 @@ public class  ProfileVeterinarioFragment extends Fragment {
         String emailUser = nUser.get(0).Email;
         String usernameUser = nUser.get(0).Cognome;
         String passwordUser = nUser.get(0).Password;
+        /*
+        StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(nUser.get(0).ImgUrl);
+        storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(mCtx).load(uri).into(holder.image_profile);
+            }
+        });*/
 
         titleName.setText(nameUser+" "+usernameUser);
         titleUsername.setText(emailUser);

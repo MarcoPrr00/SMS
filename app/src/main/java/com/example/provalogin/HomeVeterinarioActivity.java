@@ -28,7 +28,7 @@ public class HomeVeterinarioActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerVeterinario,
-                new HomeVeterinarioFragment()).commit();
+                new PerTeVeterinarioFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
