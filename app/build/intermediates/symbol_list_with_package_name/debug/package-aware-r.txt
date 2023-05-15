@@ -2661,6 +2661,7 @@ drawable avd_show_password
 drawable ax
 drawable b
 drawable border
+drawable brown_border
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2699,8 +2700,11 @@ drawable fab_bg_normal
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_add_24
+drawable ic_baseline_email_24
 drawable ic_baseline_home_24
+drawable ic_baseline_lock_24
 drawable ic_baseline_person_24
+drawable ic_baseline_person_pin_24
 drawable ic_clock_black_24dp
 drawable ic_close
 drawable ic_favorites
@@ -2798,6 +2802,7 @@ drawable prova1
 drawable prova2
 drawable provasfondo
 drawable search_background
+drawable sfondo_definitivo
 drawable sfondo_profili
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3016,6 +3021,10 @@ id easeInOut
 id easeOut
 id east
 id editButton
+id editCognome
+id editEmail
+id editName
+id editPassword
 id edit_query
 id elastic
 id email
@@ -3050,6 +3059,7 @@ id fragment_container
 id fragment_container_animali
 id fragment_container_ente
 id fragment_container_per_te
+id fragment_container_profilo_veterinario
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3268,6 +3278,7 @@ id right_side
 id rounded
 id row_index_key
 id salute_animale
+id saveButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3609,6 +3620,7 @@ layout fragment_home
 layout fragment_home_ente
 layout fragment_home_veterinario
 layout fragment_in_carico_veterinario
+layout fragment_modifica_profilo_veterinario
 layout fragment_newanimal
 layout fragment_nuova_segnalazione
 layout fragment_per_te_veterinario

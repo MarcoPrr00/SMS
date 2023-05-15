@@ -24,10 +24,14 @@ drawable avatar
 drawable ax
 drawable b
 drawable border
+drawable brown_border
 drawable c
 drawable ic_baseline_add_24
+drawable ic_baseline_email_24
 drawable ic_baseline_home_24
+drawable ic_baseline_lock_24
 drawable ic_baseline_person_24
+drawable ic_baseline_person_pin_24
 drawable ic_close
 drawable ic_favorites
 drawable ic_home
@@ -48,6 +52,7 @@ drawable prova1
 drawable prova2
 drawable provasfondo
 drawable search_background
+drawable sfondo_definitivo
 drawable sfondo_profili
 drawable trasparenza
 drawable white_background
@@ -83,6 +88,10 @@ id dettagli_segnalazione_checkbox_veterinario
 id dettagli_segnalazione_checkboxes
 id dettagli_segnalazioni
 id editButton
+id editCognome
+id editEmail
+id editName
+id editPassword
 id email
 id end
 id eta_animale
@@ -91,6 +100,7 @@ id fragment_container
 id fragment_container_animali
 id fragment_container_ente
 id fragment_container_per_te
+id fragment_container_profilo_veterinario
 id homeEnte
 id homeVet
 id ic_favorites
@@ -150,6 +160,7 @@ id recycler_view_incarico
 id recycler_view_veterinario
 id register
 id salute_animale
+id saveButton
 id searchbar
 id segnalazione_checkboxes
 id segnalazioni
@@ -206,6 +217,7 @@ layout fragment_home
 layout fragment_home_ente
 layout fragment_home_veterinario
 layout fragment_in_carico_veterinario
+layout fragment_modifica_profilo_veterinario
 layout fragment_newanimal
 layout fragment_nuova_segnalazione
 layout fragment_per_te_veterinario

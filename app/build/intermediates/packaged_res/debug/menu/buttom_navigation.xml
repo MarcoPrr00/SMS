@@ -3,7 +3,7 @@
     <item
         android:id="@+id/segnalazioni"
         android:icon="@drawable/icon_segnalazioni"
-        android:title="Segnalazione"/>
+        android:title="Segnalazioni"/>
     <item
         android:id="@+id/ic_search"
         android:icon="@drawable/ic_search"

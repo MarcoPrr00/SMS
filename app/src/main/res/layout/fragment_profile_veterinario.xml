@@ -6,14 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sfondo_profili"
-    tools:context=".Fragment.ProfileVeterinarioFragment">
-
+    tools:context=".Fragment.ProfileVeterinarioFragment"
+    android:id="@+id/fragment_container_profilo_veterinario">
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/profileImg"
         android:layout_marginTop="30dp"
-        android:src="@drawable/akwhitelogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -194,7 +193,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"/>
 
+
         </LinearLayout>
+
 
     </LinearLayout>
 

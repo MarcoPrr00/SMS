@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,6 +41,8 @@ public class  ProfileVeterinarioFragment extends Fragment {
     ImageView profileImg;
     TextView profileNameVeterinario, profileEmailVeterinario, profileUsernameVeterinario,profilePasswordVeterinario;
     TextView titleName, titleUsername;
+
+    Button modificaProfilo;
 
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
@@ -85,6 +88,17 @@ public class  ProfileVeterinarioFragment extends Fragment {
         titleName = view.findViewById(R.id.titleName);
         titleUsername = view.findViewById(R.id.titleUsername);
         profileImg= view.findViewById(R.id.profileImg);
+        modificaProfilo = view.findViewById(R.id.editButton);
+        rendiVisibile();
+        modificaProfilo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rendiInvisibile();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container_profilo_veterinario, new ModificaProfiloVeterinarioFragment(nUser.get(0))).commit();
+            }
+        });
+
 
         String userId = dbAuth.getCurrentUser().getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -114,5 +128,20 @@ public class  ProfileVeterinarioFragment extends Fragment {
         profileEmailVeterinario.setText(emailUser);
         profileUsernameVeterinario.setText(usernameUser);
         profilePasswordVeterinario.setText(passwordUser);
+
+    }
+
+    public void passUserData(){
+        String userId = dbAuth.getCurrentUser().getUid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+        query = database.getReference().child("Users").orderByChild("Id").equalTo(userId);
+
+    }
+
+    public void rendiInvisibile(){
+        modificaProfilo.setVisibility(View.INVISIBLE);
+    }
+    public  void rendiVisibile(){
+        modificaProfilo.setVisibility(View.VISIBLE);
     }
 }
