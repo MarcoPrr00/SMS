@@ -3047,6 +3047,7 @@ id floating
 id forever
 id fragmentContainerVeterinario
 id fragment_container
+id fragment_container_animali
 id fragment_container_ente
 id fragment_container_per_te
 id fragment_container_view_tag
@@ -3071,7 +3072,6 @@ id homeVet
 id honorRequest
 id horizontal_only
 id ic_favorites
-id ic_home
 id ic_profile
 id ic_search
 id icon
@@ -3223,7 +3223,6 @@ id outline
 id outward
 id overshoot
 id packed
-id padrone_animale
 id parallax
 id parent
 id parentPanel
@@ -3291,6 +3290,7 @@ id search_src_text
 id search_voice_btn
 id searchbar
 id segnalazione_checkboxes
+id segnalazioni
 id segnalazioni_item
 id select_dialog_listview
 id selected

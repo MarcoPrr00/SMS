@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/ic_home"
-        android:icon="@drawable/ic_home"
-        android:title="Home"/>
+        android:id="@+id/segnalazioni"
+        android:icon="@drawable/icon_segnalazioni"
+        android:title="Segnalazione"/>
     <item
         android:id="@+id/ic_search"
         android:icon="@drawable/ic_search"
@@ -14,7 +14,7 @@
         android:title="Preferiti"/>
     <item
         android:id="@+id/ic_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="Profilo"/>
+        android:icon="@drawable/a"
+        android:title="Animali"/>
 
 </menu>

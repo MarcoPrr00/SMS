@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/nome_item"
             android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
             android:layout_toEndOf="@+id/img1"
             android:text="@string/specie"
             android:textColor="#000"

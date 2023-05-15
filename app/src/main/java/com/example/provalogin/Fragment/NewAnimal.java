@@ -1,6 +1,7 @@
 package com.example.provalogin.Fragment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -19,17 +20,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
@@ -40,9 +45,9 @@ public class NewAnimal extends Fragment {
     FloatingActionButton nuovaimmagine;
     EditText nome_animale, specie_animale, padrone_animale, preferenza_animale, salute_animale, eta_animale, chip_animale, sesso_animale, sterilizzazione_animale;
 
-    FirebaseDatabase database;
+    FirebaseAuth auth;
     DatabaseReference reference;
-    FirebaseStorage storage;
+    String userid;
 
     public NewAnimal(){
 
@@ -51,6 +56,12 @@ public class NewAnimal extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        auth= FirebaseAuth.getInstance();
+        userid = auth.getCurrentUser().getUid();
+        String id = NewAnimal.generacodiceid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+        reference = database.getReference().child("Animals").child(id);
+
     }
 
     @Override
@@ -70,24 +81,12 @@ public class NewAnimal extends Fragment {
         nome_animale = view.findViewById(R.id.nome_animale);
         chip_animale = view.findViewById(R.id.chip_animale);
         eta_animale = view.findViewById(R.id.eta_animale);
-        padrone_animale = view.findViewById(R.id.padrone_animale);
+        //padrone_animale = view.findViewById(R.id.padrone_animale);
         preferenza_animale = view.findViewById(R.id.preferenza_animale);
         salute_animale = view.findViewById(R.id.salute_animale);
         sesso_animale = view.findViewById(R.id.sesso_animale);
         specie_animale = view.findViewById(R.id.specie_animale);
         sterilizzazione_animale = view.findViewById(R.id.sterilizzazione_animale);
-
-        //scelta del sesso dell'animale
-       /* final String[] sessoa = getResources().getStringArray(R.array.sessoa);
-       ArrayAdapter<String> sessoAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sessoa);
-       Spinner addGender = view.findViewById(R.id.sesso_animale);
-       addGender.setAdapter(sessoAdapter);*/
-
-       //scelta del boolean relativo alla sterilizzazione dell'animale
-      /* final String[] sterilizzazione = getResources().getStringArray(R.array.sterilizzazioneanimale);
-       ArrayAdapter<String> sterilizzazioneAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sterilizzazione);
-       String addSterilization = view.findViewById(R.id.sterilizzazione_animale);
-       addSterilization.setAdapter(sterilizzazioneAdapter);*/
 
 
     /*Definire il processo per inserire una immagine animale da telefono*/
@@ -102,20 +101,49 @@ public class NewAnimal extends Fragment {
         {
             @Override
             public void onClick (View view){
-                String nome = nome_animale.getText().toString();
-                String eta = eta_animale.getText().toString();
-                String chip = chip_animale.getText().toString();
-                String padrone = padrone_animale.getText().toString();
-                String preferenza = preferenza_animale.getText().toString();
-                String sesso = sesso_animale.getText().toString();
-                String specie = specie_animale.getText().toString();
-                String sterilizzazione = sterilizzazione_animale.getText().toString();
-                String salute = salute_animale.getText().toString();
+
+
+                String nomeanimale = nome_animale.getText().toString();
+                String etaanimale = eta_animale.getText().toString();
+                String chipanimale = chip_animale.getText().toString();
+                //String padrone = padrone_animale.getText().toString();
+                String preferenzacibo = preferenza_animale.getText().toString();
+                String sessoa = sesso_animale.getText().toString();
+                String specieanimale = specie_animale.getText().toString();
+                String sterilizzazioneanimale = sterilizzazione_animale.getText().toString();
+                String saluteanimale = salute_animale.getText().toString();
+
+                if(iscorrect(chipanimale)){
+                    HashMap<String, Object> hashMap = new HashMap<>();
+                    hashMap.put("nomeAnimale", nomeanimale);
+                    hashMap.put("eta", etaanimale);
+                    hashMap.put("chip", chipanimale);
+                    hashMap.put("padrone",userid);
+                    hashMap.put("preferenzaCibo", preferenzacibo);
+                    hashMap.put("sesso", sessoa);
+                    hashMap.put("specie",specieanimale);
+                    hashMap.put("sterilizzazione",sterilizzazioneanimale);
+                    hashMap.put("statoSalute",saluteanimale);
+
+                    Toast.makeText(getContext(), "caricamentoeffettuato", Toast.LENGTH_SHORT).show();
+
+
+                    reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            startActivity(new Intent(view.getContext(), HomeActivity.class));
+                        }
+                    });
+                }else{
+                    Toast.makeText(getContext(), "errore", Toast.LENGTH_SHORT).show();
+                }
+
+
 
                 //mettere dialog se dati sono corretti
 
 
-                caricamentoFirebase(nome, eta, chip, padrone, preferenza, sesso, specie, sterilizzazione, salute);
+               // caricamentoFirebase(nome, eta, chip, padrone, preferenza, sesso, specie, sterilizzazione, salute);
 
 
 
@@ -127,30 +155,7 @@ public class NewAnimal extends Fragment {
 
 
 
-    //caricamento dati animale su db firebase
-    private void caricamentoFirebase(String nomeanimale, String etaanimale, String chipanimale, String padroneanimale,
-                                  String preferenzacibo, String sessoa, String specieanimale, String sterilizzazioneanimale,
-                                  String saluteanimale){
-        String id = generacodiceid();
-        //String userid=firebaseUser.getUid();
-       // storage = FirebaseStorage.getInstance();
-       // StorageReference caricamento = storage.getReference("Animals").child(id);
-        //mettere immagine
-        Animal animal = new Animal(id, nomeanimale, etaanimale, chipanimale, padroneanimale, preferenzacibo, sessoa, specieanimale, sterilizzazioneanimale, saluteanimale);
-        database = FirebaseDatabase.getInstance();
-        reference = database.getReference("Animals");
-        reference.child(id).setValue(animal).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                Toast.makeText(getContext(), getResources().getString(R.string.added), Toast.LENGTH_SHORT).show();
-                Navigation.findNavController(requireView()).popBackStack(
-                        R.id.newanimal, true);
 
-
-            }
-        });
-
-    }
 
     public static String generacodiceid(){
         final String caratteri = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
@@ -165,7 +170,16 @@ public class NewAnimal extends Fragment {
     }
 
 
-   // private Boolean iscorrect(String etaanimale, String sessoanimale, String specieanimale, String sterilizzazioneanimale){
+   private Boolean iscorrect(String chipanimale){
 
-   // }
+       if (!chipanimale.isEmpty() && (chipanimale.length() > 12 || chipanimale.length() < 12)) {
+           chip_animale.requestFocus();
+           chip_animale.setError(getResources().getString(R.string.chip));
+           Toast.makeText(getContext(), getResources().getString(R.string.chip), Toast.LENGTH_SHORT).show();
+           return false;
+       } else {
+           chip_animale.setError(null);
+           return true;
+       }
+    }
 }//fineclass

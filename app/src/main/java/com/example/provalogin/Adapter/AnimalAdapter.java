@@ -49,8 +49,8 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
 
 
-        holder.nome_item.setText(animali.nome_animale);
-        holder.specie_item.setText(animali.specie_animale);
+        holder.nome_item.setText(animali.nomeAnimale);
+        holder.specie_item.setText(animali.specie);
 
 
 
@@ -73,7 +73,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
     static class AnimalViewHolder extends RecyclerView.ViewHolder{
         ImageView img;
-        TextView nome_item, specie_item, padrone;
+        TextView nome_item, specie_item;
 
         public AnimalViewHolder(@NonNull View itemView) {
             super(itemView);

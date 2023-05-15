@@ -75,7 +75,6 @@ id checkbox_utentetradizionale
 id checkbox_veterinario
 id chip_animale
 id close
-id container
 id description
 id dettagli_segnalazione_button
 id dettagli_segnalazione_checkbox_ente
@@ -89,12 +88,12 @@ id end
 id eta_animale
 id fragmentContainerVeterinario
 id fragment_container
+id fragment_container_animali
 id fragment_container_ente
 id fragment_container_per_te
 id homeEnte
 id homeVet
 id ic_favorites
-id ic_home
 id ic_profile
 id ic_search
 id imageAvatar
@@ -133,7 +132,6 @@ id nomecognome
 id nuovaimmagine
 id nuovoconbluetooth
 id nuovomanuale
-id padrone_animale
 id password
 id per_te_ente
 id petsEnte
@@ -154,6 +152,7 @@ id register
 id salute_animale
 id searchbar
 id segnalazione_checkboxes
+id segnalazioni
 id segnalazioni_item
 id sesso_animale
 id specie

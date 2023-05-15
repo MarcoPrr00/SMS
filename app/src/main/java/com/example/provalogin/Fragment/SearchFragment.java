@@ -55,32 +55,39 @@ public class SearchFragment extends Fragment {
 
         recyclerView.setAdapter(animalAdapter);
 
-        db= FirebaseDatabase.getInstance().getReference("Animals");
+        db = FirebaseDatabase.getInstance().getReference("Animals");
         db.addValueEventListener(valueEventListener);
+
 
        search_bar.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                readUsers();
                 searchUsers(charSequence.toString().toLowerCase());
             }
 
             @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                searchUsers(charSequence.toString().toLowerCase());
+                readUsers();
+            }
+
+            @Override
             public void afterTextChanged(Editable editable) {
+                readUsers();
+
 
             }
         });
 
         // Inflate the layout for this fragment
+
         return view;
     }
 
     private void searchUsers(String s){
-        Query query = db.orderByChild("Nome")
+        Query query = db.orderByChild("nomeAnimale")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
         query.addValueEventListener(valueEventListener);
@@ -89,7 +96,7 @@ public class SearchFragment extends Fragment {
     //lettura utenti
 
     private void readUsers (){
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Animals");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

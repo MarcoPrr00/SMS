@@ -35,7 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
-                case R.id.ic_home:
+                case R.id.segnalazioni:
                     selectedFragment= new HomeFragment();
                     break;
                 case R.id.ic_search:
