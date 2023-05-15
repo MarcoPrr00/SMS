@@ -106,10 +106,12 @@ id image_view_update
 id img
 id img1
 id imgUpdate
+id img_dettagli_animale
 id img_dettagli_segnalazioni
 id inCarico
 id inCaricoVet
 id in_carico_ente
+id inserire
 id insert
 id insert_email_address
 id insert_password_address
@@ -120,6 +122,7 @@ id linearLayout
 id log
 id login
 id mieianimali_recyclerview
+id modifica
 id motionLayout
 id name
 id newanimal
@@ -170,6 +173,9 @@ id titleUsername
 id toolbar
 id txt_città
 id txt_descrizione
+id txt_dettagli_nome
+id txt_dettagli_padrone
+id txt_dettagli_preferenza_cibo
 id txt_dettagli_segnalazione_descrizone
 id txt_dettagli_segnalazione_posizione
 id txt_dettagli_segnalazione_tipologia
@@ -194,6 +200,7 @@ layout activity_start
 layout activity_update
 layout animal_item
 layout dropdown_scelta
+layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
 layout fragment_favorietes
 layout fragment_home

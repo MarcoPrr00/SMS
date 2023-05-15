@@ -3090,6 +3090,7 @@ id image_view_update
 id img
 id img1
 id imgUpdate
+id img_dettagli_animale
 id img_dettagli_segnalazioni
 id immediateStop
 id inCarico
@@ -3098,6 +3099,7 @@ id in_carico_ente
 id included
 id indeterminate
 id info
+id inserire
 id insert
 id insert_email_address
 id insert_password_address
@@ -3153,6 +3155,7 @@ id message
 id middle
 id mieianimali_recyclerview
 id mini
+id modifica
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3394,6 +3397,9 @@ id transition_transform
 id triangle
 id txt_città
 id txt_descrizione
+id txt_dettagli_nome
+id txt_dettagli_padrone
+id txt_dettagli_preferenza_cibo
 id txt_dettagli_segnalazione_descrizone
 id txt_dettagli_segnalazione_posizione
 id txt_dettagli_segnalazione_tipologia
@@ -3596,6 +3602,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dropdown_scelta
+layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
 layout fragment_favorietes
 layout fragment_home

@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/newanimal"
-    android:background="#D2A472"
-    android:backgroundTint="#D2A472"
+    android:background="#ABF8D89D"
+    android:backgroundTint="#ABF8D89D"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NewAnimal">
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -63,14 +64,16 @@
         <EditText
             android:id="@+id/nome_animale"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:background="@drawable/trasparenza"
             android:fontFamily="@font/coustard"
             android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
             android:textColorHint="#AE8E87"
-            android:textCursorDrawable="@null"
+            android:visibility="visible"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:hint="@string/nome_animale"
             app:boxStrokeWidth="0dp"
@@ -82,8 +85,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nuovaimmagine"
-            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/img"
             tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
             android:importantForAutofill="no" />
 
@@ -91,12 +93,14 @@
         <EditText
             android:id="@+id/specie_animale"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:background="@drawable/trasparenza"
             android:fontFamily="@font/coustard"
             android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
             android:textColorHint="#AE8E87"
-            android:textCursorDrawable="@null"
+            android:visibility="visible"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
@@ -110,8 +114,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nome_animale"
-            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/nome_animale"
             tools:ignore="TextContrastCheck,SpeakableTextPresentCheck"
             android:importantForAutofill="no" />
 

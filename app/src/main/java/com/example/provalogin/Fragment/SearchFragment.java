@@ -2,6 +2,7 @@ package com.example.provalogin.Fragment;
 
 import android.os.Bundle;
 
+import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Animal;
 import com.google.firebase.database.DataSnapshot;
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -30,10 +32,9 @@ public class SearchFragment extends Fragment {
 
     private RecyclerView recyclerView;
 
-    private List<Animal> mUtente;
-    private UtenteAdapter adapter;
-    DatabaseReference dbUtente;
-
+    private AnimalAdapter animalAdapter;
+    private List<Animal> listAnimal;
+    DatabaseReference db;
     EditText search_bar;
 
     @Override
@@ -49,12 +50,13 @@ public class SearchFragment extends Fragment {
 
 
 
-        mUtente = new ArrayList<>();
-        adapter = new UtenteAdapter(this.getContext(), mUtente);
-        recyclerView.setAdapter(adapter);
-        dbUtente=FirebaseDatabase.getInstance().getReference("Animals");
-        dbUtente.addValueEventListener(valueEventListener);
+        listAnimal = new ArrayList<>();
+        animalAdapter = new AnimalAdapter(this.getContext(), listAnimal);
 
+        recyclerView.setAdapter(animalAdapter);
+
+        db= FirebaseDatabase.getInstance().getReference("Animals");
+        db.addValueEventListener(valueEventListener);
 
        search_bar.addTextChangedListener(new TextWatcher() {
             @Override
@@ -78,26 +80,26 @@ public class SearchFragment extends Fragment {
     }
 
     private void searchUsers(String s){
-        Query query = dbUtente.orderByChild("Nome")
+        Query query = db.orderByChild("Nome")
                 .startAt(s)
                 .endAt(s+"\uf8ff");
         query.addValueEventListener(valueEventListener);
     }
 
     //lettura utenti
-/*
+
     private void readUsers (){
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (search_bar.getText().toString().equals("")){
-                    mUsers.clear();
+                    listAnimal.clear();
                     for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                        User user = snapshot.getValue(User.class);
-                        mUsers.add(user);
+                        Animal animal = snapshot.getValue(Animal.class);
+                        listAnimal.add(animal);
                     }
-                    userAdapter.notifyDataSetChanged();
+                    animalAdapter.notifyDataSetChanged();
                 }
             }
 
@@ -107,17 +109,17 @@ public class SearchFragment extends Fragment {
             }
         });
     }
-*/
+
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
-            mUtente.clear();
+            listAnimal.clear();
             if (dataSnapshot.exists()) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Animal artist = snapshot.getValue(Animal.class);
-                    mUtente.add(artist);
+                    listAnimal.add(artist);
                 }
-                adapter.notifyDataSetChanged();
+                animalAdapter.notifyDataSetChanged();
             }
         }
 

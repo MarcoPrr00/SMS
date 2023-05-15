@@ -11,6 +11,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +38,7 @@ public class NewAnimal extends Fragment {
 
     public static ImageView immaginedacaricare;
     FloatingActionButton nuovaimmagine;
-    EditText nome_animale, specie_animale, sesso_animale, padrone_animale, preferenza_animale, salute_animale, sterilizzazione_animale, eta_animale, chip_animale;
+    EditText nome_animale, specie_animale, padrone_animale, preferenza_animale, salute_animale, eta_animale, chip_animale, sesso_animale, sterilizzazione_animale;
 
     FirebaseDatabase database;
     DatabaseReference reference;
@@ -77,15 +78,15 @@ public class NewAnimal extends Fragment {
         sterilizzazione_animale = view.findViewById(R.id.sterilizzazione_animale);
 
         //scelta del sesso dell'animale
-      /* final String[] sessoa = getResources().getStringArray(R.array.sessoa);
+       /* final String[] sessoa = getResources().getStringArray(R.array.sessoa);
        ArrayAdapter<String> sessoAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sessoa);
-       AutoCompleteTextView addGender = view.findViewById(R.id.sesso_animale);
+       Spinner addGender = view.findViewById(R.id.sesso_animale);
        addGender.setAdapter(sessoAdapter);*/
 
        //scelta del boolean relativo alla sterilizzazione dell'animale
       /* final String[] sterilizzazione = getResources().getStringArray(R.array.sterilizzazioneanimale);
        ArrayAdapter<String> sterilizzazioneAdapter = new ArrayAdapter<String>(requireContext(), R.layout.dropdown_scelta, sterilizzazione);
-       AutoCompleteTextView addSterilization = view.findViewById(R.id.sterilizzazione_animale);
+       String addSterilization = view.findViewById(R.id.sterilizzazione_animale);
        addSterilization.setAdapter(sterilizzazioneAdapter);*/
 
 
@@ -115,8 +116,7 @@ public class NewAnimal extends Fragment {
 
 
                 caricamentoFirebase(nome, eta, chip, padrone, preferenza, sesso, specie, sterilizzazione, salute);
-                                    /*bottomNavigationView.getMenu().findItem(R.id.homeFragment).setEnabled(false);
-                                    bottomNavigationView.getMenu().findItem(R.id.my_pet_nav_graph).setEnabled(false);*/
+
 
 
             }

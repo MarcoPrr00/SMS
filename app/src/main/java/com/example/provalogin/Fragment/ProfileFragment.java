@@ -17,7 +17,10 @@ import android.widget.TextView;
 import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.HomeActivity;
 import com.example.provalogin.Model.Animal;
+import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.R;
+import com.example.provalogin.Recycler.RecyclerItemClickListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -40,7 +43,7 @@ public class ProfileFragment extends Fragment {
     private AnimalAdapter animalAdapter;
     private List<Animal> listAnimal;
     DatabaseReference db;
-
+    FloatingActionButton inserire;
 
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimaleqrcode;
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimalebluetooth;
@@ -131,19 +134,57 @@ public class ProfileFragment extends Fragment {
         nuovoanimalemanualmente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .add(R.id.newanimal, new NuovaSegnalazioneFragment()).commit();
-                nuovoanimalemanualmente.setVisibility(View.INVISIBLE);
+              /*   getActivity().getSupportFragmentManager().beginTransaction()
+                        .add(R.id.newanimal, new NewAnimal()).commit();
+                nuovoanimalemanualmente.setVisibility(View.INVISIBLE);*/
 
 
-               /* Fragment fragment = new NewAnimal();
+               Fragment fragment = new NewAnimal();
                 FragmentTransaction transaction = getActivity()
                         .getSupportFragmentManager()
                         .beginTransaction();
-                transaction.replace(R.id.container, fragment).commit();*/
+                transaction.replace(R.id.container, fragment).commit();
             }
         });
+
+
+
+
+        //CLICK ITEM RECYCLERVIEW
+      /*  recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        rendiInvisibileView();
+                        Animal tmp = listAnimal.get(position);
+                      /*  getActivity().getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.fragment_container, new DettagliAnimale(tmp)).commit();*/
+
+                  /*  }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                })
+        );
+
+
+
+
+*/
+
+
+
     }
+   /* private void rendiVisibileView(){
+        recyclerView.setVisibility(View.VISIBLE);
+        inserire.setVisibility(View.VISIBLE);
+
+    }
+
+    private void rendiInvisibileView(){
+        recyclerView.setVisibility(View.INVISIBLE);
+        inserire.setVisibility(View.INVISIBLE);
+    }*/
     @Override
     public void onStart() {
         super.onStart();

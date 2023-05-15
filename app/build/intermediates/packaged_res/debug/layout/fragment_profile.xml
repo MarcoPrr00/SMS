@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.ProfileFragment">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -20,6 +21,7 @@
     </ScrollView>
 
     <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/inserire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
