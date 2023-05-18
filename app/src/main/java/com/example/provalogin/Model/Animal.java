@@ -4,7 +4,7 @@ package com.example.provalogin.Model;
 public class Animal {
 
 
-    public static String id;
+    public String id;
     public String nomeAnimale;
     private String eta;
     private String sesso;

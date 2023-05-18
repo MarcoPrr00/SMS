@@ -43,11 +43,10 @@ public class NewAnimal extends Fragment {
 
     public static ImageView immaginedacaricare;
     FloatingActionButton nuovaimmagine;
-    EditText nome_animale, specie_animale, padrone_animale, preferenza_animale, salute_animale, eta_animale, chip_animale, sesso_animale, sterilizzazione_animale;
-
+    EditText nomeAnimale, specie, padrone, preferenzaCibo, statoSalute, eta, chip, sesso, sterilizzazione;
     FirebaseAuth auth;
     DatabaseReference reference;
-    String userid;
+    String userid, id;
 
     public NewAnimal(){
 
@@ -57,8 +56,8 @@ public class NewAnimal extends Fragment {
 
         super.onCreate(savedInstanceState);
         auth= FirebaseAuth.getInstance();
-        userid = auth.getCurrentUser().getUid();
-        String id = NewAnimal.generacodiceid();
+        userid = auth.getCurrentUser().getUid(); //padrone
+        id = NewAnimal.generacodiceid(); //animale
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
         reference = database.getReference().child("Animals").child(id);
 
@@ -78,15 +77,15 @@ public class NewAnimal extends Fragment {
        super.onViewCreated(view, savedInstanceState);
 
        //reference
-        nome_animale = view.findViewById(R.id.nome_animale);
-        chip_animale = view.findViewById(R.id.chip_animale);
-        eta_animale = view.findViewById(R.id.eta_animale);
+        nomeAnimale = view.findViewById(R.id.nome_animale);
+        chip = view.findViewById(R.id.chip_animale);
+        eta = view.findViewById(R.id.eta_animale);
         //padrone_animale = view.findViewById(R.id.padrone_animale);
-        preferenza_animale = view.findViewById(R.id.preferenza_animale);
-        salute_animale = view.findViewById(R.id.salute_animale);
-        sesso_animale = view.findViewById(R.id.sesso_animale);
-        specie_animale = view.findViewById(R.id.specie_animale);
-        sterilizzazione_animale = view.findViewById(R.id.sterilizzazione_animale);
+        preferenzaCibo = view.findViewById(R.id.preferenza_animale);
+        statoSalute = view.findViewById(R.id.salute_animale);
+        sesso = view.findViewById(R.id.sesso_animale);
+        specie = view.findViewById(R.id.specie_animale);
+        sterilizzazione = view.findViewById(R.id.sterilizzazione_animale);
 
 
     /*Definire il processo per inserire una immagine animale da telefono*/
@@ -103,21 +102,22 @@ public class NewAnimal extends Fragment {
             public void onClick (View view){
 
 
-                String nomeanimale = nome_animale.getText().toString();
-                String etaanimale = eta_animale.getText().toString();
-                String chipanimale = chip_animale.getText().toString();
+                String nomeanimale = nomeAnimale.getText().toString();
+                String etaanimale = eta.getText().toString();
+                String chipanimale = chip.getText().toString();
                 //String padrone = padrone_animale.getText().toString();
-                String preferenzacibo = preferenza_animale.getText().toString();
-                String sessoa = sesso_animale.getText().toString();
-                String specieanimale = specie_animale.getText().toString();
-                String sterilizzazioneanimale = sterilizzazione_animale.getText().toString();
-                String saluteanimale = salute_animale.getText().toString();
+                String preferenzacibo = preferenzaCibo.getText().toString();
+                String sessoa = sesso.getText().toString();
+                String specieanimale = specie.getText().toString();
+                String sterilizzazioneanimale = sterilizzazione.getText().toString();
+                String saluteanimale = statoSalute.getText().toString();
 
                 if(iscorrect(chipanimale)){
                     HashMap<String, Object> hashMap = new HashMap<>();
                     hashMap.put("nomeAnimale", nomeanimale);
                     hashMap.put("eta", etaanimale);
                     hashMap.put("chip", chipanimale);
+                    hashMap.put("id",id);
                     hashMap.put("padrone",userid);
                     hashMap.put("preferenzaCibo", preferenzacibo);
                     hashMap.put("sesso", sessoa);
@@ -173,12 +173,12 @@ public class NewAnimal extends Fragment {
    private Boolean iscorrect(String chipanimale){
 
        if (!chipanimale.isEmpty() && (chipanimale.length() > 12 || chipanimale.length() < 12)) {
-           chip_animale.requestFocus();
-           chip_animale.setError(getResources().getString(R.string.chip));
+           chip.requestFocus();
+           chip.setError(getResources().getString(R.string.chip));
            Toast.makeText(getContext(), getResources().getString(R.string.chip), Toast.LENGTH_SHORT).show();
            return false;
        } else {
-           chip_animale.setError(null);
+           chip.setError(null);
            return true;
        }
     }

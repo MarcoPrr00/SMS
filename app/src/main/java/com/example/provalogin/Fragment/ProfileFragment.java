@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.provalogin.Adapter.AnimalAdapter;
 
@@ -35,8 +36,10 @@ import java.util.List;
 public class ProfileFragment extends Fragment {
 
     private RecyclerView recyclerView;
+
     private AnimalAdapter animalAdapter;
     FloatingActionButton inserire;
+
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimaleqrcode;
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimalebluetooth;
     com.getbase.floatingactionbutton.FloatingActionButton nuovoanimalemanualmente;
@@ -65,8 +68,8 @@ public class ProfileFragment extends Fragment {
             mAnimal.clear();
             if (dataSnapshot.exists()) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Animal animali = snapshot.getValue(Animal.class);
-                    mAnimal.add(animali);
+                    Animal animal = snapshot.getValue(Animal.class);
+                    mAnimal.add(animal);
                 }
                 animalAdapter.notifyDataSetChanged();
             }
@@ -87,8 +90,11 @@ public class ProfileFragment extends Fragment {
 
 
         recyclerView = view.findViewById(R.id.mieianimali_recyclerview);
+
         nuovoanimalemanualmente = view.findViewById(R.id.nuovomanuale);
         //inserire = view.findViewById(R.id.inserire);
+        String current = Animal.padrone;
+
 
 
             recyclerView.setHasFixedSize(true);
@@ -99,8 +105,11 @@ public class ProfileFragment extends Fragment {
             mAnimal = new ArrayList<>();
             animalAdapter = new AnimalAdapter(getContext(), mAnimal);
 
+//        if(current.equals(auth.getUid())) {
+
             recyclerView.setAdapter(animalAdapter);
 
+       // }
             db = FirebaseDatabase.getInstance().getReference("Animals").orderByChild("padrone").equalTo(userid);
             db.addValueEventListener(valueEventListener);
 

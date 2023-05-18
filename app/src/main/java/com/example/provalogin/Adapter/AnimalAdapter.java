@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,13 +14,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.provalogin.Model.Animal;
-import com.example.provalogin.Model.Segnalazioni;
-import com.example.provalogin.Model.Utente;
+
 import com.example.provalogin.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
+
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
@@ -28,6 +31,8 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
     final private Context mCtx;
     final private List<Animal> animalList;
+
+    FirebaseUser firebaseUser;
 
 
 
@@ -46,11 +51,38 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
     @Override
     public void onBindViewHolder(@NonNull AnimalAdapter.AnimalViewHolder holder, int position) {
         final Animal animali = animalList.get(position);
-
-
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        holder.btn_follow.setVisibility(View.VISIBLE);
 
         holder.nome_item.setText(animali.nomeAnimale);
         holder.specie_item.setText(animali.specie);
+
+        //visibilità del button
+       // holder.btn_follow.setVisibility(View.VISIBLE);
+
+        isFollowing(animali.id, holder.btn_follow);
+
+        holder.btn_follow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.btn_follow.getText().toString().equals("Follow")){
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
+                            .child("following").child(animali.id).setValue(true);
+
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animali.id)
+                            .child("followers").child(firebaseUser.getUid()).setValue(true);
+                } else {
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
+                            .child("following").child(animali.id).removeValue();
+
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animali.id)
+                            .child("followers").child(firebaseUser.getUid()).removeValue();
+                }
+            }
+        });
+
+
+
 
 
 
@@ -74,16 +106,39 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
     static class AnimalViewHolder extends RecyclerView.ViewHolder{
         ImageView img;
         TextView nome_item, specie_item;
+        static Button btn_follow;
 
         public AnimalViewHolder(@NonNull View itemView) {
             super(itemView);
             img = itemView.findViewById(R.id.img1);
             nome_item =  itemView.findViewById(R.id.nome_item);
             specie_item =  itemView.findViewById(R.id.specie_item);
+            btn_follow = itemView.findViewById(R.id.btn_follow);
 
         }
     }
 
+
+    private void isFollowing(String id, Button button){
+        DatabaseReference reference = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/").getReference()
+                .child("Follow").child(firebaseUser.getUid()).child("following");
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.child(id).exists()){
+                    button.setText("Following");
+                } else {
+                    button.setText("Follow");
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
 
 
 

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Animal;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,6 +21,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.provalogin.R;
@@ -31,11 +33,13 @@ import java.util.List;
 public class SearchFragment extends Fragment {
 
     private RecyclerView recyclerView;
+   // Button btn_follow;
 
     private AnimalAdapter animalAdapter;
     private List<Animal> listAnimal;
     DatabaseReference db;
     EditText search_bar;
+    //FirebaseAuth auth;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,6 +47,7 @@ public class SearchFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerView = view.findViewById(R.id.recycler_view);
+        //btn_follow = view.findViewById(R.id.btn_follow);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -96,7 +101,12 @@ public class SearchFragment extends Fragment {
     //lettura utenti
 
     private void readUsers (){
+
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Animals");
+        //String current = Animal.padrone;
+        //if(!current.equals(listAnimal.equals("padrone"))){
+            //foll.setVisibility(View.VISIBLE);
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
