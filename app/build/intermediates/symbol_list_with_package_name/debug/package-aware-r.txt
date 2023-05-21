@@ -2818,6 +2818,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id Name
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2916,6 +2917,7 @@ id bntAddImg
 id bottom
 id bottomNavigationView
 id bottom_ente
+id bottom_nav
 id bottom_navigation
 id bottom_navigation_ente
 id bounce
@@ -3021,6 +3023,8 @@ id easeInOut
 id easeOut
 id east
 id editButton
+id editButtonsalute
+id editButtonspese
 id editCognome
 id editEmail
 id editName
@@ -3060,7 +3064,9 @@ id fragment_container_animali
 id fragment_container_ente
 id fragment_container_per_te
 id fragment_container_profilo_veterinario
+id fragment_container_search
 id fragment_container_view_tag
+id fragment_profile_animal
 id frost
 id fullscreen_header
 id ghost_view
@@ -3090,6 +3096,7 @@ id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
+id im
 id image
 id imageAvatar
 id imageView
@@ -3584,7 +3591,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_home
 layout activity_home_ente
 layout activity_home_veterinario
 layout activity_index
@@ -3626,6 +3632,7 @@ layout fragment_nuova_segnalazione
 layout fragment_per_te_veterinario
 layout fragment_pets_veterinario
 layout fragment_profile
+layout fragment_profile_animal
 layout fragment_profile_veterinario
 layout fragment_search
 layout image_item
@@ -3701,9 +3708,9 @@ layout support_simple_spinner_dropdown_item
 layout user_item
 layout zxing_barcode_scanner
 layout zxing_capture
+menu bottom_navigation
 menu bottom_navmenu_ente
 menu bottom_navmenu_veterinario
-menu buttom_navigation
 mipmap baseline_qr_code_scanner_black_18
 mipmap baseline_qr_code_scanner_black_20
 mipmap baseline_qr_code_scanner_black_24
@@ -4240,16 +4247,19 @@ string project_id
 string qrcode
 string registratibut
 string salute
+string salute_animal
 string se_non_sei_registrato_clicca_qui
 string search_menu_title
 string segui
 string sesso_animale_text
 string specie
+string spese_animal
 string status_bar_notification_info_overflow
 string sterilizzazione
 string tastopercaricamento
 string tipo_segnalazione
 string todo
+string todoi
 string todoy
 string type_null
 string username

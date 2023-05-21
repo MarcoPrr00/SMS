@@ -2,6 +2,7 @@
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.provalogin.Fragment.NewAnimal;
 import com.example.provalogin.Model.Animal;
 
 import com.example.provalogin.R;
@@ -24,6 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import com.google.firebase.database.ValueEventListener;
+import com.google.rpc.context.AttributeContext;
 
 import java.util.List;
 
@@ -33,7 +36,6 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
     final private List<Animal> animalList;
 
     FirebaseUser firebaseUser;
-
 
 
     public AnimalAdapter(Context mCtx, List<Animal> aList){
@@ -52,13 +54,24 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
     public void onBindViewHolder(@NonNull AnimalAdapter.AnimalViewHolder holder, int position) {
         final Animal animali = animalList.get(position);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
-        holder.btn_follow.setVisibility(View.VISIBLE);
+
+
+        if(animali.getOwnerId().equals(firebaseUser.getUid())){
+            // Se l'animale appartiene al proprietario, rendi il pulsante invisibile
+            holder.btn_follow.setVisibility(View.INVISIBLE);
+        }else{
+            holder.btn_follow.setVisibility(View.VISIBLE);
+        }
+
+
+
 
         holder.nome_item.setText(animali.nomeAnimale);
         holder.specie_item.setText(animali.specie);
 
         //visibilità del button
        // holder.btn_follow.setVisibility(View.VISIBLE);
+
 
         isFollowing(animali.id, holder.btn_follow);
 
@@ -92,6 +105,10 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
                 .circleCrop()
                 .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)*/
                 .into(holder.img);
+
+
+
+
 
     }
 

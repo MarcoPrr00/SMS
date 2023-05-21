@@ -17,9 +17,11 @@ import com.example.provalogin.Adapter.AnimalAdapter;
 
 
 import com.example.provalogin.Model.Animal;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.play.core.integrity.p;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

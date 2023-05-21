@@ -17,14 +17,21 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.provalogin.HomeActivity;
 import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 import com.example.provalogin.RegisterActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
@@ -34,6 +41,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
     FirebaseAuth auth;
     DatabaseReference reference;
     String userid;
+    FirebaseDatabase db;
+    Utente utente;
 
     EditText descrizione, posizione;
     Spinner tipologia;
@@ -68,6 +77,9 @@ public class NuovaSegnalazioneFragment extends Fragment {
 
 
         return inflater.inflate(R.layout.fragment_nuova_segnalazione, container, false);
+
+
+
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -113,7 +125,16 @@ public class NuovaSegnalazioneFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         pd.dismiss();
-                        startActivity(new Intent(view.getContext(), HomeEnteActivity.class));
+                                switch (utente.TipoUtente){
+                                    case "EntePubblico":
+                                        startActivity(new Intent(view.getContext(), HomeEnteActivity.class));
+                                    case "UtenteAmico":
+                                        startActivity(new Intent(view.getContext(), HomeActivity.class));
+                                    case "Veterinario":
+                                        startActivity(new Intent(view.getContext(), HomeVeterinarioActivity.class));
+                                }
+
+
                     }
                 });
                 pd.dismiss();

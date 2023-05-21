@@ -108,14 +108,17 @@
     <string name="qrcode">qrcode</string>
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
+    <string name="salute_animal">Salute</string>
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato? Clicca qui!</string>
     <string name="segui">segui</string>
     <string name="sesso_animale_text">Sesso</string>
     <string name="specie">Specie</string>
+    <string name="spese_animal">Spese</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
     <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="todo">TODO</string>
+    <string name="todoi">TODO</string>
     <string name="todoy">TODO</string>
     <string name="type_null">tipo nullo</string>
     <string name="username">username</string>

@@ -70,6 +70,9 @@
     <string name="immagine">immagine</string>
     <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="destinatari">Destinatari</string>
+    <string name="salute_animal">Salute</string>
+    <string name="spese_animal">Spese</string>
+    <string name="todoi">TODO</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>

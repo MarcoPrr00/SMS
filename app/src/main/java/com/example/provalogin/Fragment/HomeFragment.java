@@ -2,65 +2,157 @@ package com.example.provalogin.Fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.provalogin.Adapter.SegnalazioniAdapter;
+import com.example.provalogin.Model.Segnalazioni;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class HomeFragment extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private RecyclerView recyclerView;
+    private SegnalazioniAdapter segnalazioniAdapter;
+    FloatingActionButton floatingButtonNuovaSegnalazione;
+    //Fragment selectedFragment=null;
+    private List<Segnalazioni> mSegnalazioni;
+    FirebaseDatabase db;
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    Utente utente;
 
     public HomeFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            mSegnalazioni.clear();
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    Segnalazioni segnalazioni = snapshot.getValue(Segnalazioni.class);
+                    mSegnalazioni.add(segnalazioni);
+                }
+                segnalazioniAdapter.notifyDataSetChanged();
+            }
         }
-    }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+        }
+    };
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
+
+
+        recyclerView = view.findViewById(R.id.recycler_view_veterinario);
+        floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);
+
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        rendiVisibileView();
+
+        mSegnalazioni = new ArrayList<>();
+        segnalazioniAdapter = new SegnalazioniAdapter(this.getContext(), mSegnalazioni);
+
+        recyclerView.setAdapter(segnalazioniAdapter);
+
+        db= FirebaseDatabase.getInstance();
+
+
+        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        Query queryUtente = db.getReference("Users").orderByChild("Id").equalTo(auth.getCurrentUser().getUid());
+        queryUtente.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    for (DataSnapshot tmpsnapshot : snapshot.getChildren()) {
+                        utente = tmpsnapshot.getValue(Utente.class);
+
+                    }
+                }
+                Query query = db.getReference("Segnalazioni");
+                switch (utente.TipoUtente){
+                    case "EntePubblico":
+                        query = db.getReference("Segnalazioni").orderByChild("destinatarioEnte").equalTo("si");
+                    case "Utente Amico":
+                        query = db.getReference("Segnalazioni").orderByChild("destinatarioUtente").equalTo("si");
+                    case "Veterinario":
+                        query = db.getReference("Segnalazioni").orderByChild("destinatarioVeterionario").equalTo("si");
+                }
+                query.addValueEventListener(valueEventListener);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+
+        return view;
     }
+
+
+
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        rendiVisibileView();
+
+        //BOTTONE NUOVA SEGNALAZIONE
+        floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rendiInvisibileView();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment()).commit();
+
+
+            }
+        });
+
+    }
+
+
+
+    //click item recycler
+    private void rendiVisibileView(){
+        recyclerView.setVisibility(View.VISIBLE);
+        floatingButtonNuovaSegnalazione.setVisibility(View.VISIBLE);
+    }
+
+    private void rendiInvisibileView(){
+        recyclerView.setVisibility(View.INVISIBLE);
+        floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
+    }
+
+
 }

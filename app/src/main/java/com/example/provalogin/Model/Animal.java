@@ -19,6 +19,15 @@ public class Animal {
 
         // costruttore di default senza argomenti
     }
+    // Getter e setter per altre proprietà della classe Animal
+
+    public String getOwnerId() {
+        return id;
+    }
+
+    public void setOwnerId(String id) {
+        this.id = id;
+    }
 
 
 }

@@ -1,17 +1,26 @@
 package com.example.provalogin.Fragment;
 
+import static android.system.Os.remove;
+
 import android.os.Bundle;
 
 import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Animal;
+import com.example.provalogin.Model.Segnalazioni;
+import com.example.provalogin.Recycler.RecyclerItemClickListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
+
+import androidx.annotation.Nullable;
+import androidx.arch.core.internal.FastSafeIterableMap;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,6 +32,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toolbar;
 
 import com.example.provalogin.R;
 import com.google.firebase.database.Query;
@@ -33,6 +44,9 @@ import java.util.List;
 public class SearchFragment extends Fragment {
 
     private RecyclerView recyclerView;
+
+    EditText edit;
+    ImageView imm;
    // Button btn_follow;
 
     private AnimalAdapter animalAdapter;
@@ -47,6 +61,9 @@ public class SearchFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerView = view.findViewById(R.id.recycler_view);
+
+        edit = view.findViewById(R.id.searchbar);
+        imm = view.findViewById(R.id.im);
         //btn_follow = view.findViewById(R.id.btn_follow);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -91,6 +108,44 @@ public class SearchFragment extends Fragment {
         return view;
     }
 
+
+
+
+
+    public void onViewCreated(@androidx.annotation.NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+        //CLICK ITEM RECYCLERVIEW
+        recyclerView.addOnItemTouchListener(
+                new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+
+                        Animal tmp = listAnimal.get(position);
+
+                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+                        fragmentTransaction.replace(R.id.fragment_container_search, new DettagliAnimale(tmp));
+                        rendiInvisibile();
+                        fragmentTransaction.commit();
+                    }
+
+                    @Override public void onLongItemClick(View view, int position) {
+                        // do whatever
+                    }
+                })
+        );
+
+    }
+
+    private void rendiInvisibile(){
+        //SearchFragment.setVisibility(View.INVISIBLE);
+        search_bar.setVisibility(View.INVISIBLE);
+        recyclerView.setVisibility(View.INVISIBLE);
+       imm.setVisibility(View.INVISIBLE);
+        edit.setVisibility(View.INVISIBLE);
+    }
     private void searchUsers(String s){
         Query query = db.orderByChild("nomeAnimale")
                 .startAt(s)
@@ -99,6 +154,7 @@ public class SearchFragment extends Fragment {
     }
 
     //lettura utenti
+
 
     private void readUsers (){
 

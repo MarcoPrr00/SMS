@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.provalogin.Fragment.FavorietesFragment;
 import com.example.provalogin.Fragment.HomeFragment;
+import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileFragment;
 import com.example.provalogin.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,9 +24,9 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.fragment_home);
 
-        bottomNavigationView=findViewById(R.id.bottom_navigation);
+        bottomNavigationView=findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();

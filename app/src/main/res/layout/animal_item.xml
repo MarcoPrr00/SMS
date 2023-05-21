@@ -53,22 +53,22 @@
             android:textColor="#000"
             android:textSize="18sp" />
 
+        <Button
+            android:id="@+id/btn_follow"
+            android:layout_width="161dp"
+            android:layout_height="46dp"
+            android:layout_alignTop="@+id/img1"
+            android:layout_alignBottom="@+id/img1"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/img1"
+
+            android:textSize="12sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
 
     </RelativeLayout>
-    <Button
-        android:id="@+id/btn_follow"
-        android:layout_width="120dp"
-        android:layout_height="41dp"
-        android:layout_alignTop="@+id/img1"
-        android:layout_alignBottom="@+id/img1"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="19dp"
-        android:textSize="12dp"
-        android:visibility="gone"
-        android:layout_toEndOf="@+id/img1"
-        android:text="Follow" />
-
 
 
 </androidx.cardview.widget.CardView>
