@@ -29,7 +29,7 @@ public class HomeActivity extends AppCompatActivity {
         bottomNavigationView=findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();
+                new PerTeVeterinarioFragment()).commit();
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
                 case R.id.segnalazioni:
-                    selectedFragment= new HomeFragment();
+                    selectedFragment= new PerTeVeterinarioFragment();
                     break;
                 case R.id.ic_search:
                     selectedFragment= new SearchFragment();

@@ -97,16 +97,22 @@ public class PerTeVeterinarioFragment extends Fragment {
 
                     }
                 }
-                Query query = db.getReference("Segnalazioni");
+
                 switch (utente.TipoUtente){
                     case "EntePubblico":
-                        query = db.getReference("Segnalazioni").orderByChild("destinatarioEnte").equalTo("si");
+                        Query queryEnte = db.getReference("Segnalazioni").orderByChild("destinatarioEnte").equalTo("si");
+                        queryEnte.addValueEventListener(valueEventListener);
+                        break;
                     case "Utente Amico":
-                        query = db.getReference("Segnalazioni").orderByChild("destinatarioUtente").equalTo("si");
+                        Query queryUtenteAmico = db.getReference("Segnalazioni").orderByChild("destinatarioUtente").equalTo("si");
+                        queryUtenteAmico.addValueEventListener(valueEventListener);
+                        break;
                     case "Veterinario":
-                        query = db.getReference("Segnalazioni").orderByChild("destinatarioVeterionario").equalTo("si");
+                        Query queryVeterinario = db.getReference("Segnalazioni").orderByChild("destinatarioVeterionario").equalTo("si");
+                        queryVeterinario.addValueEventListener(valueEventListener);
+                        break;
                 }
-                query.addValueEventListener(valueEventListener);
+
             }
 
             @Override
@@ -131,7 +137,7 @@ public class PerTeVeterinarioFragment extends Fragment {
             public void onClick(View v) {
                 rendiInvisibileView();
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment()).commit();
+                        .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment(utente)).commit();
 
 
             }

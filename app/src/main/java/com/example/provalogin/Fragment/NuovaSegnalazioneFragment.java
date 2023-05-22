@@ -56,6 +56,10 @@ public class NuovaSegnalazioneFragment extends Fragment {
 
     }
 
+    public NuovaSegnalazioneFragment(Utente utentetmp) {
+        this.utente=utentetmp;
+    }
+
 
 
     @Override
@@ -128,13 +132,14 @@ public class NuovaSegnalazioneFragment extends Fragment {
                                 switch (utente.TipoUtente){
                                     case "EntePubblico":
                                         startActivity(new Intent(view.getContext(), HomeEnteActivity.class));
-                                    case "UtenteAmico":
+                                        break;
+                                    case "Utente Amico":
                                         startActivity(new Intent(view.getContext(), HomeActivity.class));
+                                        break;
                                     case "Veterinario":
                                         startActivity(new Intent(view.getContext(), HomeVeterinarioActivity.class));
+                                        break;
                                 }
-
-
                     }
                 });
                 pd.dismiss();
