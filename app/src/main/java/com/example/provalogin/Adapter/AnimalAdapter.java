@@ -1,4 +1,3 @@
-
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
@@ -56,7 +55,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
-        if(animali.getOwnerId().equals(firebaseUser.getUid())){
+        if(animali.padrone.equals(firebaseUser.getUid())){
             // Se l'animale appartiene al proprietario, rendi il pulsante invisibile
             holder.btn_follow.setVisibility(View.INVISIBLE);
         }else{

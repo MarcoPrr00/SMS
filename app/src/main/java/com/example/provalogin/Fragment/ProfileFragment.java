@@ -95,7 +95,7 @@ public class ProfileFragment extends Fragment {
 
         nuovoanimalemanualmente = view.findViewById(R.id.nuovomanuale);
         //inserire = view.findViewById(R.id.inserire);
-        String current = Animal.padrone;
+        //String current = Animal.padrone;
 
 
 

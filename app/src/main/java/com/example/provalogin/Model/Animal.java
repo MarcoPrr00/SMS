@@ -10,7 +10,7 @@ public class Animal {
     private String sesso;
     private String chip;
     private String sterilizzazione;
-    public static String padrone;
+    public String padrone;
     public String specie;
     private String preferenzaCibo;
     private String statoSalute;

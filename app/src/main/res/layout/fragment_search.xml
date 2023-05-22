@@ -20,7 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/search_background">
+            android:background="#ABF8D89D">
 
             <ImageView
                 android:id="@+id/im"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:autofillHints=""
-            android:background="@drawable/search_background"
+            android:background="#ABF8D89D"
             android:hint="@string/cerca_i_tuoi_amici_"
             android:importantForAutofill="no"
             android:inputType="textShortMessage"
