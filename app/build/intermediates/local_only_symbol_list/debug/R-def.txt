@@ -26,6 +26,7 @@ drawable b
 drawable border
 drawable brown_border
 drawable c
+drawable cardback
 drawable ic_baseline_add_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
@@ -61,6 +62,7 @@ font coustard
 id Name
 id add_qr_code_pet
 id animali_item
+id animalipreferiti
 id backgroundLayout
 id bar
 id bluelogo
@@ -96,6 +98,7 @@ id editCognome
 id editEmail
 id editName
 id editPassword
+id elencopref
 id email
 id end
 id eta_animale
@@ -106,6 +109,7 @@ id fragment_container_ente
 id fragment_container_per_te
 id fragment_container_profilo_veterinario
 id fragment_container_search
+id fragment_dettagli_animale
 id fragment_profile_animal
 id homeEnte
 id homeVet
@@ -124,6 +128,7 @@ id img1
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
+id immagine
 id inCarico
 id inCaricoVet
 id in_carico_ente
@@ -145,6 +150,7 @@ id newanimal
 id nome
 id nome_animale
 id nome_item
+id nomeanimale
 id nomecognome
 id nuovaimmagine
 id nuovoconbluetooth
@@ -233,6 +239,7 @@ layout fragment_profile_animal
 layout fragment_profile_veterinario
 layout fragment_search
 layout image_item
+layout prefe_item
 layout segnalazioni_item
 layout start
 layout user_item
@@ -560,6 +567,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hai_gi_un_account_clicca_qui
 string hello_blank_fragment
+string i_miei_animali_preferiti
 string image
 string imagenuova
 string imieianimali

@@ -2671,6 +2671,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable c
+drawable cardback
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2893,6 +2894,7 @@ id all
 id allStates
 id always
 id animali_item
+id animalipreferiti
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3031,6 +3033,7 @@ id editName
 id editPassword
 id edit_query
 id elastic
+id elencopref
 id email
 id embed
 id end
@@ -3066,6 +3069,7 @@ id fragment_container_per_te
 id fragment_container_profilo_veterinario
 id fragment_container_search
 id fragment_container_view_tag
+id fragment_dettagli_animale
 id fragment_profile_animal
 id frost
 id fullscreen_header
@@ -3109,6 +3113,7 @@ id img1
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
+id immagine
 id immediateStop
 id inCarico
 id inCaricoVet
@@ -3223,6 +3228,7 @@ id noState
 id nome
 id nome_animale
 id nome_item
+id nomeanimale
 id nomecognome
 id none
 id normal
@@ -3699,6 +3705,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout prefe_item
 layout segnalazioni_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
@@ -4113,6 +4120,7 @@ string google_storage_bucket
 string hai_gi_un_account_clicca_qui
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string i_miei_animali_preferiti
 string icon_content_description
 string image
 string imagenuova
