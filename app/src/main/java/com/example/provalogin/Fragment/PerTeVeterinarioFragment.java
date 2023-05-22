@@ -150,7 +150,7 @@ public class PerTeVeterinarioFragment extends Fragment {
                         rendiInvisibileView();
                         Segnalazioni tmp = mSegnalazioni.get(position);
                         getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragment_container_per_te, new DettagliSegnalazioniFragment(tmp)).commit();
+                                .replace(R.id.fragment_container_per_te, new DettagliSegnalazioniFragment(tmp,utente)).commit();
 
                     }
 

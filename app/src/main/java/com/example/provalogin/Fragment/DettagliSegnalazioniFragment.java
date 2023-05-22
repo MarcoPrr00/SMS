@@ -1,34 +1,55 @@
 package com.example.provalogin.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Segnalazioni;
+import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class DettagliSegnalazioniFragment extends Fragment {
 
     Segnalazioni segnalazioni;
+    Utente utente;
+
     TextView tipoSegnalazione, descrizione, posizione;
     CheckBox cbVeteterinario, cbEnte, cbUtente;
     ImageView imgSegnalzioni;
+    Button button;
+
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+
 
     DettagliSegnalazioniFragment(){
 
     }
 
-    DettagliSegnalazioniFragment(Segnalazioni s){
+    DettagliSegnalazioniFragment(Segnalazioni s, Utente u){
         this.segnalazioni=s;
+        this.utente=u;
     }
 
 
@@ -50,6 +71,7 @@ public class DettagliSegnalazioniFragment extends Fragment {
         cbEnte = view.findViewById(R.id.dettagli_segnalazione_checkbox_ente);
         cbUtente = view.findViewById(R.id.dettagli_segnalazione_checkbox_utentetradizionale);
         imgSegnalzioni = view.findViewById(R.id.img_dettagli_segnalazioni);
+        button = view.findViewById(R.id.dettagli_segnalazione_button);
 
         tipoSegnalazione.setText(segnalazioni.tipologiaSegnalazione);
         descrizione.setText(segnalazioni.descrizione);
@@ -70,4 +92,32 @@ public class DettagliSegnalazioniFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
+
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                segnalazioni.presaInCarico="si";
+                segnalazioni.idPresaInCarico= auth.getCurrentUser().getUid();
+                reference.child("Segnalazioni").child(segnalazioni.id).setValue(segnalazioni).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        switch (utente.TipoUtente){
+                            case "EntePubblico":
+                                startActivity(new Intent(view.getContext(), HomeEnteActivity.class));
+                                break;
+                            case "Utente Amico":
+                                startActivity(new Intent(view.getContext(), HomeActivity.class));
+                                break;
+                            case "Veterinario":
+                                startActivity(new Intent(view.getContext(), HomeVeterinarioActivity.class));
+                                break;
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+
 }

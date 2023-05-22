@@ -6,6 +6,7 @@ import com.example.provalogin.Adapter.SegnalazioniAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Segnalazioni;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -41,6 +42,7 @@ public class  InCaricoVeterinarioFragment extends Fragment {
     com.getbase.floatingactionbutton.FloatingActionButton floatingButtonNuovaSegnalazione;
     private List<Segnalazioni> mSegnalazioni;
     DatabaseReference db;
+    FirebaseAuth auth = FirebaseAuth.getInstance();
 
 
     ValueEventListener valueEventListener = new ValueEventListener() {
@@ -68,17 +70,7 @@ public class  InCaricoVeterinarioFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_in_carico_veterinario, container, false);
-        //LOGICA ANIMALE ADAPTER
-        /*
-        recyclerView = view.findViewById(R.id.recycler_view_incarico);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        mUtente = new ArrayList<>();
-        adapter = new UtenteAdapter(this.getContext(), mUtente);
-        recyclerView.setAdapter(adapter);
-        dbUtente=FirebaseDatabase.getInstance().getReference("Animals");
-        dbUtente.addValueEventListener(valueEventListenerAnimale);*/
 
         //LOGICA SEGNALAZIONI ADAPTER
         recyclerView = view.findViewById(R.id.recycler_view_incarico);
@@ -91,62 +83,15 @@ public class  InCaricoVeterinarioFragment extends Fragment {
 
         recyclerView.setAdapter(segnalazioniAdapter);
 
-        db= FirebaseDatabase.getInstance().getReference("Segnalazioni");
+        Query db= FirebaseDatabase.getInstance().getReference("Segnalazioni").orderByChild("idPresaInCarico").equalTo(auth.getCurrentUser().getUid());
         db.addValueEventListener(valueEventListener);
 
         // Inflate the layout for this fragment
         return view;
     }
 
-    private void searchUsers(String s){
-        Query query = dbUtente.orderByChild("Nome")
-                .startAt(s)
-                .endAt(s+"\uf8ff");
-        query.addValueEventListener(valueEventListenerAnimale);
-    }
 
-    //lettura utenti
-/*
-    private void readUsers (){
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
-        reference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (search_bar.getText().toString().equals("")){
-                    mUsers.clear();
-                    for (DataSnapshot snapshot : dataSnapshot.getChildren()){
-                        User user = snapshot.getValue(User.class);
-                        mUsers.add(user);
-                    }
-                    userAdapter.notifyDataSetChanged();
-                }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-    }
-*/
-    ValueEventListener valueEventListenerAnimale = new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            mUtente.clear();
-            if (dataSnapshot.exists()) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Animal artist = snapshot.getValue(Animal.class);
-                    mUtente.add(artist);
-                }
-                adapter.notifyDataSetChanged();
-            }
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-
-        }
-    };
 
 
 

@@ -44,6 +44,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
     FirebaseDatabase db;
     Utente utente;
 
+    String id;
+
     EditText descrizione, posizione;
     Spinner tipologia;
     Button btnInviaSegnalazione;
@@ -68,7 +70,7 @@ public class NuovaSegnalazioneFragment extends Fragment {
 
         auth=FirebaseAuth.getInstance();
         userid = auth.getCurrentUser().getUid();
-        String id = NewAnimal.generacodiceid();
+        id = NewAnimal.generacodiceid();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
         reference = database.getReference().child("Segnalazioni").child(id);
 
@@ -117,6 +119,7 @@ public class NuovaSegnalazioneFragment extends Fragment {
                 }
 
                 HashMap<String, Object> hashMap = new HashMap<>();
+                hashMap.put("id", id);
                 hashMap.put("tipologiaSegnalazione", tipologia.getSelectedItem().toString());
                 hashMap.put("descrizione", descrizione.getText().toString());
                 hashMap.put("posizione", posizione.getText().toString());
@@ -124,6 +127,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
                 hashMap.put("destinatarioEnte", destinatarioEnte);
                 hashMap.put("destinatarioUtente", destinatarioUtente);
                 hashMap.put("idMittente",userid);
+                hashMap.put("presoInCarico","no");
+                hashMap.put("idPresoInCarico", "no");
 
                 reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
