@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -34,6 +35,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class  ProfileVeterinarioFragment extends Fragment {
+
+    private Context context;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        this.context = context;
+    }
+
 
     FirebaseAuth dbAuth = FirebaseAuth.getInstance();
     Query query;
@@ -118,7 +128,7 @@ public class  ProfileVeterinarioFragment extends Fragment {
         storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                Glide.with(getContext()).load(uri).into(profileImg);
+                Glide.with(context).load(uri).into(profileImg);
             }
         });
 
