@@ -37,12 +37,27 @@ import java.util.List;
 public class  ProfileVeterinarioFragment extends Fragment {
 
     private Context context;
+    private boolean isModificaProfiloVisible = true;
+
+    public void setModificaProfiloVisible(boolean isVisible) {
+        if (modificaProfilo != null) {
+            if (isVisible) {
+                modificaProfilo.setVisibility(View.VISIBLE);
+            } else {
+                modificaProfilo.setVisibility(View.GONE);
+            }
+        }
+    }
+
+
+
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         this.context = context;
     }
+
 
 
     FirebaseAuth dbAuth = FirebaseAuth.getInstance();
@@ -52,7 +67,7 @@ public class  ProfileVeterinarioFragment extends Fragment {
     TextView profileNameVeterinario, profileEmailVeterinario, profileUsernameVeterinario,profilePasswordVeterinario;
     TextView titleName, titleUsername;
 
-    Button modificaProfilo;
+     Button modificaProfilo;
 
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
@@ -87,8 +102,17 @@ public class  ProfileVeterinarioFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+        setModificaProfiloVisible(true);
+
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile_veterinario, container, false);
         profileNameVeterinario = view.findViewById(R.id.profileName);
@@ -99,13 +123,11 @@ public class  ProfileVeterinarioFragment extends Fragment {
         titleUsername = view.findViewById(R.id.titleUsername);
         profileImg= view.findViewById(R.id.profileImg);
         modificaProfilo = view.findViewById(R.id.editButton);
-        rendiVisibile();
         modificaProfilo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rendiInvisibile();
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_profilo_veterinario, new ModificaProfiloVeterinarioFragment(nUser.get(0))).commit();
+                        .replace(R.id.fragment_container_profilo_veterinario, new ModificaProfiloVeterinarioFragment(nUser.get(0))).addToBackStack("fragment_container_profilo_veterinario").commit();
             }
         });
 

@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +23,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ModificaProfiloVeterinarioFragment extends Fragment {
+
     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
     Utente utente;
+
+
+
     public ModificaProfiloVeterinarioFragment(Utente u){
         this.utente = u;
     }
@@ -38,6 +43,18 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
 
     }
 
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        ProfileVeterinarioFragment profiloVeterinarioFragment = (ProfileVeterinarioFragment) getParentFragmentManager().findFragmentByTag("fragment_container_profilo_veterinario");
+        if (profiloVeterinarioFragment != null) {
+            profiloVeterinarioFragment.setModificaProfiloVisible(false);
+        }
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -48,6 +65,19 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
         editPassword = view.findViewById(R.id.editPassword);
         salvaButton = view.findViewById(R.id.saveButton);
         showUserData();
+        view.setFocusableInTouchMode(true);
+        view.requestFocus();
+        view.setOnKeyListener((v, keyCode, event) -> {
+            if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
+                // Azioni da eseguire quando viene premuto il pulsante "Indietro" nel Fragment
+                // Esempio: torna indietro alla schermata precedente del Fragment
+
+                requireActivity().onBackPressed();
+                return true; // Consuma l'evento di pressione del pulsante "Indietro"
+            }
+            return false; // L'evento di pressione del pulsante "Indietro" viene propagato alle altre viste
+        });
+
 
         salvaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +119,7 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
         }
         return tmp;
     }
+
 
 
 
