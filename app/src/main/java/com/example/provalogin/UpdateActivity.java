@@ -20,8 +20,11 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.*;
 
+import com.example.provalogin.Model.Utente;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.*;
 
 import java.io.IOException;
@@ -44,12 +47,18 @@ public class UpdateActivity extends AppCompatActivity {
     // Uri indicates, where the image will be picked from
     private Uri filePath;
 
+    private String imgPosition;
+    private String posizione;
+    private Utente utente;
+
+
     // request code
     private final int PICK_IMAGE_REQUEST = 22;
 
     // instance for firebase storage and StorageReference
     FirebaseStorage storage;
     StorageReference storageReference;
+    DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -57,12 +66,6 @@ public class UpdateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
-        ActionBar actionBar;
-        actionBar = getSupportActionBar();
-        ColorDrawable colorDrawable
-                = new ColorDrawable(
-                Color.parseColor("#0F9D58"));
-        actionBar.setBackgroundDrawable(colorDrawable);
 
         // initialise views
         btnSelect = findViewById(R.id.btnScegli);
@@ -152,11 +155,16 @@ public class UpdateActivity extends AppCompatActivity {
             progressDialog.show();
 
             // Defining the child of storageReference
+            String random = UUID.randomUUID().toString();
             StorageReference ref
                     = storageReference
                     .child(
                             "images/"
-                                    + UUID.randomUUID().toString());
+                                    + random);
+
+            imgPosition = "gs://provalogin-65cb5.appspot.com/images/" + random;
+            posizione = getIntent().getStringExtra("Posizione");
+
             // adding listeners on upload
             // or failure of image
             ref.putFile(filePath)
@@ -172,9 +180,10 @@ public class UpdateActivity extends AppCompatActivity {
                                     progressDialog.dismiss();
                                     Toast
                                             .makeText(UpdateActivity.this,
-                                                    "Image Uploaded!!",
+                                                    R.string.immagine_caricata,
                                                     Toast.LENGTH_SHORT)
                                             .show();
+                                    sceltaDoveModificareImg(posizione);
                                 }
                             })
 
@@ -210,4 +219,20 @@ public class UpdateActivity extends AppCompatActivity {
                             });
         }
     }
+
+    public void sceltaDoveModificareImg(String position){
+        switch (position){
+            case "profilo":
+                modificaImgProfilo();
+                break;
+        }
+    }
+
+
+    public void modificaImgProfilo(){
+        utente = (Utente) getIntent().getSerializableExtra("Utente");
+        utente.ImgUrl=imgPosition;
+        reference.child("Users").child(utente.Id).child("ImgUrl").setValue(imgPosition);
+    }
+
 }

@@ -74,6 +74,7 @@
     <string name="spese_animal">Spese</string>
     <string name="todoi">TODO</string>
     <string name="i_miei_animali_preferiti">I MIEI ANIMALI PREFERITI</string>
+    <string name="immagine_caricata">Immagine Caricata</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>

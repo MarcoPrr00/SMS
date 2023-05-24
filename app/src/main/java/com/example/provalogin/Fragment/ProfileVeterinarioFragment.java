@@ -20,6 +20,8 @@ import com.bumptech.glide.Glide;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.example.provalogin.UpdateActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -68,6 +70,7 @@ public class  ProfileVeterinarioFragment extends Fragment {
     TextView titleName, titleUsername;
 
      Button modificaProfilo;
+     FloatingActionButton caricaImagineProfilo;
 
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
@@ -106,6 +109,15 @@ public class  ProfileVeterinarioFragment extends Fragment {
         super.onResume();
 
         setModificaProfiloVisible(true);
+        caricaImagineProfilo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), UpdateActivity.class);
+                intent.putExtra("Utente", nUser.get(0));
+                intent.putExtra("Posizione", "profilo");
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -123,6 +135,8 @@ public class  ProfileVeterinarioFragment extends Fragment {
         titleUsername = view.findViewById(R.id.titleUsername);
         profileImg= view.findViewById(R.id.profileImg);
         modificaProfilo = view.findViewById(R.id.editButton);
+        caricaImagineProfilo= view.findViewById(R.id.btn_nuava_foto);
+
         modificaProfilo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

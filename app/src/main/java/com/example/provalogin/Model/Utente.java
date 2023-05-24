@@ -8,7 +8,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class Utente {
+import java.io.Serializable;
+
+public class Utente implements Serializable {
     public String Cognome;
     public String Email;
     public String Nome;

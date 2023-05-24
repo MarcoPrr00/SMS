@@ -2935,6 +2935,7 @@ id btnInvia
 id btnScegli
 id btn_follow
 id btn_invia_nuova_segnalazione
+id btn_nuava_foto
 id btn_nuova_segnalazione
 id buttonPanel
 id cache_measures

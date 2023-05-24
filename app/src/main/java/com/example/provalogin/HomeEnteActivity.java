@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -35,7 +36,8 @@ public class HomeEnteActivity extends AppCompatActivity {
                     selectedFragment= new InCaricoVeterinarioFragment();
                     break;
                 case R.id.petsEnte:
-                    selectedFragment= new PetsVeterinarioFragment();
+                    //selectedFragment= new PetsVeterinarioFragment();
+                    startActivity(new Intent(HomeEnteActivity.this,IndexActivity.class));
                     break;
                 case R.id.profileEnte:
                     selectedFragment= new ProfileVeterinarioFragment();
