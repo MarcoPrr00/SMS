@@ -10825,7 +10825,7 @@
     </string-array><string-array name="sterilizzazione">
         <item>Effettuata</item>
         <item>Non effettuata</item>
-    </string-array></file><file path="C:\Users\Lenovo\Desktop\android\SMS\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.ProvaLogin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </string-array><string name="immagine_caricata">Immagine Caricata</string></file><file path="C:\Users\Lenovo\Desktop\android\SMS\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.ProvaLogin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">#65503F</item>
         <item name="colorPrimaryVariant">#B07F4C</item>

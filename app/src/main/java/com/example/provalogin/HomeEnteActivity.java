@@ -36,8 +36,7 @@ public class HomeEnteActivity extends AppCompatActivity {
                     selectedFragment= new InCaricoVeterinarioFragment();
                     break;
                 case R.id.petsEnte:
-                    //selectedFragment= new PetsVeterinarioFragment();
-                    startActivity(new Intent(HomeEnteActivity.this,IndexActivity.class));
+                    selectedFragment= new PetsVeterinarioFragment();
                     break;
                 case R.id.profileEnte:
                     selectedFragment= new ProfileVeterinarioFragment();

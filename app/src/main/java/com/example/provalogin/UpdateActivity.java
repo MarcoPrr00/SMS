@@ -2,7 +2,10 @@ package com.example.provalogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -39,7 +42,7 @@ public class UpdateActivity extends AppCompatActivity {
     }*/
 
     // views for button
-    private Button btnSelect, btnUpload;
+    private Button btnSelect, btnUpload, btnCamera;
 
     // view for image view
     private ImageView imageView;
@@ -54,6 +57,8 @@ public class UpdateActivity extends AppCompatActivity {
 
     // request code
     private final int PICK_IMAGE_REQUEST = 22;
+    private static final int PERMISSION_CODE = 1000;
+    private static final int IMAGE_CAPTURE_CODE = 1001;
 
     // instance for firebase storage and StorageReference
     FirebaseStorage storage;
@@ -70,6 +75,7 @@ public class UpdateActivity extends AppCompatActivity {
         // initialise views
         btnSelect = findViewById(R.id.btnScegli);
         btnUpload = findViewById(R.id.btnInvia);
+        btnCamera = findViewById(R.id.btnFaiFoto);
         imageView = findViewById(R.id.imgUpdate);
 
         // get the Firebase storage reference
@@ -91,6 +97,23 @@ public class UpdateActivity extends AppCompatActivity {
                 uploadImage();
             }
         });
+
+        // on pressing btnUpload openCamera() is called
+        btnCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if ( checkSelfPermission( Manifest.permission.CAMERA)== PackageManager.PERMISSION_DENIED &&
+                        checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED){
+                    String[] permission = { Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                    requestPermissions(permission, PERMISSION_CODE);
+                }
+                else{
+                    openCamera();
+                }
+
+            }
+        });
+
     }
 
     // Select Image method
@@ -103,7 +126,7 @@ public class UpdateActivity extends AppCompatActivity {
         startActivityForResult(
                 Intent.createChooser(
                         intent,
-                        "Select Image from here..."),
+                        "Select Image from here...") ,
                 PICK_IMAGE_REQUEST);
     }
 
@@ -121,8 +144,7 @@ public class UpdateActivity extends AppCompatActivity {
         // if request code is PICK_IMAGE_REQUEST and
         // resultCode is RESULT_OK
         // then set image in the image view
-        if (requestCode == PICK_IMAGE_REQUEST
-                && resultCode == RESULT_OK
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
                 && data != null
                 && data.getData() != null) {
 
@@ -142,6 +164,10 @@ public class UpdateActivity extends AppCompatActivity {
                 // Log the exception
                 e.printStackTrace();
             }
+        }
+
+        if (requestCode == IMAGE_CAPTURE_CODE && resultCode == RESULT_OK){
+            imageView.setImageURI(filePath);
         }
     }
 
@@ -217,6 +243,35 @@ public class UpdateActivity extends AppCompatActivity {
                                                     + (int) progress + "%");
                                 }
                             });
+        }
+    }
+
+    public void openCamera(){
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE, "New Picture");
+        values.put(MediaStore.Images.Media.DESCRIPTION, "From the camera");
+        filePath = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+        //camera intent
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, filePath);
+        startActivityForResult( cameraIntent, IMAGE_CAPTURE_CODE);
+    }
+
+    //override permission result
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode){
+            case PERMISSION_CODE:
+                if (grantResults.length >0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    openCamera();
+                }
+                else{
+                    Toast.makeText(this, "Permesso Negato", Toast.LENGTH_SHORT).show();
+                }
         }
     }
 

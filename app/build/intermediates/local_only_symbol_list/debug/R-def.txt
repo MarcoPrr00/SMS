@@ -73,6 +73,7 @@ id bottom_ente
 id bottom_nav
 id bottom_navigation
 id bottom_navigation_ente
+id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_follow
@@ -574,6 +575,7 @@ string imagenuova
 string imieianimali
 string immag
 string immagine
+string immagine_caricata
 string invia_segnalazione
 string items
 string log

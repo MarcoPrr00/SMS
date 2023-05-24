@@ -2931,6 +2931,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_follow
@@ -4128,6 +4129,7 @@ string imagenuova
 string imieianimali
 string immag
 string immagine
+string immagine_caricata
 string invia_segnalazione
 string item_view_role_description
 string items
