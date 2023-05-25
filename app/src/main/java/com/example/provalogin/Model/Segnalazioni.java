@@ -2,7 +2,9 @@ package com.example.provalogin.Model;
 
 import com.example.provalogin.R;
 
-public class Segnalazioni {
+import java.io.Serializable;
+
+public class Segnalazioni implements Serializable {
     public String id;
     public String descrizione;
     public String destinatarioEnte;
@@ -16,7 +18,7 @@ public class Segnalazioni {
     public String presaInCarico;
 
 
-    Segnalazioni(){
+    public Segnalazioni(){
 
     }
 

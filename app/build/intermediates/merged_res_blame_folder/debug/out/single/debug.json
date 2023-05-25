@@ -8,16 +8,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_info_outline_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_info_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_info_black_36dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_invert_colors_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_invert_colors_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_perm_data_setting_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_data_setting_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_invert_colors_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_invert_colors_black_18dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_info_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_info_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_perm_data_setting_black_18dp.png.flat",
@@ -124,12 +124,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_contact_calendar_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_account_circle_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_account_circle_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_black_12dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_black_12dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_account_circle_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_account_circle_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_add_shopping_cart_black_18dp.png.flat",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_account_circle_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_question_answer_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_question_answer_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_question_answer_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_question_answer_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_black_36dp.png.flat",
@@ -184,12 +184,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_gif_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_perm_data_setting_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_data_setting_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_get_app_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_get_app_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_perm_data_setting_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_data_setting_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_gif_black_48dp.png.flat",
@@ -216,12 +216,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_launch_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_lightbulb_outline_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_lightbulb_outline_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_open_in_new_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_open_in_new_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_lightbulb_outline_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_lightbulb_outline_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_payment_black_48dp.png.flat",
@@ -272,12 +272,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_bookmark_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_assignment_return_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_assignment_return_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_remove_shopping_cart_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_remove_shopping_cart_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_assignment_return_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_assignment_return_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable-v24_profilebkg.png.flat",
@@ -292,12 +292,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_assignment_ind_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_camera_mic_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_camera_mic_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_perm_camera_mic_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_camera_mic_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_camera_mic_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_camera_mic_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_trasparenza.xml.flat",
@@ -340,12 +340,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_phone_msg_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_account_box_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_account_box_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_settings_applications_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_settings_applications_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_account_box_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_account_box_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_query_builder_black_18dp.png.flat",
@@ -380,12 +380,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_motorcycle_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_remove_shopping_cart_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_remove_shopping_cart_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_info_outline_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_info_outline_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_remove_shopping_cart_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_remove_shopping_cart_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_baseline_qr_code_scanner_black_18.png.flat",
@@ -396,12 +396,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_lightbulb_outline_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_camera_alt_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_camera_alt_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_face_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_face_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_camera_alt_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_camera_alt_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_baseline_qr_code_scanner_black_24dp.png.flat",
@@ -536,12 +536,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_loyalty_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_gif_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_gif_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_swap_vert_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_swap_vert_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_gif_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_gif_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_identity_black_18dp.png.flat",
@@ -676,24 +676,24 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_settings_backup_restore_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_data_setting_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_data_setting_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_label_outline_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_label_outline_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_data_setting_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_data_setting_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_camera_mic_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_camera_mic_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_lock_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_lock_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_assignment_return_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_assignment_return_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_lock_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_lock_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_reorder_black_36dp.png.flat",
@@ -1032,12 +1032,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_picture_in_picture_alt_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_swap_vertical_circle_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_swap_vertical_circle_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_list_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_list_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_swap_vertical_circle_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_swap_vertical_circle_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_swap_vertical_circle_black_18dp.png.flat",
@@ -1108,20 +1108,20 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_settings_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_settings_bluetooth_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_settings_bluetooth_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_open_in_browser_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_open_in_browser_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_settings_applications_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_settings_applications_black_24dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_settings_bluetooth_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_settings_bluetooth_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_pets_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_pets_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_settings_applications_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_settings_applications_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_label_black_36dp.png.flat",
@@ -1160,12 +1160,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_receipt_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_perm_device_information_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_device_information_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_border.xml.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_perm_device_information_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_perm_device_information_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_open_in_browser_black_36dp.png.flat",
@@ -1320,12 +1320,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_bookmark_border_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_receipt_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_receipt_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_settings_applications_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_settings_applications_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_receipt_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_receipt_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_label_outline_black_18dp.png.flat",
@@ -1468,12 +1468,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_swap_horiz_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_remove_shopping_cart_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_remove_shopping_cart_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_info_outline_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_info_outline_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_remove_shopping_cart_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_remove_shopping_cart_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_query_builder_black_24dp.png.flat",
@@ -1512,16 +1512,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-pngs-42:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_add_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_add_black_24dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_avatar.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\avatar.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_fingerprint_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_fingerprint_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_avatar.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\avatar.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_add_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_add_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_swap_vert_black_18dp.png.flat",
@@ -1584,12 +1584,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\cardback.xml"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_turned_in_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_turned_in_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_feedback_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_feedback_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_turned_in_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_turned_in_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_bookmark_border_black_24dp.png.flat",
@@ -1640,12 +1640,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_perm_media_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_contact_mail_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_contact_mail_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_accessibility_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_accessibility_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_contact_mail_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_contact_mail_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_assignment_black_48dp.png.flat",
@@ -1760,12 +1760,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_lightbulb_outline_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\layout_activity_update.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\layout\\activity_update.xml"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_print_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_print_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\layout_activity_update.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\layout\\activity_update.xml"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_invert_colors_black_18dp.png.flat",
@@ -1800,12 +1800,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_gif_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_open_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_open_black_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_rounded_corner_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_rounded_corner_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_open_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_open_black_18dp.png"
+        "merged": "com.example.provalogin.app-merged_res-47:/layout_segnalazioni_item.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout/segnalazioni_item.xml"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_assignment_black_48dp.png.flat",
@@ -1832,16 +1836,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_print_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_feedback_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_feedback_black_18dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_perm_contact_calendar_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_perm_contact_calendar_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_launch_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_launch_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_perm_contact_calendar_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_perm_contact_calendar_black_48dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_feedback_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_feedback_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_camera_alt_black_36dp.png.flat",
@@ -2060,10 +2064,6 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_perm_media_black_24dp.png"
     },
     {
-        "merged": "com.example.provalogin.app-merged_res-47:/menu_bottom_navmenu_ente.xml.flat",
-        "source": "com.example.provalogin.app-main-49:/menu/bottom_navmenu_ente.xml"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_markunread_mailbox_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_markunread_mailbox_black_36dp.png"
     },
@@ -2124,12 +2124,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_get_app_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_print_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_print_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_label_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_label_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_print_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_print_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_favorite_black_36dp.png.flat",
@@ -2164,12 +2164,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_feedback_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_img.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\img.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_update_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_update_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_img.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\drawable\\img.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_open_in_browser_black_48dp.png.flat",
@@ -2284,12 +2284,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_turned_in_not_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_label_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_label_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_language_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_language_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_label_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_label_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_receipt_black_36dp.png.flat",
@@ -2344,16 +2344,16 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_bookmark_border_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_open_in_new_black_12dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_open_in_new_black_12dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_report_problem_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_report_problem_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_device_information_black_48dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_device_information_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_report_problem_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_report_problem_black_18dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_open_in_new_black_12dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_open_in_new_black_12dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_open_with_black_36dp.png.flat",
@@ -2432,20 +2432,20 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_invert_colors_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_input_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_input_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_baseline_qr_code_scanner_black_20.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\baseline_qr_code_scanner_black_20.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_query_builder_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_query_builder_black_24dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_input_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_input_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_question_answer_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_question_answer_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_query_builder_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_query_builder_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\drawable_provasfondo.jpg.flat",
@@ -2520,12 +2520,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_input_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\layout_fragment_modifica_profilo_veterinario.xml.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\layout\\fragment_modifica_profilo_veterinario.xml"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_settings_brightness_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_settings_brightness_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\layout_fragment_modifica_profilo_veterinario.xml.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\layout\\fragment_modifica_profilo_veterinario.xml"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_device_information_black_18dp.png.flat",
@@ -2616,24 +2616,24 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_open_with_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_update_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_update_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_question_answer_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_question_answer_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_update_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_update_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_assignment_ind_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_assignment_ind_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_face_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_face_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_info_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xhdpi\\ic_info_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_face_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_face_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_settings_applications_black_48dp.png.flat",
@@ -2744,24 +2744,28 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_loyalty_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_outline_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_outline_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_settings_bluetooth_black_24dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_settings_bluetooth_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_settings_bluetooth_black_36dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_settings_bluetooth_black_36dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_lock_outline_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_lock_outline_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_payment_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_payment_black_18dp.png"
     },
     {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_settings_bluetooth_black_36dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_settings_bluetooth_black_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_turned_in_not_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_turned_in_not_black_36dp.png"
+    },
+    {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout_fragment_dettagli_segnalazioni.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout/fragment_dettagli_segnalazioni.xml"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_accessibility_black_48dp.png.flat",
@@ -2800,12 +2804,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_question_answer_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_pageview_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_pageview_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_reorder_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_reorder_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_pageview_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_pageview_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -2836,20 +2840,20 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_lock_open_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_accessibility_black_24dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_accessibility_black_24dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_bookmark_border_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_bookmark_border_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_account_circle_black_18dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_account_circle_black_18dp.png"
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_accessibility_black_24dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_accessibility_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_perm_data_setting_black_36dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_perm_data_setting_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_account_circle_black_18dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_account_circle_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_invert_colors_black_24dp.png.flat",
@@ -2936,12 +2940,12 @@
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_settings_applications_black_48dp.png"
     },
     {
-        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_perm_camera_mic_black_48dp.png.flat",
-        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_camera_mic_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_assignment_late_black_18dp.png.flat",
         "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_assignment_late_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxxhdpi_ic_perm_camera_mic_black_48dp.png.flat",
+        "source": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_camera_mic_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Lenovo\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_markunread_mailbox_black_36dp.png.flat",

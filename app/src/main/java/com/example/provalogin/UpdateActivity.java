@@ -23,6 +23,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.*;
 
+import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -53,6 +54,7 @@ public class UpdateActivity extends AppCompatActivity {
     private String imgPosition;
     private String posizione;
     private Utente utente;
+    private Segnalazioni segnalazioni;
 
 
     // request code
@@ -280,6 +282,9 @@ public class UpdateActivity extends AppCompatActivity {
             case "profilo":
                 modificaImgProfilo();
                 break;
+            case "nuovaSegnalazione":
+                imgNuovaSegnalazione();
+                break;
         }
     }
 
@@ -288,6 +293,18 @@ public class UpdateActivity extends AppCompatActivity {
         utente = (Utente) getIntent().getSerializableExtra("Utente");
         utente.ImgUrl=imgPosition;
         reference.child("Users").child(utente.Id).child("ImgUrl").setValue(imgPosition);
+    }
+
+    public void imgNuovaSegnalazione(){
+
+        String filePathSegnalazione = getIntent().getStringExtra("FilePath");
+        filePathSegnalazione = imgPosition;
+
+        /*
+        segnalazioni = (Segnalazioni) getIntent().getSerializableExtra("NuovaSegnalazione");
+        segnalazioni.imgSegnalazione=imgPosition;
+        reference.child("Segnalazioni").setValue(segnalazioni);
+         */
     }
 
 }
