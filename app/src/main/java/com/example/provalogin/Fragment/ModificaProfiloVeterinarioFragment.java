@@ -3,6 +3,7 @@ package com.example.provalogin.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -37,9 +39,13 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
     Button salvaButton;
     DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
     String nomeUser,cognomeUser,emailUser,passwordUser;
+
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 
@@ -49,16 +55,15 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
     public void onPause() {
         super.onPause();
 
-        ProfileVeterinarioFragment profiloVeterinarioFragment = (ProfileVeterinarioFragment) getParentFragmentManager().findFragmentByTag("fragment_container_profilo_veterinario");
-        if (profiloVeterinarioFragment != null) {
-            profiloVeterinarioFragment.setModificaProfiloVisible(false);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_modifica_profilo_veterinario, container, false);
+
+
         editNome = view.findViewById(R.id.editName);
         editCognome = view.findViewById(R.id.editCognome);
         editEmail = view.findViewById(R.id.editEmail);
@@ -70,9 +75,10 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
         view.setOnKeyListener((v, keyCode, event) -> {
             if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
                 // Azioni da eseguire quando viene premuto il pulsante "Indietro" nel Fragment
-                // Esempio: torna indietro alla schermata precedente del Fragment
+                // Esempio: torna indietro al Fragment "Profilo"
 
-                requireActivity().onBackPressed();
+                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                fragmentManager.popBackStack(); // Rimuovi il fragment corrente dallo stack di back stack
                 return true; // Consuma l'evento di pressione del pulsante "Indietro"
             }
             return false; // L'evento di pressione del pulsante "Indietro" viene propagato alle altre viste
@@ -120,8 +126,16 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
         return tmp;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        /*ProfileVeterinarioFragment tmp = (ProfileVeterinarioFragment) getParentFragmentManager().findFragmentById(R.id.fragment_container_profilo_veterinario);
+        if (tmp != null){
+            getParentFragmentManager().beginTransaction().hide(tmp).commit();
+        }
 
-
+         */
+    }
 
     public void showUserData() {
 

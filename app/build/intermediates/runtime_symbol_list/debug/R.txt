@@ -3063,10 +3063,8 @@ int id fixed 0x7f0a00f8
 int id flip 0x7f0a00f9
 int id floating 0x7f0a00fa
 int id forever 0x7f0a00fb
-int id fragmentContainerVeterinario 0x7f0a00fc
 int id fragment_container 0x7f0a00fd
 int id fragment_container_animali 0x7f0a00fe
-int id fragment_container_ente 0x7f0a00ff
 int id fragment_container_per_te 0x7f0a0100
 int id fragment_container_profilo_veterinario 0x7f0a0101
 int id fragment_container_search 0x7f0a0102

@@ -135,9 +135,9 @@ public class PerTeVeterinarioFragment extends Fragment {
         floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rendiInvisibileView();
+                //rendiInvisibileView();
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_per_te, new NuovaSegnalazioneFragment(utente)).commit();
+                        .replace(R.id.fragment_container, new NuovaSegnalazioneFragment(utente)).addToBackStack(null).commit();
 
 
             }
@@ -147,10 +147,10 @@ public class PerTeVeterinarioFragment extends Fragment {
         recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
-                        rendiInvisibileView();
+                        //rendiInvisibileView();
                         Segnalazioni tmp = mSegnalazioni.get(position);
                         getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragment_container_per_te, new DettagliSegnalazioniFragment(tmp,utente)).commit();
+                                .replace(R.id.fragment_container, new DettagliSegnalazioniFragment(tmp,utente)).addToBackStack(null).commit();
 
                     }
 

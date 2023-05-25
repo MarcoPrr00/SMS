@@ -43,7 +43,7 @@ public class HomeEnteActivity extends AppCompatActivity {
                     break;
             }
             if( selectedFragment != null){
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         selectedFragment).commit();
             }
 
@@ -60,9 +60,11 @@ public class HomeEnteActivity extends AppCompatActivity {
         bottomNavigationView=findViewById(R.id.bottom_navigation_ente);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_ente,
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new PerTeVeterinarioFragment()).commit();
 
 
     }
+
+
 }

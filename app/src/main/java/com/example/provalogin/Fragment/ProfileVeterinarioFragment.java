@@ -102,13 +102,14 @@ public class  ProfileVeterinarioFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
 
-        setModificaProfiloVisible(true);
+
         caricaImagineProfilo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -118,6 +119,12 @@ public class  ProfileVeterinarioFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
 
     }
 
@@ -140,8 +147,9 @@ public class  ProfileVeterinarioFragment extends Fragment {
         modificaProfilo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_profilo_veterinario, new ModificaProfiloVeterinarioFragment(nUser.get(0))).addToBackStack("fragment_container_profilo_veterinario").commit();
+                        .replace(R.id.fragment_container, new ModificaProfiloVeterinarioFragment(nUser.get(0))).addToBackStack(null).commit();
             }
         });
 
@@ -184,10 +192,5 @@ public class  ProfileVeterinarioFragment extends Fragment {
 
     }
 
-    public void rendiInvisibile(){
-        modificaProfilo.setVisibility(View.INVISIBLE);
-    }
-    public  void rendiVisibile(){
-        modificaProfilo.setVisibility(View.VISIBLE);
-    }
+
 }

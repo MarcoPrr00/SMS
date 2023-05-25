@@ -3064,10 +3064,8 @@ id fixed
 id flip
 id floating
 id forever
-id fragmentContainerVeterinario
 id fragment_container
 id fragment_container_animali
-id fragment_container_ente
 id fragment_container_per_te
 id fragment_container_profilo_veterinario
 id fragment_container_search
