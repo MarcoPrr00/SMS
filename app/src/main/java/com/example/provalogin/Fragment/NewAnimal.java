@@ -7,35 +7,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
-
 import com.example.provalogin.HomeActivity;
-import com.example.provalogin.HomeEnteActivity;
-import com.example.provalogin.Model.Animal;
 import com.example.provalogin.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.textfield.TextInputLayout;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
+
 
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Random;
 
 public class NewAnimal extends Fragment {
@@ -43,7 +36,8 @@ public class NewAnimal extends Fragment {
 
     public static ImageView immaginedacaricare;
     FloatingActionButton nuovaimmagine;
-    EditText nomeAnimale, specie, padrone, preferenzaCibo, statoSalute, eta, chip, sesso, sterilizzazione;
+    Spinner specieanimale, sterilizzazioneanima, sessoanim, statosaluteanim;
+    EditText nomeAnimale, padrone, preferenzaCibo, eta, chip;
     FirebaseAuth auth;
     DatabaseReference reference;
     String userid, id;
@@ -82,10 +76,39 @@ public class NewAnimal extends Fragment {
         eta = view.findViewById(R.id.eta_animale);
         //padrone_animale = view.findViewById(R.id.padrone_animale);
         preferenzaCibo = view.findViewById(R.id.preferenza_animale);
-        statoSalute = view.findViewById(R.id.salute_animale);
-        sesso = view.findViewById(R.id.sesso_animale);
-        specie = view.findViewById(R.id.specie_animale);
-        sterilizzazione = view.findViewById(R.id.sterilizzazione_animale);
+        statosaluteanim = view.findViewById(R.id.salute_animale);
+        sessoanim = view.findViewById(R.id.sesso_animale);
+        specieanimale = view.findViewById(R.id.specie_animale);
+        sterilizzazioneanima = view.findViewById(R.id.sterilizzazione_animale);
+        // Set up ArrayAdapter for each spinner
+       ArrayAdapter<CharSequence> sessoAdapter = ArrayAdapter.createFromResource(
+               requireContext(),
+               R.array.sessoa,
+               android.R.layout.simple_spinner_dropdown_item
+       );
+       sessoanim.setAdapter(sessoAdapter);
+
+       // Set up ArrayAdapter for each spinner
+       ArrayAdapter<CharSequence> sterilizzazioneAdapter = ArrayAdapter.createFromResource(
+               requireContext(),
+               R.array.sterilizzazioneanimale,
+               android.R.layout.simple_spinner_dropdown_item
+       );
+       sterilizzazioneanima.setAdapter(sterilizzazioneAdapter);
+       // Set up ArrayAdapter for each spinner
+       ArrayAdapter<CharSequence> specieAdapter = ArrayAdapter.createFromResource(
+               requireContext(),
+               R.array.speciea,
+               android.R.layout.simple_spinner_dropdown_item
+       );
+       specieanimale.setAdapter(specieAdapter);
+       // Set up ArrayAdapter for each spinner
+       ArrayAdapter<CharSequence> saluteAdapter = ArrayAdapter.createFromResource(
+               requireContext(),
+               R.array.statosalute,
+               android.R.layout.simple_spinner_dropdown_item
+       );
+       statosaluteanim.setAdapter(saluteAdapter);
 
 
     /*Definire il processo per inserire una immagine animale da telefono*/
@@ -107,12 +130,12 @@ public class NewAnimal extends Fragment {
                 String chipanimale = chip.getText().toString();
                 //String padrone = padrone_animale.getText().toString();
                 String preferenzacibo = preferenzaCibo.getText().toString();
-                String sessoa = sesso.getText().toString();
-                String specieanimale = specie.getText().toString();
-                String sterilizzazioneanimale = sterilizzazione.getText().toString();
-                String saluteanimale = statoSalute.getText().toString();
+                String sessoa = sessoanim.getSelectedItem().toString();
+                String specie = specieanimale.getSelectedItem().toString();
+                String sterilizzazioneanimale = sterilizzazioneanima.getSelectedItem().toString();
+                String saluteanimale = statosaluteanim.getSelectedItem().toString();
 
-                if(iscorrect(chipanimale)){
+                if(isCorrect(chipanimale, nomeanimale, etaanimale, preferenzacibo)){
                     HashMap<String, Object> hashMap = new HashMap<>();
                     hashMap.put("nomeAnimale", nomeanimale);
                     hashMap.put("eta", etaanimale);
@@ -121,7 +144,7 @@ public class NewAnimal extends Fragment {
                     hashMap.put("padrone",userid);
                     hashMap.put("preferenzaCibo", preferenzacibo);
                     hashMap.put("sesso", sessoa);
-                    hashMap.put("specie",specieanimale);
+                    hashMap.put("specie",specie);
                     hashMap.put("sterilizzazione",sterilizzazioneanimale);
                     hashMap.put("statoSalute",saluteanimale);
 
@@ -170,21 +193,44 @@ public class NewAnimal extends Fragment {
     }
 
 
-   private Boolean iscorrect(String chipanimale){
+    private boolean isCorrect(String chipanimale, String nomea, String etaa, String preferenza) {
+        boolean isValid = true;
 
-       if (!chipanimale.isEmpty() && (chipanimale.length() > 12 || chipanimale.length() < 12)) {
-           chip.requestFocus();
-           chip.setError(getResources().getString(R.string.chip));
-           Toast.makeText(getContext(), getResources().getString(R.string.chip), Toast.LENGTH_SHORT).show();
-           return false;
-       } else {
-           chip.setError(null);
-           return true;
-       }
+        if (!chipanimale.isEmpty() && (chipanimale.length() > 12 || chipanimale.length() < 12)) {
+            chip.requestFocus();
+            chip.setError(getResources().getString(R.string.chiperror));
+            Toast.makeText(getContext(), getResources().getString(R.string.chip), Toast.LENGTH_SHORT).show();
+            isValid = false;
+        } else {
+            chip.setError(null);
+        }
 
+        if (nomea.isEmpty()) {
+            nomeAnimale.requestFocus();
+            nomeAnimale.setError(getResources().getString(R.string.nomeanimalemancante));
+            //Toast.makeText(getContext(), getResources().getString(R.string.nomeanimalemancante), Toast.LENGTH_SHORT).show();
+            isValid = false;
+        } else {
+            nomeAnimale.setError(null);
+        }
+        if (etaa.isEmpty()) {
+            eta.requestFocus();
+            eta.setError(getResources().getString(R.string.etamancante));
+           // Toast.makeText(getContext(), getResources().getString(R.string.nomeanimalemancante), Toast.LENGTH_SHORT).show();
+            isValid = false;
+        } else {
+            eta.setError(null);
+        }
+        if (preferenza.isEmpty()) {
+           preferenzaCibo.requestFocus();
+            preferenzaCibo.setError(getResources().getString(R.string.cibomancante));
+            // Toast.makeText(getContext(), getResources().getString(R.string.nomeanimalemancante), Toast.LENGTH_SHORT).show();
+            isValid = false;
+        } else {
+            preferenzaCibo.setError(null);
+        }
 
-
-
-       
+        return isValid;
     }
+
 }//fineclass

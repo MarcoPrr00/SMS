@@ -71,8 +71,9 @@ int array com_google_android_gms_fonts_certs_prod 0x7f030002
 int array items 0x7f030003
 int array preloaded_fonts 0x7f030004
 int array sessoa 0x7f030005
+int array speciea 0x7f030009
 int array spinner_segnalazione 0x7f030006
-int array sterilizzazione 0x7f030007
+int array statosalute 0x7f03000a
 int array sterilizzazioneanimale 0x7f030008
 int attr SharedValue 0x7f040000
 int attr SharedValueId 0x7f040001
@@ -4062,7 +4063,9 @@ int string character_counter_content_description 0x7f130031
 int string character_counter_overflowed_content_description 0x7f130032
 int string character_counter_pattern 0x7f130033
 int string chip 0x7f130034
+int string chiperror 0x7f130111
 int string ciao 0x7f130035
+int string cibomancante 0x7f13010e
 int string clear_text_end_icon_content_description 0x7f130036
 int string cognome 0x7f130037
 int string common_google_play_services_enable_button 0x7f130038
@@ -4094,6 +4097,7 @@ int string ente 0x7f130051
 int string error_a11y_label 0x7f130052
 int string error_icon_content_description 0x7f130053
 int string eta 0x7f130054
+int string etamancante 0x7f13010f
 int string exo_download_completed 0x7f130055
 int string exo_download_description 0x7f130056
 int string exo_download_downloading 0x7f130057
@@ -4238,6 +4242,7 @@ int string nome 0x7f1300e1
 int string nome_animale 0x7f1300e2
 int string nomeanimal 0x7f1300e3
 int string nomeanimale 0x7f1300e4
+int string nomeanimalemancante 0x7f130110
 int string nuovaSegnalazione 0x7f1300e5
 int string nuovo 0x7f1300e6
 int string nuovoamicotranoi 0x7f1300e7

@@ -24,6 +24,23 @@
         <item>Maschio</item>
         <item>Femmina</item>
     </string-array>
+    <string-array name="speciea">
+        <item>Cane</item>
+        <item>Gatto</item>
+        <item>Rana</item>
+        <item>Anatra</item>
+        <item>Usignolo</item>
+        <item>Pulcino</item>
+        <item>Lupo</item>
+        <item>Volpe</item>
+        <item>Zebra</item>
+        <item>Coccodrillo</item>
+        <item>Tartaruga</item>
+        <item>Pappagallo</item>
+        <item>Iguana</item>
+        <item>Fenicottero-rosa</item>
+        <item>Foca Monaca</item>
+    </string-array>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>
@@ -31,11 +48,18 @@
         <item>Cerco Animale</item>
         <item>Offro Animale</item>
     </string-array>
-    <string-array name="sterilizzazione">
+    <string-array name="statosalute">
+        <item>Ottimo</item>
+        <item>Discreto</item>
+        <item>Alti e bassi</item>
+        <item>Acciaccato</item>
+        <item>Me la cavo</item>
+        <item>Pessimo</item>
+    </string-array>
+    <string-array name="sterilizzazioneanimale">
         <item>Effettuata</item>
         <item>Non effettuata</item>
     </string-array>
-    <string-array name="sterilizzazioneanimale"/>
     <color name="black">#FF000000</color>
     <color name="colorSecondary">#FB825B</color>
     <color name="colorSecondaryVariant">#675143</color>
@@ -57,7 +81,9 @@
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
     <string name="chip">Chip</string>
+    <string name="chiperror">chip corretto con 12 numeri</string>
     <string name="ciao">ciao</string>
+    <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
     <string name="cognome">Cognome</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
     <string name="descrizione">Descrizione</string>
@@ -66,6 +92,7 @@
     <string name="emailutente">Email</string>
     <string name="ente">Ente</string>
     <string name="eta">Eta Animale</string>
+    <string name="etamancante">Inserire l\'età\n</string>
     <string name="firebase_database_url" translatable="false">https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app</string>
     <string name="follow">Follow</string>
     <string name="full_name">full name</string>
@@ -96,6 +123,7 @@
     <string name="nome_animale">Nome Animale</string>
     <string name="nomeanimal">Nome</string>
     <string name="nomeanimale">Nome Animale</string>
+    <string name="nomeanimalemancante">Inserire il nome dell\'animale!</string>
     <string name="nuovaSegnalazione">Nuova Segnalazione</string>
     <string name="nuovo">nuovo</string>
     <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>

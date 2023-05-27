@@ -6,8 +6,9 @@ array com_google_android_gms_fonts_certs_prod
 array items
 array preloaded_fonts
 array sessoa
+array speciea
 array spinner_segnalazione
-array sterilizzazione
+array statosalute
 array sterilizzazioneanimale
 color background
 color black
@@ -549,7 +550,9 @@ string btn_follow
 string cerca_i_tuoi_amici
 string cerca_i_tuoi_amici_
 string chip
+string chiperror
 string ciao
+string cibomancante
 string cognome
 string default_web_client_id
 string descrizione
@@ -558,6 +561,7 @@ string email
 string emailutente
 string ente
 string eta
+string etamancante
 string firebase_database_url
 string follow
 string full_name
@@ -588,6 +592,7 @@ string nome
 string nome_animale
 string nomeanimal
 string nomeanimale
+string nomeanimalemancante
 string nuovaSegnalazione
 string nuovo
 string nuovoamicotranoi

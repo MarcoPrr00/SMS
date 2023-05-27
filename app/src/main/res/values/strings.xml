@@ -75,6 +75,10 @@
     <string name="todoi">TODO</string>
     <string name="i_miei_animali_preferiti">I MIEI ANIMALI PREFERITI</string>
     <string name="immagine_caricata">Immagine Caricata</string>
+    <string name="nomeanimalemancante">Inserire il nome dell\'animale!</string>
+    <string name="etamancante">Inserire l\'età\n</string>
+    <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
+    <string name="chiperror">chip corretto con 12 numeri</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>
@@ -86,8 +90,33 @@
         <item>Maschio</item>
         <item>Femmina</item>
     </string-array>
-    <string-array name="sterilizzazione">
+    <string-array name="sterilizzazioneanimale">
         <item>Effettuata</item>
         <item>Non effettuata</item>
+    </string-array>
+    <string-array name="statosalute">
+        <item>Ottimo</item>
+        <item>Discreto</item>
+        <item>Alti e bassi</item>
+        <item>Acciaccato</item>
+        <item>Me la cavo</item>
+        <item>Pessimo</item>
+    </string-array>
+    <string-array name="speciea">
+        <item>Cane</item>
+        <item>Gatto</item>
+        <item>Rana</item>
+        <item>Anatra</item>
+        <item>Usignolo</item>
+        <item>Pulcino</item>
+        <item>Lupo</item>
+        <item>Volpe</item>
+        <item>Zebra</item>
+        <item>Coccodrillo</item>
+        <item>Tartaruga</item>
+        <item>Pappagallo</item>
+        <item>Iguana</item>
+        <item>Fenicottero-rosa</item>
+        <item>Foca Monaca</item>
     </string-array>
 </resources>

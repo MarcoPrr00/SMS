@@ -72,8 +72,9 @@ array com_google_android_gms_fonts_certs_prod
 array items
 array preloaded_fonts
 array sessoa
+array speciea
 array spinner_segnalazione
-array sterilizzazione
+array statosalute
 array sterilizzazioneanimale
 attr SharedValue
 attr SharedValueId
@@ -4063,7 +4064,9 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip
+string chiperror
 string ciao
+string cibomancante
 string clear_text_end_icon_content_description
 string cognome
 string common_google_play_services_enable_button
@@ -4095,6 +4098,7 @@ string ente
 string error_a11y_label
 string error_icon_content_description
 string eta
+string etamancante
 string exo_download_completed
 string exo_download_description
 string exo_download_downloading
@@ -4239,6 +4243,7 @@ string nome
 string nome_animale
 string nomeanimal
 string nomeanimale
+string nomeanimalemancante
 string nuovaSegnalazione
 string nuovo
 string nuovoamicotranoi

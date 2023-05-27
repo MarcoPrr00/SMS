@@ -6,22 +6,22 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml
+8-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml
+9-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:6:22-78
+12-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-13-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:7:5-80
-13-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:7:22-77
+13-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:7:22-77
 14    <uses-permission android:name="android.permission.CAMERA" />
-14-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:8:5-65
-14-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:8:22-62
+14-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:8:5-65
+14-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:8:22-62
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 15-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Antonella_Z\.gradle\caches\transforms-3\03cff9e7b7e724e46bd6420bc83ba34d\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
 15-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Antonella_Z\.gradle\caches\transforms-3\03cff9e7b7e724e46bd6420bc83ba34d\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
@@ -75,178 +75,178 @@
 40-->[androidx.core:core:1.9.0] C:\Users\Antonella_Z\.gradle\caches\transforms-3\5aa09ef41e9292bd8fec5b4ba630fb29\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 41
 42    <application
-42-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:10:5-102:19
+42-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:10:5-102:19
 43        android:allowBackup="true"
-43-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:11:9-35
+43-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:11:9-35
 44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 44-->[androidx.core:core:1.9.0] C:\Users\Antonella_Z\.gradle\caches\transforms-3\5aa09ef41e9292bd8fec5b4ba630fb29\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 45        android:dataExtractionRules="@xml/data_extraction_rules"
-45-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:12:9-65
+45-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:12:9-65
 46        android:debuggable="true"
 47        android:extractNativeLibs="false"
 48        android:fullBackupContent="@xml/backup_rules"
-48-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:13:9-54
+48-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:13:9-54
 49        android:icon="@mipmap/ic_launcher"
-49-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:14:9-43
+49-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:14:9-43
 50        android:label="@string/app_name"
-50-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:15:9-41
+50-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:15:9-41
 51        android:roundIcon="@mipmap/ic_launcher_round"
-51-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:16:9-54
+51-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:16:9-54
 52        android:supportsRtl="true"
-52-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:17:9-35
+52-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:17:9-35
 53        android:testOnly="true"
 54        android:theme="@style/Theme.ProvaLogin" >
-54-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:18:9-48
+54-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:18:9-48
 55        <activity
-55-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:21:9-27:20
+55-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:21:9-27:20
 56            android:name="com.example.provalogin.HomeVeterinarioActivity"
-56-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:22:13-52
+56-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:22:13-52
 57            android:exported="false" >
-57-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:23:13-37
+57-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:23:13-37
 58            <meta-data
-58-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+58-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 59                android:name="android.app.lib_name"
-59-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+59-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 60                android:value="" />
-60-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+60-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 61        </activity>
 62        <activity
-62-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:28:9-34:20
+62-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:28:9-34:20
 63            android:name="com.example.provalogin.HomeEnteActivity"
-63-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:29:13-45
+63-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:29:13-45
 64            android:exported="false" >
-64-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:30:13-37
+64-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:30:13-37
 65            <meta-data
-65-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+65-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 66                android:name="android.app.lib_name"
-66-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+66-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 67                android:value="" />
-67-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+67-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 68        </activity>
 69        <activity
-69-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:35:9-47:20
+69-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:35:9-47:20
 70            android:name="com.example.provalogin.first"
-70-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:36:13-34
+70-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:36:13-34
 71            android:exported="true" >
-71-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:37:13-36
+71-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:37:13-36
 72            <intent-filter>
-72-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:38:13-42:29
+72-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:38:13-42:29
 73                <action android:name="android.intent.action.MAIN" />
-73-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:39:17-69
-73-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:39:25-66
+73-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:39:17-69
+73-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:39:25-66
 74
 75                <category android:name="android.intent.category.LAUNCHER" />
-75-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:41:17-77
-75-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:41:27-74
+75-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:41:17-77
+75-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:41:27-74
 76            </intent-filter>
 77
 78            <meta-data
-78-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+78-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 79                android:name="android.app.lib_name"
-79-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+79-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 80                android:value="" />
-80-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+80-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 81        </activity>
 82        <activity
-82-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:48:9-54:20
+82-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:48:9-54:20
 83            android:name="com.example.provalogin.PostActivity"
-83-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:49:13-41
+83-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:49:13-41
 84            android:exported="false" >
-84-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:50:13-37
+84-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:50:13-37
 85            <meta-data
-85-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+85-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 86                android:name="android.app.lib_name"
-86-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+86-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 87                android:value="" />
-87-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+87-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 88        </activity>
 89        <activity
-89-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:55:9-61:20
+89-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:55:9-61:20
 90            android:name="com.example.provalogin.HomeActivity"
-90-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:56:13-41
+90-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:56:13-41
 91            android:exported="false" >
-91-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:57:13-37
+91-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:57:13-37
 92            <meta-data
-92-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+92-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 93                android:name="android.app.lib_name"
-93-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+93-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 94                android:value="" />
-94-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+94-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 95        </activity>
 96        <activity
-96-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:62:9-68:20
+96-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:62:9-68:20
 97            android:name="com.example.provalogin.RegisterActivity"
-97-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:63:13-45
+97-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:63:13-45
 98            android:exported="false" >
-98-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:64:13-37
+98-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:64:13-37
 99            <meta-data
-99-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+99-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 100                android:name="android.app.lib_name"
-100-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+100-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 101                android:value="" />
-101-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+101-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 102        </activity>
 103        <activity
-103-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:69:9-75:20
+103-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:69:9-75:20
 104            android:name="com.example.provalogin.LoginActivity"
-104-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:70:13-42
+104-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:70:13-42
 105            android:exported="false" >
-105-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:71:13-37
+105-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:71:13-37
 106            <meta-data
-106-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+106-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 107                android:name="android.app.lib_name"
-107-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+107-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 108                android:value="" />
-108-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+108-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 109        </activity>
 110        <activity
-110-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:76:9-82:20
+110-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:76:9-82:20
 111            android:name="com.example.provalogin.StartActivity"
-111-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:77:13-42
+111-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:77:13-42
 112            android:exported="false" >
-112-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:78:13-37
+112-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:78:13-37
 113            <meta-data
-113-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+113-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 114                android:name="android.app.lib_name"
-114-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+114-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 115                android:value="" />
-115-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+115-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 116        </activity>
 117        <activity
-117-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:83:9-89:20
+117-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:83:9-89:20
 118            android:name="com.example.provalogin.UpdateActivity"
-118-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:84:13-43
+118-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:84:13-43
 119            android:exported="false" >
-119-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:85:13-37
+119-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:85:13-37
 120            <meta-data
-120-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+120-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 121                android:name="android.app.lib_name"
-121-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+121-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 122                android:value="" />
-122-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+122-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 123        </activity>
 124        <activity
-124-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:90:9-97:20
+124-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:90:9-97:20
 125            android:name="com.example.provalogin.IndexActivity"
-125-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:91:13-42
+125-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:91:13-42
 126            android:exported="false"
-126-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:92:13-37
+126-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:92:13-37
 127            android:label="Index" >
-127-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:93:13-34
+127-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:93:13-34
 128            <meta-data
-128-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
+128-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:24:13-26:36
 129                android:name="android.app.lib_name"
-129-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:25:17-52
+129-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:25:17-52
 130                android:value="" />
-130-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:26:17-33
+130-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:26:17-33
 131        </activity>
 132
 133        <meta-data
-133-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:99:9-101:57
+133-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:99:9-101:57
 134            android:name="preloaded_fonts"
-134-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:100:13-43
+134-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:100:13-43
 135            android:resource="@array/preloaded_fonts" />
-135-->C:\Users\Antonella_Z\Desktop\dagit\SMS\app\src\main\AndroidManifest.xml:101:13-54
+135-->C:\Users\Antonella_Z\Desktop\ppp\SMS\app\src\main\AndroidManifest.xml:101:13-54
 136
 137        <activity
 137-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\Antonella_Z\.gradle\caches\transforms-3\03cff9e7b7e724e46bd6420bc83ba34d\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
