@@ -116,36 +116,10 @@ public class SearchFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        //CLICK ITEM RECYCLERVIEW
-        recyclerView.addOnItemTouchListener(
-                new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override public void onItemClick(View view, int position) {
-
-                        Animal tmp = listAnimal.get(position);
-
-                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                        fragmentTransaction.replace(R.id.fragment_container_search, new DettagliAnimale(tmp));
-                        rendiInvisibile();
-                        fragmentTransaction.commit();
-                    }
-
-                    @Override public void onLongItemClick(View view, int position) {
-                        // do whatever
-                    }
-                })
-        );
 
     }
 
-    private void rendiInvisibile(){
-        //SearchFragment.setVisibility(View.INVISIBLE);
-        search_bar.setVisibility(View.INVISIBLE);
-        recyclerView.setVisibility(View.INVISIBLE);
-       imm.setVisibility(View.INVISIBLE);
-        edit.setVisibility(View.INVISIBLE);
-    }
+
     private void searchUsers(String s){
         Query query = db.orderByChild("nomeAnimale")
                 .startAt(s)

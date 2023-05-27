@@ -1,7 +1,6 @@
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,11 +8,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.provalogin.Fragment.NewAnimal;
 import com.example.provalogin.Model.Animal;
 
 import com.example.provalogin.R;
@@ -25,13 +24,13 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import com.google.firebase.database.ValueEventListener;
-import com.google.rpc.context.AttributeContext;
 
 import java.util.List;
 
 public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder> {
 
     final private Context mCtx;
+
     final private List<Animal> animalList;
 
     FirebaseUser firebaseUser;
@@ -55,6 +54,7 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
 
+
         if(animali.padrone.equals(firebaseUser.getUid())){
             // Se l'animale appartiene al proprietario, rendi il pulsante invisibile
             holder.btn_follow.setVisibility(View.INVISIBLE);
@@ -62,38 +62,34 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
             holder.btn_follow.setVisibility(View.VISIBLE);
         }
 
-
-
-
         holder.nome_item.setText(animali.nomeAnimale);
         holder.specie_item.setText(animali.specie);
-
-        //visibilità del button
-       // holder.btn_follow.setVisibility(View.VISIBLE);
 
 
         isFollowing(animali.id, holder.btn_follow);
 
+
+        //following tiene traccia degli animali che l'utente sta seguendo
+        //followers tiene traccia degli utenti che seguono l'animale
         holder.btn_follow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(holder.btn_follow.getText().toString().equals("Follow")){
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
-                            .child("following").child(animali.id).setValue(true);
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animali.id)
-                            .child("followers").child(firebaseUser.getUid()).setValue(true);
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
+                            .child("following").child(animali.id).child("id").setValue(animali.id);
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
+                            .child("following").child(animali.id).child("nome").setValue(animali.nomeAnimale);
+
                 } else {
                     FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
                             .child("following").child(animali.id).removeValue();
+                    FirebaseDatabase.getInstance().getReference().child("Follow").child(firebaseUser.getUid())
+                            .child("following").child(animali.id).child("nome").removeValue();
 
-                    FirebaseDatabase.getInstance().getReference().child("Follow").child(animali.id)
-                            .child("followers").child(firebaseUser.getUid()).removeValue();
                 }
             }
         });
-
-
 
 
 

@@ -3228,9 +3228,9 @@ id newanimal
 id noScroll
 id noState
 id nome
+id nomeAnimale
 id nome_animale
 id nome_item
-id nomeanimale
 id nomecognome
 id none
 id normal

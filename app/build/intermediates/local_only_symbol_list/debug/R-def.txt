@@ -150,9 +150,9 @@ id motionLayout
 id name
 id newanimal
 id nome
+id nomeAnimale
 id nome_animale
 id nome_item
-id nomeanimale
 id nomecognome
 id nuovaimmagine
 id nuovoconbluetooth
