@@ -2820,7 +2820,6 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
-id Name
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2889,6 +2888,7 @@ id add
 id add_qr_code_pet
 id adjust_height
 id adjust_width
+id albumfoto
 id alertTitle
 id aligned
 id all
@@ -3180,7 +3180,6 @@ id message
 id middle
 id mieianimali_recyclerview
 id mini
-id modifica
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle

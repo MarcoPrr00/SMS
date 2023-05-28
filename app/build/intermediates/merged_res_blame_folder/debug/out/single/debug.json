@@ -288,10 +288,6 @@
         "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_lock_black_36dp.png"
     },
     {
-        "merged": "com.example.provalogin.app-merged_res-47:/layout_activity_register.xml.flat",
-        "source": "com.example.provalogin.app-main-49:/layout/activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_label_outline_black_36dp.png.flat",
         "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-mdpi\\ic_label_outline_black_36dp.png"
     },
@@ -1924,12 +1920,12 @@
         "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxxhdpi\\ic_perm_phone_msg_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_room_black_48dp.png.flat",
-        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_room_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\layout_fragment_dettagli_animale.xml.flat",
         "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\layout\\fragment_dettagli_animale.xml"
+    },
+    {
+        "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-hdpi_ic_room_black_48dp.png.flat",
+        "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-hdpi\\ic_room_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xhdpi_ic_language_black_18dp.png.flat",
@@ -3682,6 +3678,10 @@
     {
         "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-xxhdpi_ic_perm_device_information_black_48dp.png.flat",
         "source": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-main-49:\\mipmap-xxhdpi\\ic_perm_device_information_black_48dp.png"
+    },
+    {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout_fragment_profile_animal.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout/fragment_profile_animal.xml"
     },
     {
         "merged": "C:\\Users\\Antonella_Z\\.gradle\\daemon\\7.4\\com.example.provalogin.app-merged_res-47:\\mipmap-mdpi_ic_lock_black_24dp.png.flat",

@@ -2,6 +2,7 @@ package com.example.provalogin.Fragment;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,6 +39,8 @@ public class NewAnimal extends Fragment {
     FloatingActionButton nuovaimmagine;
     Spinner specieanimale, sterilizzazioneanima, sessoanim, statosaluteanim;
     EditText nomeAnimale, padrone, preferenzaCibo, eta, chip;
+
+    String imgPosition = "gs://provalogin-65cb5.appspot.com/logo.png";
     FirebaseAuth auth;
     DatabaseReference reference;
     String userid, id;

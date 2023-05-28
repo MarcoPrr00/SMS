@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ABF8D89D"
-    tools:context=".Fragment.ProfileVeterinarioFragment">
+    tools:context=".Fragment.ProfileVeterinarioFragment"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp">
 
     <Button
         android:id="@+id/editButtonsalute"
@@ -22,14 +24,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editButtonspese"
-        app:layout_constraintTop_toBottomOf="@+id/Name" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <ImageView
         android:id="@+id/profileImg"
         android:layout_width="161dp"
         android:layout_height="121dp"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/todoi"
         android:gravity="center"
@@ -49,10 +51,10 @@
         android:textSize="18sp"
         app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
-        android:id="@+id/Name"
+        android:id="@+id/name"
         android:layout_width="328dp"
         android:layout_height="39dp"
         android:layout_marginStart="41dp"

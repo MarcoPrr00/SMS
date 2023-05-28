@@ -285,7 +285,15 @@ public class UpdateActivity extends AppCompatActivity {
             case "nuovaSegnalazione":
                 imgNuovaSegnalazione();
                 break;
+            case "nuovoanimale":
+                imganimal();
+                break;
         }
+    }
+
+    private void imganimal() {
+        String filePath = getIntent().getStringExtra("FilePath");
+        filePath = imgPosition;
     }
 
 

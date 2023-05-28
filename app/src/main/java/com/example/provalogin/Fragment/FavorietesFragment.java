@@ -20,8 +20,10 @@ import android.widget.Toast;
 import com.example.provalogin.Adapter.PrefAdapter;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Follow;
+import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.R;
 
+import com.example.provalogin.Recycler.RecyclerItemClickListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -40,6 +42,7 @@ public class FavorietesFragment extends Fragment {
 
     TextView nomeanimale;
     ImageView immagine;
+    Follow seguiti;
     // Button btn_follow;
 
     private PrefAdapter prefAdapter;
@@ -104,46 +107,23 @@ public class FavorietesFragment extends Fragment {
 
 
         //CLICK ITEM RECYCLERVIEW
-        /*elencopref.addOnItemTouchListener(
-                new RecyclerItemClickListener(getContext(), elencopref,new RecyclerItemClickListener.OnItemClickListener() {
+        elencopref.addOnItemTouchListener(
+                new RecyclerItemClickListener(getContext(), elencopref ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
+                        Follow tmp = listAnimal.get(position);
+                        getActivity().getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.fragment_container, new DettagliAnimale(tmp)).addToBackStack(null).commit();
 
-                        Animal tmp = listAnimal.get(position);
-
-                        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-                        fragmentTransaction.replace(R.id.fragment_profile_animal, new DettagliAnimale(tmp));
-
-                        fragmentTransaction.commit();
                     }
 
                     @Override public void onLongItemClick(View view, int position) {
                         // do whatever
                     }
                 })
-        );*/
+        );
 
     }
 
-   /* ValueEventListener valueEventListener = new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            listAnimal.clear();
-            if (dataSnapshot.exists()) {
-                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    Animal artist = snapshot.getValue(Animal.class);
-                    listAnimal.add(artist);
-                }
-                prefAdapter.notifyDataSetChanged();
-            }
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-
-        }
-    };*/
 
 
 }

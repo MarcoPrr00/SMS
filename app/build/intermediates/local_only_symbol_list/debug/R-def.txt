@@ -60,8 +60,8 @@ drawable trasparenza
 drawable white_background
 font architects_daughter
 font coustard
-id Name
 id add_qr_code_pet
+id albumfoto
 id animali_item
 id animalipreferiti
 id backgroundLayout
@@ -146,7 +146,6 @@ id linearLayout
 id log
 id login
 id mieianimali_recyclerview
-id modifica
 id motionLayout
 id name
 id newanimal

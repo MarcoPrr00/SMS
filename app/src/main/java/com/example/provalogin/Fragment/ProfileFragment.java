@@ -17,9 +17,11 @@ import com.example.provalogin.Adapter.AnimalAdapter;
 
 
 import com.example.provalogin.Model.Animal;
+import com.example.provalogin.Model.Follow;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 
+import com.example.provalogin.Recycler.RecyclerItemClickListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.play.core.integrity.p;
 import com.google.firebase.auth.FirebaseAuth;
@@ -140,13 +142,12 @@ public class ProfileFragment extends Fragment {
         });
 
         //CLICK ITEM RECYCLERVIEW
-        /*recyclerView.addOnItemTouchListener(
+        recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getContext(), recyclerView ,new RecyclerItemClickListener.OnItemClickListener() {
                     @Override public void onItemClick(View view, int position) {
-                        rendiInvisibileView();
                         Animal tmp = mAnimal.get(position);
                         getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.fragment_container_animali, new DettagliAnimale(tmp)).commit();
+                                .replace(R.id.fragment_container, new DettagliMieiAnimali(tmp)).addToBackStack(null).commit();
 
                     }
 
@@ -154,7 +155,7 @@ public class ProfileFragment extends Fragment {
                         // do whatever
                     }
                 })
-        );*/
+        );
 
     }
 
