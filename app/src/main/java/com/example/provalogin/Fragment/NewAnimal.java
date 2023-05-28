@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,8 +36,8 @@ import java.util.Random;
 public class NewAnimal extends Fragment {
 
 
-    public static ImageView immaginedacaricare;
-    FloatingActionButton nuovaimmagine;
+    public ImageView immaginedacaricare;
+
     Spinner specieanimale, sterilizzazioneanima, sessoanim, statosaluteanim;
     EditText nomeAnimale, padrone, preferenzaCibo, eta, chip;
 
@@ -44,6 +45,8 @@ public class NewAnimal extends Fragment {
     FirebaseAuth auth;
     DatabaseReference reference;
     String userid, id;
+
+    String spece;
 
     public NewAnimal(){
 
@@ -65,7 +68,7 @@ public class NewAnimal extends Fragment {
                              Bundle savedInstanceState) {
        View view = inflater.inflate(R.layout.fragment_newanimal, container, false);
        immaginedacaricare = view.findViewById(R.id.img);
-       nuovaimmagine = view.findViewById(R.id.nuovaimmagine);
+
 
        return view;
    }
@@ -113,6 +116,19 @@ public class NewAnimal extends Fragment {
        );
        statosaluteanim.setAdapter(saluteAdapter);
 
+       spece = specieanimale.getSelectedItem().toString();
+       defImg(spece);
+
+
+
+       specieanimale.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+           @Override
+           public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+               spece = specieanimale.getSelectedItem().toString();
+               defImg(spece);
+           }
+       });
+
 
     /*Definire il processo per inserire una immagine animale da telefono*/
 
@@ -150,6 +166,7 @@ public class NewAnimal extends Fragment {
                     hashMap.put("specie",specie);
                     hashMap.put("sterilizzazione",sterilizzazioneanimale);
                     hashMap.put("statoSalute",saluteanimale);
+                    hashMap.put("imgAnimale",imgPosition);
 
                     Toast.makeText(getContext(), "caricamentoeffettuato", Toast.LENGTH_SHORT).show();
 
@@ -181,7 +198,70 @@ public class NewAnimal extends Fragment {
 
 
 
-
+    public void defImg(String spece){
+        switch (spece){
+            case "Cane":
+                immaginedacaricare.setImageResource(R.drawable.cane);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/cane.jpg";
+                break;
+            case "Gatto":
+                immaginedacaricare.setImageResource(R.drawable.gatto);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/gatto.jpg";
+                break;
+            case "Rana":
+                immaginedacaricare.setImageResource(R.drawable.rana);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/rana.jpg";
+                break;
+            case "Anatra":
+                immaginedacaricare.setImageResource(R.drawable.anatra);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/anatra.jpg";
+                break;
+            case "Usignolo":
+                immaginedacaricare.setImageResource(R.drawable.usignolo);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/usignolo.jpg";
+                break;
+            case "Pulcino":
+                immaginedacaricare.setImageResource(R.drawable.pulcino);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/pulcino.jpg";
+                break;
+            case "Lupo":
+                immaginedacaricare.setImageResource(R.drawable.lupo);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/lupo.jpg";
+                break;
+            case "Volpe":
+                immaginedacaricare.setImageResource(R.drawable.volpe);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/volpe.jpg";
+                break;
+            case "Zebra":
+                immaginedacaricare.setImageResource(R.drawable.zebra);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/zebra.jpg";
+                break;
+            case "Coccodrillo":
+                immaginedacaricare.setImageResource(R.drawable.coccodrillo);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/coccodrillo.jpg";
+                break;
+            case "Tartaruga":
+                immaginedacaricare.setImageResource(R.drawable.tartaruga);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/tartaruga.jpg";
+                break;
+            case "Pappagallo":
+                immaginedacaricare.setImageResource(R.drawable.pappagallo);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/pappagallo.jpg";
+                break;
+            case "Iguana":
+                immaginedacaricare.setImageResource(R.drawable.iguana);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/iguana.jpg";
+                break;
+            case "Fenicottero-rosa":
+                immaginedacaricare.setImageResource(R.drawable.fenicottero);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/fenicottero.jpg";
+                break;
+            case "Foca Monaca":
+                immaginedacaricare.setImageResource(R.drawable.foca);
+                imgPosition ="gs://provalogin-65cb5.appspot.com/Animal/foca.jpg";
+                break;
+        }
+    }
 
     public static String generacodiceid(){
         final String caratteri = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";

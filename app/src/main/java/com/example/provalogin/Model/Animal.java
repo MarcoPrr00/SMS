@@ -5,6 +5,7 @@ public class Animal {
 
 
     public String id;
+    public String imgAnimale;
     public String nomeAnimale;
     private String eta;
     private String sesso;

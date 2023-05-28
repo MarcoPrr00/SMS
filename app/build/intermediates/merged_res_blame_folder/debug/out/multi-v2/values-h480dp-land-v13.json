@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-45:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-44:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Antonella_Z\\.gradle\\caches\\transforms-3\\4d71415200048da841c2de89390b2410\\transformed\\material-1.7.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5b8dbee9c666024b51275037a4df74a1\\transformed\\material-1.7.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

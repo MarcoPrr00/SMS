@@ -27,24 +27,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/nuovaimmagine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="96dp"
-        android:background="#3EFFFFFF"
-        android:clickable="true"
-        android:contentDescription="@string/tastopercaricamento"
-        android:focusable="true"
-        app:backgroundTint="#52FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/testo"
-        app:layout_constraintStart_toStartOf="@+id/img"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/ic_camera_alt_black_24dp" />
-
-    <TextView
+        <TextView
         android:id="@+id/testo"
         android:layout_width="155dp"
         android:layout_height="53dp"

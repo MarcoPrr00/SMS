@@ -1,6 +1,7 @@
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import com.bumptech.glide.Glide;
 import com.example.provalogin.Model.Animal;
 
 import com.example.provalogin.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +26,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.List;
 
@@ -93,13 +97,19 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
 
 
+        StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(animali.imgAnimale);
+        storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Glide.with(holder.img.getContext())
+                        .load(uri)
+                        /*.placeholder(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark)
+                        .circleCrop()
+                        .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)*/
+                        .into(holder.img);
+            }
+        });
 
-        Glide.with(holder.img.getContext())
-                .load(R.drawable.logo)
-                /*.placeholder(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark)
-                .circleCrop()
-                .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)*/
-                .into(holder.img);
 
 
 
