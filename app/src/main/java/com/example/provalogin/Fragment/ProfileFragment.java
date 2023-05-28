@@ -133,9 +133,9 @@ public class ProfileFragment extends Fragment {
         nuovoanimalemanualmente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                rendiInvisibileView();
+                //rendiInvisibileView();
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container_animali, new NewAnimal()).commit();
+                        .replace(R.id.fragment_container, new NewAnimal()).addToBackStack(null).commit();
 
 
             }
