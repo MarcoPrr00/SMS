@@ -39,17 +39,7 @@ import java.util.List;
 public class  ProfileVeterinarioFragment extends Fragment {
 
     private Context context;
-    private boolean isModificaProfiloVisible = true;
 
-    public void setModificaProfiloVisible(boolean isVisible) {
-        if (modificaProfilo != null) {
-            if (isVisible) {
-                modificaProfilo.setVisibility(View.VISIBLE);
-            } else {
-                modificaProfilo.setVisibility(View.GONE);
-            }
-        }
-    }
 
 
 

@@ -23,6 +23,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.*;
 
+import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -55,6 +56,7 @@ public class UpdateActivity extends AppCompatActivity {
     private String posizione;
     private Utente utente;
     private Segnalazioni segnalazioni;
+    private Animal animale;
 
 
     // request code
@@ -288,6 +290,8 @@ public class UpdateActivity extends AppCompatActivity {
             case "nuovoanimale":
                 imganimal();
                 break;
+            case "dettagliMieiAnimali":
+                modificaImgProfiloAnimale();
         }
     }
 
@@ -313,6 +317,12 @@ public class UpdateActivity extends AppCompatActivity {
         segnalazioni.imgSegnalazione=imgPosition;
         reference.child("Segnalazioni").setValue(segnalazioni);
          */
+    }
+
+    public void modificaImgProfiloAnimale(){
+        animale = (Animal) getIntent().getSerializableExtra("Animale");
+        animale.imgAnimale = imgPosition;
+        reference.child("Animals").child(animale.id).child("imgAnimale").setValue(imgPosition);
     }
 
 }

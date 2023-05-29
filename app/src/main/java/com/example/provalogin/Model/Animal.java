@@ -1,7 +1,9 @@
 
 package com.example.provalogin.Model;
 
-public class Animal {
+import java.io.Serializable;
+
+public class Animal implements Serializable {
 
 
     public String id;

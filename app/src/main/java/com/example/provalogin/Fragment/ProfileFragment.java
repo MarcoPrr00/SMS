@@ -104,7 +104,7 @@ public class ProfileFragment extends Fragment {
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-            // rendiVisibileView();
+
 
             mAnimal = new ArrayList<>();
             animalAdapter = new AnimalAdapter(getContext(), mAnimal);

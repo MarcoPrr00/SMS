@@ -95,6 +95,7 @@ id btnScegli
 id btn_follow
 id btn_invia_nuova_segnalazione
 id btn_nuava_foto
+id btn_nuava_foto_mio_animale
 id btn_nuava_foto_segnalazione
 id btn_nuova_segnalazione
 id caricamentoanimale
@@ -163,6 +164,7 @@ id login
 id mieianimali_recyclerview
 id motionLayout
 id name
+id name_mio_animale
 id newanimal
 id nome
 id nomeAnimale
