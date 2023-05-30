@@ -9,14 +9,14 @@ public class Animal implements Serializable {
     public String id;
     public String imgAnimale;
     public String nomeAnimale;
-    private String eta;
-    private String sesso;
-    private String chip;
-    private String sterilizzazione;
+    public String eta;
+    public String sesso;
+    public String chip;
+    public String sterilizzazione;
     public String padrone;
     public String specie;
-    private String preferenzaCibo;
-    private String statoSalute;
+    public String preferenzaCibo;
+    public String statoSalute;
 
     public Animal () {
 

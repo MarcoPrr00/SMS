@@ -68,7 +68,7 @@ public class SegnalazioniAdapter extends RecyclerView.Adapter<SegnalazioniAdapte
             @Override
             public void onSuccess(Uri uri) {
                 Glide.with(holder.img.getContext())
-                        .load(uri)
+                        .load(uri).circleCrop()
                         /*.placeholder(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark)
                         .circleCrop()
                         .error(com.firebase.ui.storage.R.drawable.common_google_signin_btn_icon_dark_normal)*/
