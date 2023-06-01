@@ -10,21 +10,19 @@
     android:paddingStart="15dp"
     android:paddingEnd="15dp">
 
-    <Button
-        android:id="@+id/editButtonsalute"
-        android:layout_width="180dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="@string/salute_animal"
-        android:textColorHighlight="@color/purple_700"
-        android:textSize="18sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editButtonspese"
-        app:layout_constraintTop_toBottomOf="@+id/name_mio_animale" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profileImg"
@@ -54,6 +52,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
+
+
     <Button
         android:id="@+id/editButtonspese"
         android:layout_width="180dp"
@@ -65,6 +65,22 @@
         app:cornerRadius="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name_mio_animale" />
+
+            <Button
+                android:id="@+id/editButtonsalute"
+                android:layout_width="180dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/salute_animal"
+                android:textColorHighlight="@color/purple_700"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/editButtonspese"
+                app:layout_constraintTop_toBottomOf="@+id/name_mio_animale" />
 
     <TextView
         android:id="@+id/name_mio_animale"
@@ -102,6 +118,7 @@
             />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_foto_album_animali"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_album_fotografico"
@@ -112,6 +129,12 @@
 
 
     </RelativeLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_nuava_foto_album_foto"

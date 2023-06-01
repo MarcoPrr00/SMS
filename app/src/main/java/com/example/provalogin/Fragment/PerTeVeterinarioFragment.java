@@ -76,7 +76,7 @@ public class PerTeVeterinarioFragment extends Fragment {
 
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        rendiVisibileView();
+
 
         mSegnalazioni = new ArrayList<>();
         segnalazioniAdapter = new SegnalazioniAdapter(this.getContext(), mSegnalazioni);
@@ -129,7 +129,7 @@ public class PerTeVeterinarioFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rendiVisibileView();
+
 
         //BOTTONE NUOVA SEGNALAZIONE
         floatingButtonNuovaSegnalazione.setOnClickListener(new View.OnClickListener() {

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,6 +37,8 @@ public class DettagliAnimale extends Fragment {
     ImageView img;
     TextView txtNomeAnimale, txtPadrone, txtPreferenzaCibo, txtEta, txtSesso;
 
+    Button btnalbumFoto;
+
 
     public DettagliAnimale(Follow tmp) {
         this.f=tmp;
@@ -61,6 +64,7 @@ public class DettagliAnimale extends Fragment {
         txtPreferenzaCibo=view.findViewById(R.id.txt_dettagli_preferenza_cibo);
         txtEta=view.findViewById(R.id.eta_animale);
         txtSesso=view.findViewById(R.id.sesso_animale);
+        btnalbumFoto=view.findViewById(R.id.albumfoto);
 
         return view;
     }
@@ -68,6 +72,15 @@ public class DettagliAnimale extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+
+        //click bottone album foto
+        btnalbumFoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, new DettagliMieiAnimali(animali,"rendiInvisibiliBottoni")).addToBackStack(null).commit();
+            }
+        });
 
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();

@@ -3126,7 +3126,7 @@ id imageView
 id imageView2
 id image_added
 id image_profile
-id image_view_update
+id image_view_album_foto_animale
 id img
 id img1
 id imgUpdate
@@ -3299,6 +3299,7 @@ id radio
 id ratio
 id rectangles
 id recycler_view
+id recycler_view_foto_album_animali
 id recycler_view_incarico
 id recycler_view_veterinario
 id register
@@ -3411,7 +3412,6 @@ id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_view_name
 id textinput_counter
 id textinput_error
 id textinput_helper_text

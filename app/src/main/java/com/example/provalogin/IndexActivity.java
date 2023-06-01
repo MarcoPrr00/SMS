@@ -2,7 +2,6 @@ package com.example.provalogin;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.GenericLifecycleObserver;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,7 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
+import com.example.provalogin.Adapter.ImageAdapter;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -25,8 +24,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-
-import org.w3c.dom.CDATASection;
 
 import java.util.ArrayList;
 
@@ -79,7 +76,7 @@ public class IndexActivity extends AppCompatActivity {
 
                 }
 
-                mAdapter = new ImageAdapter(getApplicationContext(),mUploads);
+
 
                 mRecyclerView.setAdapter(mAdapter);
             }
