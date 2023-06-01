@@ -4,7 +4,7 @@
             "outputFile": "com.example.provalogin.app-mergeDebugResources-44:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/tommasovalenzano/.gradle/caches/transforms-3/9392dd674313cc84a3056d9a0c9410ef/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\9392dd674313cc84a3056d9a0c9410ef\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tommasovalenzano/.gradle/caches/transforms-3/5b8dbee9c666024b51275037a4df74a1/transformed/material-1.7.0/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5b8dbee9c666024b51275037a4df74a1\\transformed\\material-1.7.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -33,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "/Users/tommasovalenzano/.gradle/caches/transforms-3/e0385451fd01d30855dd5a5bba5defda/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\e0385451fd01d30855dd5a5bba5defda\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

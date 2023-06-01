@@ -23,7 +23,9 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.*;
 
+import com.example.provalogin.Fragment.NewAnimal;
 import com.example.provalogin.Model.Animal;
+import com.example.provalogin.Model.Image;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -292,6 +294,10 @@ public class UpdateActivity extends AppCompatActivity {
                 break;
             case "dettagliMieiAnimali":
                 modificaImgProfiloAnimale();
+                break;
+            case "nuovaFotoAlbum":
+                aggiungiFotoAlbum();
+                break;
         }
     }
 
@@ -323,6 +329,22 @@ public class UpdateActivity extends AppCompatActivity {
         animale = (Animal) getIntent().getSerializableExtra("Animale");
         animale.imgAnimale = imgPosition;
         reference.child("Animals").child(animale.id).child("imgAnimale").setValue(imgPosition);
+        this.onBackPressed();
+    }
+
+    public void aggiungiFotoAlbum(){
+        animale = (Animal) getIntent().getSerializableExtra("Animale");
+        Image img = new Image();
+        img.id = NewAnimal.generacodiceid();
+        img.imgPosition = imgPosition;
+        img.idAnimale= animale.id;
+        img.idPadrone = animale.padrone;
+
+        //caricamento
+        FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+        reference = database.getReference().child("Image").child(img.id);
+        reference.setValue(img);
+        this.onBackPressed();
     }
 
 }
