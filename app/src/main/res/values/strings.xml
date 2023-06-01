@@ -1,48 +1,48 @@
 <resources>
     <string name="app_name">PuppyPad</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
-    <string name="name">Name</string>
+    <string name="name">Nome</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
-    <string name="todo">TODO</string>
-    <string name="username">username</string>
-    <string name="full_name">full name</string>
-    <string name="btn_follow">Button</string>
-    <string name="segui">segui</string>
-    <string name="follow">Follow</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato? Clicca qui!</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="username">Nome utente</string>
+    <string name="full_name">Nome completo</string>
+    <string name="btn_follow" translatable="false">Button</string>
+    <string name="segui">Segui</string>
+    <string name="follow">Segui</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato, Clicca qui!</string>
     <string name="accedi">ACCEDI</string>
-    <string name="log">TODO</string>
-    <string name="logo" />
-    <string name="Tipologia" />
+    <string name="log" translatable="false">TODO</string>
+    <string name="logo" translatable="false" />
+    <string name="Tipologia" translatable="false" />
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>
-    <string name="emailutente">Email</string>
+    <string name="emailutente" translatable="false">Email</string>
     <string name="registratibut">REGISTRATI</string>
-    <string name="passwordutenteamico">Password</string>
+    <string name="passwordutenteamico" translatable="false">Password</string>
     <string name="hai_gi_un_account_clicca_qui">Hai già un account? Clicca qui!</string>
-    <string name="logoimage">TODO</string>
-    <string name="fullname">fullname</string>
-    <string name="Username">Username</string>
-    <string name="FullName">FullName</string>
+    <string name="logoimage" translatable="false">TODO</string>
+    <string name="fullname">Nome completo</string>
+    <string name="Username">Nome utente</string>
+    <string name="FullName">Nome completo</string>
     <string name="nuovo">nuovo</string>
-    <string name="qrcode">qrcode</string>
-    <string name="nuovoanimale">nuovoanimale</string>
+    <string name="qrcode" translatable="false">qrcode</string>
+    <string name="nuovoanimale">Nuovo animale</string>
     <string name="new_pet_bluetooth_option">Nuovo animale con Bluetooth</string>
-    <string name="new_pet_bluetooth__option">new_pet_bluetooth_option</string>
+    <string name="new_pet_bluetooth__option" translatable="false">new_pet_bluetooth_option</string>
     <string name="imieianimali">I Miei Animali</string>
     <string name="ciao">ciao</string>
     <string name="items">Tipologia Utente</string>
     <string name="type_null">tipo nullo</string>
-    <string name="Nickname">Nickname</string>
+    <string name="Nickname" translatable="false">Nickname</string>
     <string name="Nominativo">Nome e Cognome</string>
-    <string name="image">TODO</string>
+    <string name="image" translatable="false">TODO</string>
     <string name="nomeanimale">Nome Animale</string>
-    <string name="imagenuova">TODO</string>
-    <string name="todoy">TODO</string>
+    <string name="imagenuova" translatable="false">TODO</string>
+    <string name="todoy" translatable="false">TODO</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
     <string name="nuovoamicotranoi">Un nuovo amico tra noi!</string>
     <string name="nome_animale">Nome Animale</string>
@@ -59,20 +59,20 @@
     <string name="preferenza">Preferenza Cibo</string>
     <string name="salute">Stato di Salute</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
-    <string name="chip">Chip</string>
+    <string name="chip" translatable="false">Chip</string>
     <string name="eta">Eta Animale</string>
     <string name="Conferma">Conferma Dati</string>
     <string name="added">Animale Aggiunto!</string>
     <string name="nomeanimal">Nome</string>
     <string name="specie">Specie</string>
     <string name="padronea">Padrone</string>
-    <string name="immag">TODO</string>
+    <string name="immag" translatable="false">TODO</string>
     <string name="immagine">immagine</string>
     <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="destinatari">Destinatari</string>
     <string name="salute_animal">Salute</string>
     <string name="spese_animal">Spese</string>
-    <string name="todoi">TODO</string>
+    <string name="todoi" translatable="false">TODO</string>
     <string name="i_miei_animali_preferiti">I MIEI ANIMALI PREFERITI</string>
     <string name="immagine_caricata">Immagine Caricata</string>
     <string name="nomeanimalemancante">Inserire il nome dell\'animale!</string>
