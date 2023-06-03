@@ -2,7 +2,9 @@ package com.example.provalogin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -26,5 +28,8 @@ public class first extends AppCompatActivity {
 
 
     }
-
+    //funzione che esegue l'impostazione della lingua preimostata nel dispositivo
+    void loadLocate() { SharedPreferences sharedPreferences = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        String language = sharedPreferences.getString("My_Lang", "");
+    }
 }

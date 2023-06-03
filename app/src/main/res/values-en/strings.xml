@@ -59,4 +59,44 @@
     <string name="etamancante">Insert pet\'s age</string>
     <string name="cibomancante">Insert pet\'s favorite food</string>
     <string name="chiperror">Chip correct with 12 numbers</string>
+    <string-array name="spinner_segnalazione">
+        <item>Need Help!</item>
+        <item>Search Stall</item>
+        <item>Offer Stall</item>
+        <item>Search Pet</item>
+        <item>Offer Pet</item>
+    </string-array>
+    <string-array name="sessoa">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="sterilizzazioneanimale">
+        <item>Effectuated</item>
+        <item>Not Effectuated</item>
+    </string-array>
+    <string-array name="statosalute">
+        <item>Excellent</item>
+        <item>Good</item>
+        <item>Ups and Downs</item>
+        <item>Weak</item>
+        <item>Can Handle</item>
+        <item>Poor</item>
+    </string-array>
+    <string-array name="speciea">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Frog</item>
+        <item>Duck</item>
+        <item>Nightingale</item>
+        <item>Chick</item>
+        <item>Woolf</item>
+        <item>Fox</item>
+        <item>Zebra</item>
+        <item>Crocodile</item>
+        <item>Turtle</item>
+        <item>Parot</item>
+        <item>Iguana</item>
+        <item>Pink-Flamingo</item>
+        <item>Monk Seal</item>
+    </string-array>
 </resources>
