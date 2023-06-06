@@ -17,6 +17,7 @@ import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -27,6 +28,8 @@ import java.util.List;
 public class ModificaProfiloVeterinarioFragment extends Fragment {
 
     String userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+    FirebaseAuth auth = FirebaseAuth.getInstance();
+    FirebaseUser user = auth.getCurrentUser();
     Utente utente;
 
 
@@ -121,6 +124,7 @@ public class ModificaProfiloVeterinarioFragment extends Fragment {
         if(!passwordUser.equals(editPassword.getText().toString())){
             reference.child("Users").child(userId).child("Password").setValue(editPassword.getText().toString());
             passwordUser = editPassword.getText().toString();
+            user.updatePassword(passwordUser);
             tmp = true;
         }
         return tmp;
