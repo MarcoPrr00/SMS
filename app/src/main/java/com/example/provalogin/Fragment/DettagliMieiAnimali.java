@@ -45,7 +45,7 @@ import java.util.List;
 public class DettagliMieiAnimali extends Fragment {
 
     Animal animale;
-    String position;
+    String position = new String();
     ImageView imgProfilo;
     FloatingActionButton btnNuovaFotoProfilo, btnAlbumFoto;
     Button btnSpese, btnSalute;
