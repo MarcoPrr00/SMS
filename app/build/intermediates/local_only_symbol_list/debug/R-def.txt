@@ -76,6 +76,7 @@ drawable zebra
 font architects_daughter
 font coustard
 id add_qr_code_pet
+id aggiungiSpesa
 id albumfoto
 id animali_item
 id animalipreferiti
@@ -99,6 +100,7 @@ id btn_nuava_foto_album_foto
 id btn_nuava_foto_mio_animale
 id btn_nuava_foto_segnalazione
 id btn_nuova_segnalazione
+id cancellaSpesa
 id caricamentoanimale
 id checkbox_ente
 id checkbox_utentetradizionale
@@ -202,6 +204,8 @@ id sesso_animale
 id specie
 id specie_animale
 id specie_item
+id spesaEdit
+id spese_container
 id spinner_tipologia
 id start
 id sterilizzazione_animale
@@ -209,6 +213,7 @@ id tab_layout_ente
 id tab_layout_veterinario
 id testo
 id textView
+id tipoSpesa
 id tipologia
 id titleName
 id titleUsername
@@ -241,6 +246,7 @@ layout activity_register
 layout activity_start
 layout activity_update
 layout animal_item
+layout dialog
 layout dropdown_scelta
 layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
@@ -258,9 +264,11 @@ layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_veterinario
 layout fragment_search
+layout fragment_spese_animale
 layout image_item
 layout prefe_item
 layout segnalazioni_item
+layout spesa
 layout start
 layout user_item
 menu bottom_navigation

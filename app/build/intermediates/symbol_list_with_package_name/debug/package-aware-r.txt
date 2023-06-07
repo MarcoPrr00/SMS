@@ -2903,6 +2903,7 @@ id add
 id add_qr_code_pet
 id adjust_height
 id adjust_width
+id aggiungiSpesa
 id albumfoto
 id alertTitle
 id aligned
@@ -2962,6 +2963,7 @@ id cache_measures
 id callMeasure
 id cancel_action
 id cancel_button
+id cancellaSpesa
 id caricamentoanimale
 id carryVelocity
 id center
@@ -3360,6 +3362,8 @@ id special_effects_controller_view_tag
 id specie
 id specie_animale
 id specie_item
+id spesaEdit
+id spese_container
 id spinner_tipologia
 id spline
 id split_action_bar
@@ -3419,6 +3423,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id tipoSpesa
 id tipologia
 id title
 id titleDividerNoCustom
@@ -3644,6 +3649,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog
 layout dropdown_scelta
 layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
@@ -3661,6 +3667,7 @@ layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_veterinario
 layout fragment_search
+layout fragment_spese_animale
 layout image_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3730,6 +3737,7 @@ layout segnalazioni_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spesa
 layout start
 layout support_simple_spinner_dropdown_item
 layout user_item
