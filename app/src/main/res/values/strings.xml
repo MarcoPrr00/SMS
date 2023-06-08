@@ -79,6 +79,10 @@
     <string name="etamancante">Inserire l\'età\n</string>
     <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
     <string name="chiperror">chip corretto con 12 numeri</string>
+    <string name="spesa">Spesa</string>
+    <string name="prezzo">Prezzo</string>
+    <string name="elenco_spese">ELENCO SPESE</string>
+    <string name="segnalazioni_prese_in_carico">SEGNALAZIONI IN CARICO</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>

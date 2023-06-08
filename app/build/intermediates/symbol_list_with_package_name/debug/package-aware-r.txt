@@ -2835,6 +2835,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id PrezzoSpesa
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3057,6 +3058,7 @@ id editPassword
 id edit_query
 id elastic
 id elencopref
+id elencospese
 id email
 id embed
 id end
@@ -3288,6 +3290,7 @@ id post
 id postLayout
 id preferenza_animale
 id pressed
+id prezzoEdit
 id profileEmail
 id profileEnte
 id profileImg
@@ -3303,6 +3306,7 @@ id rectangles
 id recycler_view
 id recycler_view_foto_album_animali
 id recycler_view_incarico
+id recycler_view_spese_animali
 id recycler_view_veterinario
 id register
 id reverseSawtooth
@@ -3363,7 +3367,6 @@ id specie
 id specie_animale
 id specie_item
 id spesaEdit
-id spese_container
 id spinner_tipologia
 id spline
 id split_action_bar
@@ -4117,6 +4120,7 @@ string default_web_client_id
 string define_zxingandroidembedded
 string descrizione
 string destinatari
+string elenco_spese
 string email
 string emailutente
 string ente
@@ -4284,6 +4288,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string posizione
 string preferenza
+string prezzo
 string project_id
 string qrcode
 string registratibut
@@ -4291,9 +4296,11 @@ string salute
 string salute_animal
 string se_non_sei_registrato_clicca_qui
 string search_menu_title
+string segnalazioni_prese_in_carico
 string segui
 string sesso_animale_text
 string specie
+string spesa
 string spese_animal
 string status_bar_notification_info_overflow
 string sterilizzazione

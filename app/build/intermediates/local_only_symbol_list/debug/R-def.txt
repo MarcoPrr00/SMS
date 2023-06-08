@@ -75,6 +75,7 @@ drawable white_background
 drawable zebra
 font architects_daughter
 font coustard
+id PrezzoSpesa
 id add_qr_code_pet
 id aggiungiSpesa
 id albumfoto
@@ -122,6 +123,7 @@ id editEmail
 id editName
 id editPassword
 id elencopref
+id elencospese
 id email
 id end
 id eta_animale
@@ -182,6 +184,7 @@ id petsEnte
 id petsVet
 id post
 id preferenza_animale
+id prezzoEdit
 id profileEmail
 id profileEnte
 id profileImg
@@ -192,6 +195,7 @@ id profileVet
 id recycler_view
 id recycler_view_foto_album_animali
 id recycler_view_incarico
+id recycler_view_spese_animali
 id recycler_view_veterinario
 id register
 id salute_animale
@@ -205,7 +209,6 @@ id specie
 id specie_animale
 id specie_item
 id spesaEdit
-id spese_container
 id spinner_tipologia
 id start
 id sterilizzazione_animale
@@ -582,6 +585,7 @@ string cognome
 string default_web_client_id
 string descrizione
 string destinatari
+string elenco_spese
 string email
 string emailutente
 string ente
@@ -628,15 +632,18 @@ string password
 string passwordutenteamico
 string posizione
 string preferenza
+string prezzo
 string project_id
 string qrcode
 string registratibut
 string salute
 string salute_animal
 string se_non_sei_registrato_clicca_qui
+string segnalazioni_prese_in_carico
 string segui
 string sesso_animale_text
 string specie
+string spesa
 string spese_animal
 string sterilizzazione
 string tastopercaricamento

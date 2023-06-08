@@ -88,6 +88,7 @@
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
     <string name="descrizione">Descrizione</string>
     <string name="destinatari">Destinatari</string>
+    <string name="elenco_spese">ELENCO SPESE</string>
     <string name="email" translatable="false">Email</string>
     <string name="emailutente" translatable="false">Email</string>
     <string name="ente">Ente</string>
@@ -134,15 +135,18 @@
     <string name="passwordutenteamico" translatable="false">Password</string>
     <string name="posizione">Posizione</string>
     <string name="preferenza">Preferenza Cibo</string>
+    <string name="prezzo">Prezzo</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
     <string name="qrcode" translatable="false">qrcode</string>
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
     <string name="salute_animal">Salute</string>
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato, Clicca qui!</string>
+    <string name="segnalazioni_prese_in_carico">SEGNALAZIONI IN CARICO</string>
     <string name="segui">Segui</string>
     <string name="sesso_animale_text">Sesso</string>
     <string name="specie">Specie</string>
+    <string name="spesa">Spesa</string>
     <string name="spese_animal">Spese</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>

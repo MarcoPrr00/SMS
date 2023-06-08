@@ -102,7 +102,7 @@ public class DettagliMieiAnimali extends Fragment {
         btnSpese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SpeseAnimaleFragment()).addToBackStack(null).commit();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SpeseAnimaleFragment(animale)).addToBackStack(null).commit();
             }
         });
         if(!(position.isEmpty()) && position.equals("rendiInvisibiliBottoni")){
