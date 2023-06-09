@@ -2904,6 +2904,7 @@ id add
 id add_qr_code_pet
 id adjust_height
 id adjust_width
+id aggiungiCura
 id aggiungiSpesa
 id albumfoto
 id alertTitle
@@ -3002,6 +3003,7 @@ id coordinator
 id cos
 id counterclockwise
 id cradle
+id cura_edit
 id currentState
 id custom
 id customPanel
@@ -3057,6 +3059,7 @@ id editName
 id editPassword
 id edit_query
 id elastic
+id elencoCure
 id elencopref
 id elencospese
 id email
@@ -3291,6 +3294,7 @@ id postLayout
 id preferenza_animale
 id pressed
 id prezzoEdit
+id prezzo_edit
 id profileEmail
 id profileEnte
 id profileImg
@@ -3304,6 +3308,7 @@ id radio
 id ratio
 id rectangles
 id recycler_view
+id recycler_view_cure_animali
 id recycler_view_foto_album_animali
 id recycler_view_incarico
 id recycler_view_spese_animali
@@ -3636,6 +3641,7 @@ layout activity_update
 layout animal_item
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout cure
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3653,6 +3659,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog
+layout dialog_cura
 layout dropdown_scelta
 layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
@@ -3669,6 +3676,7 @@ layout fragment_pets_veterinario
 layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_veterinario
+layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale
 layout image_item

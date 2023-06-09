@@ -38,7 +38,6 @@ public class SpeseAnimaleFragment extends Fragment {
 
     Button aggiungiSpesa;
     AlertDialog dialog;
-    LinearLayout layout;
     DatabaseReference reference;
 
     RecyclerView recyclerView;
@@ -121,7 +120,6 @@ public class SpeseAnimaleFragment extends Fragment {
                         reference = database.getReference().child("Spese").child(id);
                         reference.setValue(holder);
 
-                        //addCard(spesa.getText().toString(), holder.prezzo);
                     }
                 })
                 .setNegativeButton("Cancella", new DialogInterface.OnClickListener() {
@@ -131,26 +129,5 @@ public class SpeseAnimaleFragment extends Fragment {
                     }
                 });
         dialog = builder.create();
-    }
-
-    private void addCard(String spesa, String prezzo) {
-        View view = getLayoutInflater().inflate(R.layout.spesa,null);
-
-        TextView nameView = view.findViewById(R.id.tipoSpesa);
-        TextView prezzoSpesa = view.findViewById(R.id.PrezzoSpesa);
-        Button delete = view.findViewById(R.id.cancellaSpesa);
-
-        nameView.setText(spesa);
-        prezzoSpesa.setText(prezzo);
-
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                layout.removeView(view);
-            }
-        });
-
-        layout.addView(view);
-
     }
 }

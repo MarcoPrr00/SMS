@@ -18,12 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.provalogin.Adapter.ImageAdapter;
-import com.example.provalogin.Adapter.SegnalazioniAdapter;
 import com.example.provalogin.Model.Animal;
-import com.example.provalogin.Model.Follow;
 import com.example.provalogin.Model.Image;
-import com.example.provalogin.Model.Segnalazioni;
-import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 import com.example.provalogin.UpdateActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -98,6 +94,17 @@ public class DettagliMieiAnimali extends Fragment {
         btnSpese = view.findViewById(R.id.editButtonspese);
         btnSalute = view.findViewById(R.id.editButtonsalute);
 
+        btnSalute.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment_container,new SaluteAnimaliFragment(animale))
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         btnSpese.setOnClickListener(new View.OnClickListener() {
             @Override

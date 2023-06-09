@@ -77,6 +77,7 @@ font architects_daughter
 font coustard
 id PrezzoSpesa
 id add_qr_code_pet
+id aggiungiCura
 id aggiungiSpesa
 id albumfoto
 id animali_item
@@ -108,6 +109,7 @@ id checkbox_utentetradizionale
 id checkbox_veterinario
 id chip_animale
 id close
+id cura_edit
 id description
 id dettagli_segnalazione_button
 id dettagli_segnalazione_checkbox_ente
@@ -122,6 +124,7 @@ id editCognome
 id editEmail
 id editName
 id editPassword
+id elencoCure
 id elencopref
 id elencospese
 id email
@@ -185,6 +188,7 @@ id petsVet
 id post
 id preferenza_animale
 id prezzoEdit
+id prezzo_edit
 id profileEmail
 id profileEnte
 id profileImg
@@ -193,6 +197,7 @@ id profilePassword
 id profileUsername
 id profileVet
 id recycler_view
+id recycler_view_cure_animali
 id recycler_view_foto_album_animali
 id recycler_view_incarico
 id recycler_view_spese_animali
@@ -249,7 +254,9 @@ layout activity_register
 layout activity_start
 layout activity_update
 layout animal_item
+layout cure
 layout dialog
+layout dialog_cura
 layout dropdown_scelta
 layout fragment_dettagli_animale
 layout fragment_dettagli_segnalazioni
@@ -266,6 +273,7 @@ layout fragment_pets_veterinario
 layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_veterinario
+layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale
 layout image_item

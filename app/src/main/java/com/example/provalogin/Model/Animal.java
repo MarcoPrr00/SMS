@@ -3,7 +3,7 @@ package com.example.provalogin.Model;
 
 import java.io.Serializable;
 
-public class Animal implements Serializable {
+public class  Animal implements Serializable {
 
 
     public String id;

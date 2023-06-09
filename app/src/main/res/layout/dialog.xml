@@ -10,14 +10,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/spesa"
+            android:text="Tipo Spesa"
             android:textSize="20dp"/>
 
         <EditText
             android:id="@+id/spesaEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/spesa"
+            android:hint="Spesa"
             android:textSize="20dp"/>
 
         <TextView
@@ -30,7 +30,7 @@
             android:id="@+id/prezzoEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prezzo"
+            android:hint="Prezzo"
             android:inputType="numberDecimal"
             android:textSize="20dp"/>
 
