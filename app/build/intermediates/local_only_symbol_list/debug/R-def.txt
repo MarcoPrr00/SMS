@@ -76,6 +76,7 @@ drawable zebra
 font architects_daughter
 font coustard
 id PrezzoSpesa
+id actionbar
 id add_qr_code_pet
 id aggiungiCura
 id aggiungiSpesa
@@ -108,6 +109,7 @@ id checkbox_ente
 id checkbox_utentetradizionale
 id checkbox_veterinario
 id chip_animale
+id ciaoutente
 id close
 id cura_edit
 id description
@@ -189,6 +191,7 @@ id post
 id preferenza_animale
 id prezzoEdit
 id prezzo_edit
+id profile
 id profileEmail
 id profileEnte
 id profileImg
@@ -272,6 +275,7 @@ layout fragment_per_te_veterinario
 layout fragment_pets_veterinario
 layout fragment_profile
 layout fragment_profile_animal
+layout fragment_profile_user
 layout fragment_profile_veterinario
 layout fragment_salute_animali
 layout fragment_search
@@ -282,6 +286,7 @@ layout segnalazioni_item
 layout spesa
 layout start
 layout user_item
+menu actionbar_nav
 menu bottom_navigation
 menu bottom_navmenu_ente
 menu bottom_navmenu_veterinario

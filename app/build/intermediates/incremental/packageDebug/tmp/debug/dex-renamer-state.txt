@@ -1,12 +1,12 @@
-#Fri Jun 09 17:11:53 CEST 2023
-base.0=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
-base.3=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
-base.4=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
-base.5=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
-base.6=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.7=/Users/tommasovalenzano/SMS/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
+#Sun Jun 11 12:04:43 CEST 2023
+base.0=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.5=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.6=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.7=C\:\\Users\\Antonella_Z\\Desktop\\dagit\\SMS\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=10/classes.dex

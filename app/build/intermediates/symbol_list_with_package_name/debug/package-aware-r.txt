@@ -2898,6 +2898,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_text
+id actionbar
 id actions
 id activity_chooser_view_content
 id add
@@ -2983,6 +2984,7 @@ id checkbox_veterinario
 id checked
 id chip_animale
 id chronometer
+id ciaoutente
 id circle_center
 id clear_text
 id clip_horizontal
@@ -3295,6 +3297,7 @@ id preferenza_animale
 id pressed
 id prezzoEdit
 id prezzo_edit
+id profile
 id profileEmail
 id profileEnte
 id profileImg
@@ -3675,6 +3678,7 @@ layout fragment_per_te_veterinario
 layout fragment_pets_veterinario
 layout fragment_profile
 layout fragment_profile_animal
+layout fragment_profile_user
 layout fragment_profile_veterinario
 layout fragment_salute_animali
 layout fragment_search
@@ -3754,6 +3758,7 @@ layout support_simple_spinner_dropdown_item
 layout user_item
 layout zxing_barcode_scanner
 layout zxing_capture
+menu actionbar_nav
 menu bottom_navigation
 menu bottom_navmenu_ente
 menu bottom_navmenu_veterinario

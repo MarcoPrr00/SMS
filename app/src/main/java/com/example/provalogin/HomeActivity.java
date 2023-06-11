@@ -1,17 +1,22 @@
 package com.example.provalogin;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.example.provalogin.Fragment.FavorietesFragment;
 import com.example.provalogin.Fragment.HomeFragment;
 import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileFragment;
+import com.example.provalogin.Fragment.ProfileUserFragment;
 import com.example.provalogin.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,18 +24,35 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
+    View actionbar_nav;
     Fragment selectedFragment=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_home);
-
         bottomNavigationView=findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListner);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new PerTeVeterinarioFragment()).commit();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actionbar_nav, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.profile) {
+            Toast.makeText(getApplicationContext(), "funziona", Toast.LENGTH_SHORT).show();
+
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -51,6 +73,7 @@ public class HomeActivity extends AppCompatActivity {
                     editor.apply();
                     selectedFragment= new ProfileFragment();
                     break;
+
             }
             if( selectedFragment != null){
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

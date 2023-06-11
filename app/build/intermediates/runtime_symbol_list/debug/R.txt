@@ -2897,6 +2897,7 @@ int id action_mode_bar 0x7f0a0042
 int id action_mode_bar_stub 0x7f0a0043
 int id action_mode_close_button 0x7f0a0044
 int id action_text 0x7f0a0045
+int id actionbar 0x7f0a02aa
 int id actions 0x7f0a0046
 int id activity_chooser_view_content 0x7f0a0047
 int id add 0x7f0a0048
@@ -2982,6 +2983,7 @@ int id checkbox_veterinario 0x7f0a0097
 int id checked 0x7f0a0098
 int id chip_animale 0x7f0a0099
 int id chronometer 0x7f0a009a
+int id ciaoutente 0x7f0a02a8
 int id circle_center 0x7f0a009b
 int id clear_text 0x7f0a009c
 int id clip_horizontal 0x7f0a009d
@@ -3294,6 +3296,7 @@ int id preferenza_animale 0x7f0a01cf
 int id pressed 0x7f0a01d0
 int id prezzoEdit 0x7f0a01d1
 int id prezzo_edit 0x7f0a01d2
+int id profile 0x7f0a02a7
 int id profileEmail 0x7f0a01d3
 int id profileEnte 0x7f0a01d4
 int id profileImg 0x7f0a01d5
@@ -3674,6 +3677,7 @@ int layout fragment_per_te_veterinario 0x7f0d0045
 int layout fragment_pets_veterinario 0x7f0d0046
 int layout fragment_profile 0x7f0d0047
 int layout fragment_profile_animal 0x7f0d0048
+int layout fragment_profile_user 0x7f0d0098
 int layout fragment_profile_veterinario 0x7f0d0049
 int layout fragment_salute_animali 0x7f0d004a
 int layout fragment_search 0x7f0d004b
@@ -3753,6 +3757,7 @@ int layout support_simple_spinner_dropdown_item 0x7f0d0094
 int layout user_item 0x7f0d0095
 int layout zxing_barcode_scanner 0x7f0d0096
 int layout zxing_capture 0x7f0d0097
+int menu actionbar_nav 0x7f0f0003
 int menu bottom_navigation 0x7f0f0000
 int menu bottom_navmenu_ente 0x7f0f0001
 int menu bottom_navmenu_veterinario 0x7f0f0002
