@@ -6,14 +6,21 @@ import android.app.ProgressDialog;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.content.pm.PackageManager;
+import android.location.LocationManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +42,15 @@ import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
 import com.example.provalogin.RegisterActivity;
 import com.example.provalogin.UpdateActivity;
+import com.google.android.gms.common.api.ApiException;
+import com.google.android.gms.common.api.ResolvableApiException;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.LocationSettingsRequest;
+import com.google.android.gms.location.LocationSettingsResponse;
+import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -74,12 +90,16 @@ public class NuovaSegnalazioneFragment extends Fragment {
     Uri filePathSegnalazione;
     String imgPosition = "gs://provalogin-65cb5.appspot.com/logo.png";
 
-    EditText descrizione, posizione;
+    EditText descrizione;
+
+    TextView posizione;
     Spinner tipologia;
-    Button btnInviaSegnalazione;
+    Button btnInviaSegnalazione, btnCheckPosition;
     CheckBox cbVeterinario, cbEnte, cbUtenteTradizionale;
     ImageView imgSegnalazione;
     FloatingActionButton caricaImagineProfilo;
+
+    private LocationRequest locationRequest;
 
 
 
@@ -117,6 +137,135 @@ public class NuovaSegnalazioneFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
+        locationRequest = LocationRequest.create();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(5000);
+        locationRequest.setFastestInterval(2000);
+
+        btnCheckPosition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getCurrentLocation();
+            }
+        });
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 1){
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED){
+
+                if (isGPSEnabled()) {
+
+                    getCurrentLocation();
+
+                }else {
+
+                    turnOnGPS();
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+    private void getCurrentLocation() {
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+                if (isGPSEnabled()) {
+
+                    LocationServices.getFusedLocationProviderClient(getContext())
+                            .requestLocationUpdates(locationRequest, new LocationCallback() {
+                                @Override
+                                public void onLocationResult(@NonNull LocationResult locationResult) {
+                                    super.onLocationResult(locationResult);
+
+                                    LocationServices.getFusedLocationProviderClient(getContext())
+                                            .removeLocationUpdates(this);
+
+                                    if (locationResult != null && locationResult.getLocations().size() >0){
+
+                                        int index = locationResult.getLocations().size() - 1;
+                                        double latitude = locationResult.getLocations().get(index).getLatitude();
+                                        double longitude = locationResult.getLocations().get(index).getLongitude();
+
+                                        posizione.setText("Latitude: "+ latitude + "\n" + "Longitude: "+ longitude);
+                                    }
+                                }
+                            }, Looper.getMainLooper());
+
+                } else {
+                    turnOnGPS();
+                }
+
+            } else {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+            }
+        }
+    }
+
+    private void turnOnGPS() {
+
+
+
+        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                .addLocationRequest(locationRequest);
+        builder.setAlwaysShow(true);
+
+        Task<LocationSettingsResponse> result = LocationServices.getSettingsClient(getActivity())
+                .checkLocationSettings(builder.build());
+
+        result.addOnCompleteListener(new OnCompleteListener<LocationSettingsResponse>() {
+            @Override
+            public void onComplete(@NonNull Task<LocationSettingsResponse> task) {
+
+                try {
+                    LocationSettingsResponse response = task.getResult(ApiException.class);
+                    Toast.makeText(getContext(), "GPS is already tured on", Toast.LENGTH_SHORT).show();
+
+                } catch (ApiException e) {
+
+                    switch (e.getStatusCode()) {
+                        case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
+
+                            try {
+                                ResolvableApiException resolvableApiException = (ResolvableApiException) e;
+                                resolvableApiException.startResolutionForResult(getActivity(), 2);
+                            } catch (IntentSender.SendIntentException ex) {
+                                ex.printStackTrace();
+                            }
+                            break;
+
+                        case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
+                            //Device does not have location
+                            break;
+                    }
+                }
+            }
+        });
+
+    }
+
+    private boolean isGPSEnabled() {
+        LocationManager locationManager = null;
+        boolean isEnabled = false;
+
+        if (locationManager == null) {
+            locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        }
+
+        isEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        return isEnabled;
+
     }
 
     @Override
@@ -137,6 +286,7 @@ public class NuovaSegnalazioneFragment extends Fragment {
         posizione=view.findViewById(R.id.txt_posizione);
         tipologia=view.findViewById(R.id.spinner_tipologia);
         btnInviaSegnalazione=view.findViewById(R.id.btn_invia_nuova_segnalazione);
+        btnCheckPosition=view.findViewById(R.id.btn_check_position);
         cbEnte=view.findViewById(R.id.checkbox_ente);
         cbUtenteTradizionale=view.findViewById(R.id.checkbox_utentetradizionale);
         cbVeterinario=view.findViewById(R.id.checkbox_veterinario);
@@ -264,6 +414,13 @@ public class NuovaSegnalazioneFragment extends Fragment {
         if (requestCode == IMAGE_CAPTURE_CODE){
             imgSegnalazione.setImageURI(filePathSegnalazione);
             uploadImage();
+        }
+
+        if (requestCode == 2) {
+            if (resultCode == Activity.RESULT_OK) {
+
+                getCurrentLocation();
+            }
         }
 
 
