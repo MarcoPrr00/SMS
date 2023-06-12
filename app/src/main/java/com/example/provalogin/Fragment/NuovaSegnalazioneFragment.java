@@ -69,6 +69,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.UUID;
 
 
@@ -101,7 +102,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
 
     private LocationRequest locationRequest;
 
-
+    private double latitude;
+    private double longitude;
 
     public NuovaSegnalazioneFragment() {
         // Required empty public constructor
@@ -149,6 +151,7 @@ public class NuovaSegnalazioneFragment extends Fragment {
             }
         });
 
+
     }
 
     @Override
@@ -195,8 +198,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
                                     if (locationResult != null && locationResult.getLocations().size() >0){
 
                                         int index = locationResult.getLocations().size() - 1;
-                                        double latitude = locationResult.getLocations().get(index).getLatitude();
-                                        double longitude = locationResult.getLocations().get(index).getLongitude();
+                                        latitude = locationResult.getLocations().get(index).getLatitude();
+                                        longitude = locationResult.getLocations().get(index).getLongitude();
 
                                         posizione.setText("Latitude: "+ latitude + "\n" + "Longitude: "+ longitude);
                                     }
@@ -292,6 +295,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
         cbVeterinario=view.findViewById(R.id.checkbox_veterinario);
         imgSegnalazione=view.findViewById(R.id.img_segnalazione);
         caricaImagineProfilo= view.findViewById(R.id.btn_nuava_foto_segnalazione);
+
+
         hashMap = new Segnalazioni();
         hashMap.imgSegnalazione = imgPosition;
         StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(hashMap.imgSegnalazione);
@@ -335,6 +340,8 @@ public class NuovaSegnalazioneFragment extends Fragment {
                 hashMap.presaInCarico = "no";
                 hashMap.idPresaInCarico = "no";
                 hashMap.imgSegnalazione = imgPosition;
+                hashMap.lattitudine = latitude;
+                hashMap.longitudine = longitude;
 
                 /*
                 HashMap<String, Object> hashMap = new HashMap<>();

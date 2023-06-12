@@ -17,6 +17,7 @@ import com.example.provalogin.Fragment.HomeFragment;
 import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileFragment;
 import com.example.provalogin.Fragment.ProfileUserFragment;
+import com.example.provalogin.Fragment.ProfileVeterinarioFragment;
 import com.example.provalogin.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -46,10 +47,11 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.profile) {
-            Toast.makeText(getApplicationContext(), "funziona", Toast.LENGTH_SHORT).show();
-
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new ProfileVeterinarioFragment()).addToBackStack(null).commit();
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

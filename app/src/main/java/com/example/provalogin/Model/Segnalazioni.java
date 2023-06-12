@@ -17,6 +17,10 @@ public class Segnalazioni implements Serializable {
     public String idPresaInCarico;
     public String presaInCarico;
 
+    public double lattitudine;
+
+    public double longitudine;
+
 
     public Segnalazioni(){
 

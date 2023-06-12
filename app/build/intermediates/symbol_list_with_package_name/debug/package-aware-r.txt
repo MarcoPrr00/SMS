@@ -2957,6 +2957,7 @@ id btnScegli
 id btn_check_position
 id btn_follow
 id btn_invia_nuova_segnalazione
+id btn_maps
 id btn_nuava_foto
 id btn_nuava_foto_album_foto
 id btn_nuava_foto_mio_animale
