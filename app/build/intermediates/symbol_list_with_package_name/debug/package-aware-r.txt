@@ -2700,6 +2700,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dialog_bg
 drawable fab_bg_mini
 drawable fab_bg_normal
 drawable fenicottero
@@ -2955,6 +2956,8 @@ id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_check_position
+id btn_codividi
+id btn_codividiQrCode
 id btn_follow
 id btn_invia_nuova_segnalazione
 id btn_maps
@@ -2985,6 +2988,7 @@ id checkbox_utentetradizionale
 id checkbox_veterinario
 id checked
 id chip_animale
+id choose_for_picture
 id chronometer
 id ciaoutente
 id circle_center
@@ -3143,6 +3147,7 @@ id img1
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
+id img_qrcode
 id img_segnalazione
 id immagine
 id immediateStop
@@ -3682,6 +3687,7 @@ layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_user
 layout fragment_profile_veterinario
+layout fragment_q_r_c_o_d_e
 layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale

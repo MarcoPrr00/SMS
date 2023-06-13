@@ -31,6 +31,7 @@ drawable c
 drawable cane
 drawable cardback
 drawable coccodrillo
+drawable dialog_bg
 drawable fenicottero
 drawable foca
 drawable gatto
@@ -97,6 +98,8 @@ id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_check_position
+id btn_codividi
+id btn_codividiQrCode
 id btn_follow
 id btn_invia_nuova_segnalazione
 id btn_maps
@@ -111,6 +114,7 @@ id checkbox_ente
 id checkbox_utentetradizionale
 id checkbox_veterinario
 id chip_animale
+id choose_for_picture
 id ciaoutente
 id close
 id cura_edit
@@ -158,6 +162,7 @@ id img1
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
+id img_qrcode
 id img_segnalazione
 id immagine
 id inCarico
@@ -279,6 +284,7 @@ layout fragment_profile
 layout fragment_profile_animal
 layout fragment_profile_user
 layout fragment_profile_veterinario
+layout fragment_q_r_c_o_d_e
 layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale

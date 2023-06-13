@@ -1,12 +1,21 @@
 package com.example.provalogin.Fragment;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +29,7 @@ import com.bumptech.glide.Glide;
 import com.example.provalogin.Adapter.ImageAdapter;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Image;
+import com.example.provalogin.Model.Spesa;
 import com.example.provalogin.R;
 import com.example.provalogin.UpdateActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -34,16 +44,23 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DettagliMieiAnimali extends Fragment {
 
+    AlertDialog dialog;
+
     Animal animale;
     String position = new String();
     ImageView imgProfilo;
-    FloatingActionButton btnNuovaFotoProfilo, btnAlbumFoto;
+    FloatingActionButton btnNuovaFotoProfilo, btnAlbumFoto, btnCodividiQrcode;
     Button btnSpese, btnSalute;
     TextView txtNomeAnimale;
 
@@ -93,6 +110,7 @@ public class DettagliMieiAnimali extends Fragment {
         txtNomeAnimale = view.findViewById(R.id.name_mio_animale);
         btnSpese = view.findViewById(R.id.editButtonspese);
         btnSalute = view.findViewById(R.id.editButtonsalute);
+        btnCodividiQrcode = view.findViewById(R.id.btn_codividiQrCode);
 
         btnSalute.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,6 +130,8 @@ public class DettagliMieiAnimali extends Fragment {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SpeseAnimaleFragment(animale)).addToBackStack(null).commit();
             }
         });
+
+
         if(!(position.isEmpty()) && position.equals("rendiInvisibiliBottoni")){
             rendiInvisibiliBottoni();
         }
@@ -167,7 +187,16 @@ public class DettagliMieiAnimali extends Fragment {
 
 
 
+
+        btnCodividiQrcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buildDialog();
+            }
+        });
+
     }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -199,6 +228,52 @@ public class DettagliMieiAnimali extends Fragment {
         btnNuovaFotoProfilo.setVisibility(View.INVISIBLE);
         btnSpese.setVisibility(View.INVISIBLE);
         btnSalute.setVisibility(View.INVISIBLE);
+    }
+
+    private ImageView imgQrCode;
+    private void buildDialog() {
+        //alertdialog
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        View view = getLayoutInflater().inflate(R.layout.fragment_q_r_c_o_d_e,null);
+        imgQrCode = view.findViewById(R.id.img_qrcode);
+        builder.setView(view);
+        generateQR();
+        dialog = builder.create();
+        dialog.show();
+
+        //fragment basso
+        /*
+        final Dialog dialog2 = new Dialog(getContext());
+        dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog2.setContentView(R.layout.fragment_q_r_c_o_d_e);
+        View view = getLayoutInflater().inflate(R.layout.fragment_q_r_c_o_d_e,null);
+        imgQrCode = view.findViewById(R.id.img_qrcode);
+        generateQR();
+        dialog2.show();
+        dialog2.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        //dialog2.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog2.getWindow().setGravity(Gravity.BOTTOM);
+*/
+
+    }
+
+    private void generateQR()
+    {
+        String text = animale.id;
+        MultiFormatWriter writer = new MultiFormatWriter();
+        try
+        {
+            BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE,600,600);
+            BarcodeEncoder encoder = new BarcodeEncoder();
+            Bitmap bitmap = encoder.createBitmap(matrix);
+            imgQrCode.setImageBitmap(bitmap);
+
+        } catch (WriterException e)
+        {
+            e.printStackTrace();
+        }
     }
 
 }
