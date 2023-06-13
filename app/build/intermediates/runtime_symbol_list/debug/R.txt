@@ -2813,6 +2813,7 @@ int drawable prova1 0x7f08010f
 int drawable prova2 0x7f080110
 int drawable provasfondo 0x7f080111
 int drawable pulcino 0x7f080112
+int drawable qrcode3 0x7f080122
 int drawable rana 0x7f080113
 int drawable search_background 0x7f080114
 int drawable sfondo_definitivo 0x7f080115

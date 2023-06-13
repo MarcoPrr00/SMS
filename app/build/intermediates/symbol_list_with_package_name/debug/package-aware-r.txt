@@ -2814,6 +2814,7 @@ drawable prova1
 drawable prova2
 drawable provasfondo
 drawable pulcino
+drawable qrcode3
 drawable rana
 drawable search_background
 drawable sfondo_definitivo
