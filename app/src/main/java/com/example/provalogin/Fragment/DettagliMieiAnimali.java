@@ -233,7 +233,7 @@ public class DettagliMieiAnimali extends Fragment {
     private ImageView imgQrCode;
     private void buildDialog() {
         //alertdialog
-
+/*
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         View view = getLayoutInflater().inflate(R.layout.fragment_q_r_c_o_d_e,null);
         imgQrCode = view.findViewById(R.id.img_qrcode);
@@ -241,21 +241,33 @@ public class DettagliMieiAnimali extends Fragment {
         generateQR();
         dialog = builder.create();
         dialog.show();
-
+*/
         //fragment basso
-        /*
         final Dialog dialog2 = new Dialog(getContext());
         dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog2.setContentView(R.layout.fragment_q_r_c_o_d_e);
-        View view = getLayoutInflater().inflate(R.layout.fragment_q_r_c_o_d_e,null);
-        imgQrCode = view.findViewById(R.id.img_qrcode);
-        generateQR();
+        ImageView imgQrCode2 = dialog2.findViewById(R.id.img_qrcode);
+
+        String text = animale.id;
+        MultiFormatWriter writer = new MultiFormatWriter();
+        try
+        {
+            BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE,600,600);
+            BarcodeEncoder encoder = new BarcodeEncoder();
+            Bitmap bitmap = encoder.createBitmap(matrix);
+            imgQrCode2.setImageBitmap(bitmap);
+
+        } catch (WriterException e)
+        {
+            e.printStackTrace();
+        }
+
         dialog2.show();
         dialog2.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         //dialog2.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog2.getWindow().setGravity(Gravity.BOTTOM);
-*/
+
 
     }
 
