@@ -679,4 +679,5 @@ string veterinario
 style Theme.ProvaLogin
 xml backup_rules
 xml data_extraction_rules
+xml paths
 xml start_scene

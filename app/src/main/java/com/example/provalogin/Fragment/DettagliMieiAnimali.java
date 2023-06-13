@@ -18,9 +18,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -50,13 +52,15 @@ import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DettagliMieiAnimali extends Fragment {
 
     AlertDialog dialog;
-
+    Bitmap bitmap = null;
     Animal animale;
     String position = new String();
     ImageView imgProfilo;
@@ -246,15 +250,18 @@ public class DettagliMieiAnimali extends Fragment {
         final Dialog dialog2 = new Dialog(getContext());
         dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog2.setContentView(R.layout.fragment_q_r_c_o_d_e);
+
         ImageView imgQrCode2 = dialog2.findViewById(R.id.img_qrcode);
+        FloatingActionButton btnCondividi = dialog2.findViewById(R.id.btn_codividi);
 
         String text = animale.id;
         MultiFormatWriter writer = new MultiFormatWriter();
+
         try
         {
             BitMatrix matrix = writer.encode(text, BarcodeFormat.QR_CODE,600,600);
             BarcodeEncoder encoder = new BarcodeEncoder();
-            Bitmap bitmap = encoder.createBitmap(matrix);
+            bitmap = encoder.createBitmap(matrix);
             imgQrCode2.setImageBitmap(bitmap);
 
         } catch (WriterException e)
@@ -269,6 +276,50 @@ public class DettagliMieiAnimali extends Fragment {
         dialog2.getWindow().setGravity(Gravity.BOTTOM);
 
 
+        btnCondividi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareImageandText(bitmap);
+            }
+        });
+
+    }
+
+    private void shareImageandText(Bitmap bitmap) {
+        Uri uri = getmageToShare(bitmap);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+
+        // putting uri of image to be shared
+        intent.putExtra(Intent.EXTRA_STREAM, uri);
+
+        // adding text to share
+        intent.putExtra(Intent.EXTRA_TEXT, "Ecco QRCODE del mio Animale, scansionalo!!");
+
+        // Add subject Here
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Subject Here");
+
+        // setting type to image
+        intent.setType("image/png");
+
+        // calling startactivity() to share
+        startActivity(Intent.createChooser(intent, "Share Via"));
+    }
+
+    private Uri getmageToShare(Bitmap bitmap) {
+        File imagefolder = new File(getActivity().getCacheDir(), "images");
+        Uri uri = null;
+        try {
+            imagefolder.mkdirs();
+            File file = new File(imagefolder, "shared_image.png");
+            FileOutputStream outputStream = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 90, outputStream);
+            outputStream.flush();
+            outputStream.close();
+            uri = FileProvider.getUriForFile(getContext(),"com.example.provalogin", file);
+        } catch (Exception e) {
+            Toast.makeText(getContext(), "Condivisione Fallita!!" + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+        return uri;
     }
 
     private void generateQR()

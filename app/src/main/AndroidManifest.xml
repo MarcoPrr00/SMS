@@ -107,6 +107,20 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-    </application>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.provalogin"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/paths" />
+    </provider>
+
+</application>
+
+
 
 </manifest>

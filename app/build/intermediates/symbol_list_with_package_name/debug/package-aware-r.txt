@@ -5565,4 +5565,5 @@ styleable zxing_view zxing_scanner_layout
 xml backup_rules
 xml data_extraction_rules
 xml image_share_filepaths
+xml paths
 xml start_scene

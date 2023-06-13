@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
+ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Lenovo\.gradle\caches\transforms-3\5b8dbee9c666024b51275037a4df74a1\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\5389d1aed81a8ddc8c724865d9e1fc2e\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-database:7.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\3e827a628080816b524179e132107b64\transformed\jetified-firebase-ui-database-7.1.1\AndroidManifest.xml:2:1-13:12
@@ -92,22 +92,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Lenovo\.gradle\caches\transfor
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Lenovo\.gradle\caches\transforms-3\6988a866814113a4e21f9cc6e5a9f874\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\5fe8cde7ca295bba77b1217936ca98ad\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\Lenovo\.gradle\caches\transforms-3\3a1d0705ab57bcb5d42e06783ead7d90\transformed\jetified-grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
-INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
+INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
 	package
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-112:12
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:1-126:12
 		INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:2:11-69
@@ -158,7 +158,7 @@ ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:18:5-110:19
+ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:18:5-122:15
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Lenovo\.gradle\caches\transforms-3\5b8dbee9c666024b51275037a4df74a1\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Lenovo\.gradle\caches\transforms-3\5b8dbee9c666024b51275037a4df74a1\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lenovo\.gradle\caches\transforms-3\eab9f28363ceffd4be1c4bc84ef5bc17\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -311,6 +311,22 @@ ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidMa
 		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:109:13-54
 	android:name
 		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:108:13-43
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:111:9-120:16
+	android:grantUriPermissions
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:115:13-47
+	android:authorities
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:113:13-57
+	android:exported
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:114:13-37
+	android:name
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:112:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:117:9-119:45
+	android:resource
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:119:13-42
+	android:name
+		ADDED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml:118:13-63
 uses-sdk
 INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Lenovo\Desktop\Nuova cartella (3)\SMS\app\src\main\AndroidManifest.xml
