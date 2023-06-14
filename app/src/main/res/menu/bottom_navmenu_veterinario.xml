@@ -9,8 +9,8 @@
         android:icon="@drawable/icon_star"
         android:id="@+id/inCaricoVet"/>
 
-    <item android:title="Pets"
-        android:icon="@drawable/a"
+    <item android:title="Stallo"
+        android:icon="@drawable/stallo"
         android:id="@+id/petsVet"/>
 
     <item android:title="Profilo"
