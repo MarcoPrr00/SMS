@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim bottom_animation
+anim slide_in_bottom_sheet
+anim slide_out_bottom_sheet
+anim top_animation
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -36,6 +40,7 @@ drawable fenicottero
 drawable foca
 drawable gatto
 drawable ic_baseline_add_24
+drawable ic_baseline_delete_forever2_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
 drawable ic_baseline_lock_24
@@ -69,6 +74,7 @@ drawable rana
 drawable search_background
 drawable sfondo_definitivo
 drawable sfondo_profili
+drawable stallo
 drawable tartaruga
 drawable trasparenza
 drawable usignolo
@@ -83,6 +89,7 @@ id add_qr_code_pet
 id aggiungiCura
 id aggiungiSpesa
 id albumfoto
+id animaliInStallo
 id animali_item
 id animalipreferiti
 id backgroundLayout
@@ -98,6 +105,8 @@ id bottom_navigation_ente
 id btnFaiFoto
 id btnInvia
 id btnScegli
+id btn_Qr_Code_NewStallo
+id btn_cancella_stallo
 id btn_check_position
 id btn_codividi
 id btn_codividiQrCode
@@ -160,6 +169,7 @@ id image_profile
 id image_view_album_foto_animale
 id img
 id img1
+id img2
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
@@ -175,6 +185,7 @@ id insert_email_address
 id insert_password_address
 id insertname
 id inspass
+id installo_item
 id layout_button
 id linearLayout
 id log
@@ -187,6 +198,7 @@ id newanimal
 id nome
 id nomeAnimale
 id nome_animale
+id nome_animale_item
 id nome_item
 id nomecognome
 id nuovoconbluetooth
@@ -211,11 +223,13 @@ id recycler_view
 id recycler_view_cure_animali
 id recycler_view_foto_album_animali
 id recycler_view_incarico
+id recycler_view_pet_stallo
 id recycler_view_spese_animali
 id recycler_view_veterinario
 id register
 id salute_animale
 id saveButton
+id scanner_animal
 id searchbar
 id segnalazione_checkboxes
 id segnalazioni
@@ -223,6 +237,7 @@ id segnalazioni_item
 id sesso_animale
 id specie
 id specie_animale
+id specie_animale_item
 id specie_item
 id spesaEdit
 id spinner_tipologia
@@ -286,10 +301,12 @@ layout fragment_profile_animal
 layout fragment_profile_user
 layout fragment_profile_veterinario
 layout fragment_q_r_c_o_d_e
+layout fragment_qrcode_scan
 layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale
 layout image_item
+layout installo_item
 layout prefe_item
 layout segnalazioni_item
 layout spesa
@@ -677,6 +694,7 @@ string type_null
 string username
 string utente
 string veterinario
+style DialogAnimation
 style Theme.ProvaLogin
 xml backup_rules
 xml data_extraction_rules

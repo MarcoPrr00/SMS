@@ -9,8 +9,8 @@
         android:icon="@drawable/icon_star"
         android:id="@+id/inCarico"/>
 
-    <item android:title="Pets"
-        android:icon="@drawable/a"
+    <item android:title="Stallo"
+        android:icon="@drawable/stallo"
         android:id="@+id/petsEnte"/>
 
     <item android:title="Profilo"

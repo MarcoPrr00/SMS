@@ -272,7 +272,7 @@ public class DettagliMieiAnimali extends Fragment {
         dialog2.show();
         dialog2.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog2.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        //dialog2.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog2.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog2.getWindow().setGravity(Gravity.BOTTOM);
 
 

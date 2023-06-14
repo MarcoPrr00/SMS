@@ -17,6 +17,7 @@ public class  Animal implements Serializable {
     public String specie;
     public String preferenzaCibo;
     public String statoSalute;
+    public String idStallo;
 
     public Animal () {
 

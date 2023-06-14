@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-44:/values-tr/values-tr.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-45:/values-tr/values-tr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\9be6ab042454430f216a0e6fa939d335\\transformed\\core-1.9.0\\res\\values-tr\\values-tr.xml",

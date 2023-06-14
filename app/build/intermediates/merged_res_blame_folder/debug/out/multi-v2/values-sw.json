@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.provalogin.app-mergeDebugResources-44:/values-sw/values-sw.xml",
+            "outputFile": "com.example.provalogin.app-mergeDebugResources-45:/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\e9319c77866eae4530df15f05204f349\\transformed\\jetified-play-services-base-18.1.0\\res\\values-sw\\values.xml",

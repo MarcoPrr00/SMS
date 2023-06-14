@@ -96,6 +96,7 @@ public class ProfileFragment extends Fragment {
         recyclerView = view.findViewById(R.id.mieianimali_recyclerview);
 
         nuovoanimalemanualmente = view.findViewById(R.id.nuovomanuale);
+        nuovoanimaleqrcode = view.findViewById(R.id.add_qr_code_pet);
         //inserire = view.findViewById(R.id.inserire);
         //String current = Animal.padrone;
 
@@ -136,6 +137,17 @@ public class ProfileFragment extends Fragment {
                 //rendiInvisibileView();
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragment_container, new NewAnimal()).addToBackStack(null).commit();
+
+
+            }
+        });
+
+        nuovoanimaleqrcode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //rendiInvisibileView();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, new QrcodeScanFragment("NuovoAnimale")).addToBackStack(null).commit();
 
 
             }

@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim bottom_animation
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -35,6 +36,9 @@ anim linear_indeterminate_line2_tail_interpolator
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim slide_in_bottom_sheet
+anim slide_out_bottom_sheet
+anim top_animation
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -136,6 +140,13 @@ attr arrowShaftLength
 attr attributeName
 attr autoCompleteMode
 attr autoCompleteTextViewStyle
+attr autoFocusButtonColor
+attr autoFocusButtonOffIcon
+attr autoFocusButtonOnIcon
+attr autoFocusButtonPaddingHorizontal
+attr autoFocusButtonPaddingVertical
+attr autoFocusButtonPosition
+attr autoFocusButtonVisible
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
 attr autoSizePresetSizes
@@ -528,6 +539,13 @@ attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
 attr firstBaselineToTopHeight
+attr flashButtonColor
+attr flashButtonOffIcon
+attr flashButtonOnIcon
+attr flashButtonPaddingHorizontal
+attr flashButtonPaddingVertical
+attr flashButtonPosition
+attr flashButtonVisible
 attr floatingActionButtonLargePrimaryStyle
 attr floatingActionButtonLargeSecondaryStyle
 attr floatingActionButtonLargeStyle
@@ -576,7 +594,17 @@ attr fontVariationSettings
 attr fontWeight
 attr forceApplySystemWindowInsetTop
 attr foregroundInsidePadding
+attr frameAspectRatioHeight
+attr frameAspectRatioWidth
+attr frameColor
+attr frameCornersCapRounded
+attr frameCornersRadius
+attr frameCornersSize
 attr framePosition
+attr frameSize
+attr frameThickness
+attr frameVerticalBias
+attr frameVisible
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
@@ -775,6 +803,8 @@ attr marginHorizontal
 attr marginLeftSystemWindowInsets
 attr marginRightSystemWindowInsets
 attr marginTopSystemWindowInsets
+attr maskColor
+attr maskVisible
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogButtonSpacerVisibility
 attr materialAlertDialogTheme
@@ -2709,6 +2739,7 @@ drawable gatto
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_add_24
+drawable ic_baseline_delete_forever2_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
 drawable ic_baseline_lock_24
@@ -2716,6 +2747,10 @@ drawable ic_baseline_person_24
 drawable ic_baseline_person_pin_24
 drawable ic_clock_black_24dp
 drawable ic_close
+drawable ic_code_scanner_auto_focus_off
+drawable ic_code_scanner_auto_focus_on
+drawable ic_code_scanner_flash_off
+drawable ic_code_scanner_flash_on
 drawable ic_favorites
 drawable ic_home
 drawable ic_keyboard_black_24dp
@@ -2819,6 +2854,7 @@ drawable rana
 drawable search_background
 drawable sfondo_definitivo
 drawable sfondo_profili
+drawable stallo
 drawable tartaruga
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2915,6 +2951,7 @@ id aligned
 id all
 id allStates
 id always
+id animaliInStallo
 id animali_item
 id animalipreferiti
 id animateToEnd
@@ -2939,7 +2976,9 @@ id blocking
 id bluelogo
 id bntAddImg
 id bottom
+id bottomEnd
 id bottomNavigationView
+id bottomStart
 id bottom_ente
 id bottom_nav
 id bottom_navigation
@@ -2956,6 +2995,8 @@ id browser_actions_menu_view
 id btnFaiFoto
 id btnInvia
 id btnScegli
+id btn_Qr_Code_NewStallo
+id btn_cancella_stallo
 id btn_check_position
 id btn_codividi
 id btn_codividiQrCode
@@ -3145,6 +3186,7 @@ id image_profile
 id image_view_album_foto_animale
 id img
 id img1
+id img2
 id imgUpdate
 id img_dettagli_animale
 id img_dettagli_segnalazioni
@@ -3164,6 +3206,7 @@ id insert_email_address
 id insert_password_address
 id insertname
 id inspass
+id installo_item
 id invisible
 id inward
 id is_pooling_container_tag
@@ -3265,6 +3308,7 @@ id noState
 id nome
 id nomeAnimale
 id nome_animale
+id nome_animale_item
 id nome_item
 id nomecognome
 id none
@@ -3322,6 +3366,7 @@ id recycler_view
 id recycler_view_cure_animali
 id recycler_view_foto_album_animali
 id recycler_view_incarico
+id recycler_view_pet_stallo
 id recycler_view_spese_animali
 id recycler_view_veterinario
 id register
@@ -3338,6 +3383,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scanner_animal
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3381,6 +3427,7 @@ id spacer
 id special_effects_controller_view_tag
 id specie
 id specie_animale
+id specie_animale_item
 id specie_item
 id spesaEdit
 id spinner_tipologia
@@ -3452,7 +3499,9 @@ id title_template
 id toggle
 id toolbar
 id top
+id topEnd
 id topPanel
+id topStart
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3689,10 +3738,12 @@ layout fragment_profile_animal
 layout fragment_profile_user
 layout fragment_profile_veterinario
 layout fragment_q_r_c_o_d_e
+layout fragment_qrcode_scan
 layout fragment_salute_animali
 layout fragment_search
 layout fragment_spese_animale
 layout image_item
+layout installo_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4612,6 +4663,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogAnimation
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
 style MaterialAlertDialog_Material3_Body_Text_CenterStacked
@@ -5433,6 +5485,7 @@ styleable CircleImageView civ_border_color civ_border_overlay civ_border_width c
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
+styleable CodeScannerView autoFocusButtonColor autoFocusButtonOffIcon autoFocusButtonOnIcon autoFocusButtonPaddingHorizontal autoFocusButtonPaddingVertical autoFocusButtonPosition autoFocusButtonVisible flashButtonColor flashButtonOffIcon flashButtonOnIcon flashButtonPaddingHorizontal flashButtonPaddingVertical flashButtonPosition flashButtonVisible frameAspectRatioHeight frameAspectRatioWidth frameColor frameCornersCapRounded frameCornersRadius frameCornersSize frameSize frameThickness frameVerticalBias frameVisible maskColor maskVisible
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance collapsedTitleTextColor contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance expandedTitleTextColor extraMultilineHeightEnabled forceApplySystemWindowInsetTop maxLines scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleCollapseMode titleEnabled titlePositionInterpolator titleTextEllipsize toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar

@@ -22,14 +22,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:backgroundTint="#F8D89D"
-            app:fab_addButtonColorNormal="#F8D89D">
+            android:backgroundTint="#65503F"
+            app:fab_addButtonColorNormal="#65503F">
 
             <com.getbase.floatingactionbutton.FloatingActionButton
                 android:id="@+id/nuovomanuale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:backgroundTint="#F8D89D"
+                app:backgroundTint="#65503F"
                 app:fab_icon="@mipmap/ic_pets_black_24dp"
                 app:fab_title="@string/nuovoanimale" />
 
