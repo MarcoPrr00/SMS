@@ -293,7 +293,7 @@ public class DettagliMieiAnimali extends Fragment {
         intent.putExtra(Intent.EXTRA_STREAM, uri);
 
         // adding text to share
-        intent.putExtra(Intent.EXTRA_TEXT, "Ecco QRCODE del mio Animale, scansionalo!!");
+        intent.putExtra(Intent.EXTRA_TEXT, "Ecco QRCODE del mio Animale, scansionalo!!\n DATI PUBBLICI ANIMALI:\n\nnome: "+animale.nomeAnimale+"\nspecie: "+animale.specie+"\nsesso: "+animale.sesso+"\netà: "+animale.eta);
 
         // Add subject Here
         intent.putExtra(Intent.EXTRA_SUBJECT, "Subject Here");
