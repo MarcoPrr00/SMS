@@ -83,6 +83,7 @@
     <string name="prezzo">Prezzo</string>
     <string name="elenco_spese">ELENCO SPESE</string>
     <string name="segnalazioni_prese_in_carico">SEGNALAZIONI IN CARICO</string>
+    <string name="i_miei_animali">I MIEI ANIMALI</string>
     <string-array name="spinner_segnalazione">
         <item>Cerco Aiuto!</item>
         <item>Cerco Stallo</item>

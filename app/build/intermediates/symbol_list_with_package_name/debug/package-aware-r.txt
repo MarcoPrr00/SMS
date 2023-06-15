@@ -2743,6 +2743,7 @@ drawable ic_baseline_delete_forever2_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
 drawable ic_baseline_lock_24
+drawable ic_baseline_logout_24
 drawable ic_baseline_person_24
 drawable ic_baseline_person_pin_24
 drawable ic_clock_black_24dp
@@ -2774,6 +2775,8 @@ drawable img_1
 drawable img_3
 drawable l
 drawable logo
+drawable logout
+drawable logout2
 drawable lupo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -3195,6 +3198,7 @@ id img_dettagli_animale
 id img_dettagli_segnalazioni
 id img_qrcode
 id img_segnalazione
+id imieianimali
 id immagine
 id immediateStop
 id inCarico
@@ -3232,6 +3236,7 @@ id listMode
 id list_item
 id log
 id login
+id logout
 id marquee
 id masked
 id match_constraint
@@ -4231,6 +4236,7 @@ string google_storage_bucket
 string hai_gi_un_account_clicca_qui
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string i_miei_animali
 string i_miei_animali_preferiti
 string icon_content_description
 string image

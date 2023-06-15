@@ -2,6 +2,7 @@ package com.example.provalogin.Fragment;
 
 import static android.system.Os.remove;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.example.provalogin.Adapter.AnimalAdapter;
@@ -16,8 +17,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.arch.core.internal.FastSafeIterableMap;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -175,6 +178,8 @@ public class SearchFragment extends Fragment {
 
         }
     };
+
+
 
 }
 

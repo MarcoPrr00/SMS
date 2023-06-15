@@ -2742,6 +2742,7 @@ int drawable ic_baseline_delete_forever2_24 0x7f0800aa
 int drawable ic_baseline_email_24 0x7f0800ab
 int drawable ic_baseline_home_24 0x7f0800ac
 int drawable ic_baseline_lock_24 0x7f0800ad
+int drawable ic_baseline_logout_24 0x7f080129
 int drawable ic_baseline_person_24 0x7f0800ae
 int drawable ic_baseline_person_pin_24 0x7f0800af
 int drawable ic_clock_black_24dp 0x7f0800b0
@@ -2773,6 +2774,8 @@ int drawable img_1 0x7f0800c9
 int drawable img_3 0x7f0800ca
 int drawable l 0x7f0800cb
 int drawable logo 0x7f0800cc
+int drawable logout 0x7f080127
+int drawable logout2 0x7f080128
 int drawable lupo 0x7f0800cd
 int drawable m3_appbar_background 0x7f0800ce
 int drawable m3_popupmenu_background_overlay 0x7f0800cf
@@ -3194,6 +3197,7 @@ int id img_dettagli_animale 0x7f0a0143
 int id img_dettagli_segnalazioni 0x7f0a0144
 int id img_qrcode 0x7f0a0145
 int id img_segnalazione 0x7f0a0146
+int id imieianimali 0x7f0a02c0
 int id immagine 0x7f0a0147
 int id immediateStop 0x7f0a0148
 int id inCarico 0x7f0a0149
@@ -3231,6 +3235,7 @@ int id listMode 0x7f0a0168
 int id list_item 0x7f0a0169
 int id log 0x7f0a016a
 int id login 0x7f0a016b
+int id logout 0x7f0a02c1
 int id marquee 0x7f0a016c
 int id masked 0x7f0a016d
 int id match_constraint 0x7f0a016e
@@ -4230,6 +4235,7 @@ int string google_storage_bucket 0x7f130070
 int string hai_gi_un_account_clicca_qui 0x7f130071
 int string hello_blank_fragment 0x7f130072
 int string hide_bottom_view_on_scroll_behavior 0x7f130073
+int string i_miei_animali 0x7f130116
 int string i_miei_animali_preferiti 0x7f130074
 int string icon_content_description 0x7f130075
 int string image 0x7f130076

@@ -44,6 +44,7 @@ drawable ic_baseline_delete_forever2_24
 drawable ic_baseline_email_24
 drawable ic_baseline_home_24
 drawable ic_baseline_lock_24
+drawable ic_baseline_logout_24
 drawable ic_baseline_person_24
 drawable ic_baseline_person_pin_24
 drawable ic_close
@@ -62,6 +63,8 @@ drawable img_1
 drawable img_3
 drawable l
 drawable logo
+drawable logout
+drawable logout2
 drawable lupo
 drawable pappagallo
 drawable profilebkg
@@ -178,6 +181,7 @@ id img_dettagli_animale
 id img_dettagli_segnalazioni
 id img_qrcode
 id img_segnalazione
+id imieianimali
 id immagine
 id inCarico
 id inCaricoVet
@@ -193,6 +197,7 @@ id layout_button
 id linearLayout
 id log
 id login
+id logout
 id mieianimali_recyclerview
 id motionLayout
 id name
@@ -644,6 +649,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hai_gi_un_account_clicca_qui
 string hello_blank_fragment
+string i_miei_animali
 string i_miei_animali_preferiti
 string image
 string imagenuova

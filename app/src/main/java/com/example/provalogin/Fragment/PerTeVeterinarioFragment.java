@@ -1,9 +1,13 @@
 package com.example.provalogin.Fragment;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +19,7 @@ import android.view.ViewGroup;
 
 import com.example.provalogin.Adapter.SegnalazioniAdapter;
 ;
+import com.example.provalogin.LoginActivity;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
@@ -171,6 +176,8 @@ public class PerTeVeterinarioFragment extends Fragment {
         recyclerView.setVisibility(View.INVISIBLE);
         floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
     }
+
+
 
 
 }

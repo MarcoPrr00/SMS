@@ -2,8 +2,10 @@ package com.example.provalogin.Fragment;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -13,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.provalogin.Adapter.SegnalazioniAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.LoginActivity;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
@@ -159,20 +163,24 @@ public class HomeFragment extends Fragment {
 
 
 
-    void logout(Context context){
-        new AlertDialog.Builder(context)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("ELIMINAZIONE CURA").setMessage("Sei sicuro di voler eliminare?")
-                .setPositiveButton("Si", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
 
+    void logout(){
+            new AlertDialog.Builder(getContext())
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("ELIMINAZIONE CURA").setMessage("Sei sicuro di voler eliminare?")
+                    .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            startActivity(new Intent(getContext(), LoginActivity.class));
+                        }
+                    })
+                    .setNegativeButton("No", null)
+                    .show();
 
-                    }
-                })
-                .setNegativeButton("No", null)
-                .show();
     }
+
+
+
 
 
 }
