@@ -2870,6 +2870,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id DataSpesa
 id FUNCTION
 id META
 id NO_DEBUG
@@ -3010,6 +3011,8 @@ id btn_nuava_foto_segnalazione
 id btn_nuova_segnalazione
 id buttonPanel
 id cache_measures
+id calendarViewCura
+id calendarViewSpesa
 id callMeasure
 id cancel_action
 id cancel_button

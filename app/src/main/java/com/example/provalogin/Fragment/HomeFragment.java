@@ -1,9 +1,12 @@
 package com.example.provalogin.Fragment;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -152,6 +155,23 @@ public class HomeFragment extends Fragment {
     private void rendiInvisibileView(){
         recyclerView.setVisibility(View.INVISIBLE);
         floatingButtonNuovaSegnalazione.setVisibility(View.INVISIBLE);
+    }
+
+
+
+    void logout(Context context){
+        new AlertDialog.Builder(context)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("ELIMINAZIONE CURA").setMessage("Sei sicuro di voler eliminare?")
+                .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 
 

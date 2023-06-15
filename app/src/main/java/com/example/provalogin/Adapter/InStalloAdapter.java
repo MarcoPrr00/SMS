@@ -77,7 +77,7 @@ public class InStalloAdapter extends RecyclerView.Adapter<InStalloAdapter.Animal
                         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
                         reference = database.getReference().child("Animals").child(animali.id).child("idStallo");
                         reference.setValue("no Stallo");
-
+                        notifyItemRemoved(holder.getAdapterPosition());
 
                 }
             })

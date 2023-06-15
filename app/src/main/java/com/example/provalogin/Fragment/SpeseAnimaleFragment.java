@@ -1,7 +1,9 @@
 package com.example.provalogin.Fragment;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
+import android.icu.util.Calendar;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +15,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CalendarView;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -89,22 +93,64 @@ public class SpeseAnimaleFragment extends Fragment {
         Query db= FirebaseDatabase.getInstance().getReference("Spese").orderByChild("idAnimale").equalTo(animale.id);
         db.addValueEventListener(valueEventListener);
 
-        buildDialog();
+
         aggiungiSpesa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.show();
+                buildDialog();
             }
         });
         return view;
     }
 
     private void buildDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        View view = getLayoutInflater().inflate(R.layout.dialog,null);
-        EditText spesa = view.findViewById(R.id.spesaEdit);
-        EditText prezzo = view.findViewById(R.id.prezzoEdit);
-        builder.setView(view);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            View view = getLayoutInflater().inflate(R.layout.dialog,null);
+            EditText spesa = view.findViewById(R.id.spesaEdit);
+            EditText prezzo = view.findViewById(R.id.prezzoEdit);
+            EditText date = view.findViewById(R.id.calendarViewSpesa);
+            spesa.setText("");
+            prezzo.setText("");
+            date.setText("");
+            builder.setView(view);
+            date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // on below line we are getting
+                // the instance of our calendar.
+                final Calendar c;
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                    c = Calendar.getInstance();
+
+
+                    // on below line we are getting
+                    // our day, month and year.
+                    int year = c.get(Calendar.YEAR);
+                    int month = c.get(Calendar.MONTH);
+                    int day = c.get(Calendar.DAY_OF_MONTH);
+
+                    // on below line we are creating a variable for date picker dialog.
+                    DatePickerDialog datePickerDialog = new DatePickerDialog(
+                            // on below line we are passing context.
+                            getContext(),
+                            new DatePickerDialog.OnDateSetListener() {
+                                @Override
+                                public void onDateSet(DatePicker view, int year,
+                                                      int monthOfYear, int dayOfMonth) {
+                                    // on below line we are setting date to our edit text.
+                                    date.setText(dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
+
+                                }
+                            },
+                            // on below line we are passing year,
+                            // month and day for selected date in our date picker.
+                            year, month, day);
+                    // at last we are calling show to
+                    // display our date picker dialog.
+                    datePickerDialog.show();
+                }
+            }
+        });
         builder.setTitle("Inserisci Spesa")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -116,6 +162,7 @@ public class SpeseAnimaleFragment extends Fragment {
                         holder.id = id;
                         holder.idAnimale=animale.id;
                         holder.idPadrone=animale.padrone;
+                        holder.date = date.getText().toString();
                         FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
                         reference = database.getReference().child("Spese").child(id);
                         reference.setValue(holder);
@@ -129,5 +176,6 @@ public class SpeseAnimaleFragment extends Fragment {
                     }
                 });
         dialog = builder.create();
+        dialog.show();
     }
 }

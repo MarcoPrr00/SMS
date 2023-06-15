@@ -7,4 +7,5 @@ public class Cure {
     public String idPadrone;
     public String idAnimale;
     public String id;
+    public String date;
 }

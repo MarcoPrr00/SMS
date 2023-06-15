@@ -83,6 +83,7 @@ drawable white_background
 drawable zebra
 font architects_daughter
 font coustard
+id DataSpesa
 id PrezzoSpesa
 id actionbar
 id add_qr_code_pet
@@ -118,6 +119,8 @@ id btn_nuava_foto_album_foto
 id btn_nuava_foto_mio_animale
 id btn_nuava_foto_segnalazione
 id btn_nuova_segnalazione
+id calendarViewCura
+id calendarViewSpesa
 id cancellaSpesa
 id caricamentoanimale
 id checkbox_ente
