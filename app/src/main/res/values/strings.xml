@@ -2,6 +2,19 @@
     <string name="app_name">PuppyPad</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="segnalazioni">Segnalazioni</string>
+    <string name="ic_search">Cerca</string>
+    <string name="ic_favorites">Preferiti</string>
+    <string name="ic_profile">Miei Animali</string>
+    <string name="homeEnte">Segnalazioni</string>
+    <string name="inCarico">In Carico</string>
+    <string name="petsEnte">Stallo</string>
+    <string name="profileEnte">Miei Animali</string>
+    <string name="homeVet" translatable="false">Home</string>
+    <string name="inCaricoVet">In Carico</string>
+    <string name="petsVet">Stallo</string>
+    <string name="profileVet">Miei Animali</string>
+    <string name="elencospese">SEGNALAZIONI</string>
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
     <string name="name">Nome</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>

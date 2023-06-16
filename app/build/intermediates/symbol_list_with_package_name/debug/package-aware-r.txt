@@ -4202,6 +4202,7 @@ string define_zxingandroidembedded
 string descrizione
 string destinatari
 string elenco_spese
+string elencospese
 string email
 string emailutente
 string ente
@@ -4236,8 +4237,13 @@ string google_storage_bucket
 string hai_gi_un_account_clicca_qui
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string homeEnte
+string homeVet
 string i_miei_animali
 string i_miei_animali_preferiti
+string ic_favorites
+string ic_profile
+string ic_search
 string icon_content_description
 string image
 string imagenuova
@@ -4245,6 +4251,8 @@ string imieianimali
 string immag
 string immagine
 string immagine_caricata
+string inCarico
+string inCaricoVet
 string invia_segnalazione
 string item_view_role_description
 string items
@@ -4368,9 +4376,13 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string petsEnte
+string petsVet
 string posizione
 string preferenza
 string prezzo
+string profileEnte
+string profileVet
 string project_id
 string qrcode
 string registratibut
@@ -4378,6 +4390,7 @@ string salute
 string salute_animal
 string se_non_sei_registrato_clicca_qui
 string search_menu_title
+string segnalazioni
 string segnalazioni_prese_in_carico
 string segui
 string sesso_animale_text

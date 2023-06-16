@@ -5,18 +5,18 @@
     <item
         android:id="@+id/segnalazioni"
         android:icon="@drawable/icon_segnalazioni"
-        android:title="Segnalazioni"/>
+        android:title="@string/segnalazioni" />
     <item
         android:id="@+id/ic_search"
         android:icon="@drawable/ic_search"
-        android:title="Cerca"/>
+        android:title="@string/ic_search" />
     <item
         android:id="@+id/ic_favorites"
         android:icon="@drawable/ic_favorites"
-        android:title="Preferiti"/>
+        android:title="@string/ic_favorites" />
     <item
         android:id="@+id/ic_profile"
         android:icon="@drawable/a"
-        android:title="Miei Animali"/>
+        android:title="@string/ic_profile" />
 
 </menu>

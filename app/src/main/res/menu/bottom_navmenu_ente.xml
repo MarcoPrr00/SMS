@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Segnalazioni"
+    <item
+        android:id="@+id/homeEnte"
         android:icon="@drawable/icon_segnalazioni"
-        android:id="@+id/homeEnte"/>
+        android:title="@string/homeEnte" />
 
-    <item android:title="In Carico"
+    <item
+        android:id="@+id/inCarico"
         android:icon="@drawable/icon_star"
-        android:id="@+id/inCarico"/>
+        android:title="@string/inCarico" />
 
-    <item android:title="Stallo"
+    <item
+        android:id="@+id/petsEnte"
         android:icon="@drawable/stallo"
-        android:id="@+id/petsEnte"/>
+        android:title="@string/petsEnte" />
 
-    <item android:icon="@drawable/a"
-        android:title="Miei Animali"
-        android:id="@+id/profileEnte"/>
+    <item
+        android:id="@+id/profileEnte"
+        android:icon="@drawable/a"
+        android:title="@string/profileEnte" />
 </menu>

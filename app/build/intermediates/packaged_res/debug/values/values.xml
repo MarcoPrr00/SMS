@@ -89,6 +89,7 @@
     <string name="descrizione">Descrizione</string>
     <string name="destinatari">Destinatari</string>
     <string name="elenco_spese">ELENCO SPESE</string>
+    <string name="elencospese">SEGNALAZIONI</string>
     <string name="email" translatable="false">Email</string>
     <string name="emailutente" translatable="false">Email</string>
     <string name="ente">Ente</string>
@@ -105,14 +106,21 @@
     <string name="google_storage_bucket" translatable="false">provalogin-65cb5.appspot.com</string>
     <string name="hai_gi_un_account_clicca_qui">Hai già un account? Clicca qui!</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="homeEnte">Segnalazioni</string>
+    <string name="homeVet" translatable="false">Home</string>
     <string name="i_miei_animali">I MIEI ANIMALI</string>
     <string name="i_miei_animali_preferiti">I MIEI ANIMALI PREFERITI</string>
+    <string name="ic_favorites">Preferiti</string>
+    <string name="ic_profile">Miei Animali</string>
+    <string name="ic_search">Cerca</string>
     <string name="image" translatable="false">TODO</string>
     <string name="imagenuova" translatable="false">TODO</string>
     <string name="imieianimali">I Miei Animali</string>
     <string name="immag" translatable="false">TODO</string>
     <string name="immagine">immagine</string>
     <string name="immagine_caricata">Immagine Caricata</string>
+    <string name="inCarico">In Carico</string>
+    <string name="inCaricoVet">In Carico</string>
     <string name="invia_segnalazione">Invia Segnalazione</string>
     <string name="items">Tipologia Utente</string>
     <string name="log" translatable="false">TODO</string>
@@ -134,15 +142,20 @@
     <string name="padronea">Padrone</string>
     <string name="password" translatable="false">Password</string>
     <string name="passwordutenteamico" translatable="false">Password</string>
+    <string name="petsEnte">Stallo</string>
+    <string name="petsVet">Stallo</string>
     <string name="posizione">Posizione</string>
     <string name="preferenza">Preferenza Cibo</string>
     <string name="prezzo">Prezzo</string>
+    <string name="profileEnte">Miei Animali</string>
+    <string name="profileVet">Miei Animali</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
     <string name="qrcode" translatable="false">qrcode</string>
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
     <string name="salute_animal">Salute</string>
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato, Clicca qui!</string>
+    <string name="segnalazioni">Segnalazioni</string>
     <string name="segnalazioni_prese_in_carico">SEGNALAZIONI IN CARICO</string>
     <string name="segui">Segui</string>
     <string name="sesso_animale_text">Sesso</string>

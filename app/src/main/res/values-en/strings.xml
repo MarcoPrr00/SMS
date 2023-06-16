@@ -99,4 +99,21 @@
         <item>Pink-Flamingo</item>
         <item>Monk Seal</item>
     </string-array>
+    <string name="spesa">Expense</string>
+    <string name="prezzo">Price</string>
+    <string name="elenco_spese">Expense list</string>
+    <string name="segnalazioni_prese_in_carico">Reports received</string>
+    <string name="i_miei_animali">MY PETS</string>
+    <string name="segnalazioni">Reports</string>
+    <string name="ic_search">Search</string>
+    <string name="ic_favorites">Favorites</string>
+    <string name="ic_profile">My Pets</string>
+    <string name="homeEnte">Reports</string>
+    <string name="inCarico">Received</string>
+    <string name="petsEnte">Stall</string>
+    <string name="profileEnte">My Pets</string>
+    <string name="inCaricoVet">Received</string>
+    <string name="petsVet">Stall</string>
+    <string name="profileVet">My Pets</string>
+    <string name="elencospese">REPORTS</string>
 </resources>
