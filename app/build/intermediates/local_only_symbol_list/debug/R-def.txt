@@ -29,10 +29,12 @@ drawable anatra
 drawable avatar
 drawable ax
 drawable b
+drawable ball
 drawable border
 drawable brown_border
 drawable c
 drawable cane
+drawable card
 drawable cardback
 drawable coccodrillo
 drawable dialog_bg
@@ -186,6 +188,7 @@ id immagine
 id inCarico
 id inCaricoVet
 id in_carico_ente
+id incarico_utente
 id inserire
 id insert
 id insert_email_address

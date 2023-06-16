@@ -7,6 +7,10 @@
         android:icon="@drawable/icon_segnalazioni"
         android:title="@string/segnalazioni" />
     <item
+        android:id="@+id/incarico_utente"
+        android:icon="@drawable/icon_star"
+        android:title="@string/inCarico" />
+    <item
         android:id="@+id/ic_search"
         android:icon="@drawable/ic_search"
         android:title="@string/ic_search" />

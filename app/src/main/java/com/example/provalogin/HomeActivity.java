@@ -115,6 +115,9 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.segnalazioni:
                     selectedFragment= new PerTeVeterinarioFragment();
                     break;
+                case R.id.incarico_utente:
+                    selectedFragment= new InCaricoVeterinarioFragment();
+                    break;
                 case R.id.ic_search:
                     selectedFragment= new SearchFragment();
                     break;

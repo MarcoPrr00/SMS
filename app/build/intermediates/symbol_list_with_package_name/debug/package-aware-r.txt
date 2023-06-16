@@ -2692,6 +2692,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable ax
 drawable b
+drawable ball
 drawable border
 drawable brown_border
 drawable btn_checkbox_checked_mtrl
@@ -2704,6 +2705,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable c
 drawable cane
+drawable card
 drawable cardback
 drawable coccodrillo
 drawable common_full_open_on_phone
@@ -3204,6 +3206,7 @@ id immediateStop
 id inCarico
 id inCaricoVet
 id in_carico_ente
+id incarico_utente
 id included
 id indeterminate
 id info

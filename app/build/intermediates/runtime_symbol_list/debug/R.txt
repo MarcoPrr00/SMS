@@ -2691,6 +2691,7 @@ int drawable avd_hide_password 0x7f080077
 int drawable avd_show_password 0x7f080078
 int drawable ax 0x7f080079
 int drawable b 0x7f08007a
+int drawable ball 0x7f08012a
 int drawable border 0x7f08007b
 int drawable brown_border 0x7f08007c
 int drawable btn_checkbox_checked_mtrl 0x7f08007d
@@ -2703,6 +2704,7 @@ int drawable btn_radio_on_mtrl 0x7f080083
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f080084
 int drawable c 0x7f080085
 int drawable cane 0x7f080086
+int drawable card 0x7f08012b
 int drawable cardback 0x7f080087
 int drawable coccodrillo 0x7f080088
 int drawable common_full_open_on_phone 0x7f080089
@@ -3203,6 +3205,7 @@ int id immediateStop 0x7f0a014b
 int id inCarico 0x7f0a014c
 int id inCaricoVet 0x7f0a014d
 int id in_carico_ente 0x7f0a014e
+int id incarico_utente 0x7f0a02c2
 int id included 0x7f0a014f
 int id indeterminate 0x7f0a0150
 int id info 0x7f0a0151
