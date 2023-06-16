@@ -25,6 +25,26 @@ public class HomeVeterinarioActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     Fragment selectedFragment=null;
 
+    //Gestisco onBackPressed nell'activity per ogni fragment al quale  serve implementare questo metodo
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+
+        if (fragment instanceof PerTeVeterinarioFragment) {
+            ((PerTeVeterinarioFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof PetsVeterinarioFragment) {
+            ((PetsVeterinarioFragment) fragment).onBackPressed();
+        }
+        if (fragment instanceof ProfileFragment) {
+            ((ProfileFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof InCaricoVeterinarioFragment) {
+            ((InCaricoVeterinarioFragment) fragment).onBackPressed();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

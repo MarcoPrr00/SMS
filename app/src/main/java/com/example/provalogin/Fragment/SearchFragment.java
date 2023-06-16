@@ -180,6 +180,23 @@ public class SearchFragment extends Fragment {
     };
 
 
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
+        builder.setMessage("Sei sicuro di voler effettuare il logout?");
+        builder.setPositiveButton("Sì", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Effettua il logout da Firebase
+                FirebaseAuth.getInstance().signOut();
 
+                // Chiudi l'activity o esegui altre azioni di logout se necessario
+                requireActivity().finish();
+            }
+        });
+        builder.setNegativeButton("No", null);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 }
 

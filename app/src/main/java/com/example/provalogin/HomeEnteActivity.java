@@ -25,9 +25,33 @@ import com.example.provalogin.Fragment.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HomeEnteActivity extends AppCompatActivity {
+public class  HomeEnteActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     Fragment selectedFragment=null;
+
+
+    //Gestisco onBackPressed nell'activity per ogni fragment al quale  serve implementare questo metodo
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+
+        if (fragment instanceof PerTeVeterinarioFragment) {
+            ((PerTeVeterinarioFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof PetsVeterinarioFragment) {
+            ((PetsVeterinarioFragment) fragment).onBackPressed();
+        }
+        if (fragment instanceof ProfileFragment) {
+            ((ProfileFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof InCaricoVeterinarioFragment) {
+            ((InCaricoVeterinarioFragment) fragment).onBackPressed();
+        }
+    }
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListner = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {

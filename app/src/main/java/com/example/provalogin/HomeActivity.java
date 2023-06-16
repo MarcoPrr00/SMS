@@ -20,7 +20,9 @@ import android.widget.Toast;
 
 import com.example.provalogin.Fragment.FavorietesFragment;
 import com.example.provalogin.Fragment.HomeFragment;
+import com.example.provalogin.Fragment.InCaricoVeterinarioFragment;
 import com.example.provalogin.Fragment.PerTeVeterinarioFragment;
+import com.example.provalogin.Fragment.PetsVeterinarioFragment;
 import com.example.provalogin.Fragment.ProfileFragment;
 import com.example.provalogin.Fragment.ProfileUserFragment;
 import com.example.provalogin.Fragment.ProfileVeterinarioFragment;
@@ -31,6 +33,26 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
+    //Gestisco onBackPressed nell'activity per ogni fragment al quale  serve implementare questo metodo
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+
+        if (fragment instanceof PerTeVeterinarioFragment) {
+            ((PerTeVeterinarioFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof SearchFragment) {
+            ((SearchFragment) fragment).onBackPressed();
+        }
+        if (fragment instanceof FavorietesFragment) {
+            ((FavorietesFragment) fragment).onBackPressed();
+        }
+
+        if (fragment instanceof ProfileFragment) {
+            ((ProfileFragment) fragment).onBackPressed();
+        }
+    }
 
     BottomNavigationView bottomNavigationView;
     View actionbar_nav;
