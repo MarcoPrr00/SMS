@@ -1,9 +1,14 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,6 +48,7 @@ public class PerTeVeterinarioFragment extends Fragment {
 
 
 
+
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
         public void onDataChange(DataSnapshot dataSnapshot) {
@@ -68,7 +74,14 @@ public class PerTeVeterinarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_per_te_veterinario, container, false);
-
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(true);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(true);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(true);
+        }
 
         recyclerView = view.findViewById(R.id.recycler_view_veterinario);
         floatingButtonNuovaSegnalazione = view.findViewById(R.id.btn_nuova_segnalazione);

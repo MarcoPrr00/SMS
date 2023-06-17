@@ -1,10 +1,14 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.example.provalogin.Adapter.SegnalazioniAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Segnalazioni;
 import com.google.firebase.auth.FirebaseAuth;
@@ -74,6 +78,12 @@ public class  InCaricoVeterinarioFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_in_carico_veterinario, container, false);
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(true);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(true);
+        }
 
 
         //LOGICA SEGNALAZIONI ADAPTER

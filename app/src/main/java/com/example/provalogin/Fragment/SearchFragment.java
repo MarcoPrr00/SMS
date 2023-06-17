@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.Adapter.UtenteAdapter;
+import com.example.provalogin.HomeActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Recycler.RecyclerItemClickListener;
@@ -65,6 +66,7 @@ public class SearchFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerView = view.findViewById(R.id.recycler_view);
 
+        ((HomeActivity) getActivity()).setCustomBackEnabled(true);
         edit = view.findViewById(R.id.searchbar);
         imm = view.findViewById(R.id.im);
         //btn_follow = view.findViewById(R.id.btn_follow);

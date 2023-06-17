@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
@@ -23,6 +24,9 @@ import android.widget.TextView;
 
 import com.example.provalogin.Adapter.SegnalazioniAdapter;
 import com.example.provalogin.Adapter.SpeseAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Spesa;
@@ -79,6 +83,14 @@ public class SpeseAnimaleFragment extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_spese_animale, container, false);
 
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
 
         aggiungiSpesa = view.findViewById(R.id.aggiungiSpesa);
         //layout = view.findViewById(R.id.spese_container);

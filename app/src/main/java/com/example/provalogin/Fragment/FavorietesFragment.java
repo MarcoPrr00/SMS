@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.provalogin.Adapter.PrefAdapter;
+import com.example.provalogin.HomeActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Follow;
 import com.example.provalogin.Model.Segnalazioni;
@@ -58,6 +59,8 @@ public class FavorietesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        ((HomeActivity) getActivity()).setCustomBackEnabled(true);
 
         View view = inflater.inflate(R.layout.fragment_favorietes, container, false);
         elencopref = view.findViewById(R.id.elencopref);

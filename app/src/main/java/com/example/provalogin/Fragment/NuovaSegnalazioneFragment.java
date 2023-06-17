@@ -127,6 +127,14 @@ public class NuovaSegnalazioneFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
         auth=FirebaseAuth.getInstance();
         userid = auth.getCurrentUser().getUid();
         id = NewAnimal.generacodiceid();

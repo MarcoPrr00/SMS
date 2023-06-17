@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -71,6 +72,14 @@ public class DettagliSegnalazioniFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dettagli_segnalazioni, container, false);
 
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
         tipoSegnalazione = view.findViewById(R.id.txt_dettagli_segnalazione_tipologia);
         descrizione = view.findViewById(R.id.txt_dettagli_segnalazione_descrizone);
         posizione = view.findViewById(R.id.txt_dettagli_segnalazione_posizione);

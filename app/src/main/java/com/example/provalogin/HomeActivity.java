@@ -33,25 +33,40 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private static boolean isCustomBackEnabled = false;
+
+    public static void setCustomBackEnabled(boolean isEnabled) {
+        isCustomBackEnabled = isEnabled;
+    }
+
+
     //Gestisco onBackPressed nell'activity per ogni fragment al quale  serve implementare questo metodo
     @Override
     public void onBackPressed() {
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
 
-        if (fragment instanceof PerTeVeterinarioFragment) {
-            ((PerTeVeterinarioFragment) fragment).onBackPressed();
+        if(isCustomBackEnabled){
+            Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+            if (fragment instanceof PerTeVeterinarioFragment) {
+                ((PerTeVeterinarioFragment) fragment).onBackPressed();
+            }
+
+            if (fragment instanceof SearchFragment) {
+                ((SearchFragment) fragment).onBackPressed();
+            }
+            if (fragment instanceof FavorietesFragment) {
+                ((FavorietesFragment) fragment).onBackPressed();
+            }
+
+            if (fragment instanceof ProfileFragment) {
+                ((ProfileFragment) fragment).onBackPressed();
+            }
         }
 
-        if (fragment instanceof SearchFragment) {
-            ((SearchFragment) fragment).onBackPressed();
-        }
-        if (fragment instanceof FavorietesFragment) {
-            ((FavorietesFragment) fragment).onBackPressed();
+        else{
+            super.onBackPressed();
         }
 
-        if (fragment instanceof ProfileFragment) {
-            ((ProfileFragment) fragment).onBackPressed();
-        }
     }
 
     BottomNavigationView bottomNavigationView;

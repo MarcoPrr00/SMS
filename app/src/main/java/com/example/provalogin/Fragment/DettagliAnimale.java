@@ -1,6 +1,7 @@
 package com.example.provalogin.Fragment;
 
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Follow;
 import com.example.provalogin.Model.Utente;
@@ -57,6 +61,15 @@ public class DettagliAnimale extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_dettagli_animale, container, false);
+
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
 
         img= view.findViewById(R.id.img_dettagli_animale);
         txtNomeAnimale=view.findViewById(R.id.txt_dettagli_nome);

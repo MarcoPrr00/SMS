@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
@@ -23,6 +24,9 @@ import android.widget.Toast;
 import com.example.provalogin.Adapter.AnimalAdapter;
 import com.example.provalogin.Adapter.InStalloAdapter;
 import com.example.provalogin.Adapter.PrefAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Follow;
 import com.example.provalogin.R;
@@ -70,6 +74,13 @@ public class PetsVeterinarioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(true);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(true);
+        }
+
         return inflater.inflate(R.layout.fragment_pets_veterinario, container, false);
     }
 

@@ -24,25 +24,41 @@ import com.google.firebase.auth.FirebaseAuth;
 public class HomeVeterinarioActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     Fragment selectedFragment=null;
+    private static boolean isCustomBackEnabled = false;
+
+    public static void setCustomBackEnabled(boolean isEnabled) {
+        isCustomBackEnabled = isEnabled;
+    }
 
     //Gestisco onBackPressed nell'activity per ogni fragment al quale  serve implementare questo metodo
+    @Override
     public void onBackPressed() {
         Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
 
-        if (fragment instanceof PerTeVeterinarioFragment) {
-            ((PerTeVeterinarioFragment) fragment).onBackPressed();
+        if(isCustomBackEnabled){
+            if (fragment instanceof PerTeVeterinarioFragment) {
+                ((PerTeVeterinarioFragment) fragment).onBackPressed();
+                setCustomBackEnabled(false);
+            }
+
+            if (fragment instanceof PetsVeterinarioFragment) {
+                ((PetsVeterinarioFragment) fragment).onBackPressed();
+                setCustomBackEnabled(false);
+            }
+            if (fragment instanceof ProfileFragment) {
+                ((ProfileFragment) fragment).onBackPressed();
+                setCustomBackEnabled(false);
+            }
+
+            if (fragment instanceof InCaricoVeterinarioFragment) {
+                ((InCaricoVeterinarioFragment) fragment).onBackPressed();
+                setCustomBackEnabled(false);
+            }
+        }
+        else{
+            super.onBackPressed();
         }
 
-        if (fragment instanceof PetsVeterinarioFragment) {
-            ((PetsVeterinarioFragment) fragment).onBackPressed();
-        }
-        if (fragment instanceof ProfileFragment) {
-            ((ProfileFragment) fragment).onBackPressed();
-        }
-
-        if (fragment instanceof InCaricoVeterinarioFragment) {
-            ((InCaricoVeterinarioFragment) fragment).onBackPressed();
-        }
     }
 
     @Override

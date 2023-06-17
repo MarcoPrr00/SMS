@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -29,6 +30,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.provalogin.Adapter.ImageAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Image;
 import com.example.provalogin.Model.Spesa;
@@ -108,6 +112,14 @@ public class DettagliMieiAnimali extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile_animal, container, false);
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
         imgProfilo = view.findViewById(R.id.profileImg);
         btnNuovaFotoProfilo = view.findViewById(R.id.btn_nuava_foto_mio_animale);
         btnAlbumFoto = view.findViewById(R.id.btn_nuava_foto_album_foto);

@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
@@ -22,6 +23,9 @@ import android.widget.LinearLayout;
 
 import com.example.provalogin.Adapter.CureAdapter;
 import com.example.provalogin.Adapter.SpeseAdapter;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Animal;
 import com.example.provalogin.Model.Cure;
 import com.example.provalogin.Model.Spesa;
@@ -80,6 +84,14 @@ public class SaluteAnimaliFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_salute_animali, container, false);
 
 
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
         aggiungiCura = view.findViewById(R.id.aggiungiCura);
 
         recyclerView = view.findViewById(R.id.recycler_view_cure_animali);
