@@ -38,21 +38,17 @@ public class HomeVeterinarioActivity extends AppCompatActivity {
         if(isCustomBackEnabled){
             if (fragment instanceof PerTeVeterinarioFragment) {
                 ((PerTeVeterinarioFragment) fragment).onBackPressed();
-                setCustomBackEnabled(false);
             }
 
             if (fragment instanceof PetsVeterinarioFragment) {
                 ((PetsVeterinarioFragment) fragment).onBackPressed();
-                setCustomBackEnabled(false);
             }
             if (fragment instanceof ProfileFragment) {
                 ((ProfileFragment) fragment).onBackPressed();
-                setCustomBackEnabled(false);
             }
 
             if (fragment instanceof InCaricoVeterinarioFragment) {
                 ((InCaricoVeterinarioFragment) fragment).onBackPressed();
-                setCustomBackEnabled(false);
             }
         }
         else{
