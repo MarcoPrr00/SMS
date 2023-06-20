@@ -3501,6 +3501,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id tipoCura
 id tipoSpesa
 id tipologia
 id title
@@ -4161,6 +4162,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string accedi
 string added
+string albumfoto
 string androidx_startup
 string app_name
 string app_version
@@ -4175,6 +4177,7 @@ string btnFaiFoto
 string btnInvia
 string btnScegli
 string btn_follow
+string calendarViewCura
 string calendarViewSpesa
 string cerca_i_tuoi_amici
 string cerca_i_tuoi_amici_
@@ -4206,6 +4209,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string cura_edit
 string data
 string date
 string default_web_client_id
@@ -4213,6 +4217,7 @@ string define_zxingandroidembedded
 string description
 string descrizione
 string destinatari
+string dettagli_segnalazione_button
 string elenco_spese
 string elencospese
 string email
@@ -4265,6 +4270,7 @@ string immagine
 string immagine_caricata
 string inCarico
 string inCaricoVet
+string in_carico_ente
 string invia_segnalazione
 string item_view_role_description
 string items
@@ -4312,6 +4318,7 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string modificaprofilo
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -4389,6 +4396,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string per_te_ente
 string petsEnte
 string petsVet
 string posizione
@@ -4403,6 +4411,7 @@ string register
 string registratibut
 string salute
 string salute_animal
+string salva
 string se_non_sei_registrato_clicca_qui
 string search_menu_title
 string segnalazioni
@@ -4416,6 +4425,7 @@ string status_bar_notification_info_overflow
 string sterilizzazione
 string tastopercaricamento
 string textView
+string tipoCura
 string tipoSpesa
 string tipo_segnalazione
 string todo

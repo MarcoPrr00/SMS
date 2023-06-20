@@ -130,4 +130,13 @@
     <string name="typeSpesa">Kind of Expense</string>
     <string name="date">Date (dd-mm-yyyy)</string>
     <string name="calendarViewSpesa">Insert date</string>
+    <string name="tipoCura">Kind of Cure</string>
+    <string name="cura_edit">Cure</string>
+    <string name="calendarViewCura">Insert date</string>
+    <string name="albumfoto">MY PICS ALBUM</string>
+    <string name="dettagli_segnalazione_button">Receive</string>
+    <string name="per_te_ente">FOR YOU</string>
+    <string name="in_carico_ente">RECEIVED</string>
+    <string name="modificaprofilo">Edit Profile</string>
+    <string name="salva">SAVE</string>
 </resources>

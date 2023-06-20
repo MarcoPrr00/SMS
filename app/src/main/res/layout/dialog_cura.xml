@@ -8,17 +8,18 @@
 
 
     <TextView
+        android:id="@+id/tipoCura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipo Cura"
-        android:textSize="20dp"/>
+        android:text="@string/tipoCura"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/cura_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Cura"
-        android:textSize="20dp"/>
+        android:hint="@string/cura_edit"
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,15 +31,15 @@
         android:id="@+id/prezzo_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Prezzo"
+        android:hint="@string/prezzo"
         android:inputType="numberDecimal"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data (gg-mm-yyyy)"
-        android:textSize="20dp"/>
+        android:text="@string/date"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/calendarViewCura"
@@ -49,7 +50,7 @@
         android:cursorVisible="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:hint="Inserisci Data" />
+        android:hint="@string/calendarViewCura" />
 
 
 </LinearLayout>

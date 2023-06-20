@@ -14,13 +14,13 @@
             android:id="@+id/per_te_ente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Per Te" />
+            android:text="@string/per_te_ente" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/in_carico_ente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="In Carico" />
+            android:text="@string/in_carico_ente" />
     </com.google.android.material.tabs.TabLayout>
 
 

@@ -16,6 +16,15 @@
     <string name="typeSpesa">Tipo Spesa</string>
     <string name="textView">PROFILO UTENTE</string>
     <string name="description">Descrizione</string>
+    <string name="tipoCura">Tipo Cura</string>
+    <string name="cura_edit">Cura</string>
+    <string name="calendarViewCura">Inserisci data</string>
+    <string name="albumfoto">IL MIO ALBUM FOTOGRAFICO</string>
+    <string name="dettagli_segnalazione_button">PRENDI IN CARICO</string>
+    <string name="per_te_ente">PER TE</string>
+    <string name="in_carico_ente">IN CARICO</string>
+    <string name="modificaprofilo">Modifica Profilo</string>
+    <string name="salva">SALVA</string>
     <string name="ic_search">Cerca</string>
     <string name="ic_favorites">Preferiti</string>
     <string name="ic_profile">Miei Animali</string>

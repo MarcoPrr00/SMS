@@ -76,11 +76,13 @@
     <string name="Username">Nome utente</string>
     <string name="accedi">ACCEDI</string>
     <string name="added">Animale Aggiunto!</string>
+    <string name="albumfoto">IL MIO ALBUM FOTOGRAFICO</string>
     <string name="app_name">PuppyPad</string>
     <string name="btnFaiFoto">FOTOCAMERA</string>
     <string name="btnInvia">CARICA</string>
     <string name="btnScegli">SCEGLI IMMAGINE</string>
     <string name="btn_follow" translatable="false">Button</string>
+    <string name="calendarViewCura">Inserisci data</string>
     <string name="calendarViewSpesa">Inserisci data</string>
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
@@ -89,12 +91,14 @@
     <string name="ciao">ciao</string>
     <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
     <string name="cognome">Cognome</string>
+    <string name="cura_edit">Cura</string>
     <string name="data">Data</string>
     <string name="date">Data (gg-mm-yyyy)</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
     <string name="description">Descrizione</string>
     <string name="descrizione">Descrizione</string>
     <string name="destinatari">Destinatari</string>
+    <string name="dettagli_segnalazione_button">PRENDI IN CARICO</string>
     <string name="elenco_spese">ELENCO SPESE</string>
     <string name="elencospese">SEGNALAZIONI</string>
     <string name="email" translatable="false">Email</string>
@@ -128,12 +132,14 @@
     <string name="immagine_caricata">Immagine Caricata</string>
     <string name="inCarico">In Carico</string>
     <string name="inCaricoVet">In Carico</string>
+    <string name="in_carico_ente">IN CARICO</string>
     <string name="invia_segnalazione">Invia Segnalazione</string>
     <string name="items">Tipologia Utente</string>
     <string name="log" translatable="false">TODO</string>
     <string name="login">ACCEDI</string>
     <string name="logo" translatable="false"/>
     <string name="logoimage" translatable="false">TODO</string>
+    <string name="modificaprofilo">Modifica Profilo</string>
     <string name="name">Nome</string>
     <string name="new_pet_bluetooth__option" translatable="false">new_pet_bluetooth_option</string>
     <string name="new_pet_bluetooth_option">Nuovo animale con Bluetooth</string>
@@ -150,6 +156,7 @@
     <string name="padronea">Padrone</string>
     <string name="password" translatable="false">Password</string>
     <string name="passwordutenteamico" translatable="false">Password</string>
+    <string name="per_te_ente">PER TE</string>
     <string name="petsEnte">Stallo</string>
     <string name="petsVet">Stallo</string>
     <string name="posizione">Posizione</string>
@@ -164,6 +171,7 @@
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
     <string name="salute_animal">Salute</string>
+    <string name="salva">SALVA</string>
     <string name="se_non_sei_registrato_clicca_qui">Se non sei registrato, Clicca qui!</string>
     <string name="segnalazioni">Segnalazioni</string>
     <string name="segnalazioni_prese_in_carico">SEGNALAZIONI IN CARICO</string>
@@ -175,6 +183,7 @@
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
     <string name="textView">PROFILO UTENTE</string>
+    <string name="tipoCura">Tipo Cura</string>
     <string name="tipoSpesa">Spesa</string>
     <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="todo" translatable="false">TODO</string>
