@@ -3066,6 +3066,7 @@ int id custom 0x7f0a00c0
 int id customPanel 0x7f0a00c1
 int id cut 0x7f0a00c2
 int id dark 0x7f0a00c3
+int id date 0x7f0a02c3
 int id date_picker_actions 0x7f0a00c4
 int id decelerate 0x7f0a00c5
 int id decelerateAndComplete 0x7f0a00c6
@@ -3535,6 +3536,7 @@ int id txt_login 0x7f0a0295
 int id txt_posizione 0x7f0a0296
 int id txt_signup 0x7f0a0297
 int id txt_tipo_segnalazione 0x7f0a0298
+int id typeSpesa 0x7f0a02c4
 int id unchecked 0x7f0a0299
 int id uniform 0x7f0a029a
 int id unlabeled 0x7f0a029b
@@ -4168,7 +4170,11 @@ int string bottomsheet_action_expand 0x7f13002a
 int string bottomsheet_action_expand_halfway 0x7f13002b
 int string bottomsheet_drag_handle_clicked 0x7f13002c
 int string bottomsheet_drag_handle_content_description 0x7f13002d
+int string btnFaiFoto 0x7f130124
+int string btnInvia 0x7f130125
+int string btnScegli 0x7f130126
 int string btn_follow 0x7f13002e
+int string calendarViewSpesa 0x7f130127
 int string cerca_i_tuoi_amici 0x7f13002f
 int string cerca_i_tuoi_amici_ 0x7f130030
 int string character_counter_content_description 0x7f130031
@@ -4199,8 +4205,11 @@ int string common_open_on_phone 0x7f130049
 int string common_signin_button_text 0x7f13004a
 int string common_signin_button_text_long 0x7f13004b
 int string copy_toast_msg 0x7f13004c
+int string data 0x7f130128
+int string date 0x7f130129
 int string default_web_client_id 0x7f13004d
 int string define_zxingandroidembedded 0x7f13004e
+int string description 0x7f13012a
 int string descrizione 0x7f13004f
 int string destinatari 0x7f130050
 int string elenco_spese 0x7f130051
@@ -4268,6 +4277,7 @@ int string library_zxingandroidembedded_libraryWebsite 0x7f13008e
 int string library_zxingandroidembedded_licenseId 0x7f13008f
 int string library_zxingandroidembedded_repositoryLink 0x7f130090
 int string log 0x7f130091
+int string login 0x7f13012b
 int string logo 0x7f130092
 int string logoimage 0x7f130093
 int string m3_sys_motion_easing_emphasized 0x7f130094
@@ -4381,12 +4391,14 @@ int string path_password_strike_through 0x7f1300ff
 int string petsEnte 0x7f130100
 int string petsVet 0x7f130101
 int string posizione 0x7f130102
+int string post 0x7f13012c
 int string preferenza 0x7f130103
 int string prezzo 0x7f130104
 int string profileEnte 0x7f130105
 int string profileVet 0x7f130106
 int string project_id 0x7f130107
 int string qrcode 0x7f130108
+int string register 0x7f13012d
 int string registratibut 0x7f130109
 int string salute 0x7f13010a
 int string salute_animal 0x7f13010b
@@ -4402,10 +4414,13 @@ int string spese_animal 0x7f130114
 int string status_bar_notification_info_overflow 0x7f130115
 int string sterilizzazione 0x7f130116
 int string tastopercaricamento 0x7f130117
+int string textView 0x7f13012e
+int string tipoSpesa 0x7f13012f
 int string tipo_segnalazione 0x7f130118
 int string todo 0x7f130119
 int string todoi 0x7f13011a
 int string todoy 0x7f13011b
+int string typeSpesa 0x7f130130
 int string type_null 0x7f13011c
 int string username 0x7f13011d
 int string utente 0x7f13011e

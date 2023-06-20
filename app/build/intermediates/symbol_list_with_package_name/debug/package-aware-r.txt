@@ -3067,6 +3067,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3536,6 +3537,7 @@ id txt_login
 id txt_posizione
 id txt_signup
 id txt_tipo_segnalazione
+id typeSpesa
 id unchecked
 id uniform
 id unlabeled
@@ -4169,7 +4171,11 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btnFaiFoto
+string btnInvia
+string btnScegli
 string btn_follow
+string calendarViewSpesa
 string cerca_i_tuoi_amici
 string cerca_i_tuoi_amici_
 string character_counter_content_description
@@ -4200,8 +4206,11 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string data
+string date
 string default_web_client_id
 string define_zxingandroidembedded
+string description
 string descrizione
 string destinatari
 string elenco_spese
@@ -4269,6 +4278,7 @@ string library_zxingandroidembedded_libraryWebsite
 string library_zxingandroidembedded_licenseId
 string library_zxingandroidembedded_repositoryLink
 string log
+string login
 string logo
 string logoimage
 string m3_sys_motion_easing_emphasized
@@ -4382,12 +4392,14 @@ string path_password_strike_through
 string petsEnte
 string petsVet
 string posizione
+string post
 string preferenza
 string prezzo
 string profileEnte
 string profileVet
 string project_id
 string qrcode
+string register
 string registratibut
 string salute
 string salute_animal
@@ -4403,10 +4415,13 @@ string spese_animal
 string status_bar_notification_info_overflow
 string sterilizzazione
 string tastopercaricamento
+string textView
+string tipoSpesa
 string tipo_segnalazione
 string todo
 string todoi
 string todoy
+string typeSpesa
 string type_null
 string username
 string utente

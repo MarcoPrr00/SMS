@@ -24,31 +24,31 @@
         <!--Button for choosing image from gallery-->
         <Button
             android:id="@+id/btnScegli"
-            android:text="Scegli Immagine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:text="@string/btnScegli" />
 
         <Button
             android:id="@+id/btnFaiFoto"
-            android:layout_margin="3dp"
-            android:text="Fotocamera"
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="@string/btnFaiFoto" />
 
 
     </LinearLayout>
 
 
     <!--Button for uploading image-->
-    <Button
-        android:id="@+id/btnInvia"
-        android:text="Upload"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"/>
+        <Button
+            android:id="@+id/btnInvia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="@string/btnInvia" />
 
     </LinearLayout>
 

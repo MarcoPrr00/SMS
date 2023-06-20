@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:backgroundTint="#03A9F4"
-        android:text="Login" />
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/register"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:backgroundTint="#03A9F4"
-        android:text="Registrati" />
+        android:text="@string/register" />
 
 
 </LinearLayout>

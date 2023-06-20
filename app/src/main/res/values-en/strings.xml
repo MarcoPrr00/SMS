@@ -116,4 +116,18 @@
     <string name="petsVet">Stall</string>
     <string name="profileVet">My Pets</string>
     <string name="elencospese">REPORTS</string>
+    <string name="Tipologia">Typology</string>
+    <string name="textView">USER\'S PROFILE</string>
+    <string name="description">Description</string>
+    <string name="login">LOGIN</string>
+    <string name="register">SIGN IN</string>
+    <string name="post">POST</string>
+    <string name="btnScegli">CHOOSE PIC</string>
+    <string name="btnFaiFoto">CAMERA</string>
+    <string name="btnInvia">UPLOAD</string>
+    <string name="tipoSpesa">Expense</string>
+    <string name="data">Date</string>
+    <string name="typeSpesa">Kind of Expense</string>
+    <string name="date">Date (dd-mm-yyyy)</string>
+    <string name="calendarViewSpesa">Insert date</string>
 </resources>

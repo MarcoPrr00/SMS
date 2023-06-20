@@ -136,6 +136,7 @@ id choose_for_picture
 id ciaoutente
 id close
 id cura_edit
+id date
 id description
 id dettagli_segnalazione_button
 id dettagli_segnalazione_checkbox_ente
@@ -277,6 +278,7 @@ id txt_login
 id txt_posizione
 id txt_signup
 id txt_tipo_segnalazione
+id typeSpesa
 id user_item
 id username
 id view_pager_ente
@@ -624,7 +626,11 @@ string Username
 string accedi
 string added
 string app_name
+string btnFaiFoto
+string btnInvia
+string btnScegli
 string btn_follow
+string calendarViewSpesa
 string cerca_i_tuoi_amici
 string cerca_i_tuoi_amici_
 string chip
@@ -632,7 +638,10 @@ string chiperror
 string ciao
 string cibomancante
 string cognome
+string data
+string date
 string default_web_client_id
+string description
 string descrizione
 string destinatari
 string elenco_spese
@@ -671,6 +680,7 @@ string inCaricoVet
 string invia_segnalazione
 string items
 string log
+string login
 string logo
 string logoimage
 string name
@@ -692,12 +702,14 @@ string passwordutenteamico
 string petsEnte
 string petsVet
 string posizione
+string post
 string preferenza
 string prezzo
 string profileEnte
 string profileVet
 string project_id
 string qrcode
+string register
 string registratibut
 string salute
 string salute_animal
@@ -711,10 +723,13 @@ string spesa
 string spese_animal
 string sterilizzazione
 string tastopercaricamento
+string textView
+string tipoSpesa
 string tipo_segnalazione
 string todo
 string todoi
 string todoy
+string typeSpesa
 string type_null
 string username
 string utente

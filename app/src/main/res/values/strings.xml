@@ -3,6 +3,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="segnalazioni">Segnalazioni</string>
+    <string name="login">ACCEDI</string>
+    <string name="register">REGISTRATI</string>
+    <string name="post">PUBBLICA</string>
+    <string name="btnScegli">SCEGLI IMMAGINE</string>
+    <string name="btnFaiFoto">FOTOCAMERA</string>
+    <string name="btnInvia">CARICA</string>
+    <string name="tipoSpesa">Spesa</string>
+    <string name="data">Data</string>
+    <string name="date">Data (gg-mm-yyyy)</string>
+    <string name="calendarViewSpesa">Inserisci data</string>
+    <string name="typeSpesa">Tipo Spesa</string>
+    <string name="textView">PROFILO UTENTE</string>
+    <string name="description">Descrizione</string>
     <string name="ic_search">Cerca</string>
     <string name="ic_favorites">Preferiti</string>
     <string name="ic_profile">Miei Animali</string>
@@ -30,7 +43,7 @@
     <string name="accedi">ACCEDI</string>
     <string name="log" translatable="false">TODO</string>
     <string name="logo" translatable="false" />
-    <string name="Tipologia" translatable="false" />
+    <string name="Tipologia" >Tipologia</string>
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>
     <string name="emailutente" translatable="false">Email</string>

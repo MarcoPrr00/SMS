@@ -72,12 +72,16 @@
     <string name="Nickname" translatable="false">Nickname</string>
     <string name="Nominativo">Nome e Cognome</string>
     <string name="Specie_animale">Specie Animale</string>
-    <string name="Tipologia" translatable="false"/>
+    <string name="Tipologia">Tipologia</string>
     <string name="Username">Nome utente</string>
     <string name="accedi">ACCEDI</string>
     <string name="added">Animale Aggiunto!</string>
     <string name="app_name">PuppyPad</string>
+    <string name="btnFaiFoto">FOTOCAMERA</string>
+    <string name="btnInvia">CARICA</string>
+    <string name="btnScegli">SCEGLI IMMAGINE</string>
     <string name="btn_follow" translatable="false">Button</string>
+    <string name="calendarViewSpesa">Inserisci data</string>
     <string name="cerca_i_tuoi_amici">Cerca i tuoi amici</string>
     <string name="cerca_i_tuoi_amici_">Cerca i tuoi amici</string>
     <string name="chip" translatable="false">Chip</string>
@@ -85,7 +89,10 @@
     <string name="ciao">ciao</string>
     <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
     <string name="cognome">Cognome</string>
+    <string name="data">Data</string>
+    <string name="date">Data (gg-mm-yyyy)</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
+    <string name="description">Descrizione</string>
     <string name="descrizione">Descrizione</string>
     <string name="destinatari">Destinatari</string>
     <string name="elenco_spese">ELENCO SPESE</string>
@@ -124,6 +131,7 @@
     <string name="invia_segnalazione">Invia Segnalazione</string>
     <string name="items">Tipologia Utente</string>
     <string name="log" translatable="false">TODO</string>
+    <string name="login">ACCEDI</string>
     <string name="logo" translatable="false"/>
     <string name="logoimage" translatable="false">TODO</string>
     <string name="name">Nome</string>
@@ -145,12 +153,14 @@
     <string name="petsEnte">Stallo</string>
     <string name="petsVet">Stallo</string>
     <string name="posizione">Posizione</string>
+    <string name="post">PUBBLICA</string>
     <string name="preferenza">Preferenza Cibo</string>
     <string name="prezzo">Prezzo</string>
     <string name="profileEnte">Miei Animali</string>
     <string name="profileVet">Miei Animali</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
     <string name="qrcode" translatable="false">qrcode</string>
+    <string name="register">REGISTRATI</string>
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
     <string name="salute_animal">Salute</string>
@@ -164,10 +174,13 @@
     <string name="spese_animal">Spese</string>
     <string name="sterilizzazione">Sterilizzazione Animale</string>
     <string name="tastopercaricamento">Cliccare per caricare</string>
+    <string name="textView">PROFILO UTENTE</string>
+    <string name="tipoSpesa">Spesa</string>
     <string name="tipo_segnalazione">Tipo segnalazione</string>
     <string name="todo" translatable="false">TODO</string>
     <string name="todoi" translatable="false">TODO</string>
     <string name="todoy" translatable="false">TODO</string>
+    <string name="typeSpesa">Tipo Spesa</string>
     <string name="type_null">tipo nullo</string>
     <string name="username">Nome utente</string>
     <string name="utente">Utente Tradizionale</string>
