@@ -1,12 +1,10 @@
 package com.example.provalogin.Adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,7 +32,7 @@ public class PrefAdapter extends RecyclerView.Adapter<PrefAdapter.PrefViewHolder
     final private Context Ctx;
     final private List<Follow> animalList;
 
-    private Animal animali;
+    private Animal animal;
 
     FirebaseUser firebaseUser;
 
@@ -64,10 +62,9 @@ public class PrefAdapter extends RecyclerView.Adapter<PrefAdapter.PrefViewHolder
         reference.child("Animals").child(f.id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
-                animali = task.getResult().getValue(Animal.class);
+                    animal = task.getResult().getValue(Animal.class);
 
-
-                StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(animali.imgAnimale);
+                StorageReference storageReference = FirebaseStorage.getInstance().getReferenceFromUrl(animal.imgAnimale);
                 storageReference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
