@@ -32,10 +32,10 @@
         android:id="@+id/aggiungiSpesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aggiungi Spesa"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_marginBottom="10dp"
+        android:text="@string/aggiungiSpesa" />
 
 
 </RelativeLayout>

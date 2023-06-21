@@ -25,6 +25,13 @@
     <string name="in_carico_ente">IN CARICO</string>
     <string name="modificaprofilo">Modifica Profilo</string>
     <string name="salva">SALVA</string>
+    <string name="btn_check_position">TROVA LA MIA POSIZIONE</string>
+    <string name="animaliInStallo">ANIMALI IN STALLO</string>
+    <string name="txt_album_fotografico">ALBUM FOTOGRAFICO</string>
+    <string name="elencoCure">ELENCO CURE</string>
+    <string name="aggiungiCura">Aggiungi Cura</string>
+    <string name="aggiungiSpesa">Aggiungi Spesa</string>
+    <string name="citta">Città</string>
     <string name="ic_search">Cerca</string>
     <string name="ic_favorites">Preferiti</string>
     <string name="ic_profile">Miei Animali</string>
@@ -64,7 +71,7 @@
     <string name="Username">Nome utente</string>
     <string name="FullName">Nome completo</string>
     <string name="nuovo">nuovo</string>
-    <string name="qrcode" translatable="false">qrcode</string>
+    <string name="qrcode" translatable="false">QRCODE</string>
     <string name="nuovoanimale">Nuovo animale</string>
     <string name="new_pet_bluetooth_option">Nuovo animale con Bluetooth</string>
     <string name="new_pet_bluetooth__option" translatable="false">new_pet_bluetooth_option</string>

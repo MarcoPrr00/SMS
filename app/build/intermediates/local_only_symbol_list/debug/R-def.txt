@@ -626,11 +626,15 @@ string Tipologia
 string Username
 string accedi
 string added
+string aggiungiCura
+string aggiungiSpesa
 string albumfoto
+string animaliInStallo
 string app_name
 string btnFaiFoto
 string btnInvia
 string btnScegli
+string btn_check_position
 string btn_follow
 string calendarViewCura
 string calendarViewSpesa
@@ -640,6 +644,7 @@ string chip
 string chiperror
 string ciao
 string cibomancante
+string citta
 string cognome
 string cura_edit
 string data
@@ -649,6 +654,7 @@ string description
 string descrizione
 string destinatari
 string dettagli_segnalazione_button
+string elencoCure
 string elenco_spese
 string elencospese
 string email
@@ -739,6 +745,7 @@ string tipo_segnalazione
 string todo
 string todoi
 string todoy
+string txt_album_fotografico
 string typeSpesa
 string type_null
 string username

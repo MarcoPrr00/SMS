@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/img1"
-            android:text="Email"
+            android:text="@string/email"
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
             android:layout_below="@+id/txt_email"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/img1"
-            android:text="Città"
+            android:text="@string/citta"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -58,11 +58,10 @@
             android:layout_below="@+id/txt_città"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/img1"
-            android:text="Tipo Segnalazione"
+            android:text="@string/tipo_segnalazione"
             android:textColor="#000"
             android:textSize="18sp"
-            android:textStyle="italic"
-            />
+            android:textStyle="italic" />
 
 
     </RelativeLayout>

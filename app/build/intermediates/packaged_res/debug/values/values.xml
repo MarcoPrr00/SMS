@@ -76,11 +76,15 @@
     <string name="Username">Nome utente</string>
     <string name="accedi">ACCEDI</string>
     <string name="added">Animale Aggiunto!</string>
+    <string name="aggiungiCura">Aggiungi Cura</string>
+    <string name="aggiungiSpesa">Aggiungi Spesa</string>
     <string name="albumfoto">IL MIO ALBUM FOTOGRAFICO</string>
+    <string name="animaliInStallo">ANIMALI IN STALLO</string>
     <string name="app_name">PuppyPad</string>
     <string name="btnFaiFoto">FOTOCAMERA</string>
     <string name="btnInvia">CARICA</string>
     <string name="btnScegli">SCEGLI IMMAGINE</string>
+    <string name="btn_check_position">TROVA LA MIA POSIZIONE</string>
     <string name="btn_follow" translatable="false">Button</string>
     <string name="calendarViewCura">Inserisci data</string>
     <string name="calendarViewSpesa">Inserisci data</string>
@@ -90,6 +94,7 @@
     <string name="chiperror">chip corretto con 12 numeri</string>
     <string name="ciao">ciao</string>
     <string name="cibomancante">Inserire il cibo preferito dell\'animale</string>
+    <string name="citta">Città</string>
     <string name="cognome">Cognome</string>
     <string name="cura_edit">Cura</string>
     <string name="data">Data</string>
@@ -99,6 +104,7 @@
     <string name="descrizione">Descrizione</string>
     <string name="destinatari">Destinatari</string>
     <string name="dettagli_segnalazione_button">PRENDI IN CARICO</string>
+    <string name="elencoCure">ELENCO CURE</string>
     <string name="elenco_spese">ELENCO SPESE</string>
     <string name="elencospese">SEGNALAZIONI</string>
     <string name="email" translatable="false">Email</string>
@@ -166,7 +172,7 @@
     <string name="profileEnte">Miei Animali</string>
     <string name="profileVet">Miei Animali</string>
     <string name="project_id" translatable="false">provalogin-65cb5</string>
-    <string name="qrcode" translatable="false">qrcode</string>
+    <string name="qrcode" translatable="false">QRCODE</string>
     <string name="register">REGISTRATI</string>
     <string name="registratibut">REGISTRATI</string>
     <string name="salute">Stato di Salute</string>
@@ -189,6 +195,7 @@
     <string name="todo" translatable="false">TODO</string>
     <string name="todoi" translatable="false">TODO</string>
     <string name="todoy" translatable="false">TODO</string>
+    <string name="txt_album_fotografico">ALBUM FOTOGRAFICO</string>
     <string name="typeSpesa">Tipo Spesa</string>
     <string name="type_null">tipo nullo</string>
     <string name="username">Nome utente</string>

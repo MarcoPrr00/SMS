@@ -14,17 +14,17 @@
         tools:context=".Fragment.QRCODEFragment"
         >
 
-        <TextView
-            android:id="@+id/choose_for_picture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="QRCODE"
-            android:textSize="28dp"
-            android:fontFamily="@font/coustard"
-            android:textColor="@color/black"
-            android:textColorHint="@color/colorSecondaryVariant"
-            android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/choose_for_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/coustard"
+        android:text="@string/qrcode"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorSecondaryVariant"
+        android:textSize="28dp" />
 
 
 

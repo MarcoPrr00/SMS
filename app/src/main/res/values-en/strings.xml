@@ -139,4 +139,11 @@
     <string name="in_carico_ente">RECEIVED</string>
     <string name="modificaprofilo">Edit Profile</string>
     <string name="salva">SAVE</string>
+    <string name="btn_check_position">FIND MY POSITION</string>
+    <string name="animaliInStallo">PETS IN STALL</string>
+    <string name="txt_album_fotografico">PICS ALBUM</string>
+    <string name="elencoCure">CURE LIST</string>
+    <string name="aggiungiCura">Add Cure</string>
+    <string name="aggiungiSpesa">Add Expense</string>
+    <string name="citta">City</string>
 </resources>

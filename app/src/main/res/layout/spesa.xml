@@ -25,14 +25,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/tipoSpesa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Spesa"
+                    android:text="@string/spesa"
                     android:textColor="#B36A0D"
                     android:textFontWeight="1000"
-                    android:textSize="30dp"/>
+                    android:textSize="30dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -44,10 +45,10 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Prezzo"
+                    android:text="@string/prezzo"
                     android:textColor="#B36A0D"
                     android:textFontWeight="1000"
-                    android:textSize="30dp"/>
+                    android:textSize="30dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -63,10 +64,10 @@
                     android:id="@+id/DataSpesa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Data"
+                    android:text="@string/data"
                     android:textColor="#B36A0D"
                     android:textFontWeight="1000"
-                    android:textSize="30dp"/>
+                    android:textSize="30dp" />
 
             </LinearLayout>
 

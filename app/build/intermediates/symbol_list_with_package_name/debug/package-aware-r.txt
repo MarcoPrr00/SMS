@@ -4162,8 +4162,11 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string accedi
 string added
+string aggiungiCura
+string aggiungiSpesa
 string albumfoto
 string androidx_startup
+string animaliInStallo
 string app_name
 string app_version
 string appbar_scrolling_view_behavior
@@ -4176,6 +4179,7 @@ string bottomsheet_drag_handle_content_description
 string btnFaiFoto
 string btnInvia
 string btnScegli
+string btn_check_position
 string btn_follow
 string calendarViewCura
 string calendarViewSpesa
@@ -4188,6 +4192,7 @@ string chip
 string chiperror
 string ciao
 string cibomancante
+string citta
 string clear_text_end_icon_content_description
 string cognome
 string common_google_play_services_enable_button
@@ -4218,6 +4223,7 @@ string description
 string descrizione
 string destinatari
 string dettagli_segnalazione_button
+string elencoCure
 string elenco_spese
 string elencospese
 string email
@@ -4431,6 +4437,7 @@ string tipo_segnalazione
 string todo
 string todoi
 string todoy
+string txt_album_fotografico
 string typeSpesa
 string type_null
 string username

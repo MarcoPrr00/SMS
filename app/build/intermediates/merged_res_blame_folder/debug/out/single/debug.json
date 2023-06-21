@@ -4228,6 +4228,10 @@
         "source": "com.example.provalogin.app-debug-48:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout-land_fragment_qrcode_scan.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout-land/fragment_qrcode_scan.xml"
+    },
+    {
         "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xxhdpi_ic_swap_vertical_circle_black_18dp.png.flat",
         "source": "com.example.provalogin.app-main-49:/mipmap-xxhdpi/ic_swap_vertical_circle_black_18dp.png"
     },
@@ -5568,6 +5572,10 @@
         "source": "com.example.provalogin.app-main-49:/mipmap-hdpi/ic_favorite_black_36dp.png"
     },
     {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout-land_fragment_q_r_c_o_d_e.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout-land/fragment_q_r_c_o_d_e.xml"
+    },
+    {
         "merged": "com.example.provalogin.app-merged_res-47:/mipmap-hdpi_ic_info_outline_black_18dp.png.flat",
         "source": "com.example.provalogin.app-main-49:/mipmap-hdpi/ic_info_outline_black_18dp.png"
     },
@@ -6256,6 +6264,10 @@
         "source": "com.example.provalogin.app-main-49:/mipmap-xxhdpi/ic_update_black_18dp.png"
     },
     {
+        "merged": "com.example.provalogin.app-merged_res-47:/layout-land_installo_item.xml.flat",
+        "source": "com.example.provalogin.app-main-49:/layout-land/installo_item.xml"
+    },
+    {
         "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xhdpi_ic_accessibility_black_36dp.png.flat",
         "source": "com.example.provalogin.app-main-49:/mipmap-xhdpi/ic_accessibility_black_36dp.png"
     },
@@ -6380,16 +6392,16 @@
         "source": "com.example.provalogin.app-main-49:/mipmap-xxhdpi/ic_bookmark_black_48dp.png"
     },
     {
-        "merged": "com.example.provalogin.app-merged_res-47:/drawable_lupo.jpg.flat",
-        "source": "com.example.provalogin.app-main-49:/drawable/lupo.jpg"
+        "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xhdpi_ic_add_black_48dp.png.flat",
+        "source": "com.example.provalogin.app-main-49:/mipmap-xhdpi/ic_add_black_48dp.png"
     },
     {
         "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xhdpi_ic_pan_tool_black_24dp.png.flat",
         "source": "com.example.provalogin.app-main-49:/mipmap-xhdpi/ic_pan_tool_black_24dp.png"
     },
     {
-        "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xhdpi_ic_add_black_48dp.png.flat",
-        "source": "com.example.provalogin.app-main-49:/mipmap-xhdpi/ic_add_black_48dp.png"
+        "merged": "com.example.provalogin.app-merged_res-47:/drawable_lupo.jpg.flat",
+        "source": "com.example.provalogin.app-main-49:/drawable/lupo.jpg"
     },
     {
         "merged": "com.example.provalogin.app-merged_res-47:/mipmap-xhdpi_ic_payment_black_24dp.png.flat",

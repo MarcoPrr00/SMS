@@ -32,28 +32,28 @@
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <TextView
+        android:id="@+id/titleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/titleName"
         android:layout_marginTop="10dp"
-        android:text="Name"
+        android:text="@string/name"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/profileImg"
         app:layout_constraintStart_toStartOf="@id/profileImg"
-        app:layout_constraintTop_toBottomOf="@id/profileImg"/>
+        app:layout_constraintTop_toBottomOf="@id/profileImg" />
 
     <TextView
+        android:id="@+id/titleUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/titleUsername"
-        android:text="email"
+        android:text="@string/email"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@id/titleName"
         app:layout_constraintStart_toStartOf="@id/titleName"
-        app:layout_constraintTop_toBottomOf="@id/titleName"/>
+        app:layout_constraintTop_toBottomOf="@id/titleName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,24 +80,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/name"
-                android:layout_weight="1"
-                android:text="Nome"
-                android:textStyle="bold"
-                android:textColor="@color/purple_500"
-                android:textSize="18sp"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/profileName"
-                android:text="name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="@string/name"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -116,24 +116,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/username"
-                android:layout_weight="1"
-                android:text="Cognome"
-                android:textStyle="bold"
-                android:textColor="@color/purple_500"
-                android:textSize="18sp"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cognome"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/profileUsername"
-                android:text="Cognome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="@string/cognome"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -152,24 +152,24 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/email"
-                android:layout_weight="1"
-                android:text="Email"
-                android:textStyle="bold"
-                android:textColor="@color/purple_500"
-                android:textSize="18sp"/>
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/profileEmail"
-                android:text="email"
                 android:layout_weight="1"
+                android:text="@string/email"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/email"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
         </LinearLayout>
 
@@ -188,24 +188,24 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/password"
                 android:layout_weight="1"
-                android:text="Password"
-                android:textStyle="bold"
+                android:text="@string/password"
                 android:textColor="@color/purple_500"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/profilePassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/profilePassword"
-                android:text="password"
                 android:layout_weight="1"
+                android:text="@string/password"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/black"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
 
 
         </LinearLayout>
@@ -218,7 +218,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:gravity="center"
-        android:text="Modifica Profilo"
+        android:text="@string/modificaprofilo"
         android:textSize="18sp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
