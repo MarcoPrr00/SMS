@@ -69,7 +69,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="Conferma">Conferma Dati</string>
     <string name="FullName">Nome completo</string>
-    <string name="Nickname" translatable="false">Nickname</string>
+    <string name="Nickname">Nickname</string>
     <string name="Nominativo">Nome e Cognome</string>
     <string name="Specie_animale">Specie Animale</string>
     <string name="Tipologia">Tipologia</string>
@@ -98,7 +98,7 @@
     <string name="cognome">Cognome</string>
     <string name="cura_edit">Cura</string>
     <string name="data">Data</string>
-    <string name="date">Data (gg-mm-yyyy)</string>
+    <string name="date">Data (gg-mm-aaaa)</string>
     <string name="default_web_client_id" translatable="false">689067539377-9k2e0u73t2ccm5c9486i8893vbhund4k.apps.googleusercontent.com</string>
     <string name="description">Descrizione</string>
     <string name="descrizione">Descrizione</string>

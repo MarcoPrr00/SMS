@@ -24,6 +24,7 @@
     <string name="ciao">Hi!</string>
     <string name="items">Type of user</string>
     <string name="type_null">type null</string>
+    <string name="Nickname">Nickname</string>
     <string name="Nominativo">Name and Surname</string>
     <string name="nomeanimale">Pet\'s name</string>
     <string name="tastopercaricamento">Click for upload</string>

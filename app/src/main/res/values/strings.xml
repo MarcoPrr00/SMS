@@ -11,7 +11,7 @@
     <string name="btnInvia">CARICA</string>
     <string name="tipoSpesa">Spesa</string>
     <string name="data">Data</string>
-    <string name="date">Data (gg-mm-yyyy)</string>
+    <string name="date">Data (gg-mm-aaaa)</string>
     <string name="calendarViewSpesa">Inserisci data</string>
     <string name="typeSpesa">Tipo Spesa</string>
     <string name="textView">PROFILO UTENTE</string>
@@ -79,7 +79,7 @@
     <string name="ciao">ciao</string>
     <string name="items">Tipologia Utente</string>
     <string name="type_null">tipo nullo</string>
-    <string name="Nickname" translatable="false">Nickname</string>
+    <string name="Nickname">Nickname</string>
     <string name="Nominativo">Nome e Cognome</string>
     <string name="image" translatable="false">TODO</string>
     <string name="nomeanimale">Nome Animale</string>
