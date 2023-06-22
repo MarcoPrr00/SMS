@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuppyPad</string>
+    <string name="segnalazioni">Informes</string>
+    <string name="login">ACCESO</string>
+    <string name="register">INICIAR SESIÓN</string>
+    <string name="post">PUBLICAR</string>
+    <string name="btnScegli">ELEGIR IMAGEN</string>
+    <string name="btnFaiFoto">CÁMARA</string>
+    <string name="btnInvia">CARGA</string>
+    <string name="tipoSpesa">Gastos</string>
+    <string name="data">Fecha</string>
+    <string name="date">Fecha (dd-mm-aaaa)</string>
+    <string name="calendarViewSpesa">Introduce la fecha</string>
+    <string name="typeSpesa">Tipo de gasto</string>
+    <string name="textView">PERFIL DEL USUARIO</string>
+    <string name="description">Descripción</string>
+    <string name="tipoCura">Tipo de tratamiento</string>
+    <string name="cura_edit">Tratamiento</string>
+    <string name="calendarViewCura">Introduce la fecha</string>
+    <string name="albumfoto">MI ÁLBUM DE FOTOS</string>
+    <string name="dettagli_segnalazione_button">HAZTE CARGO</string>
+    <string name="per_te_ente">PARA TI</string>
+    <string name="in_carico_ente">EN CARGA</string>
+    <string name="modificaprofilo">Editar perfil</string>
+    <string name="salva">AHORRAR</string>
+    <string name="btn_check_position">ENCONTRAR MI UBICACIÓN</string>
+    <string name="animaliInStallo">ESTABLO DE ANIMALES</string>
+    <string name="txt_album_fotografico">ALBUM DE FOTOS</string>
+    <string name="elencoCure">LISTA DE CURA</string>
+    <string name="aggiungiCura">Agregar curación</string>
+    <string name="aggiungiSpesa">Agregar gasto</string>
+    <string name="citta">Ciudad</string>
+    <string name="ic_search">Busca</string>
+    <string name="ic_favorites">Favoritos</string>
+    <string name="ic_profile">Mis animales</string>
+    <string name="homeEnte">Informes</string>
+    <string name="inCarico">EN CARGA</string>
+    <string name="petsEnte">Parar</string>
+    <string name="profileEnte">Mis animales</string>
+    <string name="inCaricoVet">EN CARGA</string>
+    <string name="petsVet">Parar</string>
+    <string name="profileVet">Mis animales</string>
+    <string name="elencospese">Informes</string>
+    <string name="cerca_i_tuoi_amici">Busca a tus amigos</string>
+    <string name="name">Nombre</string>
+    <string name="cerca_i_tuoi_amici_">Busca a tus amigos</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="segui">Seguir</string>
+    <string name="follow">Seguir</string>
+    <string name="se_non_sei_registrato_clicca_qui">¡Si usted no está registrado haga clic aquí!</string>
+    <string name="accedi">ACCESO</string>
+    <string name="Tipologia">Tipología</string>
+    <string name="nome">Nombre</string>
+    <string name="cognome">Apellido</string>
+    <string name="registratibut">INICIAR SESIÓN</string>
+    <string name="hai_gi_un_account_clicca_qui">Ya tienes una cuenta? ¡Haga clic aquí!</string>
+    <string name="fullname">Nombre completo</string>
+    <string name="Username">Nombre de usuario</string>
+    <string name="FullName">Nombre completo</string>
+    <string name="nuovo">nuevo</string>
+    <string name="nuovoanimale">nuevo animal</string>
+    <string name="new_pet_bluetooth_option">Nuevo animal con Bluetooth</string>
+    <string name="imieianimali">Mis animales</string>
+    <string name="ciao">HOLA</string>
+    <string name="items">Tipo de usuario</string>
+    <string name="type_null">tipo nulo</string>
+    <string name="Nickname">Apodo</string>
+    <string name="Nominativo">Nombre y apellido</string>
+    <string name="nomeanimale">Nombre de animal</string>
+    <string name="tastopercaricamento">Haga clic para cargar</string>
+    <string name="nuovoamicotranoi">¡Un nuevo amigo entre nosotros!</string>
+    <string name="nome_animale">Nombre de animal</string>
+    <string name="Specie_animale">Especies animales</string>
+    <string name="sesso_animale_text">Sexo</string>
+    <string name="nuovaSegnalazione">Nuevo reporte</string>
+    <string name="descrizione">Descripción</string>
+    <string name="veterinario">Veterinario</string>
+    <string name="ente">Cuerpo</string>
+    <string name="utente">Usuario tradicional</string>
+    <string name="posizione">Posición</string>
+    <string name="invia_segnalazione">Enviar reporte</string>
+    <string name="padrone">Maestro de animales</string>
+    <string name="preferenza">Preferencia de alimentos</string>
+    <string name="salute">Estado de salud</string>
+    <string name="sterilizzazione">Esterilización de animales</string>
+    <string name="eta">Edad de los animales</string>
+    <string name="Conferma">Confirmar datos</string>
+    <string name="added">Animal añadido!</string>
+    <string name="nomeanimal">Nombre</string>
+    <string name="specie">Especies</string>
+    <string name="padronea">Maestro</string>
+    <string name="immagine">imagen</string>
+    <string name="tipo_segnalazione">Tipo de informe</string>
+    <string name="destinatari">Destinatarios</string>
+    <string name="salute_animal">Salud</string>
+    <string name="spese_animal">Gastos</string>
+    <string name="i_miei_animali_preferiti">MIS ANIMALES FAVORITOS</string>
+    <string name="immagine_caricata">Imagen cargada</string>
+    <string name="nomeanimalemancante">Introduzca el nombre de la mascota!</string>
+    <string name="etamancante">Introduzca su edad</string>
+    <string name="cibomancante">Introduzca la comida favorita de la mascota</string>
+    <string name="chiperror">chip correcto con 12 números</string>
+    <string name="spesa">Gastos</string>
+    <string name="prezzo">Precio</string>
+    <string name="elenco_spese">LISTA DE GASTOS</string>
+    <string name="segnalazioni_prese_in_carico">INFORMES EN CARGA</string>
+    <string name="i_miei_animali">MIS ANIMALES</string>
+    <string-array name="spinner_segnalazione">
+        <item>¡Buscando ayuda!</item>
+        <item>Buscando Stallo</item>
+        <item>Ofrezco Stallo</item>
+        <item>Buscando un animal</item>
+        <item>Ofrezco Animal</item>
+    </string-array>
+    <string-array name="sessoa">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string-array name="sterilizzazioneanimale">
+        <item>Realizada</item>
+        <item>No realizada</item>
+    </string-array>
+    <string-array name="statosalute">
+        <item>Óptimo</item>
+        <item>Discreto</item>
+        <item>Subidas y bajadas</item>
+        <item>magullado</item>
+        <item>me las arreglo</item>
+        <item>Horrible</item>
+    </string-array>
+    <string-array name="speciea">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Rana</item>
+        <item>Pato</item>
+        <item>Ruiseñor</item>
+        <item>Pulga</item>
+        <item>Lobo</item>
+        <item>Zorro</item>
+        <item>Cebra</item>
+        <item>Cocodrilo</item>
+        <item>Tortuga</item>
+        <item>Parot</item>
+        <item>Iguana</item>
+        <item>Flamenco rosa</item>
+        <item>Foca monje</item>
+    </string-array>
+</resources>

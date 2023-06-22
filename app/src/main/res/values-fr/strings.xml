@@ -107,4 +107,44 @@
     <string name="elenco_spese">LISTE DES DÉPENSES</string>
     <string name="segnalazioni_prese_in_carico">RAPPORTS EN CHARGE</string>
     <string name="i_miei_animali">MES ANIMAUX</string>
+    <string-array name="spinner_segnalazione">
+        <item>Cherche de l\'aide!</item>
+        <item>Cherche Stall</item>
+        <item>Offre Stall</item>
+        <item>Cherche Animal</item>
+        <item>Offre Animal</item>
+    </string-array>
+    <string-array name="sessoa">
+        <item>Mâle</item>
+        <item>Femme</item>
+    </string-array>
+    <string-array name="sterilizzazioneanimale">
+        <item>Réalisé</item>
+        <item>Pas réalisé</item>
+    </string-array>
+    <string-array name="statosalute">
+        <item>Optimal</item>
+        <item>Discret</item>
+        <item>Hauts et bas</item>
+        <item>Meurtri</item>
+        <item>Je reçois par</item>
+        <item>Terrible</item>
+    </string-array>
+    <string-array name="speciea">
+        <item>Chien</item>
+        <item>Chat</item>
+        <item>Grenouille</item>
+        <item>Canard</item>
+        <item>Rossignol</item>
+        <item>Puce</item>
+        <item>Lupo</item>
+        <item>Renard</item>
+        <item>Zèbre</item>
+        <item>Crocodile</item>
+        <item>Tortue</item>
+        <item>Parot</item>
+        <item>Iguane</item>
+        <item>Flamant rose</item>
+        <item>Phoque moine</item>
+    </string-array>
 </resources>
