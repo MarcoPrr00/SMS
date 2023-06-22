@@ -1,5 +1,6 @@
 package com.example.provalogin.Fragment;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,6 +21,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.provalogin.HomeActivity;
+import com.example.provalogin.HomeEnteActivity;
+import com.example.provalogin.HomeVeterinarioActivity;
 import com.example.provalogin.Model.Segnalazioni;
 import com.example.provalogin.Model.Utente;
 import com.example.provalogin.R;
@@ -129,6 +133,17 @@ public class  ProfileVeterinarioFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile_veterinario, container, false);
+
+
+        Activity activity = getActivity();
+        if (activity instanceof HomeVeterinarioActivity) {
+            ((HomeVeterinarioActivity) activity).setCustomBackEnabled(false);
+        } else if (activity instanceof HomeEnteActivity) {
+            ((HomeEnteActivity) activity).setCustomBackEnabled(false);
+        }else if (activity instanceof HomeActivity) {
+            ((HomeActivity) activity).setCustomBackEnabled(false);
+        }
+
         profileNameVeterinario = view.findViewById(R.id.profileName);
         profileEmailVeterinario = view.findViewById(R.id.profileEmail);
         profileUsernameVeterinario = view.findViewById(R.id.profileUsername);
