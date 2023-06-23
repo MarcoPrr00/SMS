@@ -17,19 +17,20 @@
         android:textAlignment="center"
         android:hint="@string/i_miei_animali"
         android:textColorHint="@color/colorSecondaryVariant" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mieianimali_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:background="#00FFFFFF"
-        android:backgroundTint="#00FFFFFF" />
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment_container_animali">
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mieianimali_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF" />
+        </ScrollView>
         <com.getbase.floatingactionbutton.FloatingActionsMenu
             android:id="@+id/inserire"
             android:layout_width="wrap_content"
@@ -56,13 +57,7 @@
                 app:fab_icon="@mipmap/baseline_qr_code_scanner_black_18"
                 app:fab_title="@string/qrcode" />
 
-            <com.getbase.floatingactionbutton.FloatingActionButton
-                android:id="@+id/nuovoconbluetooth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:backgroundTint="#F8D89D"
-                app:fab_icon="@mipmap/ic_settings_bluetooth_black_18dp"
-                app:fab_title="@string/new_pet_bluetooth_option" />
+
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
     </FrameLayout>
 

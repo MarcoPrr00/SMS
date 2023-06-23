@@ -3002,6 +3002,7 @@ id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_Qr_Code_NewStallo
+id btn_cancella_animale
 id btn_cancella_stallo
 id btn_check_position
 id btn_codividi
@@ -3329,7 +3330,6 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id nuovoconbluetooth
 id nuovomanuale
 id off
 id on

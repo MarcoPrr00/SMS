@@ -69,7 +69,7 @@ public class DettagliMieiAnimali extends Fragment {
     String position = new String();
     ImageView imgProfilo;
     FloatingActionButton btnNuovaFotoProfilo, btnAlbumFoto, btnCodividiQrcode;
-    Button btnSpese, btnSalute;
+    Button btnSpese, btnSalute, btnCancella;
     TextView txtNomeAnimale;
 
     RecyclerView recyclerView;
@@ -127,7 +127,7 @@ public class DettagliMieiAnimali extends Fragment {
         btnSpese = view.findViewById(R.id.editButtonspese);
         btnSalute = view.findViewById(R.id.editButtonsalute);
         btnCodividiQrcode = view.findViewById(R.id.btn_codividiQrCode);
-
+        btnCancella = view.findViewById(R.id.btn_cancella_animale);
         btnSalute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -144,6 +144,28 @@ public class DettagliMieiAnimali extends Fragment {
             @Override
             public void onClick(View v) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SpeseAnimaleFragment(animale)).addToBackStack(null).commit();
+            }
+        });
+
+        btnCancella.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new androidx.appcompat.app.AlertDialog.Builder(btnCancella.getContext())
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle("ELIMINAZIONE ANIMALE").setMessage("Sei sicuro di voler eliminare?")
+                        .setPositiveButton("Si", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                DatabaseReference reference;
+                                FirebaseDatabase database = FirebaseDatabase.getInstance("https://provalogin-65cb5-default-rtdb.europe-west1.firebasedatabase.app/");
+                                reference = database.getReference().child("Animals").child(animale.id);
+                                reference.removeValue();
+                                getActivity().getSupportFragmentManager().popBackStack();
+
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
             }
         });
 
@@ -244,6 +266,8 @@ public class DettagliMieiAnimali extends Fragment {
         btnNuovaFotoProfilo.setVisibility(View.INVISIBLE);
         btnSpese.setVisibility(View.INVISIBLE);
         btnSalute.setVisibility(View.INVISIBLE);
+        btnCancella.setVisibility(View.INVISIBLE);
+        btnCodividiQrcode.setVisibility(View.INVISIBLE);
     }
 
     private ImageView imgQrCode;

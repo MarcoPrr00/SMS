@@ -112,6 +112,7 @@ id btnFaiFoto
 id btnInvia
 id btnScegli
 id btn_Qr_Code_NewStallo
+id btn_cancella_animale
 id btn_cancella_stallo
 id btn_check_position
 id btn_codividi
@@ -213,7 +214,6 @@ id nome_animale
 id nome_animale_item
 id nome_item
 id nomecognome
-id nuovoconbluetooth
 id nuovomanuale
 id password
 id per_te_ente
